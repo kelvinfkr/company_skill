@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Company Talent Economics Model",
+  "type": "object",
+  "required": [
+    "company",
+    "threshold",
+    "buckets"
+  ],
+  "properties": {
+    "company": {
+      "type": "string"
+    },
+    "reference_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "threshold": {
+      "type": "object",
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "workforce": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "object",
+          "required": [
+            "low",
+            "mode",
+            "high"
+          ],
+          "properties": {
+            "low": {
+              "type": "number"
+            },
+            "mode": {
+              "type": "number"
+            },
+            "high": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "buckets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "headcount"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "headcount": {
+            "type": "object",
+            "required": [
+              "low",
+              "mode",
+              "high"
+            ],
+            "properties": {
+              "low": {
+                "type": "number"
+              },
+              "mode": {
+                "type": "number"
+              },
+              "high": {
+                "type": "number"
+              }
+            }
+          },
+          "p_exceed": {
+            "type": "object",
+            "properties": {
+              "low": {
+                "type": "number"
+              },
+              "mode": {
+                "type": "number"
+              },
+              "high": {
+                "type": "number"
+              }
+            }
+          },
+          "tc": {
+            "type": "object",
+            "properties": {
+              "low": {
+                "type": "number"
+              },
+              "mode": {
+                "type": "number"
+              },
+              "high": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

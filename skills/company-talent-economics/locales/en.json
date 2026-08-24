@@ -1,0 +1,240 @@
+{
+ "_doc": "Locale pack. Every pack must carry the same keys as en.json; scripts/check_locales.py enforces that. Structural chrome only — analytical prose is written by the agent in this language.",
+ "meta": {
+  "tag": "en",
+  "name": "English",
+  "native_name": "English",
+  "direction": "ltr",
+  "script": "latin",
+  "fallback": null,
+  "group_sep": ",",
+  "decimal_sep": ".",
+  "currency_position": "before",
+  "currency_space": false,
+  "font_sans": [
+   "Noto Sans",
+   "DejaVu Sans",
+   "Arial",
+   "Helvetica"
+  ],
+  "font_serif": [
+   "Noto Serif",
+   "DejaVu Serif",
+   "Georgia",
+   "Times New Roman"
+  ]
+ },
+ "scale": [
+  [
+   1000000000.0,
+   1000000000.0,
+   "bn"
+  ],
+  [
+   1000000.0,
+   1000000.0,
+   "M"
+  ],
+  [
+   10000.0,
+   1000.0,
+   "k"
+  ]
+ ],
+ "cover": {
+  "report_title": "Talent Economics Report",
+  "subtitle_default": "Talent economics reconstructed from public data",
+  "reference_date": "Reference date",
+  "entity_type": "Entity type",
+  "scope": "Scope",
+  "threshold": "High-pay threshold",
+  "confidence": "Overall confidence",
+  "method_note": "Method: every figure is tagged Disclosed / Derived / Inferred / Assumption. TC = base salary + expected cash bonus or commission + annualised vested equity value, pre-tax. Interval estimates are preferred over false-precision point estimates.",
+  "header_suffix": "Talent Economics",
+  "page": "Page {n}"
+ },
+ "sections": {
+  "executive": [
+   "Executive summary",
+   "Scale, the upper tail of pay, and the uncertainty that matters most."
+  ],
+  "charter": [
+   "Charter and control structure",
+   "Separate economic ownership, voting power, board control and legacy rights. Reconstructed terms must never pose as original charter text."
+  ],
+  "business": [
+   "Business performance and profit pools",
+   "Before pricing anyone, establish where profit is created and who controls it."
+  ],
+  "talent_pnl": [
+   "Profit pool to role dependency",
+   "Which roles actually control revenue, margin, customer relationships and technical bottlenecks. Dependency is graded qualitatively only."
+  ],
+  "organization": [
+   "Organisation and level map",
+   "Keep company-native titles and levels; build a separate latent state that is comparable across companies."
+  ],
+  "compensation": [
+   "Compensation distribution",
+   "Model base, cash bonus and annualised vested equity separately, then aggregate to annual pre-tax TC."
+  ],
+  "high_compensation": [
+   "High-compensation population",
+   "Use a Monte Carlo interval for the number of employees above the threshold, never a point estimate."
+  ],
+  "role_pay": [
+   "Critical-role pay bands",
+   "Market replacement cost is only the starting point; economic justification and internal equity define the defensible zone."
+  ],
+  "career": [
+   "Promotion and external-entry paths",
+   "Public profiles support observed transition shares, which are not the company's true promotion probabilities."
+  ],
+  "governance": [
+   "Equity incentives and talent capital",
+   "How much ownership goes to whom is the company's own strongest statement about which roles are critical."
+  ],
+  "sensitivity": [
+   "Sensitivity and uncertainty",
+   "Which assumptions would most change the headcount and pricing conclusions, and which missing evidence would narrow the intervals fastest."
+  ],
+  "evidence": [
+   "Evidence summary",
+   "The report keeps core evidence only; the full source manifest and claim ledger travel with the audit bundle."
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "Item",
+   "Current arrangement",
+   "Historical change",
+   "Evidence status"
+  ],
+  "charter_timeline": [
+   "Date",
+   "Event",
+   "Economic effect",
+   "Control effect",
+   "Document status"
+  ],
+  "business_metrics": [
+   "Metric",
+   "Value",
+   "Basis",
+   "Evidence"
+  ],
+  "profit_pools": [
+   "Segment",
+   "Revenue",
+   "Gross profit / contribution",
+   "Growth",
+   "Key dependency"
+  ],
+  "talent_pnl": [
+   "Profit pool",
+   "Critical process",
+   "Critical role",
+   "Dependency",
+   "Why"
+  ],
+  "organization": [
+   "Native role / level",
+   "Track",
+   "Scope",
+   "Function / BU",
+   "Latent state",
+   "Confidence"
+  ],
+  "compensation": [
+   "Group",
+   "Headcount",
+   "Cash TC",
+   "Equity TC",
+   "Total TC",
+   "P(above threshold)",
+   "Confidence"
+  ],
+  "high_compensation": [
+   "Group",
+   "Above threshold",
+   "Contribution",
+   "Main uncertainty"
+  ],
+  "role_pay": [
+   "Role",
+   "Market replacement",
+   "Economic justification",
+   "Internal equity",
+   "Defensible zone",
+   "Diagnostic"
+  ],
+  "career_qa": [
+   "Question",
+   "Assessment"
+  ],
+  "governance": [
+   "Metric",
+   "Assessment / value",
+   "Evidence"
+  ],
+  "evidence": [
+   "ID",
+   "Source",
+   "Date",
+   "Status",
+   "Supports"
+  ]
+ },
+ "labels": {
+  "profit_pools": "Profit pools",
+  "charter_timeline": "Charter and ownership timeline",
+  "internal_path": "Common internal paths",
+  "external_path": "Common external-entry paths",
+  "first_threshold_state": "State that first crosses the threshold",
+  "promotion_tenure": "Observed tenure before promotion",
+  "senior_hire_mix": "Senior roles: internal build vs external buy",
+  "high_comp_headline": "Estimated employees above threshold: {v}",
+  "approx": "approx. ",
+  "people": "",
+  "people_suffix": " employees",
+  "mode": "mode",
+  "na": "n/a",
+  "dash": "—",
+  "provisional_confidence": "Low (provisional estimate)",
+  "provisional_note": "Provisional: {facts} was not publicly available. This estimate rests on modelled assumptions and must be read as a range, not a measurement."
+ },
+ "claim_types": {
+  "observed_fact": "Disclosed",
+  "derived_metric": "Derived",
+  "assumption": "Assumption",
+  "inference": "Inferred",
+  "reconstruction": "Reconstructed"
+ },
+ "kpi": {
+  "headcount": "Full-time employees",
+  "rnd_headcount": "R&D employees",
+  "payroll_per_head": "Payroll cost per employee (incl. equity)",
+  "tc_median": "Median TC (inferred)",
+  "tc_p90": "P90 TC (inferred)",
+  "above_p50": "Above threshold (p50)",
+  "above_range": "p05-p95",
+  "above_share": "Share above threshold"
+ },
+ "metrics": {
+  "revenue": "Revenue",
+  "gross_profit": "Gross profit",
+  "operating_profit": "Operating profit",
+  "net_profit": "Net profit",
+  "rnd_expense": "R&D expense",
+  "sales_expense": "Selling expense",
+  "admin_expense": "G&A expense",
+  "employee_benefit_expense": "Employee benefit expense (incl. SBC)",
+  "sbc_expense": "Share-based compensation",
+  "gross_profit_per_head": "Gross profit per employee",
+  "benefit_over_gp": "Employee benefit expense / gross profit",
+  "note_gp_per_head": "gross profit / headcount",
+  "note_notes": "financial statement notes"
+ },
+ "threshold_sentence": "Annual pre-tax TC >= {amount} {currency} (base + cash bonus + annualised vested equity; equity priced on a {basis} basis)",
+ "forbidden_terms": []
+}

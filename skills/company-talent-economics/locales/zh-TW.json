@@ -1,0 +1,247 @@
+{
+ "_doc": "語言包。所有語言包的鍵必須與 en.json 完全一致，由 scripts/check_locales.py 檢查。此處只翻譯報告骨架，分析正文由 agent 以該語言撰寫。",
+ "meta": {
+  "tag": "zh-TW",
+  "name": "Chinese (Traditional)",
+  "native_name": "繁體中文",
+  "direction": "ltr",
+  "script": "hant",
+  "fallback": null,
+  "group_sep": ",",
+  "decimal_sep": ".",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans CJK TC",
+   "Noto Sans TC",
+   "Source Han Sans TC",
+   "PingFang TC",
+   "Microsoft JhengHei",
+   "PMingLiU"
+  ],
+  "font_serif": [
+   "Noto Serif CJK TC",
+   "Noto Serif TC",
+   "Source Han Serif TC",
+   "Songti TC",
+   "PMingLiU"
+  ]
+ },
+ "scale": [
+  [
+   100000000.0,
+   100000000.0,
+   "亿"
+  ],
+  [
+   10000.0,
+   10000.0,
+   "万"
+  ]
+ ],
+ "cover": {
+  "report_title": "企業人才經濟學研究報告",
+  "subtitle_default": "以公開資料重建的企業人才經濟學研究",
+  "reference_date": "參考日期",
+  "entity_type": "實體類型",
+  "scope": "研究範圍",
+  "threshold": "高薪門檻",
+  "confidence": "整體信心水準",
+  "method_note": "方法說明：所有數字標註為「揭露」「衍生」「推斷」或「模型假設」；TC = 基本薪資 + 預期現金獎金/佣金 + 年化既得股份價值（稅前）；區間估計優先於偽精確點估計。",
+  "header_suffix": "人才經濟學",
+  "page": "第 {n} 頁"
+ },
+ "sections": {
+  "executive": [
+   "執行摘要",
+   "先給出規模、薪酬上尾與關鍵不確定性。"
+  ],
+  "charter": [
+   "公司章程與控制權結構",
+   "區分經濟權益、投票權、董事會控制權與歷史特殊權利；重建條款不得冒充章程原文。"
+  ],
+  "business": [
+   "經營績效與利潤池",
+   "在為任何人定價之前，先確認利潤在哪裡產生、由誰控制。"
+  ],
+  "talent_pnl": [
+   "利潤池—職務依賴映射",
+   "辨識真正掌控營收、毛利、客戶關係與技術瓶頸的職務；依賴度僅做定性分級。"
+  ],
+  "organization": [
+   "組織與職級映射",
+   "保留公司原生職稱與職級，另建可跨公司比較的隱含職級（latent state）。"
+  ],
+  "compensation": [
+   "薪酬分布",
+   "基本薪資、現金獎金與年化既得股份分開建模，再彙總為年度稅前 TC。"
+  ],
+  "high_compensation": [
+   "高薪族群規模",
+   "以蒙地卡羅區間而非單點估計跨過門檻的員工人數。"
+  ],
+  "role_pay": [
+   "關鍵職務薪酬區間",
+   "市場替代成本只是起點；經濟合理性與內部公平共同決定可辯護區間。"
+  ],
+  "career": [
+   "晉升與外部進入路徑",
+   "公開履歷只能支持「觀察到的轉換占比」，不等於公司真實晉升機率。"
+  ],
+  "governance": [
+   "股權激勵與人才資本配置",
+   "公司把多少所有權分配給誰，是它自認關鍵職務的最強訊號。"
+  ],
+  "sensitivity": [
+   "敏感度與不確定性",
+   "哪些假設最可能改變人數與職務定價結論；補哪些證據最能收斂區間。"
+  ],
+  "evidence": [
+   "證據摘要",
+   "主報告僅保留核心證據；完整來源清單與證據帳冊隨稽核包交付。"
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "事項",
+   "現行安排",
+   "歷史變化",
+   "證據狀態"
+  ],
+  "charter_timeline": [
+   "日期",
+   "事件",
+   "經濟權益影響",
+   "控制權影響",
+   "文件狀態"
+  ],
+  "business_metrics": [
+   "指標",
+   "數值",
+   "口徑",
+   "證據"
+  ],
+  "profit_pools": [
+   "業務/分部",
+   "營收",
+   "毛利/貢獻",
+   "成長",
+   "關鍵依賴"
+  ],
+  "talent_pnl": [
+   "利潤池",
+   "關鍵流程",
+   "關鍵職務",
+   "依賴度",
+   "原因"
+  ],
+  "organization": [
+   "原生職務/職級",
+   "Track",
+   "Scope",
+   "職能/BU",
+   "Latent state",
+   "信心水準"
+  ],
+  "compensation": [
+   "族群",
+   "人數",
+   "Cash TC",
+   "Equity TC",
+   "Total TC",
+   "P(超過門檻)",
+   "信心水準"
+  ],
+  "high_compensation": [
+   "族群",
+   "超過門檻人數",
+   "貢獻",
+   "主要不確定性"
+  ],
+  "role_pay": [
+   "職務",
+   "市場替代",
+   "經濟合理性",
+   "內部公平",
+   "可辯護區間",
+   "診斷"
+  ],
+  "career_qa": [
+   "問題",
+   "判斷"
+  ],
+  "governance": [
+   "指標",
+   "判斷/數值",
+   "證據"
+  ],
+  "evidence": [
+   "ID",
+   "來源",
+   "日期",
+   "狀態",
+   "支持的判斷"
+  ]
+ },
+ "labels": {
+  "profit_pools": "利潤池",
+  "charter_timeline": "章程與股權結構演變時間線",
+  "internal_path": "常見內部路徑",
+  "external_path": "常見外部進入路徑",
+  "first_threshold_state": "首次跨過門檻的職級狀態",
+  "promotion_tenure": "觀察到的晉升 tenure",
+  "senior_hire_mix": "資深職務內部培養／外部延攬比例",
+  "high_comp_headline": "高薪人數估計：{v}",
+  "approx": "約 ",
+  "people": "",
+  "people_suffix": " 人",
+  "mode": "眾數",
+  "na": "n/a",
+  "dash": "—",
+  "provisional_confidence": "低（暫定估計）",
+  "provisional_note": "暫定估計：{facts} 無公開資料。本估計建立在模型假設之上，只能作為區間參考，不能視為實測值。"
+ },
+ "claim_types": {
+  "observed_fact": "揭露",
+  "derived_metric": "衍生",
+  "assumption": "模型假設",
+  "inference": "推斷",
+  "reconstruction": "重建"
+ },
+ "kpi": {
+  "headcount": "全職員工",
+  "rnd_headcount": "研發人員",
+  "payroll_per_head": "人均薪酬費用（含股份）",
+  "tc_median": "TC 中位數（推斷）",
+  "tc_p90": "TC P90（推斷）",
+  "above_p50": "跨門檻人數 p50",
+  "above_range": "p05-p95",
+  "above_share": "跨門檻占比"
+ },
+ "metrics": {
+  "revenue": "營業收入",
+  "gross_profit": "毛利",
+  "operating_profit": "營業利益",
+  "net_profit": "淨利",
+  "rnd_expense": "研發費用",
+  "sales_expense": "銷售費用",
+  "admin_expense": "管理費用",
+  "employee_benefit_expense": "員工福利費用（含 SBC）",
+  "sbc_expense": "股份基礎薪酬",
+  "gross_profit_per_head": "人均毛利",
+  "benefit_over_gp": "員工福利費用 ÷ 毛利",
+  "note_gp_per_head": "毛利 ÷ 全職員工數",
+  "note_notes": "財務報表附註"
+ },
+ "threshold_sentence": "年度稅前 TC ≥ {amount} {currency}（基本薪資 + 現金獎金 + 年化既得股份；股份採{basis}價格基準）",
+ "forbidden_terms": [
+  [
+   "憲法",
+   "章程"
+  ],
+  [
+   "高收入人口",
+   "高薪族群"
+  ]
+ ]
+}

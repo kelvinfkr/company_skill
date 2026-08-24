@@ -1,0 +1,240 @@
+{
+ "_doc": "Locale pack. Every pack must carry the same keys as en.json; scripts/check_locales.py enforces that. Structural chrome only - analytical prose is written by the agent in this language.",
+ "meta": {
+  "tag": "de",
+  "name": "German",
+  "native_name": "Deutsch",
+  "direction": "ltr",
+  "script": "latin",
+  "fallback": null,
+  "group_sep": ".",
+  "decimal_sep": ",",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans",
+   "DejaVu Sans",
+   "Arial",
+   "Helvetica"
+  ],
+  "font_serif": [
+   "Noto Serif",
+   "DejaVu Serif",
+   "Georgia",
+   "Times New Roman"
+  ]
+ },
+ "scale": [
+  [
+   1000000000.0,
+   1000000000.0,
+   " Mrd."
+  ],
+  [
+   1000000.0,
+   1000000.0,
+   " Mio."
+  ],
+  [
+   10000.0,
+   1000.0,
+   " Tsd."
+  ]
+ ],
+ "cover": {
+  "report_title": "Talent-Ökonomie-Bericht",
+  "subtitle_default": "Aus öffentlichen Daten rekonstruierte Talent-Ökonomie",
+  "reference_date": "Stichtag",
+  "entity_type": "Rechtsform",
+  "scope": "Untersuchungsumfang",
+  "threshold": "Hochvergütungsschwelle",
+  "confidence": "Gesamtkonfidenz",
+  "method_note": "Methode: Jede Zahl ist als Offengelegt / Abgeleitet / Geschätzt / Annahme gekennzeichnet. TC (Gesamtvergütung) = Grundgehalt + erwarteter Bonus bzw. Provision + annualisierter Wert unverfallbarer Aktien, vor Steuern. Intervallschätzungen haben Vorrang vor scheingenauen Punktwerten.",
+  "header_suffix": "Talent-Ökonomie",
+  "page": "Seite {n}"
+ },
+ "sections": {
+  "executive": [
+   "Zusammenfassung",
+   "Größenordnung, oberes Vergütungsende und die entscheidende Unsicherheit zuerst."
+  ],
+  "charter": [
+   "Satzung und Kontrollstruktur",
+   "Wirtschaftliches Eigentum, Stimmrechte, Aufsichtsratskontrolle und Altrechte trennen. Rekonstruierte Klauseln dürfen nie als Original-Satzungstext auftreten."
+  ],
+  "business": [
+   "Geschäftsentwicklung und Profit Pools",
+   "Vor jeder Vergütungsaussage klären, wo der Gewinn entsteht und wer ihn kontrolliert."
+  ],
+  "talent_pnl": [
+   "Profit Pool und Rollenabhängigkeit",
+   "Welche Rollen Umsatz, Marge, Kundenbeziehung und technische Engpässe tatsächlich kontrollieren. Abhängigkeit wird nur qualitativ eingestuft."
+  ],
+  "organization": [
+   "Organisation und Level-Mapping",
+   "Unternehmenseigene Titel und Level beibehalten und daneben einen unternehmensübergreifend vergleichbaren latenten Zustand aufbauen."
+  ],
+  "compensation": [
+   "Vergütungsverteilung",
+   "Grundgehalt, Barbonus und annualisierte Aktien getrennt modellieren und zur jährlichen TC vor Steuern aggregieren."
+  ],
+  "high_compensation": [
+   "Hochvergütete Belegschaft",
+   "Die Zahl der Beschäftigten oberhalb der Schwelle als Monte-Carlo-Intervall ausweisen, nie als Punktwert."
+  ],
+  "role_pay": [
+   "Vergütungsbänder kritischer Rollen",
+   "Die Wiederbeschaffungskosten am Markt sind nur der Startpunkt; wirtschaftliche Rechtfertigung und interne Gerechtigkeit bestimmen die vertretbare Zone."
+  ],
+  "career": [
+   "Beförderungs- und Externeinstiegspfade",
+   "Öffentliche Profile stützen nur beobachtete Übergangsanteile, nicht die tatsächlichen Beförderungswahrscheinlichkeiten."
+  ],
+  "governance": [
+   "Aktienvergütung und Humankapitalallokation",
+   "Wie viel Eigentum an wen geht, ist die stärkste Aussage des Unternehmens darüber, welche Rollen kritisch sind."
+  ],
+  "sensitivity": [
+   "Sensitivität und Unsicherheit",
+   "Welche Annahmen Kopfzahl und Rollenpreis am stärksten verändern und welche fehlenden Belege die Intervalle am schnellsten verengen."
+  ],
+  "evidence": [
+   "Belegübersicht",
+   "Der Bericht führt nur Kernbelege; das vollständige Quellenverzeichnis und das Belegregister liegen dem Prüfpaket bei."
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "Punkt",
+   "Aktuelle Regelung",
+   "Historische Änderung",
+   "Belegstatus"
+  ],
+  "charter_timeline": [
+   "Datum",
+   "Ereignis",
+   "Wirtschaftliche Wirkung",
+   "Kontrollwirkung",
+   "Dokumentstatus"
+  ],
+  "business_metrics": [
+   "Kennzahl",
+   "Wert",
+   "Basis",
+   "Beleg"
+  ],
+  "profit_pools": [
+   "Segment",
+   "Umsatz",
+   "Rohertrag / Deckungsbeitrag",
+   "Wachstum",
+   "Zentrale Abhängigkeit"
+  ],
+  "talent_pnl": [
+   "Profit Pool",
+   "Kritischer Prozess",
+   "Kritische Rolle",
+   "Abhängigkeit",
+   "Begründung"
+  ],
+  "organization": [
+   "Rolle / Level intern",
+   "Track",
+   "Scope",
+   "Funktion / BU",
+   "Latenter Zustand",
+   "Konfidenz"
+  ],
+  "compensation": [
+   "Gruppe",
+   "Kopfzahl",
+   "Bar-TC",
+   "Aktien-TC",
+   "Gesamt-TC",
+   "P(über Schwelle)",
+   "Konfidenz"
+  ],
+  "high_compensation": [
+   "Gruppe",
+   "Über der Schwelle",
+   "Beitrag",
+   "Hauptunsicherheit"
+  ],
+  "role_pay": [
+   "Rolle",
+   "Marktwiederbeschaffung",
+   "Wirtschaftliche Rechtfertigung",
+   "Interne Gerechtigkeit",
+   "Vertretbare Zone",
+   "Diagnose"
+  ],
+  "career_qa": [
+   "Frage",
+   "Einschätzung"
+  ],
+  "governance": [
+   "Kennzahl",
+   "Einschätzung / Wert",
+   "Beleg"
+  ],
+  "evidence": [
+   "ID",
+   "Quelle",
+   "Datum",
+   "Status",
+   "Stützt"
+  ]
+ },
+ "labels": {
+  "profit_pools": "Profit Pools",
+  "charter_timeline": "Chronologie von Satzung und Anteilsstruktur",
+  "internal_path": "Übliche interne Pfade",
+  "external_path": "Übliche externe Einstiegspfade",
+  "first_threshold_state": "Erster Zustand über der Schwelle",
+  "promotion_tenure": "Beobachtete Verweildauer vor Beförderung",
+  "senior_hire_mix": "Senior-Rollen: intern aufbauen vs. extern einkaufen",
+  "high_comp_headline": "Geschätzte Beschäftigte über der Schwelle: {v}",
+  "approx": "ca. ",
+  "people": "",
+  "people_suffix": " Beschäftigte",
+  "mode": "Modus",
+  "na": "k. A.",
+  "dash": "—",
+  "provisional_confidence": "Niedrig (vorläufige Schätzung)",
+  "provisional_note": "Vorläufig: {facts} war öffentlich nicht verfügbar. Die Schätzung beruht auf Modellannahmen und ist als Intervall zu lesen, nicht als Messwert."
+ },
+ "claim_types": {
+  "observed_fact": "Offengelegt",
+  "derived_metric": "Abgeleitet",
+  "assumption": "Annahme",
+  "inference": "Geschätzt",
+  "reconstruction": "Rekonstruiert"
+ },
+ "kpi": {
+  "headcount": "Vollzeitbeschäftigte",
+  "rnd_headcount": "F&E-Beschäftigte",
+  "payroll_per_head": "Personalkosten je Beschäftigten (inkl. Aktien)",
+  "tc_median": "Median-TC (geschätzt)",
+  "tc_p90": "TC P90 (geschätzt)",
+  "above_p50": "Über Schwelle (p50)",
+  "above_range": "p05-p95",
+  "above_share": "Anteil über der Schwelle"
+ },
+ "metrics": {
+  "revenue": "Umsatz",
+  "gross_profit": "Rohertrag",
+  "operating_profit": "Betriebsergebnis",
+  "net_profit": "Jahresüberschuss",
+  "rnd_expense": "F&E-Aufwand",
+  "sales_expense": "Vertriebsaufwand",
+  "admin_expense": "Verwaltungsaufwand",
+  "employee_benefit_expense": "Personalaufwand (inkl. Aktienvergütung)",
+  "sbc_expense": "Aktienbasierte Vergütung",
+  "gross_profit_per_head": "Rohertrag je Beschäftigten",
+  "benefit_over_gp": "Personalaufwand / Rohertrag",
+  "note_gp_per_head": "Rohertrag / Kopfzahl",
+  "note_notes": "Anhang zum Abschluss"
+ },
+ "threshold_sentence": "Jährliche TC vor Steuern >= {amount} {currency} (Grundgehalt + Barbonus + annualisierte unverfallbare Aktien; Aktienbewertung auf {basis}-Basis)",
+ "forbidden_terms": []
+}

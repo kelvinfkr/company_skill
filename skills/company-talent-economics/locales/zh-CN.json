@@ -1,0 +1,252 @@
+{
+ "_doc": "语言包。所有语言包的键必须与 en.json 完全一致，由 scripts/check_locales.py 校验。此处只翻译报告骨架，分析正文由 agent 用该语言撰写。",
+ "meta": {
+  "tag": "zh-CN",
+  "name": "Chinese (Simplified)",
+  "native_name": "简体中文",
+  "direction": "ltr",
+  "script": "hans",
+  "fallback": null,
+  "group_sep": ",",
+  "decimal_sep": ".",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans CJK SC",
+   "Noto Sans SC",
+   "Source Han Sans SC",
+   "PingFang SC",
+   "Microsoft YaHei",
+   "SimHei",
+   "WenQuanYi Micro Hei"
+  ],
+  "font_serif": [
+   "Noto Serif CJK SC",
+   "Noto Serif SC",
+   "Source Han Serif SC",
+   "Songti SC",
+   "SimSun"
+  ]
+ },
+ "scale": [
+  [
+   100000000.0,
+   100000000.0,
+   "亿"
+  ],
+  [
+   10000.0,
+   10000.0,
+   "万"
+  ]
+ ],
+ "cover": {
+  "report_title": "企业人才经济学研究报告",
+  "subtitle_default": "公开数据驱动的企业人才经济学研究",
+  "reference_date": "参考日期",
+  "entity_type": "实体类型",
+  "scope": "研究范围",
+  "threshold": "高薪阈值",
+  "confidence": "总体置信度",
+  "method_note": "方法说明：所有数字标注为「披露」「派生」「推断」或「模型假设」；TC = 基本薪资 + 预期现金奖金/提成 + 年化归属股份价值（税前）；区间估计优先于伪精确点估计。",
+  "header_suffix": "人才经济学",
+  "page": "第 {n} 页"
+ },
+ "sections": {
+  "executive": [
+   "执行摘要",
+   "先给出规模、薪酬上尾和关键不确定性。"
+  ],
+  "charter": [
+   "公司章程与控制权结构",
+   "区分经济权益、投票权、董事会控制权与历史特殊权利；重建的条款不得冒充章程原文。"
+  ],
+  "business": [
+   "经营业绩与利润池",
+   "薪酬定价之前，先确定利润在哪里产生、由谁控制。"
+  ],
+  "talent_pnl": [
+   "利润池—岗位依赖映射",
+   "识别真正控制收入、毛利、客户关系与技术瓶颈的岗位；依赖度只做定性分级。"
+  ],
+  "organization": [
+   "组织与职级映射",
+   "保留公司原生职级与头衔，另建可跨公司比较的隐含职级（latent state）。"
+  ],
+  "compensation": [
+   "薪酬分布",
+   "基本薪资、现金奖金与年化归属股份分开建模，再汇总为年度税前 TC。"
+  ],
+  "high_compensation": [
+   "高薪人群规模",
+   "用蒙特卡洛区间而非单点估计跨过阈值的员工数量。"
+  ],
+  "role_pay": [
+   "关键岗位薪酬区间",
+   "市场替代成本只是起点；经济合理性与内部公平共同决定可辩护区间。"
+  ],
+  "career": [
+   "晋升与外部进入路径",
+   "公开履历只能支持「观察到的转换份额」，不等于公司真实晋升概率。"
+  ],
+  "governance": [
+   "股份激励与人才资本配置",
+   "公司把多少所有权分配给谁，是其自认关键岗位的最强信号。"
+  ],
+  "sensitivity": [
+   "敏感性与不确定性",
+   "哪些假设最可能改变人数与岗位定价结论；补什么证据最能收窄区间。"
+  ],
+  "evidence": [
+   "证据摘要",
+   "主报告只保留核心证据；完整来源清单与证据台账随审计包交付。"
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "事项",
+   "现行安排",
+   "历史变化",
+   "证据状态"
+  ],
+  "charter_timeline": [
+   "日期",
+   "事件",
+   "经济权益影响",
+   "控制权影响",
+   "文件状态"
+  ],
+  "business_metrics": [
+   "指标",
+   "数值",
+   "口径",
+   "证据"
+  ],
+  "profit_pools": [
+   "业务/板块",
+   "收入",
+   "毛利/贡献",
+   "增长",
+   "关键依赖"
+  ],
+  "talent_pnl": [
+   "利润池",
+   "关键流程",
+   "关键岗位",
+   "依赖度",
+   "原因"
+  ],
+  "organization": [
+   "原生岗位/职级",
+   "Track",
+   "Scope",
+   "职能/BU",
+   "Latent state",
+   "置信度"
+  ],
+  "compensation": [
+   "人群",
+   "人数",
+   "Cash TC",
+   "Equity TC",
+   "Total TC",
+   "P(超过阈值)",
+   "置信度"
+  ],
+  "high_compensation": [
+   "人群",
+   "超过阈值人数",
+   "贡献",
+   "主要不确定性"
+  ],
+  "role_pay": [
+   "岗位",
+   "市场替代",
+   "经济合理性",
+   "内部公平",
+   "可辩护区间",
+   "诊断"
+  ],
+  "career_qa": [
+   "问题",
+   "判断"
+  ],
+  "governance": [
+   "指标",
+   "判断/数值",
+   "证据"
+  ],
+  "evidence": [
+   "ID",
+   "来源",
+   "日期",
+   "状态",
+   "支持的判断"
+  ]
+ },
+ "labels": {
+  "profit_pools": "利润池",
+  "charter_timeline": "章程与股权结构演变时间线",
+  "internal_path": "常见内部路径",
+  "external_path": "常见外部进入路径",
+  "first_threshold_state": "首次通常跨过阈值的状态",
+  "promotion_tenure": "观察到的晋升 tenure",
+  "senior_hire_mix": "高级岗位内部/外部供给",
+  "high_comp_headline": "高收入人数估计：{v}",
+  "approx": "约 ",
+  "people": "",
+  "people_suffix": " 人",
+  "mode": "众数",
+  "na": "n/a",
+  "dash": "—",
+  "provisional_confidence": "低（临时估计）",
+  "provisional_note": "临时估计：{facts} 无公开数据。本估计基于模型假设，只能作为区间参考，不能当作实测值。"
+ },
+ "claim_types": {
+  "observed_fact": "披露",
+  "derived_metric": "派生",
+  "assumption": "模型假设",
+  "inference": "推断",
+  "reconstruction": "重建"
+ },
+ "kpi": {
+  "headcount": "全职员工",
+  "rnd_headcount": "研发人员",
+  "payroll_per_head": "人均薪酬费用（含股份）",
+  "tc_median": "TC 中位数（推断）",
+  "tc_p90": "TC P90（推断）",
+  "above_p50": "跨阈值人数 p50",
+  "above_range": "p05-p95",
+  "above_share": "跨阈值占比"
+ },
+ "metrics": {
+  "revenue": "营业收入",
+  "gross_profit": "毛利",
+  "operating_profit": "经营利润",
+  "net_profit": "净利润",
+  "rnd_expense": "研发开支",
+  "sales_expense": "销售开支",
+  "admin_expense": "行政开支",
+  "employee_benefit_expense": "雇员福利开支（含 SBC）",
+  "sbc_expense": "以股份为基础的薪酬",
+  "gross_profit_per_head": "人均毛利",
+  "benefit_over_gp": "雇员福利开支 ÷ 毛利",
+  "note_gp_per_head": "毛利 ÷ 全职雇员数",
+  "note_notes": "财务报表附注"
+ },
+ "threshold_sentence": "年度税前 TC ≥ {amount} {currency}（基本薪资 + 现金奖金 + 年化归属股份；股份按{basis}价格基准）",
+ "forbidden_terms": [
+  [
+   "宪法",
+   "章程"
+  ],
+  [
+   "高收入人口",
+   "高薪人群"
+  ],
+  [
+   "收入分布",
+   "薪酬分布"
+  ]
+ ]
+}

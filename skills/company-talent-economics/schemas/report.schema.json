@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Company Talent Economics Report",
+  "type": "object",
+  "required": [
+    "meta",
+    "executive",
+    "business",
+    "compensation",
+    "high_compensation"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "company",
+        "language"
+      ],
+      "properties": {
+        "company": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string",
+          "description": "BCP-47 tag the report is written in; render_report.py picks the locale pack from it."
+        },
+        "reference_date": {
+          "type": "string"
+        },
+        "entity_type": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "threshold": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "provisional_note": {
+          "type": "string",
+          "description": "Set by compile_report.py when the run is provisional; printed on the cover."
+        }
+      },
+      "additionalProperties": true
+    },
+    "executive": {
+      "type": "object"
+    },
+    "charter": {
+      "type": "object",
+      "description": "Articles/charter and control structure. Legacy key `constitution` is still accepted by the renderer."
+    },
+    "constitution": {
+      "type": "object"
+    },
+    "business": {
+      "type": "object"
+    },
+    "talent_pnl": {
+      "type": "array"
+    },
+    "organization": {
+      "type": "array"
+    },
+    "compensation": {
+      "type": "array"
+    },
+    "high_compensation": {
+      "type": "object"
+    },
+    "role_pay": {
+      "type": "array"
+    },
+    "career": {
+      "type": "object"
+    },
+    "governance": {
+      "type": "array"
+    },
+    "sensitivity": {
+      "type": "array"
+    },
+    "evidence": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

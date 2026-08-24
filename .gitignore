@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+dist/
+talent-economics/
+*.egg-info/
+.venv/
+venv/

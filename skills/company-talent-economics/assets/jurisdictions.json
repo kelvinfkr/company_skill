@@ -1,0 +1,1230 @@
+{
+ "_doc": "Jurisdiction registry. threshold_default and employer_social_rate are PRIORS, not facts: override with a disclosed number whenever one exists and record the override in analysis_notes.md. threshold_default is a round local-currency number that reads as 'high earner' in that market, not a statistical cut-off. Add a jurisdiction by appending an entry here — no code change is needed.",
+ "_schema": {
+  "name": "str",
+  "languages": "BCP-47 tags, most likely filing language first",
+  "currency": "ISO 4217 or null",
+  "threshold_default": "number or null",
+  "employer_social_rate": "employer-side statutory contributions as a share of gross payroll",
+  "filing_venues": "domains to site:-scope searches to",
+  "key_documents": "document names in the local filing language",
+  "registry": "company registry sources",
+  "notes": "what is unusually available or unusually misleading here"
+ },
+ "aliases": {
+  "china": "cn",
+  "prc": "cn",
+  "mainland": "cn",
+  "中国": "cn",
+  "中国大陆": "cn",
+  "a-share": "cn",
+  "a股": "cn",
+  "hongkong": "hk",
+  "hong kong": "hk",
+  "香港": "hk",
+  "hkex": "hk",
+  "taiwan": "tw",
+  "台湾": "tw",
+  "臺灣": "tw",
+  "twse": "tw",
+  "japan": "jp",
+  "日本": "jp",
+  "tokyo": "jp",
+  "tse": "jp",
+  "korea": "kr",
+  "south korea": "kr",
+  "한국": "kr",
+  "대한민국": "kr",
+  "kospi": "kr",
+  "singapore": "sg",
+  "新加坡": "sg",
+  "sgx": "sg",
+  "malaysia": "my",
+  "indonesia": "id",
+  "thailand": "th",
+  "vietnam": "vn",
+  "viet nam": "vn",
+  "philippines": "ph",
+  "australia": "au",
+  "asx": "au",
+  "new zealand": "nz",
+  "india": "in",
+  "bharat": "in",
+  "भारत": "in",
+  "nse": "in",
+  "bse": "in",
+  "pakistan": "pk",
+  "bangladesh": "bd",
+  "usa": "us",
+  "u.s.": "us",
+  "u.s.a.": "us",
+  "united states": "us",
+  "america": "us",
+  "美国": "us",
+  "sec": "us",
+  "nasdaq": "us",
+  "nyse": "us",
+  "canada": "ca",
+  "加拿大": "ca",
+  "mexico": "mx",
+  "méxico": "mx",
+  "brazil": "br",
+  "brasil": "br",
+  "chile": "cl",
+  "argentina": "ar",
+  "uk": "gb",
+  "u.k.": "gb",
+  "united kingdom": "gb",
+  "britain": "gb",
+  "england": "gb",
+  "英国": "gb",
+  "lse": "gb",
+  "ireland": "ie",
+  "germany": "de",
+  "deutschland": "de",
+  "德国": "de",
+  "france": "fr",
+  "法国": "fr",
+  "netherlands": "nl",
+  "holland": "nl",
+  "belgium": "be",
+  "switzerland": "ch",
+  "schweiz": "ch",
+  "suisse": "ch",
+  "austria": "at",
+  "spain": "es",
+  "españa": "es",
+  "italy": "it",
+  "italia": "it",
+  "portugal": "pt",
+  "sweden": "se",
+  "sverige": "se",
+  "norway": "no",
+  "norge": "no",
+  "denmark": "dk",
+  "danmark": "dk",
+  "finland": "fi",
+  "suomi": "fi",
+  "poland": "pl",
+  "polska": "pl",
+  "greece": "gr",
+  "russia": "ru",
+  "россия": "ru",
+  "turkey": "tr",
+  "türkiye": "tr",
+  "turkiye": "tr",
+  "israel": "il",
+  "ישראל": "il",
+  "uae": "ae",
+  "emirates": "ae",
+  "dubai": "ae",
+  "abu dhabi": "ae",
+  "saudi": "sa",
+  "saudi arabia": "sa",
+  "ksa": "sa",
+  "egypt": "eg",
+  "south africa": "za",
+  "nigeria": "ng",
+  "eu": "other",
+  "europe": "other",
+  "global": "other",
+  "worldwide": "other",
+  "السعودية": "sa",
+  "السعودي": "sa",
+  "الإمارات": "ae",
+  "دبي": "ae",
+  "أبوظبي": "ae",
+  "مصر": "eg",
+  "المصرية": "eg",
+  "المصري": "eg",
+  "株式会社": "jp",
+  "주식회사": "kr",
+  "台灣": "tw",
+  "中國": "cn",
+  "россии": "ru",
+  "российская": "ru",
+  "türk": "tr",
+  "österreich": "at",
+  "brasileiro": "br"
+ },
+ "jurisdictions": {
+  "cn": {
+   "name": "China (mainland, A-share)",
+   "languages": [
+    "zh-CN"
+   ],
+   "currency": "CNY",
+   "threshold_default": 1000000,
+   "employer_social_rate": 0.18,
+   "filing_venues": [
+    "cninfo.com.cn",
+    "sse.com.cn",
+    "szse.cn",
+    "bse.cn"
+   ],
+   "key_documents": [
+    "年度报告",
+    "招股说明书",
+    "股权激励计划",
+    "问询函回复",
+    "社会责任报告"
+   ],
+   "registry": [
+    "gsxt.gov.cn (business registry)",
+    "qcc/tianyancha (secondary)"
+   ],
+   "notes": "Employee cash payments appear in the cash-flow statement (支付给职工的现金) and exclude SBC."
+  },
+  "hk": {
+   "name": "Hong Kong SAR (HKEX)",
+   "languages": [
+    "zh-HK",
+    "zh-TW",
+    "en"
+   ],
+   "currency": "HKD",
+   "threshold_default": 1500000,
+   "employer_social_rate": 0.05,
+   "filing_venues": [
+    "hkexnews.hk",
+    "sfc.hk"
+   ],
+   "key_documents": [
+    "年報 / Annual Report",
+    "招股章程 / Prospectus",
+    "授出獎勵股份公告 / Share award grant",
+    "購股權計劃 / Share option scheme"
+   ],
+   "registry": [
+    "cr.gov.hk (Companies Registry)"
+   ],
+   "notes": "Watch WVR/dual-class structures; MPF employer contribution is capped, so the effective social rate is low."
+  },
+  "tw": {
+   "name": "Taiwan (TWSE/TPEx)",
+   "languages": [
+    "zh-TW"
+   ],
+   "currency": "TWD",
+   "threshold_default": 3000000,
+   "employer_social_rate": 0.18,
+   "filing_venues": [
+    "mops.twse.com.tw",
+    "twse.com.tw"
+   ],
+   "key_documents": [
+    "年報",
+    "公開說明書",
+    "員工酬勞分派",
+    "薪資報酬委員會報告"
+   ],
+   "registry": [
+    "gcis.nat.gov.tw"
+   ],
+   "notes": "Listed issuers must disclose non-managerial employee headcount and average/median pay (員工薪資資訊)."
+  },
+  "jp": {
+   "name": "Japan",
+   "languages": [
+    "ja"
+   ],
+   "currency": "JPY",
+   "threshold_default": 20000000,
+   "employer_social_rate": 0.16,
+   "filing_venues": [
+    "disclosure2.edinet-fsa.go.jp",
+    "release.tdnet.info"
+   ],
+   "key_documents": [
+    "有価証券報告書",
+    "決算短信",
+    "コーポレート・ガバナンス報告書",
+    "ストックオプション発行要項"
+   ],
+   "registry": [
+    "houjin-bangou.nta.go.jp"
+   ],
+   "notes": "有価証券報告書 discloses average annual pay (平均年間給与) and headcount by segment — a strong anchor."
+  },
+  "kr": {
+   "name": "South Korea",
+   "languages": [
+    "ko"
+   ],
+   "currency": "KRW",
+   "threshold_default": 200000000,
+   "employer_social_rate": 0.11,
+   "filing_venues": [
+    "dart.fss.or.kr"
+   ],
+   "key_documents": [
+    "사업보고서",
+    "증권신고서",
+    "주식매수선택권 부여",
+    "임원 보수 지급"
+   ],
+   "registry": [],
+   "notes": "사업보고서 discloses per-gender average pay, headcount and individual pay above KRW 500m."
+  },
+  "sg": {
+   "name": "Singapore",
+   "languages": [
+    "en"
+   ],
+   "currency": "SGD",
+   "threshold_default": 250000,
+   "employer_social_rate": 0.17,
+   "filing_venues": [
+    "sgx.com",
+    "links.sgx.com"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Offer Document / Prospectus",
+    "Share plan circular",
+    "Remuneration report"
+   ],
+   "registry": [
+    "bizfile.gov.sg (ACRA)"
+   ],
+   "notes": "CPF employer contribution is capped by the Ordinary Wage ceiling."
+  },
+  "my": {
+   "name": "Malaysia",
+   "languages": [
+    "ms",
+    "en"
+   ],
+   "currency": "MYR",
+   "threshold_default": 500000,
+   "employer_social_rate": 0.14,
+   "filing_venues": [
+    "bursamalaysia.com"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Prospectus",
+    "ESOS circular"
+   ],
+   "registry": [
+    "ssm.com.my"
+   ],
+   "notes": ""
+  },
+  "id": {
+   "name": "Indonesia",
+   "languages": [
+    "id"
+   ],
+   "currency": "IDR",
+   "threshold_default": 2000000000,
+   "employer_social_rate": 0.11,
+   "filing_venues": [
+    "idx.co.id",
+    "ojk.go.id"
+   ],
+   "key_documents": [
+    "Laporan Tahunan",
+    "Prospektus",
+    "Laporan Keuangan"
+   ],
+   "registry": [
+    "ahu.go.id"
+   ],
+   "notes": ""
+  },
+  "th": {
+   "name": "Thailand",
+   "languages": [
+    "th"
+   ],
+   "currency": "THB",
+   "threshold_default": 5000000,
+   "employer_social_rate": 0.05,
+   "filing_venues": [
+    "set.or.th",
+    "sec.or.th"
+   ],
+   "key_documents": [
+    "แบบ 56-1 One Report",
+    "หนังสือชี้ชวน",
+    "งบการเงิน"
+   ],
+   "registry": [
+    "dbd.go.th"
+   ],
+   "notes": ""
+  },
+  "vn": {
+   "name": "Vietnam",
+   "languages": [
+    "vi"
+   ],
+   "currency": "VND",
+   "threshold_default": 3000000000,
+   "employer_social_rate": 0.215,
+   "filing_venues": [
+    "hsx.vn",
+    "hnx.vn",
+    "ssc.gov.vn"
+   ],
+   "key_documents": [
+    "Báo cáo thường niên",
+    "Bản cáo bạch",
+    "Báo cáo tài chính"
+   ],
+   "registry": [],
+   "notes": ""
+  },
+  "ph": {
+   "name": "Philippines",
+   "languages": [
+    "en",
+    "tl"
+   ],
+   "currency": "PHP",
+   "threshold_default": 8000000,
+   "employer_social_rate": 0.1,
+   "filing_venues": [
+    "edge.pse.com.ph",
+    "sec.gov.ph"
+   ],
+   "key_documents": [
+    "Annual Report (17-A)",
+    "Definitive Information Statement (20-IS)",
+    "Prospectus"
+   ],
+   "registry": [],
+   "notes": ""
+  },
+  "au": {
+   "name": "Australia",
+   "languages": [
+    "en"
+   ],
+   "currency": "AUD",
+   "threshold_default": 300000,
+   "employer_social_rate": 0.115,
+   "filing_venues": [
+    "asx.com.au",
+    "asic.gov.au"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Remuneration Report",
+    "Prospectus",
+    "Appendix 4E"
+   ],
+   "registry": [
+    "abr.business.gov.au"
+   ],
+   "notes": "The Remuneration Report (KMP) is a statutory section of the annual report; superannuation is the employer social cost."
+  },
+  "nz": {
+   "name": "New Zealand",
+   "languages": [
+    "en"
+   ],
+   "currency": "NZD",
+   "threshold_default": 300000,
+   "employer_social_rate": 0.03,
+   "filing_venues": [
+    "nzx.com"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Product Disclosure Statement"
+   ],
+   "registry": [
+    "companiesoffice.govt.nz"
+   ],
+   "notes": ""
+  },
+  "in": {
+   "name": "India",
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "currency": "INR",
+   "threshold_default": 10000000,
+   "employer_social_rate": 0.17,
+   "filing_venues": [
+    "bseindia.com",
+    "nseindia.com",
+    "sebi.gov.in"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "DRHP / RHP",
+    "ESOP disclosure (SBEB)",
+    "Board's Report Rule 5(2) top-ten remuneration"
+   ],
+   "registry": [
+    "mca.gov.in"
+   ],
+   "notes": "Rule 5(2) of the Companies Rules discloses the top-ten paid employees by name and pay — the single best high-comp anchor in India."
+  },
+  "pk": {
+   "name": "Pakistan",
+   "languages": [
+    "en",
+    "ur"
+   ],
+   "currency": "PKR",
+   "threshold_default": 20000000,
+   "employer_social_rate": 0.1,
+   "filing_venues": [
+    "psx.com.pk",
+    "secp.gov.pk"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Prospectus"
+   ],
+   "registry": [],
+   "notes": ""
+  },
+  "bd": {
+   "name": "Bangladesh",
+   "languages": [
+    "bn",
+    "en"
+   ],
+   "currency": "BDT",
+   "threshold_default": 10000000,
+   "employer_social_rate": 0.05,
+   "filing_venues": [
+    "dsebd.org",
+    "sec.gov.bd"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Prospectus"
+   ],
+   "registry": [],
+   "notes": ""
+  },
+  "us": {
+   "name": "United States",
+   "languages": [
+    "en"
+   ],
+   "currency": "USD",
+   "threshold_default": 250000,
+   "employer_social_rate": 0.1,
+   "filing_venues": [
+    "sec.gov",
+    "efts.sec.gov"
+   ],
+   "key_documents": [
+    "10-K (Human Capital)",
+    "DEF 14A proxy",
+    "S-1 / F-1",
+    "20-F",
+    "8-K equity plan exhibits",
+    "Form 4"
+   ],
+   "registry": [
+    "opencorporates.com",
+    "state SoS registries"
+   ],
+   "notes": "CEO pay-ratio disclosure gives the median employee's total compensation — a direct distribution anchor. Pay-transparency laws (CA, CO, NY, WA, IL) put real ranges in job postings."
+  },
+  "ca": {
+   "name": "Canada",
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "currency": "CAD",
+   "threshold_default": 250000,
+   "employer_social_rate": 0.12,
+   "filing_venues": [
+    "sedarplus.ca",
+    "sec.gov"
+   ],
+   "key_documents": [
+    "Annual Information Form",
+    "Management Information Circular (NEO pay)",
+    "MD&A",
+    "Prospectus"
+   ],
+   "registry": [
+    "ised-isde.canada.ca"
+   ],
+   "notes": "British Columbia and Ontario pay-transparency rules require ranges in job postings."
+  },
+  "mx": {
+   "name": "Mexico",
+   "languages": [
+    "es"
+   ],
+   "currency": "MXN",
+   "threshold_default": 3000000,
+   "employer_social_rate": 0.28,
+   "filing_venues": [
+    "bmv.com.mx",
+    "gob.mx/cnbv"
+   ],
+   "key_documents": [
+    "Reporte Anual",
+    "Prospecto de colocación",
+    "Estados financieros"
+   ],
+   "registry": [
+    "rug.gob.mx"
+   ],
+   "notes": ""
+  },
+  "br": {
+   "name": "Brazil",
+   "languages": [
+    "pt"
+   ],
+   "currency": "BRL",
+   "threshold_default": 800000,
+   "employer_social_rate": 0.35,
+   "filing_venues": [
+    "rad.cvm.gov.br",
+    "b3.com.br"
+   ],
+   "key_documents": [
+    "Formulário de Referência (item 8 remuneração)",
+    "Demonstrações Financeiras",
+    "Prospecto"
+   ],
+   "registry": [
+    "gov.br/receitafederal"
+   ],
+   "notes": "Formulário de Referência discloses highest/lowest/average board and executive pay — unusually granular."
+  },
+  "cl": {
+   "name": "Chile",
+   "languages": [
+    "es"
+   ],
+   "currency": "CLP",
+   "threshold_default": 150000000,
+   "employer_social_rate": 0.05,
+   "filing_venues": [
+    "cmfchile.cl"
+   ],
+   "key_documents": [
+    "Memoria Anual",
+    "Estados Financieros",
+    "FECU"
+   ],
+   "registry": [],
+   "notes": ""
+  },
+  "ar": {
+   "name": "Argentina",
+   "languages": [
+    "es"
+   ],
+   "currency": "ARS",
+   "threshold_default": null,
+   "employer_social_rate": 0.27,
+   "filing_venues": [
+    "cnv.gov.ar",
+    "bolsar.com"
+   ],
+   "key_documents": [
+    "Memoria y Balance",
+    "Prospecto"
+   ],
+   "registry": [],
+   "notes": "High inflation: state the threshold in USD terms and the FX date, or the number is meaningless a quarter later."
+  },
+  "gb": {
+   "name": "United Kingdom",
+   "languages": [
+    "en"
+   ],
+   "currency": "GBP",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.15,
+   "filing_venues": [
+    "find-and-update.company-information.service.gov.uk",
+    "data.fca.org.uk",
+    "londonstockexchange.com"
+   ],
+   "key_documents": [
+    "Annual Report and Accounts",
+    "Directors' Remuneration Report",
+    "Gender pay gap report",
+    "Admission Document"
+   ],
+   "registry": [
+    "Companies House"
+   ],
+   "notes": "Companies House publishes full statutory accounts for private companies too — average employee cost and headcount are in the notes."
+  },
+  "ie": {
+   "name": "Ireland",
+   "languages": [
+    "en",
+    "ga"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.11,
+   "filing_venues": [
+    "euronext.com",
+    "core.cro.ie"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Prospectus"
+   ],
+   "registry": [
+    "cro.ie"
+   ],
+   "notes": ""
+  },
+  "de": {
+   "name": "Germany",
+   "languages": [
+    "de"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.21,
+   "filing_venues": [
+    "bundesanzeiger.de",
+    "unternehmensregister.de",
+    "bafin.de"
+   ],
+   "key_documents": [
+    "Geschäftsbericht",
+    "Vergütungsbericht (§162 AktG)",
+    "Konzernabschluss",
+    "Wertpapierprospekt"
+   ],
+   "registry": [
+    "handelsregister.de"
+   ],
+   "notes": "The §162 AktG Vergütungsbericht gives individualised management-board pay; Personalaufwand in the Konzernabschluss is the payroll envelope."
+  },
+  "fr": {
+   "name": "France",
+   "languages": [
+    "fr"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.3,
+   "filing_venues": [
+    "amf-france.org",
+    "bodacc.fr",
+    "info-financiere.fr"
+   ],
+   "key_documents": [
+    "Document d'enregistrement universel (URD)",
+    "Rapport sur le gouvernement d'entreprise",
+    "Bilan social"
+   ],
+   "registry": [
+    "annuaire-entreprises.data.gouv.fr",
+    "infogreffe.fr"
+   ],
+   "notes": "The bilan social and index d'égalité professionnelle give headcount and pay structure; charges patronales are ~30% of gross."
+  },
+  "nl": {
+   "name": "Netherlands",
+   "languages": [
+    "nl",
+    "en"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.2,
+   "filing_venues": [
+    "afm.nl",
+    "euronext.com"
+   ],
+   "key_documents": [
+    "Jaarverslag",
+    "Remuneratierapport",
+    "Prospectus"
+   ],
+   "registry": [
+    "kvk.nl"
+   ],
+   "notes": ""
+  },
+  "be": {
+   "name": "Belgium",
+   "languages": [
+    "nl",
+    "fr",
+    "en"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.27,
+   "filing_venues": [
+    "fsma.be",
+    "euronext.com"
+   ],
+   "key_documents": [
+    "Jaarverslag / Rapport annuel",
+    "Remuneratieverslag"
+   ],
+   "registry": [
+    "kbopub.economie.fgov.be",
+    "nbb.be (annual accounts)"
+   ],
+   "notes": "The NBB Balanscentrale publishes staff cost and FTE for essentially every Belgian company, private included."
+  },
+  "ch": {
+   "name": "Switzerland",
+   "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+   ],
+   "currency": "CHF",
+   "threshold_default": 250000,
+   "employer_social_rate": 0.13,
+   "filing_venues": [
+    "six-group.com",
+    "ser-ag.com"
+   ],
+   "key_documents": [
+    "Geschäftsbericht",
+    "Vergütungsbericht",
+    "Kotierungsprospekt"
+   ],
+   "registry": [
+    "zefix.ch"
+   ],
+   "notes": "Say-on-pay means the Vergütungsbericht is voted on and therefore detailed."
+  },
+  "at": {
+   "name": "Austria",
+   "languages": [
+    "de"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.21,
+   "filing_venues": [
+    "wienerborse.at",
+    "fma.gv.at"
+   ],
+   "key_documents": [
+    "Geschäftsbericht",
+    "Vergütungsbericht"
+   ],
+   "registry": [
+    "firmenbuch.at"
+   ],
+   "notes": ""
+  },
+  "es": {
+   "name": "Spain",
+   "languages": [
+    "es"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.32,
+   "filing_venues": [
+    "cnmv.es",
+    "bolsasymercados.es"
+   ],
+   "key_documents": [
+    "Informe Anual",
+    "Informe Anual de Remuneraciones de los Consejeros (IARC)",
+    "Folleto"
+   ],
+   "registry": [
+    "registradores.org"
+   ],
+   "notes": "The IARC is a standardised remuneration filing; Spain also requires a registro retributivo (pay register) by job class."
+  },
+  "it": {
+   "name": "Italy",
+   "languages": [
+    "it"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.3,
+   "filing_venues": [
+    "consob.it",
+    "borsaitaliana.it"
+   ],
+   "key_documents": [
+    "Relazione Finanziaria Annuale",
+    "Relazione sulla Remunerazione",
+    "Prospetto"
+   ],
+   "registry": [
+    "registroimprese.it"
+   ],
+   "notes": ""
+  },
+  "pt": {
+   "name": "Portugal",
+   "languages": [
+    "pt"
+   ],
+   "currency": "EUR",
+   "threshold_default": 120000,
+   "employer_social_rate": 0.24,
+   "filing_venues": [
+    "cmvm.pt",
+    "euronext.com"
+   ],
+   "key_documents": [
+    "Relatório e Contas",
+    "Relatório de Governo Societário"
+   ],
+   "registry": [
+    "portaldaempresa.pt"
+   ],
+   "notes": "The Relatório Único gives headcount and pay structure for Portuguese employers."
+  },
+  "se": {
+   "name": "Sweden",
+   "languages": [
+    "sv",
+    "en"
+   ],
+   "currency": "SEK",
+   "threshold_default": 1500000,
+   "employer_social_rate": 0.31,
+   "filing_venues": [
+    "nasdaqomxnordic.com",
+    "fi.se"
+   ],
+   "key_documents": [
+    "Årsredovisning",
+    "Ersättningsrapport",
+    "Prospekt"
+   ],
+   "registry": [
+    "bolagsverket.se",
+    "allabolag.se"
+   ],
+   "notes": "Swedish income data is public; Årsredovisning shows personalkostnader and average FTE for private companies too."
+  },
+  "no": {
+   "name": "Norway",
+   "languages": [
+    "no",
+    "en"
+   ],
+   "currency": "NOK",
+   "threshold_default": 1500000,
+   "employer_social_rate": 0.14,
+   "filing_venues": [
+    "newsweb.oslobors.no"
+   ],
+   "key_documents": [
+    "Årsrapport",
+    "Lederlønnserklæring",
+    "Prospekt"
+   ],
+   "registry": [
+    "brreg.no"
+   ],
+   "notes": "Norwegian tax lists (skattelister) are public — usable as aggregate calibration, never to publish an individual's pay."
+  },
+  "dk": {
+   "name": "Denmark",
+   "languages": [
+    "da",
+    "en"
+   ],
+   "currency": "DKK",
+   "threshold_default": 1200000,
+   "employer_social_rate": 0.01,
+   "filing_venues": [
+    "nasdaqomxnordic.com"
+   ],
+   "key_documents": [
+    "Årsrapport",
+    "Vederlagsrapport"
+   ],
+   "registry": [
+    "cvr.dk"
+   ],
+   "notes": "Employer social cost is unusually low (paid via income tax); do not apply a continental-European rate."
+  },
+  "fi": {
+   "name": "Finland",
+   "languages": [
+    "fi",
+    "sv",
+    "en"
+   ],
+   "currency": "EUR",
+   "threshold_default": 150000,
+   "employer_social_rate": 0.2,
+   "filing_venues": [
+    "nasdaqomxnordic.com"
+   ],
+   "key_documents": [
+    "Vuosikertomus",
+    "Palkitsemisraportti"
+   ],
+   "registry": [
+    "ytj.fi"
+   ],
+   "notes": ""
+  },
+  "pl": {
+   "name": "Poland",
+   "languages": [
+    "pl"
+   ],
+   "currency": "PLN",
+   "threshold_default": 500000,
+   "employer_social_rate": 0.21,
+   "filing_venues": [
+    "gpw.pl",
+    "knf.gov.pl"
+   ],
+   "key_documents": [
+    "Raport roczny",
+    "Polityka wynagrodzeń",
+    "Prospekt emisyjny"
+   ],
+   "registry": [
+    "ekrs.ms.gov.pl"
+   ],
+   "notes": ""
+  },
+  "gr": {
+   "name": "Greece",
+   "languages": [
+    "el"
+   ],
+   "currency": "EUR",
+   "threshold_default": 100000,
+   "employer_social_rate": 0.22,
+   "filing_venues": [
+    "athexgroup.gr",
+    "hcmc.gr"
+   ],
+   "key_documents": [
+    "Ετήσια Οικονομική Έκθεση",
+    "Έκθεση Αποδοχών"
+   ],
+   "registry": [
+    "businessportal.gr"
+   ],
+   "notes": ""
+  },
+  "ru": {
+   "name": "Russia",
+   "languages": [
+    "ru"
+   ],
+   "currency": "RUB",
+   "threshold_default": 15000000,
+   "employer_social_rate": 0.3,
+   "filing_venues": [
+    "e-disclosure.ru",
+    "moex.com"
+   ],
+   "key_documents": [
+    "Годовой отчёт",
+    "Ежеквартальный отчёт",
+    "Проспект ценных бумаг"
+   ],
+   "registry": [
+    "egrul.nalog.ru"
+   ],
+   "notes": "Sanctions and delisting have thinned disclosure since 2022; check whether the issuer has an exemption from publication."
+  },
+  "tr": {
+   "name": "Türkiye",
+   "languages": [
+    "tr"
+   ],
+   "currency": "TRY",
+   "threshold_default": 5000000,
+   "employer_social_rate": 0.23,
+   "filing_venues": [
+    "kap.org.tr",
+    "spk.gov.tr"
+   ],
+   "key_documents": [
+    "Faaliyet Raporu",
+    "Kurumsal Yönetim Uyum Raporu",
+    "İzahname"
+   ],
+   "registry": [
+    "ticaretsicil.gov.tr"
+   ],
+   "notes": "High inflation: state the FX date with any threshold."
+  },
+  "il": {
+   "name": "Israel",
+   "languages": [
+    "he",
+    "en"
+   ],
+   "currency": "ILS",
+   "threshold_default": 700000,
+   "employer_social_rate": 0.08,
+   "filing_venues": [
+    "maya.tase.co.il",
+    "magna.isa.gov.il",
+    "sec.gov"
+   ],
+   "key_documents": [
+    "דוח תקופתי",
+    "דוח הצעת מדף",
+    "תגמול נושאי משרה"
+   ],
+   "registry": [
+    "ica.justice.gov.il"
+   ],
+   "notes": "Israeli issuers must disclose the five highest-paid officers individually — a direct top-tail anchor. Many are dual-listed on Nasdaq: check SEC filings too."
+  },
+  "ae": {
+   "name": "United Arab Emirates",
+   "languages": [
+    "ar",
+    "en"
+   ],
+   "currency": "AED",
+   "threshold_default": 700000,
+   "employer_social_rate": 0.125,
+   "filing_venues": [
+    "dfm.ae",
+    "adx.ae",
+    "sca.gov.ae"
+   ],
+   "key_documents": [
+    "التقرير السنوي / Annual Report",
+    "نشرة الاكتتاب / Prospectus"
+   ],
+   "registry": [],
+   "notes": "Statutory pension applies to GCC nationals only; expatriate staff carry end-of-service gratuity instead — model them separately."
+  },
+  "sa": {
+   "name": "Saudi Arabia",
+   "languages": [
+    "ar",
+    "en"
+   ],
+   "currency": "SAR",
+   "threshold_default": 700000,
+   "employer_social_rate": 0.12,
+   "filing_venues": [
+    "saudiexchange.sa",
+    "cma.org.sa"
+   ],
+   "key_documents": [
+    "التقرير السنوي",
+    "نشرة الإصدار",
+    "تقرير مجلس الإدارة"
+   ],
+   "registry": [],
+   "notes": "Board reports disclose aggregate top-five executive pay; Saudization quotas shape the org chart."
+  },
+  "eg": {
+   "name": "Egypt",
+   "languages": [
+    "ar",
+    "en"
+   ],
+   "currency": "EGP",
+   "threshold_default": 3000000,
+   "employer_social_rate": 0.19,
+   "filing_venues": [
+    "egx.com.eg",
+    "fra.gov.eg"
+   ],
+   "key_documents": [
+    "التقرير السنوي",
+    "نشرة الاكتتاب"
+   ],
+   "registry": [],
+   "notes": ""
+  },
+  "za": {
+   "name": "South Africa",
+   "languages": [
+    "en"
+   ],
+   "currency": "ZAR",
+   "threshold_default": 2000000,
+   "employer_social_rate": 0.03,
+   "filing_venues": [
+    "jse.co.za",
+    "sensapi.jse.co.za"
+   ],
+   "key_documents": [
+    "Integrated Annual Report",
+    "Remuneration Report",
+    "Pre-listing Statement"
+   ],
+   "registry": [
+    "cipc.co.za"
+   ],
+   "notes": "King IV requires a three-part remuneration report including the pay gap; employment-equity reports give headcount by level."
+  },
+  "ng": {
+   "name": "Nigeria",
+   "languages": [
+    "en"
+   ],
+   "currency": "NGN",
+   "threshold_default": 100000000,
+   "employer_social_rate": 0.1,
+   "filing_venues": [
+    "ngxgroup.com",
+    "sec.gov.ng"
+   ],
+   "key_documents": [
+    "Annual Report",
+    "Prospectus"
+   ],
+   "registry": [
+    "cac.gov.ng"
+   ],
+   "notes": ""
+  },
+  "private": {
+   "name": "Private company (any country)",
+   "languages": [],
+   "currency": null,
+   "threshold_default": null,
+   "employer_social_rate": 0.18,
+   "filing_venues": [],
+   "key_documents": [
+    "Financing announcements",
+    "Official headcount statements",
+    "Public job postings with pay ranges",
+    "Employee equity plan documents when public"
+   ],
+   "registry": [],
+   "notes": "Widen every interval. Never convert illiquid private equity to cash-like TC without modelling liquidity and valuation risk."
+  },
+  "other": {
+   "name": "Other / not yet mapped",
+   "languages": [],
+   "currency": null,
+   "threshold_default": null,
+   "employer_social_rate": 0.15,
+   "filing_venues": [],
+   "key_documents": [
+    "Statutory annual accounts",
+    "Regulator or exchange filings",
+    "Company registry extract",
+    "Official job postings"
+   ],
+   "registry": [],
+   "notes": "Find the national company registry and the securities regulator first, then follow the generic six-pass plan. Add the jurisdiction to assets/jurisdictions.json once you have located the venues."
+  }
+ }
+}

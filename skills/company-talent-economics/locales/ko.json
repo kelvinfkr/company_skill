@@ -1,0 +1,239 @@
+{
+ "_doc": "로케일 팩. 모든 팩은 en.json과 동일한 키를 가져야 하며 scripts/check_locales.py가 이를 검증한다. 여기서는 보고서 골격만 번역하고, 분석 본문은 agent가 이 언어로 작성한다.",
+ "meta": {
+  "tag": "ko",
+  "name": "Korean",
+  "native_name": "한국어",
+  "direction": "ltr",
+  "script": "kore",
+  "fallback": null,
+  "group_sep": ",",
+  "decimal_sep": ".",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans CJK KR",
+   "Noto Sans KR",
+   "Source Han Sans K",
+   "Apple SD Gothic Neo",
+   "Malgun Gothic",
+   "NanumGothic"
+  ],
+  "font_serif": [
+   "Noto Serif CJK KR",
+   "Noto Serif KR",
+   "Source Han Serif K",
+   "Apple Myungjo",
+   "Batang",
+   "NanumMyeongjo"
+  ]
+ },
+ "scale": [
+  [
+   100000000.0,
+   100000000.0,
+   "억"
+  ],
+  [
+   10000.0,
+   10000.0,
+   "만"
+  ]
+ ],
+ "cover": {
+  "report_title": "인재 이코노믹스 분석 보고서",
+  "subtitle_default": "공개 데이터로 재구성한 인재 이코노믹스 분석",
+  "reference_date": "기준일",
+  "entity_type": "법인 유형",
+  "scope": "분석 범위",
+  "threshold": "고임금 기준선",
+  "confidence": "종합 신뢰도",
+  "method_note": "방법: 모든 수치에 「공시」「도출」「추정」「모델 가정」 중 하나를 표기한다. TC = 기본급 + 예상 상여·인센티브 + 연환산 가득 주식 가치(세전). 가짜 정밀도의 점추정보다 구간추정을 우선한다.",
+  "header_suffix": "인재 이코노믹스",
+  "page": "{n} 쪽"
+ },
+ "sections": {
+  "executive": [
+   "요약",
+   "규모, 보수 상위 구간, 가장 중요한 불확실성을 먼저 제시한다."
+  ],
+  "charter": [
+   "정관과 지배구조",
+   "경제적 지분, 의결권, 이사회 지배력, 기존 특별권리를 구분한다. 재구성한 조항을 정관 원문처럼 제시해서는 안 된다."
+  ],
+  "business": [
+   "사업 실적과 이익 풀",
+   "보수를 논하기 전에 이익이 어디서 생기고 누가 통제하는지 확정한다."
+  ],
+  "talent_pnl": [
+   "이익 풀과 직무 의존도 매핑",
+   "매출, 매출총이익, 고객 관계, 기술 병목을 실제로 통제하는 직무를 식별한다. 의존도는 정성 등급만 부여한다."
+  ],
+  "organization": [
+   "조직과 직급 매핑",
+   "회사 고유 직함·직급을 유지하고, 회사 간 비교가 가능한 잠재 직급을 별도로 구성한다."
+  ],
+  "compensation": [
+   "보상 분포",
+   "기본급, 현금 상여, 연환산 가득 주식을 각각 모델링한 뒤 연간 세전 TC로 합산한다."
+  ],
+  "high_compensation": [
+   "고임금 인원 규모",
+   "기준선을 넘는 인원은 몬테카를로 구간으로 제시하고 점추정을 쓰지 않는다."
+  ],
+  "role_pay": [
+   "핵심 직무 보상 구간",
+   "시장 대체 비용은 출발점일 뿐이며, 경제적 정당성과 내부 형평성이 방어 가능한 구간을 결정한다."
+  ],
+  "career": [
+   "승진과 외부 유입 경로",
+   "공개 이력은 「관측된 이동 비율」만 뒷받침하며 회사의 실제 승진 확률이 아니다."
+  ],
+  "governance": [
+   "주식 보상과 인적 자본 배분",
+   "누구에게 얼마의 소유권을 배분하는지는 회사가 스스로 밝히는 핵심 직무 신호다."
+  ],
+  "sensitivity": [
+   "민감도와 불확실성",
+   "인원과 직무 가격 결론을 가장 크게 바꾸는 가정, 구간을 가장 빨리 좁히는 추가 증거."
+  ],
+  "evidence": [
+   "근거 요약",
+   "본문에는 핵심 근거만 싣고, 전체 출처 목록과 근거 원장은 감사 패키지에 포함한다."
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "항목",
+   "현행 내용",
+   "변경 이력",
+   "근거 상태"
+  ],
+  "charter_timeline": [
+   "일자",
+   "사건",
+   "경제적 지분 영향",
+   "지배권 영향",
+   "문서 상태"
+  ],
+  "business_metrics": [
+   "지표",
+   "수치",
+   "산출 기준",
+   "근거"
+  ],
+  "profit_pools": [
+   "세그먼트",
+   "매출",
+   "매출총이익·기여이익",
+   "성장률",
+   "핵심 의존"
+  ],
+  "talent_pnl": [
+   "이익 풀",
+   "핵심 프로세스",
+   "핵심 직무",
+   "의존도",
+   "근거"
+  ],
+  "organization": [
+   "회사 직무·직급",
+   "트랙",
+   "스코프",
+   "직능·BU",
+   "잠재 직급",
+   "신뢰도"
+  ],
+  "compensation": [
+   "그룹",
+   "인원",
+   "현금 TC",
+   "주식 TC",
+   "총 TC",
+   "P(기준선 초과)",
+   "신뢰도"
+  ],
+  "high_compensation": [
+   "그룹",
+   "기준선 초과 인원",
+   "기여",
+   "주요 불확실성"
+  ],
+  "role_pay": [
+   "직무",
+   "시장 대체",
+   "경제적 정당성",
+   "내부 형평",
+   "방어 가능 구간",
+   "진단"
+  ],
+  "career_qa": [
+   "논점",
+   "판단"
+  ],
+  "governance": [
+   "지표",
+   "판단·수치",
+   "근거"
+  ],
+  "evidence": [
+   "ID",
+   "출처",
+   "일자",
+   "상태",
+   "뒷받침하는 판단"
+  ]
+ },
+ "labels": {
+  "profit_pools": "이익 풀",
+  "charter_timeline": "정관·지분구조 변천",
+  "internal_path": "대표적 내부 경로",
+  "external_path": "대표적 외부 유입 경로",
+  "first_threshold_state": "기준선을 처음 넘는 직급",
+  "promotion_tenure": "관측된 승진 전 재직기간",
+  "senior_hire_mix": "상위 직무의 내부 육성 대 외부 영입",
+  "high_comp_headline": "고임금 인원 추정: {v}",
+  "approx": "약 ",
+  "people": "",
+  "people_suffix": "명",
+  "mode": "최빈값",
+  "na": "n/a",
+  "dash": "—",
+  "provisional_confidence": "낮음(잠정 추정)",
+  "provisional_note": "잠정 추정: {facts} 는 공개 자료로 확인되지 않았다. 본 추정은 모델 가정에 의존하므로 실측치가 아니라 구간으로 읽어야 한다."
+ },
+ "claim_types": {
+  "observed_fact": "공시",
+  "derived_metric": "도출",
+  "assumption": "모델 가정",
+  "inference": "추정",
+  "reconstruction": "재구성"
+ },
+ "kpi": {
+  "headcount": "정규직 인원",
+  "rnd_headcount": "연구개발 인원",
+  "payroll_per_head": "1인당 인건비(주식 포함)",
+  "tc_median": "TC 중앙값(추정)",
+  "tc_p90": "TC P90(추정)",
+  "above_p50": "기준선 초과 p50",
+  "above_range": "p05-p95",
+  "above_share": "기준선 초과 비율"
+ },
+ "metrics": {
+  "revenue": "매출액",
+  "gross_profit": "매출총이익",
+  "operating_profit": "영업이익",
+  "net_profit": "당기순이익",
+  "rnd_expense": "연구개발비",
+  "sales_expense": "판매비",
+  "admin_expense": "관리비",
+  "employee_benefit_expense": "종업원급여(주식보상 포함)",
+  "sbc_expense": "주식기준보상",
+  "gross_profit_per_head": "1인당 매출총이익",
+  "benefit_over_gp": "종업원급여 ÷ 매출총이익",
+  "note_gp_per_head": "매출총이익 ÷ 인원",
+  "note_notes": "재무제표 주석"
+ },
+ "threshold_sentence": "연간 세전 TC ≥ {amount} {currency}(기본급 + 현금 상여 + 연환산 가득 주식, 주가 기준은 {basis})",
+ "forbidden_terms": []
+}

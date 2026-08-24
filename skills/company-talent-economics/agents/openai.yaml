@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Talent Economics"
+  short_description: "Reconstruct a company's pay distribution, high-comp population, critical roles and career paths from public filings; outputs a PDF"
+  default_prompt: "Use $company-talent-economics to research a company from public sources and produce an evidence-backed compensation, talent-economics, and career-path PDF report."

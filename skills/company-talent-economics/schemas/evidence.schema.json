@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Talent Economics Evidence Item",
+  "type": "object",
+  "required": ["claim", "source", "claim_type", "source_tier", "confidence"],
+  "properties": {
+    "claim": {"type": "string"},
+    "source": {"type": "string"},
+    "published_date": {"type": ["string", "null"]},
+    "observed_date": {"type": ["string", "null"]},
+    "claim_type": {"enum": ["observed_fact", "derived_metric", "assumption", "inference", "reconstruction"]},
+    "source_tier": {"enum": ["A", "B", "C", "D", "E"]},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "company": {"type": ["string", "null"]},
+    "business_unit": {"type": ["string", "null"]},
+    "role": {"type": ["string", "null"]},
+    "level": {"type": ["string", "null"]},
+    "geography": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}

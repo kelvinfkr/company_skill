@@ -1,0 +1,382 @@
+{
+ "meta": {
+  "company": "示例企业",
+  "reference_date": "2026-08-24",
+  "entity_type": "中国未上市科技企业",
+  "scope": "中国主营业务与核心研发组织",
+  "threshold": "年度税前 TC ≥ 100 万元",
+  "confidence": "中等",
+  "subtitle": "公开数据驱动的企业人才经济学研究",
+  "language": "zh-CN"
+ },
+ "executive": {
+  "diagnosis": "高薪呈尖塔型：真正跨过百万 TC 的人群主要集中在核心技术平台、业务负责人、关键客户与少数高级管理岗位；普通同级 title 之间的合理薪酬可以相差一倍以上。",
+  "metrics": [
+   {
+    "label": "员工规模",
+    "value": "约 2,800 人"
+   },
+   {
+    "label": "TC 中位数",
+    "value": "约 32 万"
+   },
+   {
+    "label": "TC P90",
+    "value": "约 86 万"
+   },
+   {
+    "label": "百万 TC 人数",
+    "value": "155 人"
+   },
+   {
+    "label": "p05-p95",
+    "value": "105-225 人"
+   },
+   {
+    "label": "百万 TC 占比",
+    "value": "约 5.5%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "营业收入",
+    "value": "24.0 亿元",
+    "type": "披露",
+    "evidence": "审计/正式披露"
+   },
+   {
+    "metric": "毛利",
+    "value": "7.9 亿元",
+    "type": "披露",
+    "evidence": "审计/正式披露"
+   },
+   {
+    "metric": "经营利润",
+    "value": "2.1 亿元",
+    "type": "披露",
+    "evidence": "审计/正式披露"
+   },
+   {
+    "metric": "人均毛利",
+    "value": "约 28.2 万元",
+    "type": "派生",
+    "evidence": "毛利 ÷ 员工规模"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "核心产品 A",
+    "revenue": "14.0 亿",
+    "gross_profit": "5.2 亿",
+    "growth": "+65%",
+    "dependency": "算法性能、产品化与供应链"
+   },
+   {
+    "segment": "核心产品 B",
+    "revenue": "7.0 亿",
+    "gross_profit": "2.1 亿",
+    "growth": "+30%",
+    "dependency": "平台能力与海外渠道"
+   },
+   {
+    "segment": "零部件/服务",
+    "revenue": "3.0 亿",
+    "gross_profit": "0.6 亿",
+    "growth": "+20%",
+    "dependency": "存量客户与交付效率"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "核心产品 A",
+   "process": "控制算法",
+   "role": "首席算法/控制负责人",
+   "dependency": "极高",
+   "why": "直接决定性能上限和产品差异化"
+  },
+  {
+   "profit_pool": "核心产品 A",
+   "process": "产品化",
+   "role": "平台工程负责人",
+   "dependency": "高",
+   "why": "把研究能力转化为可规模交付的系统"
+  },
+  {
+   "profit_pool": "海外业务",
+   "process": "渠道与大客户",
+   "role": "区域销售负责人",
+   "dependency": "高",
+   "why": "收入集中于少数渠道与战略客户"
+  }
+ ],
+ "organization": [
+  {
+   "native": "高级算法工程师",
+   "track": "IC",
+   "scope": "项目",
+   "function": "核心研发",
+   "state": "IC3",
+   "confidence": "中"
+  },
+  {
+   "native": "算法专家",
+   "track": "IC",
+   "scope": "多项目",
+   "function": "核心研发",
+   "state": "IC4",
+   "confidence": "中"
+  },
+  {
+   "native": "平台负责人",
+   "track": "IC/管理",
+   "scope": "职能",
+   "function": "技术平台",
+   "state": "IC5/M4",
+   "confidence": "中"
+  },
+  {
+   "native": "事业部负责人",
+   "track": "高管",
+   "scope": "P&L",
+   "function": "业务单元",
+   "state": "E6",
+   "confidence": "高"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "普通工程研发",
+   "headcount": "约 1,150",
+   "cash": "22-42 万",
+   "equity": "0-8 万",
+   "total": "22-50 万",
+   "probability": "约 1%",
+   "confidence": "中"
+  },
+  {
+   "bucket": "高级研发/算法",
+   "headcount": "约 360",
+   "cash": "45-85 万",
+   "equity": "8-40 万",
+   "total": "53-125 万",
+   "probability": "约 35%",
+   "confidence": "中"
+  },
+  {
+   "bucket": "管理者/负责人",
+   "headcount": "约 170",
+   "cash": "60-110 万",
+   "equity": "10-60 万",
+   "total": "70-170 万",
+   "probability": "约 58%",
+   "confidence": "中"
+  },
+  {
+   "bucket": "高级销售",
+   "headcount": "约 120",
+   "cash": "45-120 万",
+   "equity": "0-25 万",
+   "total": "45-145 万",
+   "probability": "约 42%",
+   "confidence": "低"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 105 / p50 155 / p95 225 人（约占员工 5.5%）",
+  "rows": [
+   {
+    "bucket": "高级研发/算法",
+    "count": "约 78",
+    "contribution": "50%",
+    "uncertainty": "私企股权年度价值"
+   },
+   {
+    "bucket": "管理者/负责人",
+    "count": "约 51",
+    "contribution": "33%",
+    "uncertainty": "负责人层级混合"
+   },
+   {
+    "bucket": "高级销售",
+    "count": "约 26",
+    "contribution": "17%",
+    "uncertainty": "奖金/提成波动"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "核心算法负责人",
+   "market": "110-180 万",
+   "economic": "130-230 万",
+   "internal": "90-150 万",
+   "defensible": "130-150 万",
+   "diagnostic": "低端存在留才风险"
+  },
+  {
+   "role": "平台工程负责人",
+   "market": "90-140 万",
+   "economic": "100-170 万",
+   "internal": "80-130 万",
+   "defensible": "100-130 万",
+   "diagnostic": "区间重合"
+  },
+  {
+   "role": "海外销售负责人",
+   "market": "80-150 万",
+   "economic": "90-180 万",
+   "internal": "70-120 万",
+   "defensible": "90-120 万",
+   "diagnostic": "应提高浮动薪酬占比"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "高级工程师 → 专家 → 平台负责人 → 事业部技术负责人",
+   "销售经理 → 大区负责人 → 海外业务负责人"
+  ],
+  "external_path": [
+   "成熟平台高级专家/Staff → 平台负责人或首席专家",
+   "行业头部大客户负责人 → 业务负责人"
+  ],
+  "first_threshold_state": "专家上部 / 平台负责人",
+  "promotion_tenure": "公开履历中，重大状态跃迁通常约 2-4 年",
+  "senior_hire_mix": "越靠近首席专家与 BU 负责人，外部引进占比越高"
+ },
+ "governance": [
+  {
+   "metric": "员工股份激励池",
+   "value": "完全摊薄约 8%",
+   "evidence": "股权计划/融资材料"
+  },
+  {
+   "metric": "股份奖励覆盖人数",
+   "value": "约 210 人",
+   "evidence": "激励名单或推断"
+  },
+  {
+   "metric": "归属机制",
+   "value": "4 年为主，叠加公司与个人条件",
+   "evidence": "激励计划"
+  },
+  {
+   "metric": "人才股权配置",
+   "value": "明显集中于核心技术与 BU 负责人",
+   "evidence": "授予结构"
+  },
+  {
+   "metric": "股权/分红关系",
+   "value": "未上市阶段以长期股权替代现金分红",
+   "evidence": "资本结构"
+  }
+ ],
+ "sensitivity": [
+  "百万 TC 人数对私企股权估值、销售奖金兑现率最敏感。",
+  "岗位合理薪酬对核心产品毛利池是否高度集中于少数技术节点最敏感。",
+  "如果取得完整股权激励名单、事业部组织架构和年度奖金分布，人数区间可明显收窄。",
+  "早期章程未公开时，必须将相关治理结论标记为重建，而非原始条款。"
+ ],
+ "evidence": [
+  {
+   "id": "A01",
+   "source": "正式财务披露",
+   "date": "2026",
+   "status": "披露",
+   "supports": "收入、毛利、利润"
+  },
+  {
+   "id": "A02",
+   "source": "员工/组织披露",
+   "date": "2026",
+   "status": "披露",
+   "supports": "员工规模与组织结构"
+  },
+  {
+   "id": "B01",
+   "source": "公开招聘岗位",
+   "date": "2026",
+   "status": "披露",
+   "supports": "现金薪酬与岗位职责"
+  },
+  {
+   "id": "C01",
+   "source": "公开职业履历样本",
+   "date": "2024-2026",
+   "status": "推断",
+   "supports": "晋升与外部进入路径"
+  },
+  {
+   "id": "M01",
+   "source": "人才经济学模型",
+   "date": "2026",
+   "status": "模型",
+   "supports": "百万 TC 人数与岗位定价区间"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "法律/上市结构",
+    "current": "境内科技企业，处于资本市场准备阶段",
+    "historical": "有限公司逐步制度化治理",
+    "evidence": "公开登记/正式披露"
+   },
+   {
+    "item": "章程状态",
+    "current": "现行版本可得；早期版本部分缺失",
+    "historical": "融资与治理调整多次修订",
+    "evidence": "原件 + 重建"
+   },
+   {
+    "item": "创始人经济权益",
+    "current": "约 27%",
+    "historical": "从早期高比例逐轮稀释",
+    "evidence": "股本沿革"
+   },
+   {
+    "item": "创始人投票权",
+    "current": "约 54%",
+    "historical": "上市准备阶段强化控制安排",
+    "evidence": "章程/法律文件"
+   },
+   {
+    "item": "董事会控制",
+    "current": "7 席中约 4 席与创始团队一致",
+    "historical": "机构席位在上市准备期收敛",
+    "evidence": "董事名册/法律文件"
+   },
+   {
+    "item": "投资人特殊权利",
+    "current": "大部分已终止或标准化",
+    "historical": "曾存在清算、反稀释和重大事项权利",
+    "evidence": "股东协议披露"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "2019",
+    "event": "机构融资",
+    "economic": "新增机构经济权益",
+    "control": "机构获得董事/保留事项权利",
+    "status": "重建"
+   },
+   {
+    "date": "2023",
+    "event": "后续融资",
+    "economic": "创始人进一步稀释",
+    "control": "投资人治理权扩大",
+    "status": "重建"
+   },
+   {
+    "date": "2025",
+    "event": "治理重构",
+    "economic": "特殊经济权利清理",
+    "control": "创始人控制权结构化",
+    "status": "原始文件"
+   }
+  ]
+ }
+}

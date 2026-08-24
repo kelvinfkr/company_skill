@@ -1,0 +1,80 @@
+{
+  "company": "Fictional Robotics Co.",
+  "reference_date": "2026-08-24",
+  "threshold": {
+    "amount": 1000000,
+    "currency": "CNY"
+  },
+  "workforce": {
+    "low": 2700,
+    "mode": 2800,
+    "high": 2900
+  },
+  "buckets": [
+    {
+      "name": "General engineering",
+      "headcount": {
+        "low": 1050,
+        "mode": 1150,
+        "high": 1250
+      },
+      "p_exceed": {
+        "low": 0.0,
+        "mode": 0.01,
+        "high": 0.03
+      }
+    },
+    {
+      "name": "Senior robotics/AI",
+      "headcount": {
+        "low": 300,
+        "mode": 360,
+        "high": 420
+      },
+      "p_exceed": {
+        "low": 0.2,
+        "mode": 0.35,
+        "high": 0.5
+      }
+    },
+    {
+      "name": "Managers/heads",
+      "headcount": {
+        "low": 130,
+        "mode": 170,
+        "high": 210
+      },
+      "p_exceed": {
+        "low": 0.4,
+        "mode": 0.58,
+        "high": 0.72
+      }
+    },
+    {
+      "name": "Senior sales",
+      "headcount": {
+        "low": 80,
+        "mode": 120,
+        "high": 160
+      },
+      "p_exceed": {
+        "low": 0.25,
+        "mode": 0.42,
+        "high": 0.6
+      }
+    },
+    {
+      "name": "Other",
+      "headcount": {
+        "low": 950,
+        "mode": 1000,
+        "high": 1050
+      },
+      "p_exceed": {
+        "low": 0.0,
+        "mode": 0.002,
+        "high": 0.01
+      }
+    }
+  ]
+}
