@@ -1,0 +1,240 @@
+{
+ "_doc": "Locale pack. Every pack must carry the same keys as en.json; scripts/check_locales.py enforces that. Structural chrome only - analytical prose is written by the agent in this language.",
+ "meta": {
+  "tag": "pt",
+  "name": "Portuguese (Brazilian spelling)",
+  "native_name": "Português",
+  "direction": "ltr",
+  "script": "latin",
+  "fallback": null,
+  "group_sep": ".",
+  "decimal_sep": ",",
+  "currency_position": "before",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans",
+   "DejaVu Sans",
+   "Arial",
+   "Helvetica"
+  ],
+  "font_serif": [
+   "Noto Serif",
+   "DejaVu Serif",
+   "Georgia",
+   "Times New Roman"
+  ]
+ },
+ "scale": [
+  [
+   1000000000.0,
+   1000000000.0,
+   " bi"
+  ],
+  [
+   1000000.0,
+   1000000.0,
+   " mi"
+  ],
+  [
+   10000.0,
+   1000.0,
+   " mil"
+  ]
+ ],
+ "cover": {
+  "report_title": "Relatório de economia de talento",
+  "subtitle_default": "Economia de talento reconstruída a partir de dados públicos",
+  "reference_date": "Data de referência",
+  "entity_type": "Tipo de entidade",
+  "scope": "Escopo",
+  "threshold": "Limiar de alta remuneração",
+  "confidence": "Confiança global",
+  "method_note": "Método: cada número é etiquetado como Divulgado / Derivado / Inferido / Pressuposto. TC (remuneração total) = salário base + bônus ou comissão esperados + valor anualizado das ações adquiridas, antes de impostos. Intervalos são preferidos a estimativas pontuais de falsa precisão.",
+  "header_suffix": "Economia de talento",
+  "page": "Página {n}"
+ },
+ "sections": {
+  "executive": [
+   "Sumário executivo",
+   "Escala, cauda superior da remuneração e a incerteza que mais pesa."
+  ],
+  "charter": [
+   "Estatuto social e estrutura de controle",
+   "Separar participação econômica, direito de voto, controle do conselho e direitos herdados. Cláusulas reconstruídas nunca podem se passar por texto estatutário original."
+  ],
+  "business": [
+   "Desempenho do negócio e pools de lucro",
+   "Antes de precificar qualquer cargo, estabelecer onde o lucro é gerado e quem o controla."
+  ],
+  "talent_pnl": [
+   "Pool de lucro e dependência de cargos",
+   "Quais cargos realmente controlam receita, margem, relação com o cliente e gargalos técnicos. A dependência é graduada apenas qualitativamente."
+  ],
+  "organization": [
+   "Organização e mapa de níveis",
+   "Preservar títulos e níveis próprios da empresa e construir à parte um estado latente comparável entre empresas."
+  ],
+  "compensation": [
+   "Distribuição de remuneração",
+   "Modelar separadamente base, bônus em dinheiro e ações anualizadas, e agregar em TC anual antes de impostos."
+  ],
+  "high_compensation": [
+   "População de alta remuneração",
+   "Usar um intervalo de Monte Carlo para o número de empregados acima do limiar, nunca uma estimativa pontual."
+  ],
+  "role_pay": [
+   "Faixas salariais de cargos críticos",
+   "O custo de reposição de mercado é apenas o ponto de partida; justificativa econômica e equidade interna definem a zona defensável."
+  ],
+  "career": [
+   "Trajetórias de promoção e entrada externa",
+   "Perfis públicos sustentam apenas proporções de transição observadas, que não são as probabilidades reais de promoção."
+  ],
+  "governance": [
+   "Incentivos em ações e capital humano",
+   "Quanta propriedade vai para quem é a declaração mais forte da própria empresa sobre quais cargos são críticos."
+  ],
+  "sensitivity": [
+   "Sensibilidade e incerteza",
+   "Quais premissas mais mudariam as conclusões de quadro e de precificação, e qual evidência ausente estreitaria mais rápido os intervalos."
+  ],
+  "evidence": [
+   "Resumo de evidências",
+   "O relatório mantém apenas a evidência central; o inventário completo de fontes e o registro de afirmações acompanham o pacote de auditoria."
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "Item",
+   "Arranjo atual",
+   "Mudança histórica",
+   "Status da evidência"
+  ],
+  "charter_timeline": [
+   "Data",
+   "Evento",
+   "Efeito econômico",
+   "Efeito no controle",
+   "Status do documento"
+  ],
+  "business_metrics": [
+   "Métrica",
+   "Valor",
+   "Base",
+   "Evidência"
+  ],
+  "profit_pools": [
+   "Segmento",
+   "Receita",
+   "Lucro bruto / contribuição",
+   "Crescimento",
+   "Dependência principal"
+  ],
+  "talent_pnl": [
+   "Pool de lucro",
+   "Processo crítico",
+   "Cargo crítico",
+   "Dependência",
+   "Motivo"
+  ],
+  "organization": [
+   "Cargo / nível interno",
+   "Trilha",
+   "Escopo",
+   "Função / UN",
+   "Estado latente",
+   "Confiança"
+  ],
+  "compensation": [
+   "Grupo",
+   "Quadro",
+   "TC em dinheiro",
+   "TC em ações",
+   "TC total",
+   "P(acima do limiar)",
+   "Confiança"
+  ],
+  "high_compensation": [
+   "Grupo",
+   "Acima do limiar",
+   "Contribuição",
+   "Incerteza principal"
+  ],
+  "role_pay": [
+   "Cargo",
+   "Reposição de mercado",
+   "Justificativa econômica",
+   "Equidade interna",
+   "Zona defensável",
+   "Diagnóstico"
+  ],
+  "career_qa": [
+   "Questão",
+   "Avaliação"
+  ],
+  "governance": [
+   "Métrica",
+   "Avaliação / valor",
+   "Evidência"
+  ],
+  "evidence": [
+   "ID",
+   "Fonte",
+   "Data",
+   "Status",
+   "Sustenta"
+  ]
+ },
+ "labels": {
+  "profit_pools": "Pools de lucro",
+  "charter_timeline": "Linha do tempo do estatuto e do capital",
+  "internal_path": "Trajetórias internas comuns",
+  "external_path": "Trajetórias de entrada externa comuns",
+  "first_threshold_state": "Primeiro estado que cruza o limiar",
+  "promotion_tenure": "Tempo observado até a promoção",
+  "senior_hire_mix": "Cargos sênior: formar internamente vs contratar fora",
+  "high_comp_headline": "Empregados estimados acima do limiar: {v}",
+  "approx": "aprox. ",
+  "people": "",
+  "people_suffix": " empregados",
+  "mode": "moda",
+  "na": "n/d",
+  "dash": "—",
+  "provisional_confidence": "Baixa (estimativa provisória)",
+  "provisional_note": "Provisório: {facts} não estava disponível publicamente. Esta estimativa apoia-se em premissas do modelo e deve ser lida como intervalo, não como medição."
+ },
+ "claim_types": {
+  "observed_fact": "Divulgado",
+  "derived_metric": "Derivado",
+  "assumption": "Pressuposto",
+  "inference": "Inferido",
+  "reconstruction": "Reconstruído"
+ },
+ "kpi": {
+  "headcount": "Empregados em tempo integral",
+  "rnd_headcount": "Empregados de P&D",
+  "payroll_per_head": "Custo de pessoal por empregado (com ações)",
+  "tc_median": "TC mediana (inferida)",
+  "tc_p90": "TC P90 (inferida)",
+  "above_p50": "Acima do limiar (p50)",
+  "above_range": "p05-p95",
+  "above_share": "Proporção acima do limiar"
+ },
+ "metrics": {
+  "revenue": "Receita",
+  "gross_profit": "Lucro bruto",
+  "operating_profit": "Lucro operacional",
+  "net_profit": "Lucro líquido",
+  "rnd_expense": "Despesa de P&D",
+  "sales_expense": "Despesa comercial",
+  "admin_expense": "Despesa administrativa",
+  "employee_benefit_expense": "Despesa com pessoal (incl. pagamento em ações)",
+  "sbc_expense": "Pagamento baseado em ações",
+  "gross_profit_per_head": "Lucro bruto por empregado",
+  "benefit_over_gp": "Despesa com pessoal / lucro bruto",
+  "note_gp_per_head": "lucro bruto / quadro",
+  "note_notes": "notas das demonstrações financeiras"
+ },
+ "threshold_sentence": "TC anual antes de impostos >= {amount} {currency} (base + bônus em dinheiro + ações adquiridas anualizadas; ações precificadas na base {basis})",
+ "forbidden_terms": []
+}

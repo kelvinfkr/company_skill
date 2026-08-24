@@ -1,0 +1,18 @@
+{
+  "_doc": "Default priors. Use these unless a disclosed number overrides them; record every override in analysis_notes.md.",
+  "employer_social_rate": {"cn": 0.18, "hk": 0.05, "us": 0.10, "private": 0.18, "other": 0.15},
+  "equity_vesting_years": 4,
+  "equity_price_basis": "grant_date",
+  "pyramid_share_by_band": {
+    "_doc": "share of a function's headcount by native level band; entry/mid/senior/director/exec",
+    "R&D": [0.56, 0.33, 0.085, 0.024, 0.001],
+    "Non-R&D professional": [0.60, 0.30, 0.085, 0.014, 0.001],
+    "Sales": [0.62, 0.28, 0.08, 0.019, 0.001],
+    "Frontline": [1.0, 0, 0, 0, 0]
+  },
+  "dependency_factor": {"extreme": [0.05, 0.10], "high": [0.02, 0.05], "medium": [0.005, 0.02], "low": [0.0, 0.005]},
+  "frontline_per_store": {"own_store": 4, "partner_store": 0.3},
+  "min_transitions_for_shares": 10,
+  "envelope_tolerance": 0.10,
+  "headcount_range_pct": 0.10
+}

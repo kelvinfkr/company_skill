@@ -1,0 +1,240 @@
+{
+ "_doc": "Locale pack. Every pack must carry the same keys as en.json; scripts/check_locales.py enforces that. Structural chrome only - analytical prose is written by the agent in this language.",
+ "meta": {
+  "tag": "it",
+  "name": "Italian",
+  "native_name": "Italiano",
+  "direction": "ltr",
+  "script": "latin",
+  "fallback": null,
+  "group_sep": ".",
+  "decimal_sep": ",",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans",
+   "DejaVu Sans",
+   "Arial",
+   "Helvetica"
+  ],
+  "font_serif": [
+   "Noto Serif",
+   "DejaVu Serif",
+   "Georgia",
+   "Times New Roman"
+  ]
+ },
+ "scale": [
+  [
+   1000000000.0,
+   1000000000.0,
+   " mld"
+  ],
+  [
+   1000000.0,
+   1000000.0,
+   " mln"
+  ],
+  [
+   10000.0,
+   1000.0,
+   " mila"
+  ]
+ ],
+ "cover": {
+  "report_title": "Rapporto di talent economics",
+  "subtitle_default": "Talent economics ricostruita da dati pubblici",
+  "reference_date": "Data di riferimento",
+  "entity_type": "Tipo di entità",
+  "scope": "Perimetro",
+  "threshold": "Soglia di alta retribuzione",
+  "confidence": "Confidenza complessiva",
+  "method_note": "Metodo: ogni cifra è etichettata come Divulgato / Derivato / Inferito / Ipotesi. TC (retribuzione totale) = retribuzione fissa + bonus o provvigioni attesi + valore annualizzato delle azioni maturate, al lordo delle imposte. Si preferiscono gli intervalli alle stime puntuali di falsa precisione.",
+  "header_suffix": "Talent economics",
+  "page": "Pagina {n}"
+ },
+ "sections": {
+  "executive": [
+   "Sintesi",
+   "Dimensione, coda alta delle retribuzioni e l'incertezza che pesa di più."
+  ],
+  "charter": [
+   "Statuto e struttura di controllo",
+   "Distinguere proprietà economica, diritti di voto, controllo del consiglio e diritti pregressi. Le clausole ricostruite non devono mai apparire come testo statutario originale."
+  ],
+  "business": [
+   "Andamento economico e pool di profitto",
+   "Prima di prezzare qualsiasi ruolo, stabilire dove nasce il profitto e chi lo controlla."
+  ],
+  "talent_pnl": [
+   "Pool di profitto e dipendenza dai ruoli",
+   "Quali ruoli controllano davvero ricavi, margine, relazione con il cliente e colli di bottiglia tecnici. La dipendenza è graduata solo qualitativamente."
+  ],
+  "organization": [
+   "Organizzazione e mappa dei livelli",
+   "Mantenere titoli e livelli propri dell'azienda e costruire a parte uno stato latente confrontabile tra aziende."
+  ],
+  "compensation": [
+   "Distribuzione retributiva",
+   "Modellare separatamente fisso, bonus in denaro e azioni annualizzate, poi aggregare in TC annua lorda."
+  ],
+  "high_compensation": [
+   "Popolazione ad alta retribuzione",
+   "Usare un intervallo Monte Carlo per il numero di dipendenti sopra la soglia, mai una stima puntuale."
+  ],
+  "role_pay": [
+   "Fasce retributive dei ruoli critici",
+   "Il costo di sostituzione di mercato è solo il punto di partenza; giustificazione economica ed equità interna definiscono la zona difendibile."
+  ],
+  "career": [
+   "Percorsi di promozione e ingresso esterno",
+   "I profili pubblici sostengono solo quote di transizione osservate, che non sono le probabilità reali di promozione."
+  ],
+  "governance": [
+   "Incentivi azionari e capitale umano",
+   "Quanta proprietà va a chi è la dichiarazione più forte dell'azienda su quali ruoli siano critici."
+  ],
+  "sensitivity": [
+   "Sensibilità e incertezza",
+   "Quali ipotesi cambierebbero di più le conclusioni su organico e prezzo dei ruoli, e quali evidenze mancanti restringerebbero prima gli intervalli."
+  ],
+  "evidence": [
+   "Sintesi delle evidenze",
+   "Il rapporto conserva solo le evidenze centrali; l'elenco completo delle fonti e il registro delle affermazioni accompagnano il pacchetto di audit."
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "Voce",
+   "Assetto attuale",
+   "Variazione storica",
+   "Stato dell'evidenza"
+  ],
+  "charter_timeline": [
+   "Data",
+   "Evento",
+   "Effetto economico",
+   "Effetto sul controllo",
+   "Stato del documento"
+  ],
+  "business_metrics": [
+   "Indicatore",
+   "Valore",
+   "Base",
+   "Evidenza"
+  ],
+  "profit_pools": [
+   "Segmento",
+   "Ricavi",
+   "Margine lordo / contribuzione",
+   "Crescita",
+   "Dipendenza chiave"
+  ],
+  "talent_pnl": [
+   "Pool di profitto",
+   "Processo critico",
+   "Ruolo critico",
+   "Dipendenza",
+   "Motivo"
+  ],
+  "organization": [
+   "Ruolo / livello interno",
+   "Track",
+   "Ambito",
+   "Funzione / BU",
+   "Stato latente",
+   "Confidenza"
+  ],
+  "compensation": [
+   "Gruppo",
+   "Organico",
+   "TC in denaro",
+   "TC in azioni",
+   "TC totale",
+   "P(sopra soglia)",
+   "Confidenza"
+  ],
+  "high_compensation": [
+   "Gruppo",
+   "Sopra la soglia",
+   "Contributo",
+   "Incertezza principale"
+  ],
+  "role_pay": [
+   "Ruolo",
+   "Sostituzione di mercato",
+   "Giustificazione economica",
+   "Equità interna",
+   "Zona difendibile",
+   "Diagnosi"
+  ],
+  "career_qa": [
+   "Domanda",
+   "Valutazione"
+  ],
+  "governance": [
+   "Indicatore",
+   "Valutazione / valore",
+   "Evidenza"
+  ],
+  "evidence": [
+   "ID",
+   "Fonte",
+   "Data",
+   "Stato",
+   "Sostiene"
+  ]
+ },
+ "labels": {
+  "profit_pools": "Pool di profitto",
+  "charter_timeline": "Cronologia di statuto e assetto proprietario",
+  "internal_path": "Percorsi interni tipici",
+  "external_path": "Percorsi di ingresso esterno tipici",
+  "first_threshold_state": "Primo stato che supera la soglia",
+  "promotion_tenure": "Anzianità osservata prima della promozione",
+  "senior_hire_mix": "Ruoli senior: sviluppo interno vs assunzione esterna",
+  "high_comp_headline": "Dipendenti stimati sopra la soglia: {v}",
+  "approx": "circa ",
+  "people": "",
+  "people_suffix": " dipendenti",
+  "mode": "moda",
+  "na": "n.d.",
+  "dash": "—",
+  "provisional_confidence": "Bassa (stima provvisoria)",
+  "provisional_note": "Provvisorio: {facts} non era disponibile pubblicamente. La stima poggia su ipotesi di modello e va letta come intervallo, non come misura."
+ },
+ "claim_types": {
+  "observed_fact": "Divulgato",
+  "derived_metric": "Derivato",
+  "assumption": "Ipotesi",
+  "inference": "Inferito",
+  "reconstruction": "Ricostruito"
+ },
+ "kpi": {
+  "headcount": "Dipendenti a tempo pieno",
+  "rnd_headcount": "Dipendenti R&S",
+  "payroll_per_head": "Costo del lavoro per dipendente (azioni incluse)",
+  "tc_median": "TC mediana (inferita)",
+  "tc_p90": "TC P90 (inferita)",
+  "above_p50": "Sopra la soglia (p50)",
+  "above_range": "p05-p95",
+  "above_share": "Quota sopra la soglia"
+ },
+ "metrics": {
+  "revenue": "Ricavi",
+  "gross_profit": "Margine lordo",
+  "operating_profit": "Risultato operativo",
+  "net_profit": "Utile netto",
+  "rnd_expense": "Spese di R&S",
+  "sales_expense": "Spese commerciali",
+  "admin_expense": "Spese generali e amministrative",
+  "employee_benefit_expense": "Costo del personale (incl. pagamenti in azioni)",
+  "sbc_expense": "Pagamenti basati su azioni",
+  "gross_profit_per_head": "Margine lordo per dipendente",
+  "benefit_over_gp": "Costo del personale / margine lordo",
+  "note_gp_per_head": "margine lordo / organico",
+  "note_notes": "note al bilancio"
+ },
+ "threshold_sentence": "TC annua lorda >= {amount} {currency} (fisso + bonus in denaro + azioni maturate annualizzate; azioni valorizzate su base {basis})",
+ "forbidden_terms": []
+}

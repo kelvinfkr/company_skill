@@ -1,0 +1,240 @@
+{
+ "_doc": "Locale pack. Every pack must carry the same keys as en.json; scripts/check_locales.py enforces that. Structural chrome only - analytical prose is written by the agent in this language.",
+ "meta": {
+  "tag": "es",
+  "name": "Spanish",
+  "native_name": "Español",
+  "direction": "ltr",
+  "script": "latin",
+  "fallback": null,
+  "group_sep": ".",
+  "decimal_sep": ",",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans",
+   "DejaVu Sans",
+   "Arial",
+   "Helvetica"
+  ],
+  "font_serif": [
+   "Noto Serif",
+   "DejaVu Serif",
+   "Georgia",
+   "Times New Roman"
+  ]
+ },
+ "scale": [
+  [
+   1000000000.0,
+   1000000000.0,
+   " mil M"
+  ],
+  [
+   1000000.0,
+   1000000.0,
+   " M"
+  ],
+  [
+   10000.0,
+   1000.0,
+   " k"
+  ]
+ ],
+ "cover": {
+  "report_title": "Informe de economía del talento",
+  "subtitle_default": "Economía del talento reconstruida a partir de datos públicos",
+  "reference_date": "Fecha de referencia",
+  "entity_type": "Tipo de entidad",
+  "scope": "Alcance",
+  "threshold": "Umbral de alta retribución",
+  "confidence": "Confianza global",
+  "method_note": "Método: cada cifra se etiqueta como Divulgado / Derivado / Inferido / Supuesto. TC (retribución total) = salario base + bono o comisión esperada + valor anualizado de las acciones consolidadas, antes de impuestos. Se prefieren los intervalos a las estimaciones puntuales de falsa precisión.",
+  "header_suffix": "Economía del talento",
+  "page": "Página {n}"
+ },
+ "sections": {
+  "executive": [
+   "Resumen ejecutivo",
+   "Tamaño, cola alta de la retribución y la incertidumbre que más pesa."
+  ],
+  "charter": [
+   "Estatutos y estructura de control",
+   "Separar propiedad económica, derechos de voto, control del consejo y derechos heredados. Los términos reconstruidos nunca deben presentarse como texto estatutario original."
+  ],
+  "business": [
+   "Resultados y bolsas de beneficio",
+   "Antes de poner precio a nadie, determinar dónde se genera el beneficio y quién lo controla."
+  ],
+  "talent_pnl": [
+   "Bolsa de beneficio y dependencia de puestos",
+   "Qué puestos controlan realmente los ingresos, el margen, la relación con el cliente y los cuellos de botella técnicos. La dependencia se gradúa solo cualitativamente."
+  ],
+  "organization": [
+   "Organización y mapa de niveles",
+   "Conservar títulos y niveles propios de la empresa y construir aparte un estado latente comparable entre empresas."
+  ],
+  "compensation": [
+   "Distribución retributiva",
+   "Modelar por separado base, bono en efectivo y acciones anualizadas, y agregarlos en TC anual antes de impuestos."
+  ],
+  "high_compensation": [
+   "Población de alta retribución",
+   "Usar un intervalo Monte Carlo para el número de empleados por encima del umbral, nunca una estimación puntual."
+  ],
+  "role_pay": [
+   "Bandas retributivas de puestos críticos",
+   "El coste de reemplazo de mercado es solo el punto de partida; la justificación económica y la equidad interna definen la zona defendible."
+  ],
+  "career": [
+   "Rutas de promoción y entrada externa",
+   "Los perfiles públicos solo sustentan cuotas de transición observadas, que no son las probabilidades reales de promoción."
+  ],
+  "governance": [
+   "Incentivos en acciones y capital humano",
+   "Cuánta propiedad se reparte y a quién es la declaración más fuerte de la propia empresa sobre qué puestos son críticos."
+  ],
+  "sensitivity": [
+   "Sensibilidad e incertidumbre",
+   "Qué supuestos cambiarían más las conclusiones de plantilla y de precio, y qué evidencia ausente estrecharía antes los intervalos."
+  ],
+  "evidence": [
+   "Resumen de evidencia",
+   "El informe conserva solo la evidencia central; el inventario completo de fuentes y el registro de afirmaciones viajan con el paquete de auditoría."
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "Concepto",
+   "Situación actual",
+   "Cambio histórico",
+   "Estado de la evidencia"
+  ],
+  "charter_timeline": [
+   "Fecha",
+   "Hecho",
+   "Efecto económico",
+   "Efecto sobre el control",
+   "Estado del documento"
+  ],
+  "business_metrics": [
+   "Métrica",
+   "Valor",
+   "Base",
+   "Evidencia"
+  ],
+  "profit_pools": [
+   "Segmento",
+   "Ingresos",
+   "Margen bruto / contribución",
+   "Crecimiento",
+   "Dependencia clave"
+  ],
+  "talent_pnl": [
+   "Bolsa de beneficio",
+   "Proceso crítico",
+   "Puesto crítico",
+   "Dependencia",
+   "Motivo"
+  ],
+  "organization": [
+   "Puesto / nivel propio",
+   "Vía",
+   "Alcance",
+   "Función / UN",
+   "Estado latente",
+   "Confianza"
+  ],
+  "compensation": [
+   "Grupo",
+   "Plantilla",
+   "TC en efectivo",
+   "TC en acciones",
+   "TC total",
+   "P(sobre umbral)",
+   "Confianza"
+  ],
+  "high_compensation": [
+   "Grupo",
+   "Sobre el umbral",
+   "Contribución",
+   "Incertidumbre principal"
+  ],
+  "role_pay": [
+   "Puesto",
+   "Reemplazo de mercado",
+   "Justificación económica",
+   "Equidad interna",
+   "Zona defendible",
+   "Diagnóstico"
+  ],
+  "career_qa": [
+   "Pregunta",
+   "Valoración"
+  ],
+  "governance": [
+   "Métrica",
+   "Valoración / valor",
+   "Evidencia"
+  ],
+  "evidence": [
+   "ID",
+   "Fuente",
+   "Fecha",
+   "Estado",
+   "Sustenta"
+  ]
+ },
+ "labels": {
+  "profit_pools": "Bolsas de beneficio",
+  "charter_timeline": "Cronología de estatutos y accionariado",
+  "internal_path": "Rutas internas habituales",
+  "external_path": "Rutas de entrada externa habituales",
+  "first_threshold_state": "Primer estado que supera el umbral",
+  "promotion_tenure": "Antigüedad observada antes de la promoción",
+  "senior_hire_mix": "Puestos senior: desarrollo interno frente a contratación externa",
+  "high_comp_headline": "Empleados estimados por encima del umbral: {v}",
+  "approx": "aprox. ",
+  "people": "",
+  "people_suffix": " empleados",
+  "mode": "moda",
+  "na": "n/d",
+  "dash": "—",
+  "provisional_confidence": "Baja (estimación provisional)",
+  "provisional_note": "Provisional: {facts} no estaba disponible públicamente. Esta estimación se apoya en supuestos del modelo y debe leerse como un intervalo, no como una medición."
+ },
+ "claim_types": {
+  "observed_fact": "Divulgado",
+  "derived_metric": "Derivado",
+  "assumption": "Supuesto",
+  "inference": "Inferido",
+  "reconstruction": "Reconstruido"
+ },
+ "kpi": {
+  "headcount": "Empleados a tiempo completo",
+  "rnd_headcount": "Empleados de I+D",
+  "payroll_per_head": "Coste laboral por empleado (con acciones)",
+  "tc_median": "TC mediana (inferida)",
+  "tc_p90": "TC P90 (inferida)",
+  "above_p50": "Sobre el umbral (p50)",
+  "above_range": "p05-p95",
+  "above_share": "Proporción sobre el umbral"
+ },
+ "metrics": {
+  "revenue": "Ingresos",
+  "gross_profit": "Margen bruto",
+  "operating_profit": "Resultado de explotación",
+  "net_profit": "Resultado neto",
+  "rnd_expense": "Gasto en I+D",
+  "sales_expense": "Gastos de venta",
+  "admin_expense": "Gastos generales y administrativos",
+  "employee_benefit_expense": "Gasto de personal (incl. pago en acciones)",
+  "sbc_expense": "Pago basado en acciones",
+  "gross_profit_per_head": "Margen bruto por empleado",
+  "benefit_over_gp": "Gasto de personal / margen bruto",
+  "note_gp_per_head": "margen bruto / plantilla",
+  "note_notes": "notas de los estados financieros"
+ },
+ "threshold_sentence": "TC anual antes de impuestos >= {amount} {currency} (base + bono en efectivo + acciones consolidadas anualizadas; acciones valoradas sobre base {basis})",
+ "forbidden_terms": []
+}

@@ -1,0 +1,144 @@
+{
+ "company": "小米集团 (1810.HK)",
+ "jurisdiction": "hk",
+ "fiscal_year": "2025",
+ "reference_date": "2025-12-31",
+ "currency": "CNY",
+ "threshold": 1000000,
+ "phase_completed": 7,
+ "entity": {
+  "legal_name": "Xiaomi Corporation 小米集团",
+  "ticker": "1810.HK",
+  "domicile": "Cayman",
+  "listing_venue": "HKEX",
+  "company_type": "hk_listed",
+  "charter_status": "official_summary"
+ },
+ "facts": {
+  "revenue": {
+   "value": 457286.7,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "gross_profit": {
+   "value": 101805.8,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "operating_profit": {
+   "value": 47900.9,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "net_profit": {
+   "value": 41566.4,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "rnd_expense": {
+   "value": 33132.2,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "sales_expense": {
+   "value": 33214.3,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "admin_expense": {
+   "value": 6653.0,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "employee_benefit_expense": {
+   "value": 30470.7,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "sbc_expense": {
+   "value": 5365.1,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "cash_paid_to_employees": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  }
+ },
+ "facts_count": {
+  "headcount": {
+   "value": 56531,
+   "evidence_id": "E01"
+  },
+  "domestic_headcount": {
+   "value": 53901,
+   "evidence_id": "E01"
+  },
+  "overseas_headcount": {
+   "value": 2630,
+   "evidence_id": "E01"
+  },
+  "rnd_headcount": {
+   "value": 25457,
+   "evidence_id": "E01"
+  },
+  "equity_award_holders": {
+   "value": 16572,
+   "evidence_id": "E01"
+  },
+  "person_grants_last_12m": {
+   "value": 9707,
+   "evidence_id": "E07"
+  }
+ },
+ "segments": [
+  {
+   "name": "互联网服务",
+   "revenue": 37440.3,
+   "gross_profit": 28640.2,
+   "growth_pct": 9.7,
+   "evidence_id": "E02",
+   "dependency": "广告变现、用户规模"
+  },
+  {
+   "name": "IoT与生活消费产品",
+   "revenue": 123200.2,
+   "gross_profit": 28423.4,
+   "growth_pct": 18.3,
+   "evidence_id": "E02",
+   "dependency": "大家电产品力、新零售"
+  },
+  {
+   "name": "智能电动汽车及AI",
+   "revenue": 106069.5,
+   "gross_profit": 25763.4,
+   "growth_pct": 223.8,
+   "evidence_id": "E02",
+   "dependency": "辅助驾驶、产能、销售网络"
+  },
+  {
+   "name": "智能手机",
+   "revenue": 186439.8,
+   "gross_profit": 20266.2,
+   "growth_pct": -2.8,
+   "evidence_id": "E02",
+   "dependency": "高端化、自研芯片"
+  }
+ ],
+ "assumptions": {
+  "employer_social_rate": 0.05,
+  "equity_vesting_years": 4,
+  "equity_price_basis": "grant_date"
+ },
+ "_instructions": "Fill facts from fetched Tier A/B documents only. Leave value null and note in analysis_notes.md if not available. Amounts in millions of the reporting currency.",
+ "checks": {
+  "payroll_envelope_deviation": 0.0018,
+  "modelled_tc_total_million": 29327.8
+ },
+ "language": "zh-CN",
+ "chrome_locale": "zh-CN",
+ "jurisdiction_name": "Hong Kong SAR (HKEX)",
+ "provisional": false,
+ "provisional_facts": []
+}

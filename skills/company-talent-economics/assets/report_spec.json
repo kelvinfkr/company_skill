@@ -1,0 +1,42 @@
+{
+ "meta": {
+  "company": "{company}",
+  "language": "{bcp47_tag}",
+  "reference_date": "{YYYY-MM-DD}",
+  "entity_type": "{company_type}",
+  "scope": "{scope}",
+  "threshold": "{threshold}",
+  "confidence": "{confidence}",
+  "subtitle": ""
+ },
+ "executive": {
+  "diagnosis": "{one_sentence_diagnosis}",
+  "metrics": []
+ },
+ "business": {
+  "metrics": [],
+  "profit_pools": []
+ },
+ "talent_pnl": [],
+ "organization": [],
+ "compensation": [],
+ "high_compensation": {
+  "headline": "{p05 / p50 / p95}",
+  "rows": []
+ },
+ "role_pay": [],
+ "career": {
+  "internal_path": [],
+  "external_path": [],
+  "first_threshold_state": "",
+  "promotion_tenure": "",
+  "senior_hire_mix": ""
+ },
+ "governance": [],
+ "sensitivity": [],
+ "evidence": [],
+ "charter": {
+  "summary": [],
+  "timeline": []
+ }
+}

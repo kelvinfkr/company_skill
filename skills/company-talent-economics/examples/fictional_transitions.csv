@@ -1,0 +1,5 @@
+from_state,to_state,transition_type,months,evidence_tier
+Senior Engineer,Expert,internal_promotion,30,D
+Expert,Platform Lead,internal_promotion,38,D
+External Staff Engineer,Platform Lead,external_entry,0,D
+Platform Lead,BU Tech Head,internal_promotion,42,B

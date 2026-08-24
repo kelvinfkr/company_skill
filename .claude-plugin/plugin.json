@@ -1,0 +1,22 @@
+{
+  "name": "company-talent-economics",
+  "version": "0.9.0",
+  "description": "Reconstruct a company's pay distribution, high-compensation population, critical roles, pay bands and career graph from public filings, and deliver a typeset PDF. Any country, and the report is written in the language of the company name you type.",
+  "author": {
+    "name": "kelvinfkr",
+    "url": "https://github.com/kelvinfkr"
+  },
+  "homepage": "https://github.com/kelvinfkr/company_skill",
+  "repository": "https://github.com/kelvinfkr/company_skill",
+  "license": "MIT",
+  "keywords": [
+    "compensation",
+    "talent-economics",
+    "pay-bands",
+    "equity",
+    "filings",
+    "research",
+    "multilingual",
+    "pdf-report"
+  ]
+}

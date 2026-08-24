@@ -1,0 +1,240 @@
+{
+ "_doc": "ロケールパック。すべてのパックは en.json と同一のキーを持つ必要がある（scripts/check_locales.py で検証）。ここで翻訳するのはレポートの骨格のみで、分析本文は agent がこの言語で執筆する。",
+ "meta": {
+  "tag": "ja",
+  "name": "Japanese",
+  "native_name": "日本語",
+  "direction": "ltr",
+  "script": "jpan",
+  "fallback": null,
+  "group_sep": ",",
+  "decimal_sep": ".",
+  "currency_position": "after",
+  "currency_space": true,
+  "font_sans": [
+   "Noto Sans CJK JP",
+   "Noto Sans JP",
+   "Source Han Sans",
+   "Hiragino Sans",
+   "Yu Gothic",
+   "Meiryo",
+   "IPAGothic"
+  ],
+  "font_serif": [
+   "Noto Serif CJK JP",
+   "Noto Serif JP",
+   "Source Han Serif",
+   "Hiragino Mincho ProN",
+   "Yu Mincho",
+   "IPAMincho"
+  ]
+ },
+ "scale": [
+  [
+   100000000.0,
+   100000000.0,
+   "億"
+  ],
+  [
+   10000.0,
+   10000.0,
+   "万"
+  ]
+ ],
+ "cover": {
+  "report_title": "人材エコノミクス調査レポート",
+  "subtitle_default": "公開情報から再構築した人材エコノミクス分析",
+  "reference_date": "基準日",
+  "entity_type": "法人区分",
+  "scope": "分析範囲",
+  "threshold": "高報酬しきい値",
+  "confidence": "総合信頼度",
+  "method_note": "方法：すべての数値に「開示」「導出」「推定」「モデル仮定」のいずれかを付す。TC = 基本給 + 想定賞与・歩合 + 年換算の権利確定株式価値（税引前）。疑似的な精度の点推定より区間推定を優先する。",
+  "header_suffix": "人材エコノミクス",
+  "page": "{n} ページ"
+ },
+ "sections": {
+  "executive": [
+   "要約",
+   "規模、報酬の上位テール、最も重要な不確実性を先に示す。"
+  ],
+  "charter": [
+   "定款と支配構造",
+   "経済的持分、議決権、取締役会支配、既存の特別権利を区別する。再構築した条項を定款の原文として提示してはならない。"
+  ],
+  "business": [
+   "事業業績と利益プール",
+   "報酬を論じる前に、利益がどこで生まれ誰が握っているかを確定する。"
+  ],
+  "talent_pnl": [
+   "利益プールと職務依存の対応",
+   "売上、粗利、顧客関係、技術的ボトルネックを実際に握る職務を特定する。依存度は定性評価のみ。"
+  ],
+  "organization": [
+   "組織と等級のマッピング",
+   "社内固有の役職・等級を保持しつつ、他社と比較可能な潜在等級を別途構築する。"
+  ],
+  "compensation": [
+   "報酬分布",
+   "基本給、賞与、年換算株式を別々にモデル化し、年間税引前 TC に合算する。"
+  ],
+  "high_compensation": [
+   "高報酬層の規模",
+   "しきい値超の人数はモンテカルロ区間で示し、点推定は用いない。"
+  ],
+  "role_pay": [
+   "重要職務の報酬レンジ",
+   "市場代替コストは出発点にすぎない。経済合理性と社内公平性が防御可能なゾーンを決める。"
+  ],
+  "career": [
+   "昇進と外部採用の経路",
+   "公開履歴が支持するのは「観測された遷移比率」であり、社内の真の昇進確率ではない。"
+  ],
+  "governance": [
+   "株式インセンティブと人的資本配分",
+   "誰にどれだけ所有権を配るかは、会社自身による重要職務の最も強い表明である。"
+  ],
+  "sensitivity": [
+   "感度分析と不確実性",
+   "人数と職務価格の結論を最も動かす仮定、および区間を最も縮める追加証拠。"
+  ],
+  "evidence": [
+   "証拠サマリー",
+   "本編には主要な証拠のみを載せ、完全な出典一覧と証拠台帳は監査パッケージに同梱する。"
+  ]
+ },
+ "tables": {
+  "charter_summary": [
+   "項目",
+   "現行の取り決め",
+   "変更の経緯",
+   "証拠の状態"
+  ],
+  "charter_timeline": [
+   "日付",
+   "事象",
+   "経済的持分への影響",
+   "支配権への影響",
+   "文書の状態"
+  ],
+  "business_metrics": [
+   "指標",
+   "数値",
+   "算定基礎",
+   "証拠"
+  ],
+  "profit_pools": [
+   "セグメント",
+   "売上",
+   "粗利・貢献利益",
+   "成長率",
+   "主要な依存"
+  ],
+  "talent_pnl": [
+   "利益プール",
+   "重要プロセス",
+   "重要職務",
+   "依存度",
+   "理由"
+  ],
+  "organization": [
+   "社内職務・等級",
+   "トラック",
+   "スコープ",
+   "職能・BU",
+   "潜在等級",
+   "信頼度"
+  ],
+  "compensation": [
+   "層",
+   "人数",
+   "現金 TC",
+   "株式 TC",
+   "合計 TC",
+   "P(しきい値超)",
+   "信頼度"
+  ],
+  "high_compensation": [
+   "層",
+   "しきい値超の人数",
+   "寄与",
+   "主な不確実性"
+  ],
+  "role_pay": [
+   "職務",
+   "市場代替",
+   "経済合理性",
+   "社内公平",
+   "防御可能レンジ",
+   "診断"
+  ],
+  "career_qa": [
+   "論点",
+   "判断"
+  ],
+  "governance": [
+   "指標",
+   "判断・数値",
+   "証拠"
+  ],
+  "evidence": [
+   "ID",
+   "出典",
+   "日付",
+   "状態",
+   "支持する判断"
+  ]
+ },
+ "labels": {
+  "profit_pools": "利益プール",
+  "charter_timeline": "定款・資本構成の変遷",
+  "internal_path": "代表的な社内経路",
+  "external_path": "代表的な外部入社経路",
+  "first_threshold_state": "最初にしきい値を超える等級",
+  "promotion_tenure": "観測された昇進までの在任期間",
+  "senior_hire_mix": "上位職の内部育成と外部採用の比率",
+  "high_comp_headline": "高報酬人数の推定：{v}",
+  "approx": "約 ",
+  "people": "",
+  "people_suffix": " 名",
+  "mode": "最頻値",
+  "na": "n/a",
+  "dash": "—",
+  "provisional_confidence": "低（暫定推計）",
+  "provisional_note": "暫定推計：{facts} は公開情報として入手できなかった。本推計はモデル仮定に依存しており、実測値ではなく区間として読むこと。"
+ },
+ "claim_types": {
+  "observed_fact": "開示",
+  "derived_metric": "導出",
+  "assumption": "モデル仮定",
+  "inference": "推定",
+  "reconstruction": "再構築"
+ },
+ "kpi": {
+  "headcount": "正社員数",
+  "rnd_headcount": "研究開発人員",
+  "payroll_per_head": "一人当たり人件費（株式含む）",
+  "tc_median": "TC 中央値（推定）",
+  "tc_p90": "TC P90（推定）",
+  "above_p50": "しきい値超 p50",
+  "above_range": "p05-p95",
+  "above_share": "しきい値超の比率"
+ },
+ "metrics": {
+  "revenue": "売上高",
+  "gross_profit": "売上総利益",
+  "operating_profit": "営業利益",
+  "net_profit": "当期純利益",
+  "rnd_expense": "研究開発費",
+  "sales_expense": "販売費",
+  "admin_expense": "一般管理費",
+  "employee_benefit_expense": "人件費（株式報酬含む）",
+  "sbc_expense": "株式報酬費用",
+  "gross_profit_per_head": "一人当たり売上総利益",
+  "benefit_over_gp": "人件費 ÷ 売上総利益",
+  "note_gp_per_head": "売上総利益 ÷ 従業員数",
+  "note_notes": "財務諸表注記"
+ },
+ "threshold_sentence": "年間税引前 TC ≥ {amount} {currency}（基本給 + 賞与 + 年換算の権利確定株式。株価基準は{basis}）",
+ "forbidden_terms": []
+}
