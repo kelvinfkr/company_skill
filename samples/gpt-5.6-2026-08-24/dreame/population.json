@@ -1,0 +1,148 @@
+{
+  "company": "追觅科技",
+  "reference_date": "2025-12-31",
+  "threshold": {
+    "amount": 1000000.0,
+    "currency": "CNY"
+  },
+  "samples": 50000,
+  "estimated_headcount": {
+    "p05": 17637.86735082275,
+    "p50": 18547.29124661298,
+    "p95": 19451.018241361086,
+    "mean": 18547.64165823963
+  },
+  "estimated_above_threshold": {
+    "p05": 583.0873107934684,
+    "p50": 829.602260006239,
+    "p95": 1127.4705691321865,
+    "mean": 839.8828616515768
+  },
+  "share_above_threshold": {
+    "p05": 0.031415429367057504,
+    "p50": 0.0447326417194015,
+    "p95": 0.060990270416844974
+  },
+  "buckets": [
+    {
+      "name": "研发 entry",
+      "function": "研发",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "研发 mid",
+      "function": "研发",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "研发 senior",
+      "function": "研发",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 99.08874138010657,
+      "above_threshold_p50": 322.23749272677503,
+      "above_threshold_p95": 607.3668487917677
+    },
+    {
+      "name": "研发 director",
+      "function": "研发",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 212.73187980887624,
+      "above_threshold_p50": 255.77264816384155,
+      "above_threshold_p95": 299.58565683209025
+    },
+    {
+      "name": "研发 exec",
+      "function": "研发",
+      "level": "exec",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 34.502758372573126,
+      "above_threshold_p50": 39.9725838647834,
+      "above_threshold_p95": 45.46804390681204
+    },
+    {
+      "name": "销售、产品与职能 entry",
+      "function": "销售、产品与职能",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "销售、产品与职能 mid",
+      "function": "销售、产品与职能",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "销售、产品与职能 senior",
+      "function": "销售、产品与职能",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 26.541172153668835,
+      "above_threshold_p50": 94.11229013352374,
+      "above_threshold_p95": 204.89755302726962
+    },
+    {
+      "name": "销售、产品与职能 director",
+      "function": "销售、产品与职能",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 69.63838682281329,
+      "above_threshold_p50": 92.56439311988186,
+      "above_threshold_p95": 113.21897165103768
+    },
+    {
+      "name": "销售、产品与职能 exec",
+      "function": "销售、产品与职能",
+      "level": "exec",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 10.631485203954597,
+      "above_threshold_p50": 11.992511923353934,
+      "above_threshold_p95": 13.361037107402968
+    },
+    {
+      "name": "制造与服务一线 frontline",
+      "function": "制造与服务一线",
+      "level": "frontline",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "境外员工 mixed",
+      "function": "境外员工",
+      "level": "mixed",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.1374876983693778,
+      "above_threshold_p50": 1.5902177739144285,
+      "above_threshold_p95": 4.2395505475350355
+    }
+  ]
+}

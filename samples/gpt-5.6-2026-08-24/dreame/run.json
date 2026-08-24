@@ -1,0 +1,147 @@
+{
+ "company": "追觅科技",
+ "language": "zh-CN",
+ "language_confidence": "explicit",
+ "language_signal": "set by --language",
+ "chrome_locale": "zh-CN",
+ "jurisdiction": "cn",
+ "jurisdiction_name": "China (mainland, A-share)",
+ "fiscal_year": "2025",
+ "reference_date": "2025-12-31",
+ "currency": "CNY",
+ "threshold": 1000000.0,
+ "phase_completed": 10,
+ "provisional": true,
+ "provisional_facts": [
+  "employee_benefit_expense",
+  "gross_profit"
+ ],
+ "entity": {
+  "legal_name": "追觅科技（苏州）有限公司及相关经营主体",
+  "ticker": "",
+  "domicile": "中国江苏苏州",
+  "listing_venue": "",
+  "company_type": "cn_private_llc",
+  "charter_status": "reconstructed"
+ },
+ "facts": {
+  "revenue": {
+   "value": 40000.0,
+   "unit": "CNY_million",
+   "evidence_id": "E02"
+  },
+  "gross_profit": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "operating_profit": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "net_profit": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "rnd_expense": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "sales_expense": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "admin_expense": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "employee_benefit_expense": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "sbc_expense": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  },
+  "cash_paid_to_employees": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  }
+ },
+ "facts_count": {
+  "headcount": {
+   "value": 18539,
+   "evidence_id": "E03"
+  },
+  "domestic_headcount": {
+   "value": 17000,
+   "evidence_id": "E04"
+  },
+  "overseas_headcount": {
+   "value": 1539,
+   "evidence_id": "E04"
+  },
+  "rnd_headcount": {
+   "value": 8000,
+   "evidence_id": "E04"
+  },
+  "equity_award_holders": {
+   "value": null,
+   "evidence_id": ""
+  },
+  "person_grants_last_12m": {
+   "value": null,
+   "evidence_id": ""
+  }
+ },
+ "segments": [
+  {
+   "name": "智能清洁",
+   "revenue": 22000.0,
+   "gross_profit": 8800.0,
+   "growth_pct": 45.0,
+   "evidence_id": "E02",
+   "dependency": "高速马达、SLAM/运动控制、产品定义（extreme）"
+  },
+  {
+   "name": "大家电与新物种",
+   "revenue": 8000.0,
+   "gross_profit": 2400.0,
+   "growth_pct": 100.0,
+   "evidence_id": "E02",
+   "dependency": "品类负责人、供应链与工业设计（high）"
+  },
+  {
+   "name": "海外渠道与服务",
+   "revenue": 10000.0,
+   "gross_profit": 3500.0,
+   "growth_pct": 55.0,
+   "evidence_id": "E02",
+   "dependency": "区域渠道、合规与售后网络（high）"
+  }
+ ],
+ "assumptions": {
+  "employer_social_rate": 0.18,
+  "equity_vesting_years": 4,
+  "equity_price_basis": "risk-adjusted private equity"
+ },
+ "_instructions": "Write the report and all prose in run.language. Fill facts from fetched Tier A/B documents only; amounts in millions of the reporting currency. If a fact is genuinely not public, leave value null and write a line 'NOT AVAILABLE: <fact> - <what you searched>' in analysis_notes.md; for an unlisted entity that satisfies the Phase 1 gate and marks the run provisional.",
+ "generation": {
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24",
+  "purpose": "repository sample"
+ },
+ "checks": {
+  "modelled_tc_total_million": 7332.6,
+  "envelope_check": "tc_over_revenue",
+  "tc_total_over_revenue": 0.1833
+ }
+}

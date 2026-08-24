@@ -1,0 +1,128 @@
+{
+  "company": "小米集团 (1810.HK)",
+  "reference_date": "2025-12-31",
+  "threshold": {
+    "amount": 1000000,
+    "currency": "CNY"
+  },
+  "samples": 50000,
+  "estimated_headcount": {
+    "p05": 55130.43309428359,
+    "p50": 56687.252517700035,
+    "p95": 58299.66157966777,
+    "mean": 56694.06080781339
+  },
+  "estimated_above_threshold": {
+    "p05": 4289.373129440942,
+    "p50": 4915.631180412073,
+    "p95": 5844.82954381462,
+    "mean": 4975.914419327456
+  },
+  "share_above_threshold": {
+    "p05": 0.07544163944075112,
+    "p50": 0.08670589850502089,
+    "p95": 0.10329281807255462
+  },
+  "buckets": [
+    {
+      "name": "研发 13-15",
+      "function": "研发",
+      "level": "13-15",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "研发 16-17",
+      "function": "研发",
+      "level": "16-17",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 206.54476330653924,
+      "above_threshold_p50": 768.0993688074337,
+      "above_threshold_p95": 1684.0633704159554
+    },
+    {
+      "name": "研发 18",
+      "function": "研发",
+      "level": "18",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 1842.453722562777,
+      "above_threshold_p50": 2041.9010911603318,
+      "above_threshold_p95": 2171.8120234239705
+    },
+    {
+      "name": "研发 19-20",
+      "function": "研发",
+      "level": "19-20",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 607.684891226379,
+      "above_threshold_p50": 624.2969733611463,
+      "above_threshold_p95": 641.1739710406699
+    },
+    {
+      "name": "研发 21-22",
+      "function": "研发",
+      "level": "21-22",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 136.65673109298814,
+      "above_threshold_p50": 140.2478758215483,
+      "above_threshold_p95": 144.21972359992083
+    },
+    {
+      "name": "非研发专业岗 13-15",
+      "function": "非研发专业岗",
+      "level": "13-15",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "非研发专业岗 16-17",
+      "function": "非研发专业岗",
+      "level": "16-17",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 10.153418604830776,
+      "above_threshold_p50": 113.52739283569815,
+      "above_threshold_p95": 300.8553725472346
+    },
+    {
+      "name": "非研发专业岗 18-20",
+      "function": "非研发专业岗",
+      "level": "18-20",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 1120.0764742507233,
+      "above_threshold_p50": 1216.6133935520752,
+      "above_threshold_p95": 1314.1823504579604
+    },
+    {
+      "name": "一线零售/制造/客服 frontline",
+      "function": "一线零售/制造/客服",
+      "level": "frontline",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "境外员工 mixed",
+      "function": "境外员工",
+      "level": "mixed",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    }
+  ]
+}

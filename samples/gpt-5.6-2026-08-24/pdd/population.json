@@ -1,0 +1,228 @@
+{
+  "company": "拼多多（PDD Holdings）",
+  "reference_date": "2025-12-31",
+  "threshold": {
+    "amount": 1000000.0,
+    "currency": "CNY"
+  },
+  "samples": 50000,
+  "estimated_headcount": {
+    "p05": 25250.31186523437,
+    "p50": 25490.632077126833,
+    "p95": 25732.48671184381,
+    "mean": 25490.995059829333
+  },
+  "estimated_above_threshold": {
+    "p05": 5165.394862482803,
+    "p50": 6335.571128697324,
+    "p95": 7317.716433910339,
+    "mean": 6295.263495173936
+  },
+  "share_above_threshold": {
+    "p05": 0.20266550392794838,
+    "p50": 0.24855371027529571,
+    "p95": 0.28714574579694613
+  },
+  "buckets": [
+    {
+      "name": "产品开发 entry",
+      "function": "产品开发",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "产品开发 mid",
+      "function": "产品开发",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 840.6932896353871,
+      "above_threshold_p50": 1995.1842042941564,
+      "above_threshold_p95": 2940.971539045751
+    },
+    {
+      "name": "产品开发 senior",
+      "function": "产品开发",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 1617.9233885846547,
+      "above_threshold_p50": 1655.90871499809,
+      "above_threshold_p95": 1694.321339812932
+    },
+    {
+      "name": "产品开发 director",
+      "function": "产品开发",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 455.03955499788356,
+      "above_threshold_p50": 465.99564810367906,
+      "above_threshold_p95": 476.9336966045395
+    },
+    {
+      "name": "产品开发 exec",
+      "function": "产品开发",
+      "level": "exec",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 50.63002983664213,
+      "above_threshold_p50": 51.99868361696947,
+      "above_threshold_p95": 53.38072969229692
+    },
+    {
+      "name": "销售、营销与履约 entry",
+      "function": "销售、营销与履约",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "销售、营销与履约 mid",
+      "function": "销售、营销与履约",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 14.887519959828476,
+      "above_threshold_p50": 167.91404552810906,
+      "above_threshold_p95": 441.7914448512475
+    },
+    {
+      "name": "销售、营销与履约 senior",
+      "function": "销售、营销与履约",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 755.9197507477508,
+      "above_threshold_p50": 881.5261072375595,
+      "above_threshold_p95": 956.3909455451231
+    },
+    {
+      "name": "销售、营销与履约 director",
+      "function": "销售、营销与履约",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 255.8461696605302,
+      "above_threshold_p50": 262.02361545958047,
+      "above_threshold_p95": 268.12599792568966
+    },
+    {
+      "name": "销售、营销与履约 exec",
+      "function": "销售、营销与履约",
+      "level": "exec",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 22.31374632662274,
+      "above_threshold_p50": 22.99978364074434,
+      "above_threshold_p95": 23.677242711237827
+    },
+    {
+      "name": "平台运营 entry",
+      "function": "平台运营",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "平台运营 mid",
+      "function": "平台运营",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 25.002797596979526,
+      "above_threshold_p50": 89.15310712701361,
+      "above_threshold_p95": 189.54503746444772
+    },
+    {
+      "name": "平台运营 senior",
+      "function": "平台运营",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 174.6298970001499,
+      "above_threshold_p50": 187.35743341777888,
+      "above_threshold_p95": 199.0753668169259
+    },
+    {
+      "name": "平台运营 director",
+      "function": "平台运营",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 53.01944347829244,
+      "above_threshold_p50": 55.266807441591226,
+      "above_threshold_p95": 57.83394175128306
+    },
+    {
+      "name": "平台运营 exec",
+      "function": "平台运营",
+      "level": "exec",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 4.025440858750565,
+      "above_threshold_p50": 4.294129774875884,
+      "above_threshold_p95": 4.778175929307944
+    },
+    {
+      "name": "管理与行政 entry",
+      "function": "管理与行政",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "管理与行政 mid",
+      "function": "管理与行政",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 21.812934518477135,
+      "above_threshold_p50": 89.07751501384996,
+      "above_threshold_p95": 205.2326968079489
+    },
+    {
+      "name": "管理与行政 senior",
+      "function": "管理与行政",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 246.44750909830995,
+      "above_threshold_p50": 273.29794514291916,
+      "above_threshold_p95": 294.43190400941455
+    },
+    {
+      "name": "管理与行政 director",
+      "function": "管理与行政",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 96.16370437320141,
+      "above_threshold_p50": 101.00328519701381,
+      "above_threshold_p95": 105.78495362275251
+    },
+    {
+      "name": "管理与行政 exec",
+      "function": "管理与行政",
+      "level": "exec",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 10.313555163129186,
+      "above_threshold_p50": 11.000956828639332,
+      "above_threshold_p95": 11.682654452254251
+    }
+  ]
+}

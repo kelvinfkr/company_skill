@@ -1,0 +1,8 @@
+pass,source,url,date,source_type,tier,status
+1_identity_charter,PDD amended articles,https://www.sec.gov/Archives/edgar/data/1737806/000110465923014742/tm235930d1_ex99-1.htm,2023-02-06,SEC exhibit,A,used
+2_business_economics,PDD FY2025 results,https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025/,2026-03-25,official results,A,used
+3_workforce_payroll,PDD 2025 Form 20-F,https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm,2026-04-29,SEC filing,A,used
+4_compensation_equity,PDD 2025 Form 20-F share plans,https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm,2026-04-29,SEC filing,A,used
+4_compensation_equity,Levels.fyi Pinduoduo China,https://www.levels.fyi/companies/pinduoduo/salaries/software-engineer,2026-08-24,compensation database,C,calibration only
+5_organization_roles,PDD management page,https://investor.pddholdings.com/corporate-governance/management,2026-08-24,official page,B,used
+6_career_transitions,PDD management bios and 2025 appointments,https://investor.pddholdings.com/corporate-governance/management,2025-12-19,official page,B,used

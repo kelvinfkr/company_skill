@@ -1,0 +1,34 @@
+[
+  {
+    "role": "高速数字马达技术负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      1600000.0,
+      2400000.0
+    ]
+  },
+  {
+    "role": "SLAM/运动控制算法负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      1800000.0,
+      2800000.0
+    ]
+  },
+  {
+    "role": "智能清洁品类总经理",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      1800000.0,
+      2600000.0
+    ]
+  },
+  {
+    "role": "海外区域渠道负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      1400000.0,
+      2200000.0
+    ]
+  }
+]

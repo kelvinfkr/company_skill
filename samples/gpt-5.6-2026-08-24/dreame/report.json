@@ -1,0 +1,502 @@
+{
+ "meta": {
+  "company": "追觅科技",
+  "language": "zh-CN",
+  "reference_date": "2025-12-31",
+  "entity_type": "中国非上市民营科技与智能制造集团（集团边界为重建口径）",
+  "scope": "核心经营主体及含工厂侧的集团用工口径；不把加盟渠道和外包人员计入",
+  "threshold": "年度税前 TC ≥ 1,000,000 CNY（基本薪资 + 现金奖金 + 年化归属股份；股份按risk-adjusted private equity价格基准）",
+  "confidence": "低（临时估计）",
+  "subtitle": "公开数据驱动的企业人才经济学研究",
+  "provisional_note": "临时估计：employee_benefit_expense, gross_profit 无公开数据。本估计基于模型假设，只能作为区间参考，不能当作实测值。",
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24"
+ },
+ "executive": {
+  "diagnosis": "追觅呈现制造业宽底与核心技术尖塔并存的薪酬结构：约4%-6%员工可能跨过百万TC，但收入、员工边界、利润和股权价值均缺少审计锚点，因此只能作为暂定估算。",
+  "metrics": [
+   {
+    "label": "全职员工",
+    "value": "约 18,539 人"
+   },
+   {
+    "label": "研发人员",
+    "value": "约 8,000 人 / 43%"
+   },
+   {
+    "label": "人均薪酬费用（含股份）",
+    "value": "约39.6万 CNY（模型推断）"
+   },
+   {
+    "label": "TC 中位数（推断）",
+    "value": "31.4万 CNY"
+   },
+   {
+    "label": "TC P90（推断）",
+    "value": "65.3万 CNY"
+   },
+   {
+    "label": "跨阈值人数 p50",
+    "value": "约 830 人"
+   },
+   {
+    "label": "p05-p95",
+    "value": "583-约 1,127 人"
+   },
+   {
+    "label": "跨阈值占比",
+    "value": "4.5%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "营业收入",
+    "value": "400亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E02"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "智能清洁",
+    "revenue": "220亿 CNY",
+    "gross_profit": "88.0亿 CNY",
+    "growth": "45.0%",
+    "dependency": "高速马达、SLAM/运动控制、产品定义（extreme）"
+   },
+   {
+    "segment": "大家电与新物种",
+    "revenue": "80.0亿 CNY",
+    "gross_profit": "24.0亿 CNY",
+    "growth": "100.0%",
+    "dependency": "品类负责人、供应链与工业设计（high）"
+   },
+   {
+    "segment": "海外渠道与服务",
+    "revenue": "100亿 CNY",
+    "gross_profit": "35.0亿 CNY",
+    "growth": "55.0%",
+    "dependency": "区域渠道、合规与售后网络（high）"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "智能清洁",
+   "process": "高速数字马达",
+   "role": "电机技术负责人",
+   "dependency": "极高",
+   "why": "核心技术差异化与产品性能直接相关，替代周期长"
+  },
+  {
+   "profit_pool": "智能清洁",
+   "process": "SLAM/运动控制",
+   "role": "算法与机器人平台负责人",
+   "dependency": "高",
+   "why": "决定导航、避障和复杂家庭场景体验"
+  },
+  {
+   "profit_pool": "大家电与新物种",
+   "process": "品类定义与量产",
+   "role": "品类总经理、供应链负责人",
+   "dependency": "高",
+   "why": "新BU从概念到规模化的关键瓶颈"
+  },
+  {
+   "profit_pool": "海外渠道与服务",
+   "process": "区域渠道、合规与售后",
+   "role": "海外区域负责人",
+   "dependency": "高",
+   "why": "全球化收入依赖本地渠道效率和售后能力"
+  }
+ ],
+ "organization": [
+  {
+   "native": "校招/初级研发",
+   "track": "IC",
+   "scope": "任务/项目",
+   "function": "研发",
+   "state": "IC1-IC2",
+   "confidence": "中（官方招聘）"
+  },
+  {
+   "native": "项目骨干/中级",
+   "track": "IC/M",
+   "scope": "项目/小团队",
+   "function": "研发、产品",
+   "state": "IC3/M1",
+   "confidence": "低"
+  },
+  {
+   "native": "资深专家/负责人",
+   "track": "IC/M",
+   "scope": "关键系统/多团队",
+   "function": "研发、品类",
+   "state": "IC4-IC5/M2",
+   "confidence": "低"
+  },
+  {
+   "native": "BU负责人",
+   "track": "经营",
+   "scope": "业务线P&L",
+   "function": "产品、销售、制造",
+   "state": "M3-M4",
+   "confidence": "中（公开组织报道）"
+  },
+  {
+   "native": "制造/服务一线",
+   "track": "一线",
+   "scope": "任务",
+   "function": "工厂与售后",
+   "state": "F1",
+   "confidence": "低"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "研发 entry",
+   "headcount": "约 4,320 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "20.0万-45.0万 (众数 30.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 mid",
+   "headcount": "约 2,560 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "35.0万-75.0万 (众数 52.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 senior",
+   "headcount": "约 800 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "65.0万-130万 (众数 90.0万)",
+   "probability": "40%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 director",
+   "headcount": "约 280 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "100万-240万 (众数 150万)",
+   "probability": "91%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 exec",
+   "headcount": "约 40 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "220万-900万 (众数 450万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、产品与职能 entry",
+   "headcount": "约 2,320 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "16.0万-40.0万 (众数 26.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、产品与职能 mid",
+   "headcount": "约 1,200 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "30.0万-65.0万 (众数 45.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、产品与职能 senior",
+   "headcount": "约 360 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "55.0万-120万 (众数 80.0万)",
+   "probability": "26%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、产品与职能 director",
+   "headcount": "约 108 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "90.0万-220万 (众数 140万)",
+   "probability": "86%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、产品与职能 exec",
+   "headcount": "约 12 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "200万-800万 (众数 400万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "制造与服务一线 frontline",
+   "headcount": "约 5,000 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "9.0万-22.0万 (众数 14.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "境外员工 mixed",
+   "headcount": "约 1,539 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "18.0万-80.0万 (众数 36.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 583 / p50 830 / p95 1,127 人 (4.5%)",
+  "rows": [
+   {
+    "bucket": "研发 senior",
+    "count": "约 322 人",
+    "contribution": "39%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   },
+   {
+    "bucket": "研发 director",
+    "count": "约 256 人",
+    "contribution": "31%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   },
+   {
+    "bucket": "销售、产品与职能 senior",
+    "count": "约 94 人",
+    "contribution": "11%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   },
+   {
+    "bucket": "销售、产品与职能 director",
+    "count": "约 93 人",
+    "contribution": "11%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   },
+   {
+    "bucket": "研发 exec",
+    "count": "约 40 人",
+    "contribution": "5%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   },
+   {
+    "bucket": "销售、产品与职能 exec",
+    "count": "约 12 人",
+    "contribution": "1%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   },
+   {
+    "bucket": "境外员工 mixed",
+    "count": "约 2 人",
+    "contribution": "0%",
+    "uncertainty": "员工边界、职级结构、私股价值和跨线概率均为宽区间推断"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "高速数字马达技术负责人",
+   "market": "120-260万",
+   "economic": "160-450万",
+   "internal": "100-240万",
+   "defensible": "160-240万",
+   "diagnostic": "内部上沿偏低，存在留才压力"
+  },
+  {
+   "role": "SLAM/运动控制算法负责人",
+   "market": "140-300万",
+   "economic": "180-500万",
+   "internal": "110-280万",
+   "defensible": "180-280万",
+   "diagnostic": "关键技术岗位需专项股权"
+  },
+  {
+   "role": "智能清洁品类总经理",
+   "market": "120-260万",
+   "economic": "180-550万",
+   "internal": "100-260万",
+   "defensible": "180-260万",
+   "diagnostic": "适合P&L挂钩奖金"
+  },
+  {
+   "role": "海外区域渠道负责人",
+   "market": "100-240万",
+   "economic": "140-400万",
+   "internal": "90-220万",
+   "defensible": "140-220万",
+   "diagnostic": "区域业绩与回款质量应共同计价"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "校招研发 → 项目骨干 → 资深专家/技术负责人",
+   "成熟业务骨干 → 新BU负责人"
+  ],
+  "external_path": [
+   "同业资深研发 → 核心技术专家",
+   "消费电子/家电高管 → 品类或海外区域负责人"
+  ],
+  "first_threshold_state": "核心算法/电机资深专家或成熟BU负责人；普通中级岗位通常仍低于百万线",
+  "promotion_tenure": "公开路径仅8条且公司强调结果导向，不能据此计算晋升概率；样本常见24-36个月跃迁",
+  "senior_hire_mix": "基础技术更偏内部培养，新品类、汽车与海外经营更依赖外部引进"
+ },
+ "governance": [
+  {
+   "metric": "章程状态",
+   "value": "历史章程未公开，治理结构为重建",
+   "evidence": "工商与媒体材料"
+  },
+  {
+   "metric": "集团边界",
+   "value": "母体、追觅创新、追觅梦创及大量生态BU并存",
+   "evidence": "工商穿透报道"
+  },
+  {
+   "metric": "员工股权",
+   "value": "覆盖人数、授予价和归属条件未公开",
+   "evidence": "检索未取得"
+  },
+  {
+   "metric": "现金激励",
+   "value": "2025年多次团队/个人奖金；年末全员黄金奖励",
+   "evidence": "公司公开口径媒体报道"
+  },
+  {
+   "metric": "晋升定价",
+   "value": "创始人公开称外聘涨幅通常不超过20%，业绩后再提拔涨薪",
+   "evidence": "21财经"
+  }
+ ],
+ "sensitivity": [
+  "员工口径从核心白领约7,000到含工厂/生态18,539差异最大；本报告采用后者并扩大区间。",
+  "高级研发人数±25%可使百万TC p50改变约250-450人。",
+  "私股风险折价从70%降至40%会明显提高senior/director跨线概率，但不能把名义估值当现金。",
+  "最需要的新证据是审计集团财务、社保口径员工数、股权激励参与人数及各BU独立融资条款。"
+ ],
+ "evidence": [
+  {
+   "id": "B01",
+   "source": "追觅科技官网",
+   "date": "2026-08",
+   "status": "披露",
+   "supports": "成立、核心技术与产品边界"
+  },
+  {
+   "id": "B02",
+   "source": "高校就业网官方招聘材料",
+   "date": "2023-2025",
+   "status": "披露",
+   "supports": "校招薪酬结构与研发岗位"
+  },
+  {
+   "id": "C01",
+   "source": "公司口径媒体报道",
+   "date": "2025-2026",
+   "status": "需核验",
+   "supports": "收入、员工规模与现金奖励"
+  },
+  {
+   "id": "C02",
+   "source": "工商穿透与组织报道",
+   "date": "2026-05",
+   "status": "重建",
+   "supports": "集团/BU治理结构"
+  },
+  {
+   "id": "E01",
+   "source": "招聘聚合薪资样本",
+   "date": "2026-08",
+   "status": "弱校准",
+   "supports": "普通岗位薪酬量级"
+  },
+  {
+   "id": "M01",
+   "source": "本报告模型与50,000次蒙特卡洛",
+   "date": "2026-08",
+   "status": "模型",
+   "supports": "跨阈值人数与分布"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "法律实体",
+    "current": "追觅科技（苏州）有限公司及相关经营主体",
+    "historical": "2017年成立并多轮融资",
+    "evidence": "工商/公司官网"
+   },
+   {
+    "item": "章程状态",
+    "current": "未取得现行章程原文",
+    "historical": "股权和控制条款由工商变更与融资报道重建",
+    "evidence": "reconstructed"
+   },
+   {
+    "item": "集团架构",
+    "current": "母体下设主营平台与生态投资平台",
+    "historical": "2025-2026大量BU和生态主体扩张",
+    "evidence": "工商穿透报道"
+   },
+   {
+    "item": "创始人控制",
+    "current": "创始人对战略、资本配置和关键人事具有高度影响",
+    "historical": "公开报道称其持续增持",
+    "evidence": "媒体重建，不等同章程原文"
+   },
+   {
+    "item": "员工激励",
+    "current": "现金奖金与即时奖励可观察，股权条款不透明",
+    "historical": "校招材料披露3-6个月绩效奖金",
+    "evidence": "官方招聘/公开报道"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "2017",
+    "event": "公司成立",
+    "economic": "智能清洁创业",
+    "control": "创始团队控制",
+    "status": "官方摘要"
+   },
+   {
+    "date": "2021",
+    "event": "C轮融资",
+    "economic": "扩大全球化与研发投入",
+    "control": "外部投资人进入",
+    "status": "官方/媒体摘要"
+   },
+   {
+    "date": "2025",
+    "event": "品类和BU快速扩张",
+    "economic": "从清洁电器走向全屋与新物种",
+    "control": "集团边界复杂化",
+    "status": "重建"
+   },
+   {
+    "date": "2025-12",
+    "event": "全员黄金与绩效奖励",
+    "economic": "用即时现金激励绑定扩张结果",
+    "control": "股权覆盖仍不透明",
+    "status": "公开报道"
+   }
+  ]
+ }
+}

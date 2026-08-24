@@ -1,0 +1,9 @@
+from_state,to_state,transition_type,months,evidence_tier,note
+校招研发工程师,项目骨干,internal_promotion,24,D,校园招聘与公开履历样本
+项目骨干,资深研发/专家,internal_promotion,30,D,快速业务扩张期的内部路径
+资深研发/专家,技术负责人,internal_promotion,36,D,公开履历样本
+外部清洁电器研发,资深研发/专家,external_entry,0,D,同业社招路径
+外部消费电子产品经理,品类负责人,external_entry,0,D,新品类扩张路径
+中国区销售负责人,海外区域负责人,internal_lateral,24,D,全球化业务横向流动
+核心业务负责人,新BU负责人,internal_lateral,18,C,200+ BU孵化机制
+同业高管,事业部负责人,external_entry,0,C,外部招聘与公司公开回应

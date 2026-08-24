@@ -1,0 +1,8 @@
+创始团队/业务负责人 -> 高级副总裁 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+高级副总裁 -> 联席CEO [internal_promotion] n=1, weighted_share=100.0%, median_tenure=60 mo
+联席CEO -> 联席董事长/联席CEO [internal_promotion] n=1, weighted_share=100.0%, median_tenure=32 mo
+技术负责人 -> CEO/董事 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=48 mo
+业务运营骨干 -> 业务线负责人 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+外部电商平台资深工程师 -> 资深产品开发 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+资深产品开发 -> 技术负责人 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=42 mo
+中国业务负责人 -> 跨境业务负责人 [internal_lateral] n=1, weighted_share=100.0%, median_tenure=24 mo

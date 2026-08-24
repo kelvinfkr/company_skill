@@ -182,6 +182,8 @@ def add_page_number(paragraph):
 
 def configure_doc(doc: Document):
     sec = doc.sections[0]
+    sec.page_width = Mm(210)
+    sec.page_height = Mm(297)
     sec.different_first_page_header_footer = True
     sec.top_margin = Mm(18); sec.bottom_margin = Mm(17)
     sec.left_margin = Mm(18); sec.right_margin = Mm(18)

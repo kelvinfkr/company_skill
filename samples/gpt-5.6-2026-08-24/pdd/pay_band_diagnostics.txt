@@ -1,0 +1,34 @@
+[
+  {
+    "role": "推荐/广告排序算法负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      3000000.0,
+      5000000.0
+    ]
+  },
+  {
+    "role": "跨境履约与供应链平台负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2500000.0,
+      4200000.0
+    ]
+  },
+  {
+    "role": "支付与交易风控负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2200000.0,
+      4000000.0
+    ]
+  },
+  {
+    "role": "资深产品/算法工程师",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      1000000.0,
+      1800000.0
+    ]
+  }
+]

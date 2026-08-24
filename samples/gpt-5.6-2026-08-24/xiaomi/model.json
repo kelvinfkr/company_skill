@@ -1,0 +1,235 @@
+{
+ "company": "小米集团 (1810.HK)",
+ "reference_date": "2025-12-31",
+ "threshold": {
+  "amount": 1000000,
+  "currency": "CNY"
+ },
+ "workforce": {
+  "low": 55455,
+  "mode": 56587,
+  "high": 57719
+ },
+ "buckets": [
+  {
+   "name": "研发 13-15",
+   "function": "研发",
+   "level": "13-15",
+   "headcount": {
+    "low": 13671,
+    "mode": 14205,
+    "high": 14787
+   },
+   "tc": {
+    "low": 250000,
+    "mode": 330000,
+    "high": 480000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": "22-45 万",
+   "equity": "0-3 万"
+  },
+  {
+   "name": "研发 16-17",
+   "function": "研发",
+   "level": "16-17",
+   "headcount": {
+    "low": 7987,
+    "mode": 8299,
+    "high": 8639
+   },
+   "tc": {
+    "low": 550000,
+    "mode": 720000,
+    "high": 1100000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0478,
+    "high": 0.2541
+   },
+   "cash": "45-80 万",
+   "equity": "8-30 万"
+  },
+  {
+   "name": "研发 18",
+   "function": "研发",
+   "level": "18",
+   "headcount": {
+    "low": 2107,
+    "mode": 2189,
+    "high": 2279
+   },
+   "tc": {
+    "low": 900000,
+    "mode": 1250000,
+    "high": 2000000
+   },
+   "p_exceed": {
+    "low": 0.8015,
+    "mode": 0.974,
+    "high": 1.0
+   },
+   "cash": "60-110 万",
+   "equity": "30-90 万"
+  },
+  {
+   "name": "研发 19-20",
+   "function": "研发",
+   "level": "19-20",
+   "headcount": {
+    "low": 600,
+    "mode": 624,
+    "high": 649
+   },
+   "tc": {
+    "low": 1800000,
+    "mode": 2500000,
+    "high": 4500000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": "100-200 万",
+   "equity": "80-250 万"
+  },
+  {
+   "name": "研发 21-22",
+   "function": "研发",
+   "level": "21-22",
+   "headcount": {
+    "low": 135,
+    "mode": 140,
+    "high": 146
+   },
+   "tc": {
+    "low": 5000000,
+    "mode": 9000000,
+    "high": 30000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": "200-600 万",
+   "equity": "300 万+"
+  },
+  {
+   "name": "非研发专业岗 13-15",
+   "function": "非研发专业岗",
+   "level": "13-15",
+   "headcount": {
+    "low": 7560,
+    "mode": 8460,
+    "high": 9360
+   },
+   "tc": {
+    "low": 150000,
+    "mode": 280000,
+    "high": 420000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "非研发专业岗 16-17",
+   "function": "非研发专业岗",
+   "level": "16-17",
+   "headcount": {
+    "low": 3906,
+    "mode": 4371,
+    "high": 4836
+   },
+   "tc": {
+    "low": 450000,
+    "mode": 650000,
+    "high": 1000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0884
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "非研发专业岗 18-20",
+   "function": "非研发专业岗",
+   "level": "18-20",
+   "headcount": {
+    "low": 1134,
+    "mode": 1269,
+    "high": 1404
+   },
+   "tc": {
+    "low": 800000,
+    "mode": 1300000,
+    "high": 3800000
+   },
+   "p_exceed": {
+    "low": 0.9055,
+    "mode": 0.9733,
+    "high": 0.9968
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "一线零售/制造/客服 frontline",
+   "function": "一线零售/制造/客服",
+   "level": "frontline",
+   "headcount": {
+    "low": 12500,
+    "mode": 14400,
+    "high": 16500
+   },
+   "tc": {
+    "low": 80000,
+    "mode": 130000,
+    "high": 200000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "境外员工 mixed",
+   "function": "境外员工",
+   "level": "mixed",
+   "headcount": {
+    "low": 2400,
+    "mode": 2630,
+    "high": 2900
+   },
+   "tc": {
+    "low": 100000,
+    "mode": 250000,
+    "high": 700000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  }
+ ]
+}

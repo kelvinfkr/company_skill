@@ -1,0 +1,455 @@
+{
+ "company": "拼多多（PDD Holdings）",
+ "reference_date": "2025-12-31",
+ "threshold": {
+  "amount": 1000000.0,
+  "currency": "CNY"
+ },
+ "workforce": {
+  "low": 24965,
+  "mode": 25474,
+  "high": 25983
+ },
+ "buckets": [
+  {
+   "name": "产品开发 entry",
+   "function": "产品开发",
+   "level": "entry",
+   "headcount": {
+    "low": 4500,
+    "mode": 4658,
+    "high": 4815
+   },
+   "tc": {
+    "low": 450000,
+    "mode": 600000,
+    "high": 800000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "产品开发 mid",
+   "function": "产品开发",
+   "level": "mid",
+   "headcount": {
+    "low": 3400,
+    "mode": 3519,
+    "high": 3638
+   },
+   "tc": {
+    "low": 750000,
+    "mode": 1000000,
+    "high": 1400000
+   },
+   "p_exceed": {
+    "low": 0.0865,
+    "mode": 0.6154,
+    "high": 0.9573
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "产品开发 senior",
+   "function": "产品开发",
+   "level": "senior",
+   "headcount": {
+    "low": 1600,
+    "mode": 1656,
+    "high": 1712
+   },
+   "tc": {
+    "low": 1300000,
+    "mode": 1900000,
+    "high": 2800000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "产品开发 director",
+   "function": "产品开发",
+   "level": "director",
+   "headcount": {
+    "low": 450,
+    "mode": 466,
+    "high": 482
+   },
+   "tc": {
+    "low": 2400000,
+    "mode": 4000000,
+    "high": 7000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "产品开发 exec",
+   "function": "产品开发",
+   "level": "exec",
+   "headcount": {
+    "low": 50,
+    "mode": 52,
+    "high": 54
+   },
+   "tc": {
+    "low": 6000000,
+    "mode": 12000000,
+    "high": 25000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、营销与履约 entry",
+   "function": "销售、营销与履约",
+   "level": "entry",
+   "headcount": {
+    "low": 6820,
+    "mode": 7061,
+    "high": 7316
+   },
+   "tc": {
+    "low": 250000,
+    "mode": 380000,
+    "high": 550000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、营销与履约 mid",
+   "function": "销售、营销与履约",
+   "level": "mid",
+   "headcount": {
+    "low": 2970,
+    "mode": 3075,
+    "high": 3186
+   },
+   "tc": {
+    "low": 500000,
+    "mode": 700000,
+    "high": 1000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.1852
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、营销与履约 senior",
+   "function": "销售、营销与履约",
+   "level": "senior",
+   "headcount": {
+    "low": 935,
+    "mode": 968,
+    "high": 1003
+   },
+   "tc": {
+    "low": 900000,
+    "mode": 1300000,
+    "high": 2000000
+   },
+   "p_exceed": {
+    "low": 0.7216,
+    "mode": 0.9773,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、营销与履约 director",
+   "function": "销售、营销与履约",
+   "level": "director",
+   "headcount": {
+    "low": 253,
+    "mode": 262,
+    "high": 271
+   },
+   "tc": {
+    "low": 1800000,
+    "mode": 3000000,
+    "high": 5500000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、营销与履约 exec",
+   "function": "销售、营销与履约",
+   "level": "exec",
+   "headcount": {
+    "low": 22,
+    "mode": 23,
+    "high": 24
+   },
+   "tc": {
+    "low": 5000000,
+    "mode": 9000000,
+    "high": 18000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "平台运营 entry",
+   "function": "平台运营",
+   "level": "entry",
+   "headcount": {
+    "low": 700,
+    "mode": 746,
+    "high": 800
+   },
+   "tc": {
+    "low": 300000,
+    "mode": 450000,
+    "high": 650000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "平台运营 mid",
+   "function": "平台运营",
+   "level": "mid",
+   "headcount": {
+    "low": 462,
+    "mode": 493,
+    "high": 528
+   },
+   "tc": {
+    "low": 550000,
+    "mode": 800000,
+    "high": 1150000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.1071,
+    "high": 0.4775
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "平台运营 senior",
+   "function": "平台运营",
+   "level": "senior",
+   "headcount": {
+    "low": 182,
+    "mode": 194,
+    "high": 208
+   },
+   "tc": {
+    "low": 1000000,
+    "mode": 1450000,
+    "high": 2200000
+   },
+   "p_exceed": {
+    "low": 0.8843,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "平台运营 director",
+   "function": "平台运营",
+   "level": "director",
+   "headcount": {
+    "low": 52,
+    "mode": 55,
+    "high": 59
+   },
+   "tc": {
+    "low": 1800000,
+    "mode": 3000000,
+    "high": 5000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "平台运营 exec",
+   "function": "平台运营",
+   "level": "exec",
+   "headcount": {
+    "low": 4,
+    "mode": 4,
+    "high": 5
+   },
+   "tc": {
+    "low": 4500000,
+    "mode": 8000000,
+    "high": 15000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "管理与行政 entry",
+   "function": "管理与行政",
+   "level": "entry",
+   "headcount": {
+    "low": 1008,
+    "mode": 1076,
+    "high": 1152
+   },
+   "tc": {
+    "low": 260000,
+    "mode": 400000,
+    "high": 600000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "管理与行政 mid",
+   "function": "管理与行政",
+   "level": "mid",
+   "headcount": {
+    "low": 714,
+    "mode": 762,
+    "high": 816
+   },
+   "tc": {
+    "low": 500000,
+    "mode": 750000,
+    "high": 1100000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0476,
+    "high": 0.3386
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "管理与行政 senior",
+   "function": "管理与行政",
+   "level": "senior",
+   "headcount": {
+    "low": 273,
+    "mode": 291,
+    "high": 312
+   },
+   "tc": {
+    "low": 900000,
+    "mode": 1400000,
+    "high": 2200000
+   },
+   "p_exceed": {
+    "low": 0.8115,
+    "mode": 0.9846,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "管理与行政 director",
+   "function": "管理与行政",
+   "level": "director",
+   "headcount": {
+    "low": 94,
+    "mode": 101,
+    "high": 108
+   },
+   "tc": {
+    "low": 1800000,
+    "mode": 3200000,
+    "high": 5500000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "管理与行政 exec",
+   "function": "管理与行政",
+   "level": "exec",
+   "headcount": {
+    "low": 10,
+    "mode": 11,
+    "high": 12
+   },
+   "tc": {
+    "low": 5000000,
+    "mode": 10000000,
+    "high": 22000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  }
+ ]
+}

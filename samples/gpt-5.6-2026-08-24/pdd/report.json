@@ -1,0 +1,674 @@
+{
+ "meta": {
+  "company": "拼多多（PDD Holdings）",
+  "language": "zh-CN",
+  "reference_date": "2025-12-31",
+  "entity_type": "开曼注册、NASDAQ 上市的外国私人发行人",
+  "scope": "PDD Holdings 合并口径；中国平台与跨境业务合并建模，职能人数采用 20-F 披露",
+  "threshold": "年度税前 TC ≥ 1,000,000 CNY（基本薪资 + 现金奖金 + 年化归属股份；股份按grant_date/accounting SBC价格基准）",
+  "confidence": "低（临时估计）",
+  "subtitle": "公开数据驱动的企业人才经济学研究",
+  "provisional_note": "临时估计：employee_benefit_expense modeled, not disclosed 无公开数据。本估计基于模型假设，只能作为区间参考，不能当作实测值。",
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24"
+ },
+ "executive": {
+  "diagnosis": "拼多多是极高利润、极精干且股权费用密集的组织：模型显示约四分之一员工可能跨过百万 TC，但完整雇员福利开支未披露，因此该比例只能作为暂定区间。",
+  "metrics": [
+   {
+    "label": "全职员工",
+    "value": "约 25,474 人"
+   },
+   {
+    "label": "研发人员",
+    "value": "约 10,351 人 / 41%"
+   },
+   {
+    "label": "人均薪酬费用（含股份）",
+    "value": "108万 CNY"
+   },
+   {
+    "label": "TC 中位数（推断）",
+    "value": "64.3万 CNY"
+   },
+   {
+    "label": "TC P90（推断）",
+    "value": "173万 CNY"
+   },
+   {
+    "label": "跨阈值人数 p50",
+    "value": "约 6,336 人"
+   },
+   {
+    "label": "p05-p95",
+    "value": "5,165-约 7,318 人"
+   },
+   {
+    "label": "跨阈值占比",
+    "value": "24.9%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "营业收入",
+    "value": "4,318亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "毛利",
+    "value": "2,430亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "经营利润",
+    "value": "946亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "净利润",
+    "value": "994亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "研发开支",
+    "value": "165亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "销售开支",
+    "value": "1,253亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "行政开支",
+    "value": "66.4亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "雇员福利开支（含 SBC）",
+    "value": "275亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E10"
+   },
+   {
+    "metric": "以股份为基础的薪酬",
+    "value": "79.4亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E03"
+   },
+   {
+    "metric": "人均毛利",
+    "value": "954万 CNY",
+    "type": "derived_metric",
+    "evidence": "毛利 ÷ 全职雇员数"
+   },
+   {
+    "metric": "雇员福利开支 ÷ 毛利",
+    "value": "11.3%",
+    "type": "derived_metric",
+    "evidence": "财务报表附注"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "在线营销服务及其他",
+    "revenue": "2,178亿 CNY",
+    "gross_profit": "1,633亿 CNY",
+    "growth": "10.0%",
+    "dependency": "推荐/广告排序、商家ROI与用户留存（high）"
+   },
+   {
+    "segment": "交易服务",
+    "revenue": "2,141亿 CNY",
+    "gross_profit": "797亿 CNY",
+    "growth": "9.0%",
+    "dependency": "跨境履约、风控、支付与供应链网络（high）"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "在线营销服务",
+   "process": "推荐与广告排序",
+   "role": "广告算法/商业化平台负责人",
+   "dependency": "高",
+   "why": "推断毛利最高，商家ROI与用户留存同时受排序系统影响"
+  },
+  {
+   "profit_pool": "交易服务",
+   "process": "全球履约与供应链编排",
+   "role": "履约平台/供应链负责人",
+   "dependency": "高",
+   "why": "交易服务收入超过2,140亿元，履约和支付成本直接决定单位经济性"
+  },
+  {
+   "profit_pool": "交易服务",
+   "process": "支付与交易风控",
+   "role": "支付、反欺诈与商家风险负责人",
+   "dependency": "高",
+   "why": "跨市场交易扩大了欺诈、合规和资金安全暴露"
+  },
+  {
+   "profit_pool": "全集团",
+   "process": "跨境监管响应",
+   "role": "产品合规/公共政策负责人",
+   "dependency": "高",
+   "why": "不直接创造收入，但可能决定市场准入与业务连续性"
+  }
+ ],
+ "organization": [
+  {
+   "native": "产品开发 entry",
+   "track": "IC",
+   "scope": "任务/项目",
+   "function": "产品与工程",
+   "state": "IC1-IC2",
+   "confidence": "低（公司未披露职级名称）"
+  },
+  {
+   "native": "产品开发 mid",
+   "track": "IC/M",
+   "scope": "项目/团队",
+   "function": "产品与工程",
+   "state": "IC3-IC4/M1",
+   "confidence": "中（薪酬样本校准）"
+  },
+  {
+   "native": "senior",
+   "track": "IC/M",
+   "scope": "多团队/关键系统",
+   "function": "全职能",
+   "state": "IC5/M2-M3",
+   "confidence": "低"
+  },
+  {
+   "native": "director",
+   "track": "M",
+   "scope": "职能/业务线",
+   "function": "全职能",
+   "state": "M4-M5",
+   "confidence": "低"
+  },
+  {
+   "native": "高级副总裁/联席CEO",
+   "track": "高管",
+   "scope": "公司/业务群P&L",
+   "function": "集团",
+   "state": "E",
+   "confidence": "高（官方履历）"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "产品开发 entry",
+   "headcount": "约 4,658 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "45.0万-80.0万 (众数 60.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "产品开发 mid",
+   "headcount": "约 3,519 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "75.0万-140万 (众数 100万)",
+   "probability": "57%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "产品开发 senior",
+   "headcount": "约 1,656 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "130万-280万 (众数 190万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "产品开发 director",
+   "headcount": "约 466 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "240万-700万 (众数 400万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "产品开发 exec",
+   "headcount": "约 52 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "600万-2,500万 (众数 1,200万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、营销与履约 entry",
+   "headcount": "约 7,061 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "25.0万-55.0万 (众数 38.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、营销与履约 mid",
+   "headcount": "约 3,075 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "50.0万-100万 (众数 70.0万)",
+   "probability": "5%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、营销与履约 senior",
+   "headcount": "约 968 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "90.0万-200万 (众数 130万)",
+   "probability": "91%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、营销与履约 director",
+   "headcount": "约 262 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "180万-550万 (众数 300万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "销售、营销与履约 exec",
+   "headcount": "约 23 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "500万-1,800万 (众数 900万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "平台运营 entry",
+   "headcount": "约 746 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "30.0万-65.0万 (众数 45.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "平台运营 mid",
+   "headcount": "约 493 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "55.0万-115万 (众数 80.0万)",
+   "probability": "18%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "平台运营 senior",
+   "headcount": "约 194 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "100万-220万 (众数 145万)",
+   "probability": "97%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "平台运营 director",
+   "headcount": "约 55 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "180万-500万 (众数 300万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "平台运营 exec",
+   "headcount": "约 4 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "450万-1,500万 (众数 800万)",
+   "probability": "107%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "管理与行政 entry",
+   "headcount": "约 1,076 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "26.0万-60.0万 (众数 40.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "管理与行政 mid",
+   "headcount": "约 762 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "50.0万-110万 (众数 75.0万)",
+   "probability": "12%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "管理与行政 senior",
+   "headcount": "约 291 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "90.0万-220万 (众数 140万)",
+   "probability": "94%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "管理与行政 director",
+   "headcount": "约 101 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "180万-550万 (众数 320万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "管理与行政 exec",
+   "headcount": "约 11 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "500万-2,200万 (众数 1,000万)",
+   "probability": "100%",
+   "confidence": "inference"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 5,165 / p50 6,336 / p95 7,318 人 (24.9%)",
+  "rows": [
+   {
+    "bucket": "产品开发 mid",
+    "count": "约 1,995 人",
+    "contribution": "31%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "产品开发 senior",
+    "count": "约 1,656 人",
+    "contribution": "26%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "销售、营销与履约 senior",
+    "count": "约 882 人",
+    "contribution": "14%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "产品开发 director",
+    "count": "约 466 人",
+    "contribution": "7%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "管理与行政 senior",
+    "count": "约 273 人",
+    "contribution": "4%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "销售、营销与履约 director",
+    "count": "约 262 人",
+    "contribution": "4%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "平台运营 senior",
+    "count": "约 187 人",
+    "contribution": "3%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "销售、营销与履约 mid",
+    "count": "约 168 人",
+    "contribution": "3%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "管理与行政 director",
+    "count": "约 101 人",
+    "contribution": "2%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "平台运营 mid",
+    "count": "约 89 人",
+    "contribution": "1%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "管理与行政 mid",
+    "count": "约 89 人",
+    "contribution": "1%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "平台运营 director",
+    "count": "约 55 人",
+    "contribution": "1%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "产品开发 exec",
+    "count": "约 52 人",
+    "contribution": "1%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "销售、营销与履约 exec",
+    "count": "约 23 人",
+    "contribution": "0%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "管理与行政 exec",
+    "count": "约 11 人",
+    "contribution": "0%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   },
+   {
+    "bucket": "平台运营 exec",
+    "count": "约 4 人",
+    "contribution": "0%",
+    "uncertainty": "职能人数为披露；职级拆分、现金/股权比例和跨线概率为模型假设"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "推荐/广告排序算法负责人",
+   "market": "220-500万",
+   "economic": "300-900万",
+   "internal": "180-500万",
+   "defensible": "300-500万",
+   "diagnostic": "重合；内部下沿存在留才压力"
+  },
+  {
+   "role": "跨境履约与供应链平台负责人",
+   "market": "180-420万",
+   "economic": "250-800万",
+   "internal": "160-450万",
+   "defensible": "250-420万",
+   "diagnostic": "经济上限显著高于内部带"
+  },
+  {
+   "role": "支付与交易风控负责人",
+   "market": "180-400万",
+   "economic": "220-650万",
+   "internal": "150-400万",
+   "defensible": "220-400万",
+   "diagnostic": "重合；风险暴露支持溢价"
+  },
+  {
+   "role": "资深产品/算法工程师",
+   "market": "90-180万",
+   "economic": "100-240万",
+   "internal": "90-190万",
+   "defensible": "100-180万",
+   "diagnostic": "百万线附近，是主要跨阈值状态"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "产品/工程骨干 → 资深负责人 → 高级副总裁",
+   "高级副总裁 → 联席CEO → 联席董事长/联席CEO"
+  ],
+  "external_path": [
+   "其他电商平台资深工程师 → 资深产品开发",
+   "跨境供应链/支付专家 → 关键平台负责人"
+  ],
+  "first_threshold_state": "产品开发 mid 的上部或全职能 senior；是否跨线高度取决于股权年化价值",
+  "promotion_tenure": "仅8条公开路径，样本不足以计算公司级晋升概率；公开高管路径通常跨3-5年",
+  "senior_hire_mix": "最高管理层更偏内部培养，跨境供应链、合规和支付岗位更可能外部引进"
+ },
+ "governance": [
+  {
+   "metric": "股份支付",
+   "value": "FY2025 79.37亿元",
+   "evidence": "2025 Form 20-F"
+  },
+  {
+   "metric": "员工法定供款",
+   "value": "FY2025 23.67亿元",
+   "evidence": "20-F Note 19"
+  },
+  {
+   "metric": "股份计划",
+   "value": "2015期权计划与2018期权/RSU计划；未披露全体覆盖人数",
+   "evidence": "20-F"
+  },
+  {
+   "metric": "B类股份",
+   "value": "截至2026-03-18无B类普通股流通",
+   "evidence": "20-F share ownership"
+  },
+  {
+   "metric": "合伙人提名权",
+   "value": "相关章程条款修改需95%出席票赞成",
+   "evidence": "SEC备案组织章程"
+  }
+ ],
+ "sensitivity": [
+  "高级层人数±25%是百万TC人数的第一敏感项，预计使p50变化约900-1,300人。",
+  "SBC按会计授予日价值还是报告日市值计量，可使senior/director年化股权区间变化20%-40%。",
+  "完整雇员福利开支未披露，本样例以275亿元包络假设校准；该假设变化10%会重塑全部职级带。",
+  "最需要的新证据是非高管股权覆盖人数、按职级现金薪酬中位数和境外员工地域分布。"
+ ],
+ "evidence": [
+  {
+   "id": "A01",
+   "source": "PDD Holdings 2025 Form 20-F",
+   "date": "2026-04",
+   "status": "披露",
+   "supports": "员工、SBC、法定供款、股份计划和控制结构"
+  },
+  {
+   "id": "A02",
+   "source": "FY2025业绩公告",
+   "date": "2026-03",
+   "status": "披露",
+   "supports": "收入、成本、利润和业务收入"
+  },
+  {
+   "id": "A03",
+   "source": "SEC备案组织章程",
+   "date": "2023-02",
+   "status": "披露",
+   "supports": "PDD Partnership提名权与95%修订门槛"
+  },
+  {
+   "id": "C01",
+   "source": "Levels.fyi中国软件工程师样本",
+   "date": "2026-08",
+   "status": "校准",
+   "supports": "产品开发TC量级"
+  },
+  {
+   "id": "M01",
+   "source": "本报告模型与50,000次蒙特卡洛",
+   "date": "2026-08",
+   "status": "模型",
+   "supports": "跨阈值人数与分布"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "法律/上市结构",
+    "current": "开曼公司，NASDAQ: PDD，外国私人发行人",
+    "historical": "2018年美国上市",
+    "evidence": "20-F/组织章程"
+   },
+   {
+    "item": "股份类别",
+    "current": "截至2026-03-18仅A类普通股流通",
+    "historical": "历史上A/B双层结构",
+    "evidence": "20-F"
+   },
+   {
+    "item": "董事提名控制",
+    "current": "PDD Partnership保留执行董事任命及CEO提名相关权利",
+    "historical": "相关条款自重述章程延续",
+    "evidence": "原始组织章程"
+   },
+   {
+    "item": "修改门槛",
+    "current": "影响合伙人提名权的条款需95%出席票赞成",
+    "historical": "高于普通特别决议门槛",
+    "evidence": "原始组织章程"
+   },
+   {
+    "item": "员工股权工具",
+    "current": "2015期权计划及2018期权/RSU计划",
+    "historical": "持续确认大额SBC",
+    "evidence": "20-F"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "2018-07",
+    "event": "NASDAQ上市",
+    "economic": "员工期权获得上市流动性",
+    "control": "双层股份与创始人控制",
+    "status": "原始文件"
+   },
+   {
+    "date": "2023-02",
+    "event": "公司更名并重述章程",
+    "economic": "集团品牌与跨境业务重组",
+    "control": "合伙人提名权条款延续",
+    "status": "原始文件"
+   },
+   {
+    "date": "2025-12",
+    "event": "赵佳臻任联席董事长",
+    "economic": "供应链投资权重上升",
+    "control": "内部治理角色扩大",
+    "status": "官方公告"
+   },
+   {
+    "date": "2026-03",
+    "event": "B类普通股归零",
+    "economic": "普通股经济权利统一",
+    "control": "合伙人章程权利仍需单独分析",
+    "status": "原始文件"
+   }
+  ]
+ }
+}

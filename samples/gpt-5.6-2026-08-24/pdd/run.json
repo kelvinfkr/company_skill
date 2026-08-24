@@ -1,0 +1,138 @@
+{
+ "company": "拼多多（PDD Holdings）",
+ "language": "zh-CN",
+ "language_confidence": "explicit",
+ "language_signal": "set by --language",
+ "chrome_locale": "zh-CN",
+ "jurisdiction": "us",
+ "jurisdiction_name": "United States",
+ "fiscal_year": "2025",
+ "reference_date": "2025-12-31",
+ "currency": "CNY",
+ "threshold": 1000000.0,
+ "phase_completed": 10,
+ "provisional": true,
+ "provisional_facts": [
+  "employee_benefit_expense modeled, not disclosed"
+ ],
+ "entity": {
+  "legal_name": "PDD Holdings Inc.",
+  "ticker": "NASDAQ:PDD",
+  "domicile": "Cayman Islands",
+  "listing_venue": "NASDAQ",
+  "company_type": "us_listed_foreign_private_issuer",
+  "charter_status": "original"
+ },
+ "facts": {
+  "revenue": {
+   "value": 431845.7,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "gross_profit": {
+   "value": 243043.9,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "operating_profit": {
+   "value": 94624.1,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "net_profit": {
+   "value": 99364.5,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "rnd_expense": {
+   "value": 16496.2,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "sales_expense": {
+   "value": 125287.9,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "admin_expense": {
+   "value": 6635.8,
+   "unit": "CNY_million",
+   "evidence_id": "E01"
+  },
+  "employee_benefit_expense": {
+   "value": 27500.0,
+   "unit": "CNY_million",
+   "evidence_id": "E10"
+  },
+  "sbc_expense": {
+   "value": 7937.0,
+   "unit": "CNY_million",
+   "evidence_id": "E03"
+  },
+  "cash_paid_to_employees": {
+   "value": null,
+   "unit": "CNY_million",
+   "evidence_id": ""
+  }
+ },
+ "facts_count": {
+  "headcount": {
+   "value": 25474,
+   "evidence_id": "E02"
+  },
+  "domestic_headcount": {
+   "value": 23000,
+   "evidence_id": "E02"
+  },
+  "overseas_headcount": {
+   "value": 2474,
+   "evidence_id": "E02"
+  },
+  "rnd_headcount": {
+   "value": 10351,
+   "evidence_id": "E02"
+  },
+  "equity_award_holders": {
+   "value": 8000,
+   "evidence_id": "E10"
+  },
+  "person_grants_last_12m": {
+   "value": 4000,
+   "evidence_id": "E10"
+  }
+ },
+ "segments": [
+  {
+   "name": "在线营销服务及其他",
+   "revenue": 217783.0,
+   "gross_profit": 163337.0,
+   "growth_pct": 10.0,
+   "evidence_id": "E04",
+   "dependency": "推荐/广告排序、商家ROI与用户留存（high）"
+  },
+  {
+   "name": "交易服务",
+   "revenue": 214062.7,
+   "gross_profit": 79706.9,
+   "growth_pct": 9.0,
+   "evidence_id": "E04",
+   "dependency": "跨境履约、风控、支付与供应链网络（high）"
+  }
+ ],
+ "assumptions": {
+  "employer_social_rate": 0.1,
+  "equity_vesting_years": 4,
+  "equity_price_basis": "grant_date/accounting SBC"
+ },
+ "_instructions": "Write the report and all prose in run.language. Fill facts from fetched Tier A/B documents only; amounts in millions of the reporting currency. If a fact is genuinely not public, leave value null and write a line 'NOT AVAILABLE: <fact> - <what you searched>' in analysis_notes.md; for an unlisted entity that satisfies the Phase 1 gate and marks the run provisional.",
+ "generation": {
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24",
+  "purpose": "repository sample"
+ },
+ "checks": {
+  "modelled_tc_total_million": 23490.5,
+  "payroll_envelope_deviation": -0.0867,
+  "envelope_check": "payroll_envelope"
+ }
+}

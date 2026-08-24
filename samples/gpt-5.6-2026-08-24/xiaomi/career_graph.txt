@@ -1,0 +1,12 @@
+外部手机厂商CEO/总裁 -> 小米副总裁(22级) [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+小米副总裁(22级) -> 集团总裁/合伙人 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+外部通信厂商高管 -> 小米副总裁(22级) [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+外部芯片厂商高管 -> 小米高级副总裁 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+小米高级副总裁 -> 集团总裁 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=60 mo
+早期核心员工/部门负责人 -> 小米副总裁(22级) [internal_promotion] n=1, weighted_share=100.0%, median_tenure=96 mo
+小米总监(19-20级) -> 小米副总裁(22级) [internal_promotion] n=1, weighted_share=100.0%, median_tenure=48 mo
+外部车企/供应链高管 -> 小米汽车部门负责人 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+资深专家(18级) -> 总监(19-20级) [internal_promotion] n=1, weighted_share=100.0%, median_tenure=42 mo
+专家/经理(16-17级) -> 资深专家/高级经理(18级) [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+专员(13-15级) -> 专家/经理(16-17级) [internal_promotion] n=1, weighted_share=100.0%, median_tenure=40 mo
+外部大厂P7/T7级工程师 -> 小米16-17级 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo

@@ -1,0 +1,8 @@
+校招研发工程师 -> 项目骨干 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=24 mo
+项目骨干 -> 资深研发/专家 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=30 mo
+资深研发/专家 -> 技术负责人 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+外部清洁电器研发 -> 资深研发/专家 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+外部消费电子产品经理 -> 品类负责人 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+中国区销售负责人 -> 海外区域负责人 [internal_lateral] n=1, weighted_share=100.0%, median_tenure=24 mo
+核心业务负责人 -> 新BU负责人 [internal_lateral] n=1, weighted_share=100.0%, median_tenure=18 mo
+同业高管 -> 事业部负责人 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo

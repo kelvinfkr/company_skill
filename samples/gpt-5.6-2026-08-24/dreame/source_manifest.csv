@@ -1,0 +1,10 @@
+pass,source,url,date,source_type,tier,status
+1_identity_charter,追觅科技官网 About,https://www.dreame.tech/mobileAbout,2026-08-24,official page,B,used
+1_identity_charter,历史章程与股东协议,工商公示系统及公开融资材料,2026-08-24,search log,B,"searched, not found"
+2_business_economics,追觅2025收入口径与组织梳理,https://m.thepaper.cn/newsDetail_forward_33200211,2026-05-20,reputable media,C,used
+3_workforce_payroll,全员黄金奖励员工口径,https://m.amz123.com/t/FPaWaZlv,2026-01-02,media,C,used
+3_workforce_payroll,雇员福利开支/现金薪酬,公司官网、工商年报、融资材料,2026-08-24,search log,B,"searched, not found"
+4_compensation_equity,追觅校招简章,https://www.career.zju.edu.cn/jyxt/comm/common/preview.zf,2023-10-10,official recruiting,B,used
+4_compensation_equity,追觅工资聚合,https://m.jobui.com/company/17105318/salary/,2026-08-23,salary aggregator,E,calibration only
+5_organization_roles,追觅2025秋季招聘与组织说明,https://m.36kr.com/p/3489149971258496,2025-10-08,reputable media,C,used
+6_career_transitions,招聘与管理机制公开报道,https://www.21jingji.com/article/20260127/herald/435504f0085edd1c6e61a3e9a48959d3.html,2026-01-27,reputable media,C,used
