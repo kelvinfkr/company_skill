@@ -1,0 +1,146 @@
+{
+ "company": "任天堂株式会社",
+ "language": "ja",
+ "language_confidence": "explicit",
+ "language_signal": "set by --language",
+ "chrome_locale": "ja",
+ "jurisdiction": "jp",
+ "jurisdiction_name": "Japan",
+ "fiscal_year": "2026",
+ "reference_date": "2026-03-31",
+ "currency": "JPY",
+ "threshold": 20000000.0,
+ "phase_completed": 10,
+ "provisional": true,
+ "provisional_facts": [
+  "employee_benefit_expense modeled, not disclosed"
+ ],
+ "entity": {
+  "legal_name": "任天堂株式会社",
+  "ticker": "TSE:7974",
+  "domicile": "日本・京都",
+  "listing_venue": "東京証券取引所",
+  "company_type": "jp_listed_kabushiki_kaisha",
+  "charter_status": "official_summary"
+ },
+ "facts": {
+  "revenue": {
+   "value": 2313051.0,
+   "unit": "JPY_million",
+   "evidence_id": "E01"
+  },
+  "gross_profit": {
+   "value": 908956.0,
+   "unit": "JPY_million",
+   "evidence_id": "E01"
+  },
+  "operating_profit": {
+   "value": 360117.0,
+   "unit": "JPY_million",
+   "evidence_id": "E01"
+  },
+  "net_profit": {
+   "value": 424056.0,
+   "unit": "JPY_million",
+   "evidence_id": "E01"
+  },
+  "rnd_expense": {
+   "value": null,
+   "unit": "JPY_million",
+   "evidence_id": ""
+  },
+  "sales_expense": {
+   "value": null,
+   "unit": "JPY_million",
+   "evidence_id": ""
+  },
+  "admin_expense": {
+   "value": null,
+   "unit": "JPY_million",
+   "evidence_id": ""
+  },
+  "employee_benefit_expense": {
+   "value": 100000.0,
+   "unit": "JPY_million",
+   "evidence_id": "E09"
+  },
+  "sbc_expense": {
+   "value": null,
+   "unit": "JPY_million",
+   "evidence_id": ""
+  },
+  "cash_paid_to_employees": {
+   "value": null,
+   "unit": "JPY_million",
+   "evidence_id": ""
+  }
+ },
+ "facts_count": {
+  "headcount": {
+   "value": 8666,
+   "evidence_id": "E02"
+  },
+  "domestic_headcount": {
+   "value": 5000,
+   "evidence_id": "E02"
+  },
+  "overseas_headcount": {
+   "value": 3666,
+   "evidence_id": "E02"
+  },
+  "rnd_headcount": {
+   "value": 3600,
+   "evidence_id": "E06"
+  },
+  "equity_award_holders": {
+   "value": null,
+   "evidence_id": ""
+  },
+  "person_grants_last_12m": {
+   "value": null,
+   "evidence_id": ""
+  }
+ },
+ "segments": [
+  {
+   "name": "ゲームソフト・デジタル",
+   "revenue": 790000.0,
+   "gross_profit": 625000.0,
+   "growth_pct": 25.0,
+   "evidence_id": "E05",
+   "dependency": "ゲーム制作、エンジン、オンライン基盤（extreme）"
+  },
+  {
+   "name": "ハードウェア",
+   "revenue": 1449551.0,
+   "gross_profit": 232506.0,
+   "growth_pct": 100.0,
+   "evidence_id": "E04",
+   "dependency": "SoC、量産品質、供給網（high）"
+  },
+  {
+   "name": "IP関連",
+   "revenue": 73500.0,
+   "gross_profit": 51450.0,
+   "growth_pct": -9.7,
+   "evidence_id": "E05",
+   "dependency": "IP企画、映画・ライセンス（high）"
+  }
+ ],
+ "assumptions": {
+  "employer_social_rate": 0.16,
+  "equity_vesting_years": 3,
+  "equity_price_basis": "grant-date / disclosed award value"
+ },
+ "_instructions": "Write the report and all prose in run.language. Fill facts from fetched Tier A/B documents only; amounts in millions of the reporting currency. If a fact is genuinely not public, leave value null and write a line 'NOT AVAILABLE: <fact> - <what you searched>' in analysis_notes.md; for an unlisted entity that satisfies the Phase 1 gate and marks the run provisional.",
+ "generation": {
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24",
+  "purpose": "repository sample"
+ },
+ "checks": {
+  "modelled_tc_total_million": 90711.4,
+  "payroll_envelope_deviation": 0.0523,
+  "envelope_check": "payroll_envelope"
+ }
+}

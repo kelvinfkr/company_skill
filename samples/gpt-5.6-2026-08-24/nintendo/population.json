@@ -1,0 +1,188 @@
+{
+  "company": "任天堂株式会社",
+  "reference_date": "2026-03-31",
+  "threshold": {
+    "amount": 20000000.0,
+    "currency": "JPY"
+  },
+  "samples": 50000,
+  "estimated_headcount": {
+    "p05": 8434.875962738464,
+    "p50": 8671.24580688952,
+    "p95": 8909.363870108515,
+    "mean": 8671.247622245772
+  },
+  "estimated_above_threshold": {
+    "p05": 507.3152985279937,
+    "p50": 681.1806076043829,
+    "p95": 882.8927899708713,
+    "mean": 686.495446050279
+  },
+  "share_above_threshold": {
+    "p05": 0.05843118227473246,
+    "p50": 0.07857487775334687,
+    "p95": 0.10189425203799352
+  },
+  "buckets": [
+    {
+      "name": "ソフトウェア・ゲーム開発 entry",
+      "function": "ソフトウェア・ゲーム開発",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "ソフトウェア・ゲーム開発 mid",
+      "function": "ソフトウェア・ゲーム開発",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "ソフトウェア・ゲーム開発 senior",
+      "function": "ソフトウェア・ゲーム開発",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 70.34063925688704,
+      "above_threshold_p50": 224.26869226829285,
+      "above_threshold_p95": 410.9510355178247
+    },
+    {
+      "name": "ソフトウェア・ゲーム開発 director",
+      "function": "ソフトウェア・ゲーム開発",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 145.03778758356592,
+      "above_threshold_p50": 157.79791648092075,
+      "above_threshold_p95": 170.71068174765182
+    },
+    {
+      "name": "ソフトウェア・ゲーム開発 executive",
+      "function": "ソフトウェア・ゲーム開発",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 16.63414032601254,
+      "above_threshold_p50": 18.00770031391545,
+      "above_threshold_p95": 19.370778947053
+    },
+    {
+      "name": "ハードウェア・デザイン entry",
+      "function": "ハードウェア・デザイン",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "ハードウェア・デザイン mid",
+      "function": "ハードウェア・デザイン",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "ハードウェア・デザイン senior",
+      "function": "ハードウェア・デザイン",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 25.06578074668059,
+      "above_threshold_p50": 82.64668121065372,
+      "above_threshold_p95": 160.8707419527326
+    },
+    {
+      "name": "ハードウェア・デザイン director",
+      "function": "ハードウェア・デザイン",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 60.71428508307624,
+      "above_threshold_p50": 68.45159616725492,
+      "above_threshold_p95": 76.12560759710993
+    },
+    {
+      "name": "ハードウェア・デザイン executive",
+      "function": "ハードウェア・デザイン",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 8.31512366061368,
+      "above_threshold_p50": 9.00048554715613,
+      "above_threshold_p95": 9.685019254329086
+    },
+    {
+      "name": "営業・管理・IP entry",
+      "function": "営業・管理・IP",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "営業・管理・IP mid",
+      "function": "営業・管理・IP",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "営業・管理・IP senior",
+      "function": "営業・管理・IP",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 11.487354489946085,
+      "above_threshold_p50": 43.53514106610926,
+      "above_threshold_p95": 96.16160240846301
+    },
+    {
+      "name": "営業・管理・IP director",
+      "function": "営業・管理・IP",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 51.37658750254672,
+      "above_threshold_p50": 58.63678610536243,
+      "above_threshold_p95": 65.15831550670055
+    },
+    {
+      "name": "営業・管理・IP executive",
+      "function": "営業・管理・IP",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 8.315933397892698,
+      "above_threshold_p50": 8.999250491648592,
+      "above_threshold_p95": 9.688735854045149
+    },
+    {
+      "name": "運営・顧客支援 support",
+      "function": "運営・顧客支援",
+      "level": "support",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    }
+  ]
+}

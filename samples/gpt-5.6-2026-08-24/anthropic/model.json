@@ -1,0 +1,433 @@
+{
+ "company": "Anthropic PBC",
+ "reference_date": "2026-08-24",
+ "threshold": {
+  "amount": 250000.0,
+  "currency": "USD"
+ },
+ "workforce": {
+  "low": 2450,
+  "mode": 2500,
+  "high": 2550
+ },
+ "buckets": [
+  {
+   "name": "Research and engineering entry",
+   "function": "Research and engineering",
+   "level": "entry",
+   "headcount": {
+    "low": 138,
+    "mode": 168,
+    "high": 198
+   },
+   "tc": {
+    "low": 180000,
+    "mode": 230000,
+    "high": 300000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.2976,
+    "high": 0.9955
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Research and engineering mid",
+   "function": "Research and engineering",
+   "level": "mid",
+   "headcount": {
+    "low": 345,
+    "mode": 420,
+    "high": 495
+   },
+   "tc": {
+    "low": 240000,
+    "mode": 330000,
+    "high": 480000
+   },
+   "p_exceed": {
+    "low": 0.2527,
+    "mode": 0.9954,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Research and engineering senior",
+   "function": "Research and engineering",
+   "level": "senior",
+   "headcount": {
+    "low": 414,
+    "mode": 504,
+    "high": 594
+   },
+   "tc": {
+    "low": 350000,
+    "mode": 520000,
+    "high": 800000
+   },
+   "p_exceed": {
+    "low": 0.9843,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Research and engineering staff",
+   "function": "Research and engineering",
+   "level": "staff",
+   "headcount": {
+    "low": 230,
+    "mode": 280,
+    "high": 330
+   },
+   "tc": {
+    "low": 600000,
+    "mode": 1000000,
+    "high": 1800000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Research and engineering executive",
+   "function": "Research and engineering",
+   "level": "executive",
+   "headcount": {
+    "low": 23,
+    "mode": 28,
+    "high": 33
+   },
+   "tc": {
+    "low": 1500000,
+    "mode": 3500000,
+    "high": 8000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Product and applied AI entry",
+   "function": "Product and applied AI",
+   "level": "entry",
+   "headcount": {
+    "low": 45,
+    "mode": 55,
+    "high": 70
+   },
+   "tc": {
+    "low": 170000,
+    "mode": 220000,
+    "high": 290000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.1905,
+    "high": 0.9616
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Product and applied AI mid",
+   "function": "Product and applied AI",
+   "level": "mid",
+   "headcount": {
+    "low": 144,
+    "mode": 176,
+    "high": 224
+   },
+   "tc": {
+    "low": 230000,
+    "mode": 310000,
+    "high": 450000
+   },
+   "p_exceed": {
+    "low": 0.1388,
+    "mode": 0.9773,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Product and applied AI senior",
+   "function": "Product and applied AI",
+   "level": "senior",
+   "headcount": {
+    "low": 171,
+    "mode": 209,
+    "high": 266
+   },
+   "tc": {
+    "low": 330000,
+    "mode": 480000,
+    "high": 720000
+   },
+   "p_exceed": {
+    "low": 0.949,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Product and applied AI staff",
+   "function": "Product and applied AI",
+   "level": "staff",
+   "headcount": {
+    "low": 81,
+    "mode": 99,
+    "high": 126
+   },
+   "tc": {
+    "low": 550000,
+    "mode": 900000,
+    "high": 1500000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Product and applied AI executive",
+   "function": "Product and applied AI",
+   "level": "executive",
+   "headcount": {
+    "low": 9,
+    "mode": 11,
+    "high": 14
+   },
+   "tc": {
+    "low": 1400000,
+    "mode": 3000000,
+    "high": 7000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Go-to-market entry",
+   "function": "Go-to-market",
+   "level": "entry",
+   "headcount": {
+    "low": 48,
+    "mode": 56,
+    "high": 72
+   },
+   "tc": {
+    "low": 120000,
+    "mode": 170000,
+    "high": 240000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.3577
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Go-to-market mid",
+   "function": "Go-to-market",
+   "level": "mid",
+   "headcount": {
+    "low": 114,
+    "mode": 133,
+    "high": 171
+   },
+   "tc": {
+    "low": 180000,
+    "mode": 260000,
+    "high": 380000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.6937,
+    "high": 0.9983
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Go-to-market senior",
+   "function": "Go-to-market",
+   "level": "senior",
+   "headcount": {
+    "low": 90,
+    "mode": 105,
+    "high": 135
+   },
+   "tc": {
+    "low": 260000,
+    "mode": 400000,
+    "high": 650000
+   },
+   "p_exceed": {
+    "low": 0.7156,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Go-to-market director",
+   "function": "Go-to-market",
+   "level": "director",
+   "headcount": {
+    "low": 42,
+    "mode": 49,
+    "high": 63
+   },
+   "tc": {
+    "low": 450000,
+    "mode": 750000,
+    "high": 1300000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Go-to-market executive",
+   "function": "Go-to-market",
+   "level": "executive",
+   "headcount": {
+    "low": 6,
+    "mode": 7,
+    "high": 9
+   },
+   "tc": {
+    "low": 1200000,
+    "mode": 2500000,
+    "high": 6000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Safety, policy and operations entry",
+   "function": "Safety, policy and operations",
+   "level": "entry",
+   "headcount": {
+    "low": 32,
+    "mode": 40,
+    "high": 52
+   },
+   "tc": {
+    "low": 110000,
+    "mode": 160000,
+    "high": 220000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.1836
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Safety, policy and operations mid",
+   "function": "Safety, policy and operations",
+   "level": "mid",
+   "headcount": {
+    "low": 67,
+    "mode": 84,
+    "high": 109
+   },
+   "tc": {
+    "low": 170000,
+    "mode": 240000,
+    "high": 340000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.4765,
+    "high": 0.9806
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Safety, policy and operations senior",
+   "function": "Safety, policy and operations",
+   "level": "senior",
+   "headcount": {
+    "low": 48,
+    "mode": 60,
+    "high": 78
+   },
+   "tc": {
+    "low": 250000,
+    "mode": 380000,
+    "high": 600000
+   },
+   "p_exceed": {
+    "low": 0.6025,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Safety, policy and operations director",
+   "function": "Safety, policy and operations",
+   "level": "director",
+   "headcount": {
+    "low": 13,
+    "mode": 16,
+    "high": 21
+   },
+   "tc": {
+    "low": 420000,
+    "mode": 700000,
+    "high": 1200000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  }
+ ]
+}

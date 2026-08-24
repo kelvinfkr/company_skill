@@ -1,0 +1,194 @@
+{
+ "tc_uncertainty_pct": 0.22,
+ "functions": [
+  {
+   "name": "Produktion und Logistik",
+   "headcount": {
+    "low": 65000,
+    "mode": 70000,
+    "high": 75000
+   },
+   "native_bands": [
+    "tarif",
+    "professional",
+    "senior",
+    "management",
+    "executive"
+   ],
+   "shares": [
+    0.62,
+    0.25,
+    0.1,
+    0.027,
+    0.003
+   ],
+   "tc": [
+    {
+     "low": 45000,
+     "mode": 62000,
+     "high": 82000
+    },
+    {
+     "low": 65000,
+     "mode": 85000,
+     "high": 110000
+    },
+    {
+     "low": 95000,
+     "mode": 125000,
+     "high": 170000
+    },
+    {
+     "low": 140000,
+     "mode": 200000,
+     "high": 320000
+    },
+    {
+     "low": 350000,
+     "mode": 700000,
+     "high": 1600000
+    }
+   ]
+  },
+  {
+   "name": "Forschung, Entwicklung und Software",
+   "headcount": {
+    "low": 22000,
+    "mode": 25000,
+    "high": 28000
+   },
+   "native_bands": [
+    "entry",
+    "professional",
+    "senior",
+    "management",
+    "executive"
+   ],
+   "shares": [
+    0.2,
+    0.43,
+    0.27,
+    0.09,
+    0.01
+   ],
+   "tc": [
+    {
+     "low": 60000,
+     "mode": 78000,
+     "high": 100000
+    },
+    {
+     "low": 80000,
+     "mode": 105000,
+     "high": 140000
+    },
+    {
+     "low": 115000,
+     "mode": 155000,
+     "high": 220000
+    },
+    {
+     "low": 180000,
+     "mode": 270000,
+     "high": 450000
+    },
+    {
+     "low": 500000,
+     "mode": 1000000,
+     "high": 2200000
+    }
+   ]
+  },
+  {
+   "name": "Vertrieb, Verwaltung und Financial Services",
+   "headcount": {
+    "low": 32000,
+    "mode": 35000,
+    "high": 38000
+   },
+   "native_bands": [
+    "entry",
+    "professional",
+    "senior",
+    "management",
+    "executive"
+   ],
+   "shares": [
+    0.27,
+    0.45,
+    0.2,
+    0.07,
+    0.01
+   ],
+   "tc": [
+    {
+     "low": 50000,
+     "mode": 68000,
+     "high": 90000
+    },
+    {
+     "low": 70000,
+     "mode": 95000,
+     "high": 130000
+    },
+    {
+     "low": 105000,
+     "mode": 145000,
+     "high": 210000
+    },
+    {
+     "low": 170000,
+     "mode": 260000,
+     "high": 430000
+    },
+    {
+     "low": 480000,
+     "mode": 950000,
+     "high": 2100000
+    }
+   ]
+  },
+  {
+   "name": "Technische Spezialisten und Führung",
+   "headcount": {
+    "low": 21500,
+    "mode": 24540,
+    "high": 27500
+   },
+   "native_bands": [
+    "specialist",
+    "lead",
+    "director",
+    "executive"
+   ],
+   "shares": [
+    0.48,
+    0.34,
+    0.15,
+    0.03
+   ],
+   "tc": [
+    {
+     "low": 90000,
+     "mode": 120000,
+     "high": 160000
+    },
+    {
+     "low": 125000,
+     "mode": 170000,
+     "high": 240000
+    },
+    {
+     "low": 210000,
+     "mode": 320000,
+     "high": 550000
+    },
+    {
+     "low": 500000,
+     "mode": 1000000,
+     "high": 2400000
+    }
+   ]
+  }
+ ]
+}

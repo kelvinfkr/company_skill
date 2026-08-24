@@ -1,0 +1,64 @@
+{
+ "roles": [
+  {
+   "role": "Frontier research lead",
+   "market": [
+    600000,
+    1400000
+   ],
+   "economic": [
+    900000,
+    3000000
+   ],
+   "internal": [
+    550000,
+    1500000
+   ]
+  },
+  {
+   "role": "Inference systems lead",
+   "market": [
+    500000,
+    1200000
+   ],
+   "economic": [
+    800000,
+    2400000
+   ],
+   "internal": [
+    500000,
+    1300000
+   ]
+  },
+  {
+   "role": "Claude Code product lead",
+   "market": [
+    450000,
+    1000000
+   ],
+   "economic": [
+    700000,
+    2200000
+   ],
+   "internal": [
+    450000,
+    1100000
+   ]
+  },
+  {
+   "role": "Applied AI enterprise lead",
+   "market": [
+    400000,
+    900000
+   ],
+   "economic": [
+    600000,
+    1800000
+   ],
+   "internal": [
+    400000,
+    950000
+   ]
+  }
+ ]
+}

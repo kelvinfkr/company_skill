@@ -1,0 +1,605 @@
+{
+ "meta": {
+  "company": "Anthropic PBC",
+  "language": "en",
+  "reference_date": "2026-08-24",
+  "entity_type": "Private Delaware public-benefit corporation",
+  "scope": "Anthropic PBC globally; workforce and function mix reconstructed from public reporting and job postings",
+  "threshold": "Annual pre-tax TC >= 250,000 USD (base + cash bonus + annualised vested equity; equity priced on a latest preferred valuation with 70% private-market discount basis)",
+  "confidence": "Low (provisional estimate)",
+  "subtitle": "Talent economics reconstructed from public data",
+  "provisional_note": "Provisional: employee_benefit_expense, gross_profit was not publicly available. This estimate rests on modelled assumptions and must be read as a range, not a measurement.",
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24"
+ },
+ "executive": {
+  "diagnosis": "Anthropic is an unusually senior, equity-heavy frontier-lab organisation: the model places most employees above $250k TC, but private-equity value, headcount, revenue run-rate, and payroll are all provisional rather than audited.",
+  "metrics": [
+   {
+    "label": "Full-time employees",
+    "value": "approx. 2,500 employees"
+   },
+   {
+    "label": "R&D employees",
+    "value": "approx. 1,400 employees / 56%"
+   },
+   {
+    "label": "Payroll cost per employee (incl. equity)",
+    "value": "about $577k (modelled TC, not disclosed payroll)"
+   },
+   {
+    "label": "Median TC (inferred)",
+    "value": "USD432k"
+   },
+   {
+    "label": "P90 TC (inferred)",
+    "value": "USD1.0M"
+   },
+   {
+    "label": "Above threshold (p50)",
+    "value": "approx. 2,034 employees"
+   },
+   {
+    "label": "p05-p95",
+    "value": "1,840-approx. 2,211 employees"
+   },
+   {
+    "label": "Share above threshold",
+    "value": "80.1%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "Revenue",
+    "value": "USD65.0bn",
+    "type": "observed_fact",
+    "evidence": "E03"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "Enterprise API and Claude platform",
+    "revenue": "USD45.0bn",
+    "gross_profit": "Not publicly available",
+    "growth": "500.0%",
+    "dependency": "frontier models, inference efficiency, applied AI (extreme)"
+   },
+   {
+    "segment": "Claude Code and developer tools",
+    "revenue": "USD20.0bn",
+    "gross_profit": "Not publicly available",
+    "growth": "1,000.0%",
+    "dependency": "coding research, agent systems, developer experience (extreme)"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "Enterprise API",
+   "process": "Frontier model research",
+   "role": "Frontier research lead",
+   "dependency": "extreme",
+   "why": "Capability and reliability define product value and price"
+  },
+  {
+   "profit_pool": "Enterprise API",
+   "process": "Inference efficiency",
+   "role": "Inference systems lead",
+   "dependency": "extreme",
+   "why": "Latency and compute cost directly shape gross economics"
+  },
+  {
+   "profit_pool": "Claude Code",
+   "process": "Agentic coding product",
+   "role": "Claude Code product/engineering lead",
+   "dependency": "extreme",
+   "why": "Developer workflow quality drives adoption and retention"
+  },
+  {
+   "profit_pool": "Enterprise deployment",
+   "process": "Applied AI and reliability",
+   "role": "Applied AI enterprise lead",
+   "dependency": "high",
+   "why": "Deployment success converts model capability into durable contracts"
+  }
+ ],
+ "organization": [
+  {
+   "native": "entry (reconstructed)",
+   "track": "IC",
+   "scope": "component",
+   "function": "research/engineering",
+   "state": "entry",
+   "confidence": "low"
+  },
+  {
+   "native": "mid (reconstructed)",
+   "track": "IC/M",
+   "scope": "system/project",
+   "function": "all",
+   "state": "mid",
+   "confidence": "medium"
+  },
+  {
+   "native": "senior",
+   "track": "IC/M",
+   "scope": "critical system/team",
+   "function": "research/product/GTM",
+   "state": "senior",
+   "confidence": "medium"
+  },
+  {
+   "native": "staff/director",
+   "track": "IC/M",
+   "scope": "multi-team/platform",
+   "function": "all",
+   "state": "staff/director",
+   "confidence": "medium"
+  },
+  {
+   "native": "executive",
+   "track": "leadership",
+   "scope": "company/function",
+   "function": "group",
+   "state": "executive",
+   "confidence": "high"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "Research and engineering entry",
+   "headcount": "approx. 168 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "180k-300k (mode 230k)",
+   "probability": "40%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Research and engineering mid",
+   "headcount": "approx. 420 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "240k-480k (mode 330k)",
+   "probability": "77%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Research and engineering senior",
+   "headcount": "approx. 504 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "350k-800k (mode 520k)",
+   "probability": "99%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Research and engineering staff",
+   "headcount": "approx. 280 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "600k-1.8M (mode 1.0M)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Research and engineering executive",
+   "headcount": "approx. 28 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "1.5M-8.0M (mode 3.5M)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Product and applied AI entry",
+   "headcount": "approx. 55 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "170k-290k (mode 220k)",
+   "probability": "36%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Product and applied AI mid",
+   "headcount": "approx. 176 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "230k-450k (mode 310k)",
+   "probability": "75%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Product and applied AI senior",
+   "headcount": "approx. 209 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "330k-720k (mode 480k)",
+   "probability": "101%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Product and applied AI staff",
+   "headcount": "approx. 99 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "550k-1.5M (mode 900k)",
+   "probability": "102%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Product and applied AI executive",
+   "headcount": "approx. 11 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "1.4M-7.0M (mode 3.0M)",
+   "probability": "102%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Go-to-market entry",
+   "headcount": "approx. 56 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "120k-240k (mode 170k)",
+   "probability": "11%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Go-to-market mid",
+   "headcount": "approx. 133 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "180k-380k (mode 260k)",
+   "probability": "61%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Go-to-market senior",
+   "headcount": "approx. 105 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "260k-650k (mode 400k)",
+   "probability": "94%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Go-to-market director",
+   "headcount": "approx. 49 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "450k-1.3M (mode 750k)",
+   "probability": "104%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Go-to-market executive",
+   "headcount": "approx. 7 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "1.2M-6.0M (mode 2.5M)",
+   "probability": "104%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Safety, policy and operations entry",
+   "headcount": "approx. 40 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "110k-220k (mode 160k)",
+   "probability": "5%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Safety, policy and operations mid",
+   "headcount": "approx. 84 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "170k-340k (mode 240k)",
+   "probability": "50%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Safety, policy and operations senior",
+   "headcount": "approx. 60 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "250k-600k (mode 380k)",
+   "probability": "89%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Safety, policy and operations director",
+   "headcount": "approx. 16 employees",
+   "cash": "—",
+   "equity": "—",
+   "total": "420k-1.2M (mode 700k)",
+   "probability": "103%",
+   "confidence": "inference"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 1,840 / p50 2,034 / p95 2,211 employees (80.1%)",
+  "rows": [
+   {
+    "bucket": "Research and engineering senior",
+    "count": "approx. 501 employees",
+    "contribution": "25%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Research and engineering mid",
+    "count": "approx. 324 employees",
+    "contribution": "16%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Research and engineering staff",
+    "count": "approx. 280 employees",
+    "contribution": "14%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Product and applied AI senior",
+    "count": "approx. 211 employees",
+    "contribution": "10%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Product and applied AI mid",
+    "count": "approx. 133 employees",
+    "contribution": "7%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Product and applied AI staff",
+    "count": "approx. 101 employees",
+    "contribution": "5%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Go-to-market senior",
+    "count": "approx. 99 employees",
+    "contribution": "5%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Go-to-market mid",
+    "count": "approx. 81 employees",
+    "contribution": "4%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Research and engineering entry",
+    "count": "approx. 68 employees",
+    "contribution": "3%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Safety, policy and operations senior",
+    "count": "approx. 54 employees",
+    "contribution": "3%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Go-to-market director",
+    "count": "approx. 51 employees",
+    "contribution": "3%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Safety, policy and operations mid",
+    "count": "approx. 42 employees",
+    "contribution": "2%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Research and engineering executive",
+    "count": "approx. 28 employees",
+    "contribution": "1%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Product and applied AI entry",
+    "count": "approx. 20 employees",
+    "contribution": "1%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Safety, policy and operations director",
+    "count": "approx. 17 employees",
+    "contribution": "1%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Product and applied AI executive",
+    "count": "approx. 11 employees",
+    "contribution": "1%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Go-to-market executive",
+    "count": "approx. 7 employees",
+    "contribution": "0%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Go-to-market entry",
+    "count": "approx. 6 employees",
+    "contribution": "0%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   },
+   {
+    "bucket": "Safety, policy and operations entry",
+    "count": "approx. 2 employees",
+    "contribution": "0%",
+    "uncertainty": "Headcount, level mix, private-equity value, and threshold crossing are model estimates, not company measurements"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "Frontier research lead",
+   "market": "$600k-$1.4m",
+   "economic": "$900k-$3.0m",
+   "internal": "$550k-$1.5m",
+   "defensible": "$900k-$1.4m",
+   "diagnostic": "Overlap; equity risk must remain explicit"
+  },
+  {
+   "role": "Inference systems lead",
+   "market": "$500k-$1.2m",
+   "economic": "$800k-$2.4m",
+   "internal": "$500k-$1.3m",
+   "defensible": "$800k-$1.2m",
+   "diagnostic": "Compute economics support a premium"
+  },
+  {
+   "role": "Claude Code product lead",
+   "market": "$450k-$1.0m",
+   "economic": "$700k-$2.2m",
+   "internal": "$450k-$1.1m",
+   "defensible": "$700k-$1.0m",
+   "diagnostic": "Product ownership is economically scarce"
+  },
+  {
+   "role": "Applied AI enterprise lead",
+   "market": "$400k-$900k",
+   "economic": "$600k-$1.8m",
+   "internal": "$400k-$950k",
+   "defensible": "$600k-$900k",
+   "diagnostic": "Revenue conversion supports variable pay"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "Research scientist → senior researcher → research lead",
+   "Engineer → staff engineer → platform lead"
+  ],
+  "external_path": [
+   "Peer-lab researcher → senior researcher",
+   "Enterprise AI leader → applied AI lead"
+  ],
+  "first_threshold_state": "Upper-mid or senior technical/applied-AI roles; equity valuation is decisive",
+  "promotion_tenure": "The eight public paths suggest 2-3 year steps, but they are observed transitions, not promotion probabilities",
+  "senior_hire_mix": "Core safety culture favours internal development; rapid product, GTM, and international growth requires external leaders"
+ },
+ "governance": [
+  {
+   "metric": "Legal form",
+   "value": "Delaware public-benefit corporation",
+   "evidence": "Anthropic company materials"
+  },
+  {
+   "metric": "Mission governance",
+   "value": "Long-Term Benefit Trust holds Class T governance rights",
+   "evidence": "Anthropic Trust announcement"
+  },
+  {
+   "metric": "Latest financing",
+   "value": "$65bn Series H at $965bn post-money",
+   "evidence": "Anthropic, 2026-05-28"
+  },
+  {
+   "metric": "Employee equity",
+   "value": "Participation, strike prices, and waterfall are not public",
+   "evidence": "Search log"
+  }
+ ],
+ "sensitivity": [
+  "Changing the private-equity discount from 70% to 50% materially lifts senior and staff TC; nominal valuation is never treated as cash.",
+  "A ±25% change in senior technical share moves the $250k p50 count by roughly 250-400 people.",
+  "The $65bn figure is an annualised run-rate, not audited revenue; TC/revenue is therefore only a weak affordability check.",
+  "Audited payroll, grant participation, strike prices, and a cap-table waterfall would narrow the interval most."
+ ],
+ "evidence": [
+  {
+   "id": "B01",
+   "source": "Anthropic company, funding, and Trust announcements",
+   "date": "2023-2026",
+   "status": "official",
+   "supports": "PBC mission, governance, financing, valuation"
+  },
+  {
+   "id": "C01",
+   "source": "Reuters revenue run-rate report",
+   "date": "2026-08-17",
+   "status": "reported, unaudited",
+   "supports": "commercial scale anchor"
+  },
+  {
+   "id": "C02",
+   "source": "Reputable office/headcount reporting",
+   "date": "2026",
+   "status": "reported estimate",
+   "supports": "workforce scale"
+  },
+  {
+   "id": "B02",
+   "source": "Anthropic careers and office announcements",
+   "date": "2025-2026",
+   "status": "official calibration",
+   "supports": "roles, geography, hiring mix"
+  },
+  {
+   "id": "M01",
+   "source": "This report's 50,000-draw simulation",
+   "date": "2026-08-24",
+   "status": "model",
+   "supports": "threshold population and TC distribution"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "Legal form",
+    "current": "Delaware public-benefit corporation",
+    "historical": "Founded in 2021",
+    "evidence": "Official company materials"
+   },
+   {
+    "item": "Mission mechanism",
+    "current": "Long-Term Benefit Trust and Class T governance rights",
+    "historical": "Designed to strengthen long-term public-benefit oversight",
+    "evidence": "Official Trust announcement"
+   },
+   {
+    "item": "Economic ownership",
+    "current": "Private preferred/common capital structure",
+    "historical": "Multiple financing rounds through Series H",
+    "evidence": "Official funding releases"
+   },
+   {
+    "item": "Employee incentives",
+    "current": "Private equity is important but detailed terms are not public",
+    "historical": "Rapid valuation changes create retention and fairness pressure",
+    "evidence": "Careers/funding materials"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "2021",
+    "event": "Anthropic founded",
+    "economic": "Frontier AI research company",
+    "control": "PBC structure",
+    "status": "official summary"
+   },
+   {
+    "date": "2023",
+    "event": "Long-Term Benefit Trust announced",
+    "economic": "Mission protection",
+    "control": "Class T governance mechanism",
+    "status": "official summary"
+   },
+   {
+    "date": "2026-05",
+    "event": "Series H financing",
+    "economic": "$965bn post-money valuation",
+    "control": "Private preferred capital expands",
+    "status": "official release"
+   }
+  ]
+ }
+}

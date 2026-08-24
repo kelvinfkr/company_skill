@@ -375,7 +375,15 @@ def build_docx(data: dict, out_docx: Path, language: str | None = None):
     LOC = i18n.load_locale(lang)
     RTL = i18n.is_rtl(LOC)
     FONT_MAIN, FONT_SERIF = i18n.fonts(LOC)
-    warn = i18n.font_warning(LOC)
+    private_font_dir = os.environ.get('CTE_FONT_DIR')
+    private_fonts = Path(private_font_dir) if private_font_dir else None
+    if (private_fonts and private_fonts.is_dir()
+            and LOC.get('meta', {}).get('script') in ('hans', 'hant', 'jpan', 'kore')
+            and any(private_fonts.glob('NotoSansCJK*.otf'))):
+        FONT_MAIN = FONT_SERIF = 'Noto Sans CJK SC'
+        warn = None
+    else:
+        warn = i18n.font_warning(LOC)
     if warn:
         print(f"[!!] {warn}", file=sys.stderr)
     if LOC.get("_chrome_is_fallback"):
@@ -498,6 +506,15 @@ def convert_to_pdf(docx_path: Path, pdf_path: Path):
     with tempfile.TemporaryDirectory(prefix='cte_lo_') as td:
         env = os.environ.copy()
         env['HOME'] = td
+        private_font_dir = env.get('CTE_FONT_DIR')
+        if private_font_dir and Path(private_font_dir).is_dir():
+            private_fonts = Path(td) / '.fonts'
+            shutil.copytree(private_font_dir, private_fonts)
+            env['SAL_PRIVATE_FONTPATH'] = str(private_fonts)
+            fc_cache = shutil.which('fc-cache')
+            if fc_cache:
+                subprocess.run([fc_cache, '-f', str(private_fonts)], check=True,
+                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env)
         outdir = Path(td) / 'out'
         outdir.mkdir()
         exe = next((e for e in ('libreoffice', 'soffice',

@@ -1,0 +1,8 @@
+開発者 -> シニア開発者 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=48 mo
+シニア開発者 -> ゲームディレクター [internal_promotion] n=1, weighted_share=100.0%, median_tenure=60 mo
+ゲームディレクター -> 執行役員 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=84 mo
+ハードウェア開発 -> 開発部門責任者 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=72 mo
+営業企画 -> 地域法人責任者 [internal_promotion] n=1, weighted_share=100.0%, median_tenure=60 mo
+外部半導体専門家 -> SoC責任者 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+外部映像プロデューサー -> IP事業責任者 [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+地域法人責任者 -> 本社執行役員 [internal_lateral] n=1, weighted_share=100.0%, median_tenure=48 mo

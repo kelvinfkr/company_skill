@@ -1,0 +1,218 @@
+{
+  "company": "BMW AG",
+  "reference_date": "2025-12-31",
+  "threshold": {
+    "amount": 150000.0,
+    "currency": "EUR"
+  },
+  "samples": 50000,
+  "estimated_headcount": {
+    "p05": 151451.67123315344,
+    "p50": 154518.78071817142,
+    "p95": 157576.53407113787,
+    "mean": 154516.87470774844
+  },
+  "estimated_above_threshold": {
+    "p05": 25057.03656739131,
+    "p50": 29687.51662355696,
+    "p95": 34323.33023576107,
+    "mean": 29677.44674834759
+  },
+  "share_above_threshold": {
+    "p05": 0.1621146229270635,
+    "p50": 0.19202272143334975,
+    "p95": 0.2220159072286823
+  },
+  "buckets": [
+    {
+      "name": "Produktion und Logistik tarif",
+      "function": "Produktion und Logistik",
+      "level": "tarif",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "Produktion und Logistik professional",
+      "function": "Produktion und Logistik",
+      "level": "professional",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "Produktion und Logistik senior",
+      "function": "Produktion und Logistik",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 433.81289478094783,
+      "above_threshold_p50": 1638.5275470151037,
+      "above_threshold_p95": 3630.3028362919467
+    },
+    {
+      "name": "Produktion und Logistik management",
+      "function": "Produktion und Logistik",
+      "level": "management",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 1506.3377419377305,
+      "above_threshold_p50": 1738.7811361045042,
+      "above_threshold_p95": 1903.5308310778007
+    },
+    {
+      "name": "Produktion und Logistik executive",
+      "function": "Produktion und Logistik",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 199.71241867813063,
+      "above_threshold_p50": 209.9767779918256,
+      "above_threshold_p95": 220.22605963074682
+    },
+    {
+      "name": "Forschung, Entwicklung und Software entry",
+      "function": "Forschung, Entwicklung und Software",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "Forschung, Entwicklung und Software professional",
+      "function": "Forschung, Entwicklung und Software",
+      "level": "professional",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 38.20646951972348,
+      "above_threshold_p50": 440.6110933310738,
+      "above_threshold_p95": 1158.3908873934724
+    },
+    {
+      "name": "Forschung, Entwicklung und Software senior",
+      "function": "Forschung, Entwicklung und Software",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 1861.3516216064256,
+      "above_threshold_p50": 4199.069291300671,
+      "above_threshold_p95": 5962.846429693236
+    },
+    {
+      "name": "Forschung, Entwicklung und Software management",
+      "function": "Forschung, Entwicklung und Software",
+      "level": "management",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 2060.3004681262023,
+      "above_threshold_p50": 2245.5316448946537,
+      "above_threshold_p95": 2429.4929907720325
+    },
+    {
+      "name": "Forschung, Entwicklung und Software executive",
+      "function": "Forschung, Entwicklung und Software",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 229.5198301726622,
+      "above_threshold_p50": 249.99331425529408,
+      "above_threshold_p95": 270.45705292199506
+    },
+    {
+      "name": "Vertrieb, Verwaltung und Financial Services entry",
+      "function": "Vertrieb, Verwaltung und Financial Services",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.0,
+      "above_threshold_p50": 0.0,
+      "above_threshold_p95": 0.0
+    },
+    {
+      "name": "Vertrieb, Verwaltung und Financial Services professional",
+      "function": "Vertrieb, Verwaltung und Financial Services",
+      "level": "professional",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 9.406485292910576,
+      "above_threshold_p50": 109.24956731850787,
+      "above_threshold_p95": 290.66868797272065
+    },
+    {
+      "name": "Vertrieb, Verwaltung und Financial Services senior",
+      "function": "Vertrieb, Verwaltung und Financial Services",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 1332.8002738163725,
+      "above_threshold_p50": 3531.3576977878292,
+      "above_threshold_p95": 5552.956665506481
+    },
+    {
+      "name": "Vertrieb, Verwaltung und Financial Services management",
+      "function": "Vertrieb, Verwaltung und Financial Services",
+      "level": "management",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 2289.607095694025,
+      "above_threshold_p50": 2432.99832564766,
+      "above_threshold_p95": 2576.254141924132
+    },
+    {
+      "name": "Vertrieb, Verwaltung und Financial Services executive",
+      "function": "Vertrieb, Verwaltung und Financial Services",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 329.4637509711501,
+      "above_threshold_p50": 349.95565088529315,
+      "above_threshold_p95": 370.63692625625913
+    },
+    {
+      "name": "Technische Spezialisten und Führung specialist",
+      "function": "Technische Spezialisten und Führung",
+      "level": "specialist",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 345.067848710881,
+      "above_threshold_p50": 1830.897881531267,
+      "above_threshold_p95": 4548.380663583368
+    },
+    {
+      "name": "Technische Spezialisten und Führung lead",
+      "function": "Technische Spezialisten und Führung",
+      "level": "lead",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 3545.617057927796,
+      "above_threshold_p50": 6202.074707856834,
+      "above_threshold_p95": 7927.847342916795
+    },
+    {
+      "name": "Technische Spezialisten und Führung director",
+      "function": "Technische Spezialisten und Führung",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 3368.096038755132,
+      "above_threshold_p50": 3677.994700438853,
+      "above_threshold_p95": 3986.1519698071543
+    },
+    {
+      "name": "Technische Spezialisten und Führung executive",
+      "function": "Technische Spezialisten und Führung",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 673.5855419507914,
+      "above_threshold_p50": 735.6011838925942,
+      "above_threshold_p95": 796.7169329731958
+    }
+  ]
+}

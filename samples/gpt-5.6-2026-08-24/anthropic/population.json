@@ -1,0 +1,218 @@
+{
+  "company": "Anthropic PBC",
+  "reference_date": "2026-08-24",
+  "threshold": {
+    "amount": 250000.0,
+    "currency": "USD"
+  },
+  "samples": 50000,
+  "estimated_headcount": {
+    "p05": 2435.9972030050535,
+    "p50": 2540.3871113075497,
+    "p95": 2644.2456732076685,
+    "mean": 2540.228588992405
+  },
+  "estimated_above_threshold": {
+    "p05": 1839.8386951202008,
+    "p50": 2033.6137690014148,
+    "p95": 2210.810655005332,
+    "mean": 2030.3332018363765
+  },
+  "share_above_threshold": {
+    "p05": 0.7313877379133775,
+    "p50": 0.8014929997722098,
+    "p95": 0.8588290120726327
+  },
+  "buckets": [
+    {
+      "name": "Research and engineering entry",
+      "function": "Research and engineering",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 20.216155189519167,
+      "above_threshold_p50": 67.79723478235806,
+      "above_threshold_p95": 136.81911810992307
+    },
+    {
+      "name": "Research and engineering mid",
+      "function": "Research and engineering",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 173.51276328729963,
+      "above_threshold_p50": 323.7858656678162,
+      "above_threshold_p95": 426.86374465761185
+    },
+    {
+      "name": "Research and engineering senior",
+      "function": "Research and engineering",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 440.2798466484961,
+      "above_threshold_p50": 501.1370555915855,
+      "above_threshold_p95": 562.5445315375539
+    },
+    {
+      "name": "Research and engineering staff",
+      "function": "Research and engineering",
+      "level": "staff",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 245.70991820372282,
+      "above_threshold_p50": 280.1343184912371,
+      "above_threshold_p95": 314.6044211613533
+    },
+    {
+      "name": "Research and engineering executive",
+      "function": "Research and engineering",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 24.57080622604355,
+      "above_threshold_p50": 27.992259330608533,
+      "above_threshold_p95": 31.40868654358227
+    },
+    {
+      "name": "Product and applied AI entry",
+      "function": "Product and applied AI",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 5.396670077746382,
+      "above_threshold_p50": 19.919897294462864,
+      "above_threshold_p95": 43.83934194745199
+    },
+    {
+      "name": "Product and applied AI mid",
+      "function": "Product and applied AI",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 58.746147237566234,
+      "above_threshold_p50": 132.8150930504382,
+      "above_threshold_p95": 184.46091644208767
+    },
+    {
+      "name": "Product and applied AI senior",
+      "function": "Product and applied AI",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 181.13299709689562,
+      "above_threshold_p50": 210.51638675226903,
+      "above_threshold_p95": 245.49983096073245
+    },
+    {
+      "name": "Product and applied AI staff",
+      "function": "Product and applied AI",
+      "level": "staff",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 87.28563328804513,
+      "above_threshold_p50": 101.3516479375852,
+      "above_threshold_p95": 118.16267391077814
+    },
+    {
+      "name": "Product and applied AI executive",
+      "function": "Product and applied AI",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 9.709566246677543,
+      "above_threshold_p50": 11.260777026595088,
+      "above_threshold_p95": 13.128852103383112
+    },
+    {
+      "name": "Go-to-market entry",
+      "function": "Go-to-market",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.526828080489885,
+      "above_threshold_p50": 6.137629152306061,
+      "above_threshold_p95": 16.37878754288428
+    },
+    {
+      "name": "Go-to-market mid",
+      "function": "Go-to-market",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 25.56019106554652,
+      "above_threshold_p50": 81.0796490308876,
+      "above_threshold_p95": 124.32013588353689
+    },
+    {
+      "name": "Go-to-market senior",
+      "function": "Go-to-market",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 81.44646741040951,
+      "above_threshold_p50": 99.19490269252091,
+      "above_threshold_p95": 118.94410813162241
+    },
+    {
+      "name": "Go-to-market director",
+      "function": "Go-to-market",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 44.76191321676561,
+      "above_threshold_p50": 50.88016031202433,
+      "above_threshold_p95": 59.15035758965451
+    },
+    {
+      "name": "Go-to-market executive",
+      "function": "Go-to-market",
+      "level": "executive",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 6.386356015534774,
+      "above_threshold_p50": 7.265392474710682,
+      "above_threshold_p95": 8.45942268536089
+    },
+    {
+      "name": "Safety, policy and operations entry",
+      "function": "Safety, policy and operations",
+      "level": "entry",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 0.1881108427814303,
+      "above_threshold_p50": 2.19807762979099,
+      "above_threshold_p95": 5.965402056315582
+    },
+    {
+      "name": "Safety, policy and operations mid",
+      "function": "Safety, policy and operations",
+      "level": "mid",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 13.034509686467752,
+      "above_threshold_p50": 41.75338990353761,
+      "above_threshold_p95": 72.88737725899081
+    },
+    {
+      "name": "Safety, policy and operations senior",
+      "function": "Safety, policy and operations",
+      "level": "senior",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 40.625560951496766,
+      "above_threshold_p50": 53.68152885129351,
+      "above_threshold_p95": 67.14442732960967
+    },
+    {
+      "name": "Safety, policy and operations director",
+      "function": "Safety, policy and operations",
+      "level": "director",
+      "geography": null,
+      "business_unit": null,
+      "above_threshold_p05": 14.094195948875457,
+      "above_threshold_p50": 16.532938223061475,
+      "above_threshold_p95": 19.586729666761087
+    }
+  ]
+}

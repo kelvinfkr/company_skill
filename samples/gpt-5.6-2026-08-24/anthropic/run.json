@@ -1,0 +1,139 @@
+{
+ "company": "Anthropic PBC",
+ "language": "en",
+ "language_confidence": "explicit",
+ "language_signal": "set by --language",
+ "chrome_locale": "en",
+ "jurisdiction": "us",
+ "jurisdiction_name": "United States",
+ "fiscal_year": "2026",
+ "reference_date": "2026-08-24",
+ "currency": "USD",
+ "threshold": 250000.0,
+ "phase_completed": 10,
+ "provisional": true,
+ "provisional_facts": [
+  "employee_benefit_expense",
+  "gross_profit"
+ ],
+ "entity": {
+  "legal_name": "Anthropic PBC",
+  "ticker": "",
+  "domicile": "Delaware, United States",
+  "listing_venue": "",
+  "company_type": "us_private_pbc",
+  "charter_status": "official_summary"
+ },
+ "facts": {
+  "revenue": {
+   "value": 65000.0,
+   "unit": "USD_million_run_rate",
+   "evidence_id": "E03"
+  },
+  "gross_profit": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "operating_profit": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "net_profit": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "rnd_expense": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "sales_expense": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "admin_expense": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "employee_benefit_expense": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "sbc_expense": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  },
+  "cash_paid_to_employees": {
+   "value": null,
+   "unit": "USD_million",
+   "evidence_id": ""
+  }
+ },
+ "facts_count": {
+  "headcount": {
+   "value": 2500,
+   "evidence_id": "E04"
+  },
+  "domestic_headcount": {
+   "value": 1900,
+   "evidence_id": "E04"
+  },
+  "overseas_headcount": {
+   "value": 600,
+   "evidence_id": "E05"
+  },
+  "rnd_headcount": {
+   "value": 1400,
+   "evidence_id": "E08"
+  },
+  "equity_award_holders": {
+   "value": 2200,
+   "evidence_id": "E08"
+  },
+  "person_grants_last_12m": {
+   "value": null,
+   "evidence_id": ""
+  }
+ },
+ "segments": [
+  {
+   "name": "Enterprise API and Claude platform",
+   "revenue": 45000.0,
+   "gross_profit": null,
+   "growth_pct": 500.0,
+   "evidence_id": "E03",
+   "dependency": "frontier models, inference efficiency, applied AI (extreme)"
+  },
+  {
+   "name": "Claude Code and developer tools",
+   "revenue": 20000.0,
+   "gross_profit": null,
+   "growth_pct": 1000.0,
+   "evidence_id": "E03",
+   "dependency": "coding research, agent systems, developer experience (extreme)"
+  }
+ ],
+ "assumptions": {
+  "employer_social_rate": 0.1,
+  "equity_vesting_years": 4,
+  "equity_price_basis": "latest preferred valuation with 70% private-market discount"
+ },
+ "_instructions": "Write the report and all prose in run.language. Fill facts from fetched Tier A/B documents only; amounts in millions of the reporting currency. If a fact is genuinely not public, leave value null and write a line 'NOT AVAILABLE: <fact> - <what you searched>' in analysis_notes.md; for an unlisted entity that satisfies the Phase 1 gate and marks the run provisional.",
+ "generation": {
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24",
+  "purpose": "repository sample"
+ },
+ "checks": {
+  "modelled_tc_total_million": 1442.3,
+  "envelope_check": "tc_over_revenue",
+  "tc_total_over_revenue": 0.0222
+ }
+}

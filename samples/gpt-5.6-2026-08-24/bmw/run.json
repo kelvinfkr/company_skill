@@ -1,0 +1,147 @@
+{
+ "company": "BMW AG",
+ "language": "de",
+ "language_confidence": "explicit",
+ "language_signal": "set by --language",
+ "chrome_locale": "de",
+ "jurisdiction": "de",
+ "jurisdiction_name": "Germany",
+ "fiscal_year": "2025",
+ "reference_date": "2025-12-31",
+ "currency": "EUR",
+ "threshold": 150000.0,
+ "phase_completed": 10,
+ "provisional": true,
+ "provisional_facts": [
+  "gross_profit modeled",
+  "employee_benefit_expense modeled"
+ ],
+ "entity": {
+  "legal_name": "Bayerische Motoren Werke Aktiengesellschaft",
+  "ticker": "XETRA:BMW",
+  "domicile": "München, Deutschland",
+  "listing_venue": "Frankfurter Wertpapierbörse",
+  "company_type": "de_listed_ag",
+  "charter_status": "original"
+ },
+ "facts": {
+  "revenue": {
+   "value": 133453.0,
+   "unit": "EUR_million",
+   "evidence_id": "E01"
+  },
+  "gross_profit": {
+   "value": 35000.0,
+   "unit": "EUR_million",
+   "evidence_id": "E09"
+  },
+  "operating_profit": {
+   "value": 10186.0,
+   "unit": "EUR_million",
+   "evidence_id": "E01"
+  },
+  "net_profit": {
+   "value": 7451.0,
+   "unit": "EUR_million",
+   "evidence_id": "E01"
+  },
+  "rnd_expense": {
+   "value": 8319.0,
+   "unit": "EUR_million",
+   "evidence_id": "E03"
+  },
+  "sales_expense": {
+   "value": null,
+   "unit": "EUR_million",
+   "evidence_id": ""
+  },
+  "admin_expense": {
+   "value": null,
+   "unit": "EUR_million",
+   "evidence_id": ""
+  },
+  "employee_benefit_expense": {
+   "value": 23000.0,
+   "unit": "EUR_million",
+   "evidence_id": "E09"
+  },
+  "sbc_expense": {
+   "value": null,
+   "unit": "EUR_million",
+   "evidence_id": ""
+  },
+  "cash_paid_to_employees": {
+   "value": null,
+   "unit": "EUR_million",
+   "evidence_id": ""
+  }
+ },
+ "facts_count": {
+  "headcount": {
+   "value": 154540,
+   "evidence_id": "E02"
+  },
+  "domestic_headcount": {
+   "value": 85000,
+   "evidence_id": "E02"
+  },
+  "overseas_headcount": {
+   "value": 69540,
+   "evidence_id": "E02"
+  },
+  "rnd_headcount": {
+   "value": 25000,
+   "evidence_id": "E06"
+  },
+  "equity_award_holders": {
+   "value": null,
+   "evidence_id": ""
+  },
+  "person_grants_last_12m": {
+   "value": null,
+   "evidence_id": ""
+  }
+ },
+ "segments": [
+  {
+   "name": "Automotive",
+   "revenue": 117557.0,
+   "gross_profit": null,
+   "growth_pct": -5.9,
+   "evidence_id": "E01",
+   "dependency": "Fahrzeugarchitektur, Batterie, Software, Produktion (extreme)"
+  },
+  {
+   "name": "Financial Services",
+   "revenue": 39806.0,
+   "gross_profit": null,
+   "growth_pct": 3.2,
+   "evidence_id": "E05",
+   "dependency": "Restwert, Kreditrisiko, Treasury (high)"
+  },
+  {
+   "name": "Motorräder",
+   "revenue": 3143.0,
+   "gross_profit": null,
+   "growth_pct": -2.4,
+   "evidence_id": "E01",
+   "dependency": "Produktentwicklung und Premiumvertrieb (medium)"
+  }
+ ],
+ "assumptions": {
+  "employer_social_rate": 0.21,
+  "equity_vesting_years": 4,
+  "equity_price_basis": "grant-date / market price for listed shares"
+ },
+ "_instructions": "Write the report and all prose in run.language. Fill facts from fetched Tier A/B documents only; amounts in millions of the reporting currency. If a fact is genuinely not public, leave value null and write a line 'NOT AVAILABLE: <fact> - <what you searched>' in analysis_notes.md; for an unlisted entity that satisfies the Phase 1 gate and marks the run provisional.",
+ "generation": {
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24",
+  "purpose": "repository sample"
+ },
+ "checks": {
+  "modelled_tc_total_million": 19023.6,
+  "payroll_envelope_deviation": 0.0008,
+  "envelope_check": "payroll_envelope"
+ }
+}

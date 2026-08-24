@@ -1,0 +1,64 @@
+{
+ "roles": [
+  {
+   "role": "Leitung Batterie und E-Antrieb",
+   "market": [
+    180000,
+    360000
+   ],
+   "economic": [
+    240000,
+    650000
+   ],
+   "internal": [
+    170000,
+    380000
+   ]
+  },
+  {
+   "role": "Leitung E/E- und Softwarearchitektur",
+   "market": [
+    190000,
+    400000
+   ],
+   "economic": [
+    260000,
+    750000
+   ],
+   "internal": [
+    180000,
+    420000
+   ]
+  },
+  {
+   "role": "Werk- und Industrialisierungsleitung",
+   "market": [
+    170000,
+    330000
+   ],
+   "economic": [
+    220000,
+    550000
+   ],
+   "internal": [
+    160000,
+    350000
+   ]
+  },
+  {
+   "role": "Restwert- und Kreditrisikoleitung",
+   "market": [
+    160000,
+    320000
+   ],
+   "economic": [
+    210000,
+    500000
+   ],
+   "internal": [
+    150000,
+    330000
+   ]
+  }
+ ]
+}

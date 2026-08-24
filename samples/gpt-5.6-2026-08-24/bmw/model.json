@@ -1,0 +1,433 @@
+{
+ "company": "BMW AG",
+ "reference_date": "2025-12-31",
+ "threshold": {
+  "amount": 150000.0,
+  "currency": "EUR"
+ },
+ "workforce": {
+  "low": 151449,
+  "mode": 154540,
+  "high": 157631
+ },
+ "buckets": [
+  {
+   "name": "Produktion und Logistik tarif",
+   "function": "Produktion und Logistik",
+   "level": "tarif",
+   "headcount": {
+    "low": 40300,
+    "mode": 43400,
+    "high": 46500
+   },
+   "tc": {
+    "low": 45000,
+    "mode": 62000,
+    "high": 82000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Produktion und Logistik professional",
+   "function": "Produktion und Logistik",
+   "level": "professional",
+   "headcount": {
+    "low": 16250,
+    "mode": 17500,
+    "high": 18750
+   },
+   "tc": {
+    "low": 65000,
+    "mode": 85000,
+    "high": 110000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Produktion und Logistik senior",
+   "function": "Produktion und Logistik",
+   "level": "senior",
+   "headcount": {
+    "low": 6500,
+    "mode": 7000,
+    "high": 7500
+   },
+   "tc": {
+    "low": 95000,
+    "mode": 125000,
+    "high": 170000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.1185,
+    "high": 0.6528
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Produktion und Logistik management",
+   "function": "Produktion und Logistik",
+   "level": "management",
+   "headcount": {
+    "low": 1755,
+    "mode": 1890,
+    "high": 2025
+   },
+   "tc": {
+    "low": 140000,
+    "mode": 200000,
+    "high": 320000
+   },
+   "p_exceed": {
+    "low": 0.7467,
+    "mode": 0.9907,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Produktion und Logistik executive",
+   "function": "Produktion und Logistik",
+   "level": "executive",
+   "headcount": {
+    "low": 195,
+    "mode": 210,
+    "high": 225
+   },
+   "tc": {
+    "low": 350000,
+    "mode": 700000,
+    "high": 1600000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Forschung, Entwicklung und Software entry",
+   "function": "Forschung, Entwicklung und Software",
+   "level": "entry",
+   "headcount": {
+    "low": 4400,
+    "mode": 5000,
+    "high": 5600
+   },
+   "tc": {
+    "low": 60000,
+    "mode": 78000,
+    "high": 100000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Forschung, Entwicklung und Software professional",
+   "function": "Forschung, Entwicklung und Software",
+   "level": "professional",
+   "headcount": {
+    "low": 9460,
+    "mode": 10750,
+    "high": 12040
+   },
+   "tc": {
+    "low": 80000,
+    "mode": 105000,
+    "high": 140000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.1384
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Forschung, Entwicklung und Software senior",
+   "function": "Forschung, Entwicklung und Software",
+   "level": "senior",
+   "headcount": {
+    "low": 5940,
+    "mode": 6750,
+    "high": 7560
+   },
+   "tc": {
+    "low": 115000,
+    "mode": 155000,
+    "high": 220000
+   },
+   "p_exceed": {
+    "low": 0.1124,
+    "mode": 0.7083,
+    "high": 0.9849
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Forschung, Entwicklung und Software management",
+   "function": "Forschung, Entwicklung und Software",
+   "level": "management",
+   "headcount": {
+    "low": 1980,
+    "mode": 2250,
+    "high": 2520
+   },
+   "tc": {
+    "low": 180000,
+    "mode": 270000,
+    "high": 450000
+   },
+   "p_exceed": {
+    "low": 0.9938,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Forschung, Entwicklung und Software executive",
+   "function": "Forschung, Entwicklung und Software",
+   "level": "executive",
+   "headcount": {
+    "low": 220,
+    "mode": 250,
+    "high": 280
+   },
+   "tc": {
+    "low": 500000,
+    "mode": 1000000,
+    "high": 2200000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Vertrieb, Verwaltung und Financial Services entry",
+   "function": "Vertrieb, Verwaltung und Financial Services",
+   "level": "entry",
+   "headcount": {
+    "low": 8640,
+    "mode": 9450,
+    "high": 10260
+   },
+   "tc": {
+    "low": 50000,
+    "mode": 68000,
+    "high": 90000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Vertrieb, Verwaltung und Financial Services professional",
+   "function": "Vertrieb, Verwaltung und Financial Services",
+   "level": "professional",
+   "headcount": {
+    "low": 14400,
+    "mode": 15750,
+    "high": 17100
+   },
+   "tc": {
+    "low": 70000,
+    "mode": 95000,
+    "high": 130000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0237
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Vertrieb, Verwaltung und Financial Services senior",
+   "function": "Vertrieb, Verwaltung und Financial Services",
+   "level": "senior",
+   "headcount": {
+    "low": 6400,
+    "mode": 7000,
+    "high": 7600
+   },
+   "tc": {
+    "low": 105000,
+    "mode": 145000,
+    "high": 210000
+   },
+   "p_exceed": {
+    "low": 0.0459,
+    "mode": 0.5275,
+    "high": 0.9233
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Vertrieb, Verwaltung und Financial Services management",
+   "function": "Vertrieb, Verwaltung und Financial Services",
+   "level": "management",
+   "headcount": {
+    "low": 2240,
+    "mode": 2450,
+    "high": 2660
+   },
+   "tc": {
+    "low": 170000,
+    "mode": 260000,
+    "high": 430000
+   },
+   "p_exceed": {
+    "low": 0.9787,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Vertrieb, Verwaltung und Financial Services executive",
+   "function": "Vertrieb, Verwaltung und Financial Services",
+   "level": "executive",
+   "headcount": {
+    "low": 320,
+    "mode": 350,
+    "high": 380
+   },
+   "tc": {
+    "low": 480000,
+    "mode": 950000,
+    "high": 2100000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Technische Spezialisten und Führung specialist",
+   "function": "Technische Spezialisten und Führung",
+   "level": "specialist",
+   "headcount": {
+    "low": 10320,
+    "mode": 11779,
+    "high": 13200
+   },
+   "tc": {
+    "low": 90000,
+    "mode": 120000,
+    "high": 160000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0357,
+    "high": 0.4902
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Technische Spezialisten und Führung lead",
+   "function": "Technische Spezialisten und Führung",
+   "level": "lead",
+   "headcount": {
+    "low": 7310,
+    "mode": 8344,
+    "high": 9350
+   },
+   "tc": {
+    "low": 125000,
+    "mode": 170000,
+    "high": 240000
+   },
+   "p_exceed": {
+    "low": 0.2826,
+    "mode": 0.8792,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Technische Spezialisten und Führung director",
+   "function": "Technische Spezialisten und Führung",
+   "level": "director",
+   "headcount": {
+    "low": 3225,
+    "mode": 3681,
+    "high": 4125
+   },
+   "tc": {
+    "low": 210000,
+    "mode": 320000,
+    "high": 550000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "Technische Spezialisten und Führung executive",
+   "function": "Technische Spezialisten und Führung",
+   "level": "executive",
+   "headcount": {
+    "low": 645,
+    "mode": 736,
+    "high": 825
+   },
+   "tc": {
+    "low": 500000,
+    "mode": 1000000,
+    "high": 2400000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  }
+ ]
+}

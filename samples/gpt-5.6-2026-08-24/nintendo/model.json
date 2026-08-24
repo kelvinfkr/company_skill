@@ -1,0 +1,367 @@
+{
+ "company": "任天堂株式会社",
+ "reference_date": "2026-03-31",
+ "threshold": {
+  "amount": 20000000.0,
+  "currency": "JPY"
+ },
+ "workforce": {
+  "low": 8493,
+  "mode": 8666,
+  "high": 8839
+ },
+ "buckets": [
+  {
+   "name": "ソフトウェア・ゲーム開発 entry",
+   "function": "ソフトウェア・ゲーム開発",
+   "level": "entry",
+   "headcount": {
+    "low": 1440,
+    "mode": 1620,
+    "high": 1800
+   },
+   "tc": {
+    "low": 5500000,
+    "mode": 7000000,
+    "high": 9000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ソフトウェア・ゲーム開発 mid",
+   "function": "ソフトウェア・ゲーム開発",
+   "level": "mid",
+   "headcount": {
+    "low": 1088,
+    "mode": 1224,
+    "high": 1360
+   },
+   "tc": {
+    "low": 8000000,
+    "mode": 10500000,
+    "high": 14000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ソフトウェア・ゲーム開発 senior",
+   "function": "ソフトウェア・ゲーム開発",
+   "level": "senior",
+   "headcount": {
+    "low": 512,
+    "mode": 576,
+    "high": 640
+   },
+   "tc": {
+    "low": 13000000,
+    "mode": 18000000,
+    "high": 26000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.3462,
+    "high": 0.8615
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ソフトウェア・ゲーム開発 director",
+   "function": "ソフトウェア・ゲーム開発",
+   "level": "director",
+   "headcount": {
+    "low": 144,
+    "mode": 162,
+    "high": 180
+   },
+   "tc": {
+    "low": 22000000,
+    "mode": 32000000,
+    "high": 50000000
+   },
+   "p_exceed": {
+    "low": 0.9222,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ソフトウェア・ゲーム開発 executive",
+   "function": "ソフトウェア・ゲーム開発",
+   "level": "executive",
+   "headcount": {
+    "low": 16,
+    "mode": 18,
+    "high": 20
+   },
+   "tc": {
+    "low": 45000000,
+    "mode": 80000000,
+    "high": 150000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ハードウェア・デザイン entry",
+   "function": "ハードウェア・デザイン",
+   "level": "entry",
+   "headcount": {
+    "low": 744,
+    "mode": 864,
+    "high": 984
+   },
+   "tc": {
+    "low": 5200000,
+    "mode": 6800000,
+    "high": 8800000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ハードウェア・デザイン mid",
+   "function": "ハードウェア・デザイン",
+   "level": "mid",
+   "headcount": {
+    "low": 527,
+    "mode": 612,
+    "high": 697
+   },
+   "tc": {
+    "low": 7800000,
+    "mode": 10200000,
+    "high": 13500000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ハードウェア・デザイン senior",
+   "function": "ハードウェア・デザイン",
+   "level": "senior",
+   "headcount": {
+    "low": 209,
+    "mode": 243,
+    "high": 277
+   },
+   "tc": {
+    "low": 12500000,
+    "mode": 17500000,
+    "high": 25000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.2667,
+    "high": 0.804
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ハードウェア・デザイン director",
+   "function": "ハードウェア・デザイン",
+   "level": "director",
+   "headcount": {
+    "low": 62,
+    "mode": 72,
+    "high": 82
+   },
+   "tc": {
+    "low": 21000000,
+    "mode": 30000000,
+    "high": 45000000
+   },
+   "p_exceed": {
+    "low": 0.8513,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "ハードウェア・デザイン executive",
+   "function": "ハードウェア・デザイン",
+   "level": "executive",
+   "headcount": {
+    "low": 8,
+    "mode": 9,
+    "high": 10
+   },
+   "tc": {
+    "low": 40000000,
+    "mode": 70000000,
+    "high": 130000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "営業・管理・IP entry",
+   "function": "営業・管理・IP",
+   "level": "entry",
+   "headcount": {
+    "low": 832,
+    "mode": 936,
+    "high": 1040
+   },
+   "tc": {
+    "low": 4800000,
+    "mode": 6500000,
+    "high": 8500000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "営業・管理・IP mid",
+   "function": "営業・管理・IP",
+   "level": "mid",
+   "headcount": {
+    "low": 528,
+    "mode": 594,
+    "high": 660
+   },
+   "tc": {
+    "low": 7500000,
+    "mode": 9800000,
+    "high": 13000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "営業・管理・IP senior",
+   "function": "営業・管理・IP",
+   "level": "senior",
+   "headcount": {
+    "low": 176,
+    "mode": 198,
+    "high": 220
+   },
+   "tc": {
+    "low": 11500000,
+    "mode": 16000000,
+    "high": 23000000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.1118,
+    "high": 0.6087
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "営業・管理・IP director",
+   "function": "営業・管理・IP",
+   "level": "director",
+   "headcount": {
+    "low": 56,
+    "mode": 63,
+    "high": 70
+   },
+   "tc": {
+    "low": 20000000,
+    "mode": 29000000,
+    "high": 43000000
+   },
+   "p_exceed": {
+    "low": 0.7853,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "営業・管理・IP executive",
+   "function": "営業・管理・IP",
+   "level": "executive",
+   "headcount": {
+    "low": 8,
+    "mode": 9,
+    "high": 10
+   },
+   "tc": {
+    "low": 40000000,
+    "mode": 75000000,
+    "high": 140000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "運営・顧客支援 support",
+   "function": "運営・顧客支援",
+   "level": "support",
+   "headcount": {
+    "low": 1300,
+    "mode": 1466,
+    "high": 1650
+   },
+   "tc": {
+    "low": 4000000,
+    "mode": 6000000,
+    "high": 9500000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  }
+ ]
+}

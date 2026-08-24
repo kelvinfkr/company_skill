@@ -1,0 +1,9 @@
+from_state,to_state,transition_type,months,evidence_tier,note
+開発者,シニア開発者,internal_promotion,48,C,公開略歴の代表経路
+シニア開発者,ゲームディレクター,internal_promotion,60,B,長期タイトル開発
+ゲームディレクター,執行役員,internal_promotion,84,B,公式役員略歴
+ハードウェア開発,開発部門責任者,internal_promotion,72,B,公式役員略歴
+営業企画,地域法人責任者,internal_promotion,60,C,海外法人の公開経歴
+外部半導体専門家,SoC責任者,external_entry,0,D,専門採用経路
+外部映像プロデューサー,IP事業責任者,external_entry,0,C,映像事業拡大
+地域法人責任者,本社執行役員,internal_lateral,48,B,グローバル経営経路

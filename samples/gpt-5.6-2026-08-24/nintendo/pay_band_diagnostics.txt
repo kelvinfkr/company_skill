@@ -1,0 +1,34 @@
+[
+  {
+    "role": "ゲームディレクター",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      25000000.0,
+      32000000.0
+    ]
+  },
+  {
+    "role": "オンライン基盤責任者",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      24000000.0,
+      33000000.0
+    ]
+  },
+  {
+    "role": "SoC・ハードウェア責任者",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      22000000.0,
+      30000000.0
+    ]
+  },
+  {
+    "role": "IP・映像事業責任者",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      22000000.0,
+      30000000.0
+    ]
+  }
+]
