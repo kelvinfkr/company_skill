@@ -1,16 +1,21 @@
-# company-talent-economics（企业人才经济学）
+# Company Skills（企业研究技能工具箱）
 
 **English: [README.md](README.md)**
 
-一个 agent skill：从公开披露文件出发，重建一家公司的**薪酬分布、高薪人群规模、经济关键岗位、可辩护薪酬区间和晋升路径**，最终交付一份排版好的 PDF 报告，而不是一大段聊天文字。
+这是一个只使用公开证据的企业研究工具箱，目前包含两个互补的 Agent Skill：
 
-它支持**任何国家**的公司，并且**跟随你输入的公司名的语言**来写报告：问 `ソニーグループ` 就出日文报告，问 `Siemens AG` 就出德文报告，问 `小米集团` 就出中文报告。
+| Skill | 回答什么问题 | 主要交付物 |
+|---|---|---|
+| [`company-talent-economics`](skills/company-talent-economics/) | 一家公司的人赚多少、多少人跨过高薪门槛、哪些岗位在经济上关键？ | 可审计的薪酬与职业路径报告 |
+| [`estimate-layoff-risk`](skills/estimate-layoff-risk/) | 员工、实习生、合同工或某类岗位未来 3/6/12 个月的非自愿离岗风险有多大？ | 带证据的风险区间与情景报告 |
 
-同一个目录可直接在 **Claude Code**、**Codex** 和 **claude.ai** 上运行。
+两套 Skill 都从商业模式和利润池开始，而不是从头衔、情绪或薪资网站传闻开始，并明确区分公开事实、用户自述、模型假设、派生指标和推断。
+
+工具箱可在 **Claude Code**、**Codex** 和兼容的 Skill 宿主中运行。人才经济学 Skill 支持多语言排版；裁员风险 Skill 结合自适应候选人访谈与最新公开信息研究。
 
 ---
 
-## 你最终拿到什么
+## Company Talent Economics：你最终拿到什么
 
 一个可审计的产出目录，交付物是 `report.pdf`：
 
@@ -53,7 +58,17 @@ cd company_skill
 bash install.sh
 ```
 
-会把 skill 软链到 `~/.claude/skills/` 和 `~/.codex/skills/`，然后检查依赖。因为是软链，以后 `git pull` 一次，两个宿主同时更新。
+当前安装器会把 **company-talent-economics** 软链到 `~/.claude/skills/` 和
+`~/.codex/skills/`，然后检查它的依赖。因为是软链，以后 `git pull` 一次，两个宿主同时更新。
+
+**estimate-layoff-risk** 目前单独安装：
+
+```bash
+ln -s "$(pwd)/skills/estimate-layoff-risk" ~/.codex/skills/estimate-layoff-risk
+# 或复制：cp -R skills/estimate-layoff-risk ~/.codex/skills/
+```
+
+Claude Code 则把目标路径换成 `~/.claude/skills/estimate-layoff-risk`。
 
 ```bash
 bash install.sh --claude      # 只装 Claude Code
@@ -106,7 +121,7 @@ bash install.sh --zip
 
 ## 怎么用
 
-直接问就行，用什么语言都可以：
+薪酬与人才经济学可以直接这样问：
 
 ```
 小米集团的员工薪酬分布是怎样的？年薪超过 100 万的有多少人？
@@ -114,12 +129,22 @@ bash install.sh --zip
 ソニーで年収2000万円を超える社員は何人くらいいますか？
 ```
 
+非自愿离岗风险可以这样问：
+
+```
+请使用 estimate-layoff-risk，评估追觅某产品实习生未来 3/6/12 个月的非自愿离岗风险。
+先采访我，再搜索最新公开证据，并给出乐观、基准和不利情景。
+```
+
 也可以显式调用：
 
-| 宿主 | 调用方式 |
-|---|---|
-| Claude Code | `/company-talent-economics <公司名>` |
-| Codex | `$company-talent-economics <公司名>` |
+| 宿主 | 人才经济学 | 离岗风险 |
+|---|---|---|
+| Claude Code | `/company-talent-economics <公司名>` | `/estimate-layoff-risk <公司与岗位>` |
+| Codex | `$company-talent-economics <公司名>` | `$estimate-layoff-risk <公司与岗位>` |
+
+裁员风险 Skill 的完整访谈提示词、利润池框架、隐私边界、命令行流程和虚构示例，
+见其独立 [README](skills/estimate-layoff-risk/README.md)。
 
 ### 手动驱动整个 harness
 
@@ -229,14 +254,22 @@ python $S/scripts/i18n.py jurisdictions japan      # 查看单条；别名可用
 ```
 .claude-plugin/            插件与 marketplace 清单
 install.sh                 安装器、依赖检查、打包
-skills/company-talent-economics/
-  SKILL.md                 给 agent 看的指令
-  scripts/                 harness（见下表）
-  locales/                 12 个骨架语言包
-  assets/                  司法辖区注册表、检索词表、先验、模板
-  references/              方法论：术语表、推理链、辖区手册、本地化说明
-  schemas/                 report / model / evidence 的 JSON schema
-  examples/                小米完整案例与可运行样例
+skills/
+  company-talent-economics/
+    SKILL.md               薪酬与职业路径研究流程
+    scripts/               十道闸门 harness
+    locales/               12 个骨架语言包
+    assets/                司法辖区、检索词、先验和模板
+    references/            经济、证据、本地化与职业路径方法
+    schemas/               report / model / evidence JSON schema
+    examples/              完整案例与可运行样例
+  estimate-layoff-risk/
+    README.md              交互说明与本地运行方法
+    SKILL.md               离岗风险流程与安全边界
+    scripts/               案例初始化、访谈、检索、估计、渲染和校验
+    references/            利润池、岗位、领导配置、证据与校准方法
+    schemas/               case / evidence / model / report JSON schema
+    examples/              虚构的机器人产品实习生案例
 ```
 
 | 脚本 | 作用 |
