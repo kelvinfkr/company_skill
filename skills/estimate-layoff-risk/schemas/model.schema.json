@@ -1,0 +1,26 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["horizons"],
+  "properties":{
+    "calibration_status":{"enum":["validated","provisional","scenario_only"]},
+    "confidence":{"enum":["low","medium","high"]},
+    "horizons":{
+      "type":"object",
+      "additionalProperties":{
+        "type":"object",
+        "required":["company_action","unit_given_action","role_given_unit","person_given_role","contract_exit","performance_exit"],
+        "additionalProperties":{
+          "type":"object",
+          "required":["low","mode","high"],
+          "properties":{
+            "low":{"type":"number","minimum":0,"maximum":1},
+            "mode":{"type":"number","minimum":0,"maximum":1},
+            "high":{"type":"number","minimum":0,"maximum":1}
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties":true
+}

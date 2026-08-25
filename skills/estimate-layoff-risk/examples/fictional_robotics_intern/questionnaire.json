@@ -1,0 +1,80 @@
+{
+  "case_alias": "demo-intern",
+  "employment_type": "intern",
+  "role_family": "product",
+  "instructions": "Ask in two short rounds. Accept unknown or prefer_not_to_answer. Record date, provenance, confidence, and report consent.",
+  "questions": [
+    {
+      "id": "core_01",
+      "question": "Which outcomes should count: layoff, unit closure, role redundancy, performance exit, non-renewal, internship ending, forced transfer, or any involuntary exit?"
+    },
+    {
+      "id": "core_02",
+      "question": "Which horizons matter: 3, 6, and/or 12 months?"
+    },
+    {
+      "id": "core_03",
+      "question": "Which legal entity employs or contracts with you, and which parent or brand do you work under?"
+    },
+    {
+      "id": "core_04",
+      "question": "Which country, worksite, business unit, product/project/customer, and role family are you attached to?"
+    },
+    {
+      "id": "core_05",
+      "question": "What is your employment type and, if applicable, contract, probation, or internship end date?"
+    },
+    {
+      "id": "core_06",
+      "question": "Is the business stable/profitable, growing but loss-making, incubating, integrating, or contracting? Unknown is acceptable."
+    },
+    {
+      "id": "core_07",
+      "question": "What changed in headcount, open roles, replacement hiring, contractors, budget, travel, procurement, overtime, or shifts in the last 90 days?"
+    },
+    {
+      "id": "core_08",
+      "question": "Is your workload increasing, stable, disappearing, transferred, automated, or duplicated?"
+    },
+    {
+      "id": "core_09",
+      "question": "Did your manager, reporting line, cost center, site, or product ownership change recently?"
+    },
+    {
+      "id": "core_10",
+      "question": "Do you have funded deliverables with owners and deadlines for the next 8-12 weeks?"
+    },
+    {
+      "id": "core_11",
+      "question": "Has anyone requested role justification, workload logs, handover documents, access review, location changes, or role reapplications?"
+    },
+    {
+      "id": "core_12",
+      "question": "If the team shrank 20%, which work must remain and who else could perform yours?"
+    },
+    {
+      "id": "emp_intern_01",
+      "question": "When does the internship end, and is conversion headcount formally approved?"
+    },
+    {
+      "id": "emp_intern_02",
+      "question": "Are you assigned to a funded project schedule or mainly temporary overflow work?"
+    },
+    {
+      "id": "emp_intern_03",
+      "question": "What happened to comparable interns in the latest cohort?"
+    },
+    {
+      "id": "role_product_01",
+      "question": "Is the product launched, funded, and present on the current roadmap?"
+    },
+    {
+      "id": "role_product_02",
+      "question": "Are engineering and design resources still assigned to its next releases?"
+    },
+    {
+      "id": "role_product_03",
+      "question": "Are there overlapping product teams or plans to merge the product?"
+    }
+  ]
+}

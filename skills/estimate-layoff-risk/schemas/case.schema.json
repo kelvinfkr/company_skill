@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["case_alias","company","role","country","employment_type","reference_date","horizons_months"],
+  "properties":{
+    "case_alias":{"type":"string"},
+    "company":{"type":"string"},
+    "legal_employer":{"type":"string"},
+    "parent_company":{"type":"string"},
+    "business_unit":{"type":"string"},
+    "product":{"type":"string"},
+    "role":{"type":"string"},
+    "role_family":{"enum":["product","sales","engineering","research","manufacturing","operations","services","corporate","public_service","general"]},
+    "country":{"type":"string"},
+    "worksite":{"type":"string"},
+    "employment_type":{"enum":["employee","intern","probation","fixed_term","contractor"]},
+    "company_type":{"type":"string"},
+    "reference_date":{"type":"string"},
+    "horizons_months":{"type":"array","items":{"type":"integer","enum":[3,6,12]},"minItems":1}
+  },
+  "additionalProperties":true
+}

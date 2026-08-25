@@ -1,0 +1,27 @@
+{
+  "case_alias": "demo-intern",
+  "company": "Northstar Robotics",
+  "legal_employer": "",
+  "parent_company": "",
+  "business_unit": "",
+  "product": "",
+  "role": "Mobile App Product Intern",
+  "role_family": "product",
+  "country": "China",
+  "worksite": "",
+  "employment_type": "intern",
+  "company_type": "",
+  "reference_date": "2026-08-24",
+  "horizons_months": [
+    3,
+    6,
+    12
+  ],
+  "outcomes": [
+    "structural_layoff",
+    "contract_or_nonrenewal",
+    "performance_exit",
+    "redeployment",
+    "any_involuntary_exit"
+  ]
+}

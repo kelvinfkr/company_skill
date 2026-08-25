@@ -1,0 +1,89 @@
+{
+  "calibration_status": "scenario_only",
+  "confidence": "medium",
+  "combination_assumption": "conditional layer product; independent competing-hazard approximation",
+  "samples": 30000,
+  "results": {
+    "3m": {
+      "structural_layoff": {
+        "p05": 0.0069,
+        "p50": 0.0124,
+        "p95": 0.0215
+      },
+      "contract_or_nonrenewal": {
+        "p05": 0.0441,
+        "p50": 0.0752,
+        "p95": 0.1128
+      },
+      "performance_exit": {
+        "p05": 0.0161,
+        "p50": 0.0305,
+        "p95": 0.0506
+      },
+      "redeployment": {
+        "p05": 0.0009,
+        "p50": 0.002,
+        "p95": 0.004
+      },
+      "any_involuntary_exit": {
+        "p05": 0.0821,
+        "p50": 0.1169,
+        "p95": 0.1555
+      }
+    },
+    "6m": {
+      "structural_layoff": {
+        "p05": 0.0144,
+        "p50": 0.0254,
+        "p95": 0.0431
+      },
+      "contract_or_nonrenewal": {
+        "p05": 0.1569,
+        "p50": 0.236,
+        "p95": 0.3339
+      },
+      "performance_exit": {
+        "p05": 0.0309,
+        "p50": 0.0551,
+        "p95": 0.086
+      },
+      "redeployment": {
+        "p05": 0.0018,
+        "p50": 0.004,
+        "p95": 0.008
+      },
+      "any_involuntary_exit": {
+        "p05": 0.2211,
+        "p50": 0.2993,
+        "p95": 0.3901
+      }
+    },
+    "12m": {
+      "structural_layoff": {
+        "p05": 0.0259,
+        "p50": 0.0438,
+        "p95": 0.0715
+      },
+      "contract_or_nonrenewal": {
+        "p05": 0.357,
+        "p50": 0.4851,
+        "p95": 0.6174
+      },
+      "performance_exit": {
+        "p05": 0.0547,
+        "p50": 0.0876,
+        "p95": 0.1308
+      },
+      "redeployment": {
+        "p05": 0.0032,
+        "p50": 0.0069,
+        "p95": 0.0137
+      },
+      "any_involuntary_exit": {
+        "p05": 0.4394,
+        "p50": 0.5532,
+        "p95": 0.6694
+      }
+    }
+  }
+}

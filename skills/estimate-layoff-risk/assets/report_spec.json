@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "case_alias": "{alias}",
+    "company": "{company}",
+    "legal_employer": "{legal employer}",
+    "role": "{role}",
+    "country": "{country}",
+    "reference_date": "{YYYY-MM-DD}",
+    "confidence": "{low|medium|high}",
+    "outcome_definition": "{definition}"
+  },
+  "executive": {
+    "diagnosis": "{one sentence}",
+    "dominant_uncertainty": "{one sentence}",
+    "risk_by_horizon": []
+  },
+  "company_pressure": {
+    "regime": "{survival|margin_reset|capital_reallocation|integration|demand_capacity|performance_system|mixed}",
+    "summary": "",
+    "metrics": []
+  },
+  "profit_pools": [],
+  "dependency_graph": [],
+  "leadership_regime": {"summary":"","evidence":[]},
+  "candidate_signals": {"risk_up":[],"protective":[],"ambiguous":[]},
+  "scenarios": [],
+  "evidence_for": [],
+  "evidence_against": [],
+  "watchlist": {"risk_up":[],"risk_down":[]},
+  "limitations": [],
+  "sources": []
+}

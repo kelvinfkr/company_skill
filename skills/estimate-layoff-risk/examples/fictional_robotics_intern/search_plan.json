@@ -1,0 +1,91 @@
+{
+  "case_alias": "demo-intern",
+  "reference_date": "2026-08-24",
+  "passes": [
+    {
+      "id": 1,
+      "name": "entity_scope",
+      "queries": [
+        "\"Northstar Robotics\" \"legal entity subsidiaries business unit\"",
+        "\"Northstar Robotics\" \"owner organization\""
+      ]
+    },
+    {
+      "id": 2,
+      "name": "solvency_financing",
+      "queries": [
+        "\"Northstar Robotics\" \"cash flow debt maturity covenant financing\"",
+        "\"Northstar Robotics\" \"working capital capex liquidity\""
+      ]
+    },
+    {
+      "id": 3,
+      "name": "profit_pools",
+      "queries": [
+        "\"Northstar Robotics\" \"segment revenue gross profit operating profit\"",
+        "\"Northstar Robotics\" \"sales orders margin market share inventory\""
+      ]
+    },
+    {
+      "id": 4,
+      "name": "management_targets",
+      "queries": [
+        "\"Northstar Robotics\" \"restructuring severance cost savings productivity margin target\"",
+        "\"Northstar Robotics\" \"synergy shared services delayering footprint optimization\""
+      ]
+    },
+    {
+      "id": 5,
+      "name": "product_lifecycle",
+      "queries": [
+        "\"Northstar Robotics\" \"roadmap launch discontinued strategic review\"",
+        "\"Northstar Robotics\" \"executive departure investment customer contract\""
+      ]
+    },
+    {
+      "id": 6,
+      "name": "workforce_demand",
+      "queries": [
+        "\"Northstar Robotics\" \"Mobile App Product Intern\" \"jobs careers hiring freeze outsourcing automation\"",
+        "\"Northstar Robotics\" \"office factory closure relocation headcount\""
+      ]
+    },
+    {
+      "id": 7,
+      "name": "leadership_allocation",
+      "queries": [
+        "\"Northstar Robotics\" \"CEO CFO interview capital allocation headcount\"",
+        "\"Northstar Robotics\" \"previous restructuring which departments\""
+      ]
+    },
+    {
+      "id": 8,
+      "name": "contradictions_base_rates",
+      "queries": [
+        "\"Northstar Robotics\" \"Mobile App Product Intern\" \"hiring expansion new budget\"",
+        "\"Northstar Robotics\" \"new contract launch investment\"",
+        "\"Northstar Robotics\" \"layoff history workforce\""
+      ]
+    },
+    {
+      "id": 9,
+      "name": "local_notice_terms",
+      "queries": [
+        "\"Northstar Robotics\" 裁员",
+        "\"Northstar Robotics\" 人员优化",
+        "\"Northstar Robotics\" 组织调整",
+        "\"Northstar Robotics\" 降本增效",
+        "\"Northstar Robotics\" 不续签",
+        "\"Northstar Robotics\" 业务收缩"
+      ]
+    }
+  ],
+  "source_priority": [
+    "regulator/government",
+    "audited filing",
+    "official company",
+    "credible independent media",
+    "aggregate labor/recruiting data",
+    "anonymous leads"
+  ]
+}

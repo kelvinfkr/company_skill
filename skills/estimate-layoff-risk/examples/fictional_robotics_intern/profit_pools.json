@@ -1,0 +1,8 @@
+{
+  "company": "Northstar Robotics",
+  "profit_pools": [
+    {"name":"Core cleaning robots","economics":"Growing, positive contribution","option_value":"High","management_intent":"Protect and invest"},
+    {"name":"Experimental mobile devices","economics":"Negative contribution","option_value":"Low after review","management_intent":"Consolidate"},
+    {"name":"Shared mobile app","economics":"Indirect support","option_value":"Medium","management_intent":"Merge teams"}
+  ]
+}
