@@ -1,0 +1,8 @@
+Research scientist -> Senior research scientist [internal_promotion] n=1, weighted_share=100.0%, median_tenure=24 mo
+Senior research scientist -> Research lead [internal_promotion] n=1, weighted_share=100.0%, median_tenure=30 mo
+Research lead -> Research director [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+Software engineer -> Staff engineer [internal_promotion] n=1, weighted_share=100.0%, median_tenure=30 mo
+External frontier lab researcher -> Senior researcher [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+External enterprise AI lead -> Applied AI lead [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+Policy researcher -> Policy director [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+Product leader -> Labs leader [internal_lateral] n=1, weighted_share=100.0%, median_tenure=24 mo

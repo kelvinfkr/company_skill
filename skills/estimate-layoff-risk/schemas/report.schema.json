@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["meta","executive","company_pressure","profit_pools","dependency_graph","scenarios","limitations"],
+  "properties":{
+    "meta":{"type":"object"},
+    "executive":{"type":"object"},
+    "company_pressure":{"type":"object"},
+    "profit_pools":{"type":"array"},
+    "dependency_graph":{"type":"array"},
+    "leadership_regime":{"type":"object"},
+    "candidate_signals":{"type":"object"},
+    "scenarios":{"type":"array"},
+    "evidence_for":{"type":"array"},
+    "evidence_against":{"type":"array"},
+    "watchlist":{"type":"object"},
+    "limitations":{"type":"array"},
+    "sources":{"type":"array"}
+  },
+  "additionalProperties":true
+}

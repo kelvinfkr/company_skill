@@ -1,0 +1,194 @@
+{
+ "tc_uncertainty_pct": 0.35,
+ "functions": [
+  {
+   "name": "Research and engineering",
+   "headcount": {
+    "low": 1150,
+    "mode": 1400,
+    "high": 1650
+   },
+   "native_bands": [
+    "entry",
+    "mid",
+    "senior",
+    "staff",
+    "executive"
+   ],
+   "shares": [
+    0.12,
+    0.3,
+    0.36,
+    0.2,
+    0.02
+   ],
+   "tc": [
+    {
+     "low": 180000,
+     "mode": 230000,
+     "high": 300000
+    },
+    {
+     "low": 240000,
+     "mode": 330000,
+     "high": 480000
+    },
+    {
+     "low": 350000,
+     "mode": 520000,
+     "high": 800000
+    },
+    {
+     "low": 600000,
+     "mode": 1000000,
+     "high": 1800000
+    },
+    {
+     "low": 1500000,
+     "mode": 3500000,
+     "high": 8000000
+    }
+   ]
+  },
+  {
+   "name": "Product and applied AI",
+   "headcount": {
+    "low": 450,
+    "mode": 550,
+    "high": 700
+   },
+   "native_bands": [
+    "entry",
+    "mid",
+    "senior",
+    "staff",
+    "executive"
+   ],
+   "shares": [
+    0.1,
+    0.32,
+    0.38,
+    0.18,
+    0.02
+   ],
+   "tc": [
+    {
+     "low": 170000,
+     "mode": 220000,
+     "high": 290000
+    },
+    {
+     "low": 230000,
+     "mode": 310000,
+     "high": 450000
+    },
+    {
+     "low": 330000,
+     "mode": 480000,
+     "high": 720000
+    },
+    {
+     "low": 550000,
+     "mode": 900000,
+     "high": 1500000
+    },
+    {
+     "low": 1400000,
+     "mode": 3000000,
+     "high": 7000000
+    }
+   ]
+  },
+  {
+   "name": "Go-to-market",
+   "headcount": {
+    "low": 300,
+    "mode": 350,
+    "high": 450
+   },
+   "native_bands": [
+    "entry",
+    "mid",
+    "senior",
+    "director",
+    "executive"
+   ],
+   "shares": [
+    0.16,
+    0.38,
+    0.3,
+    0.14,
+    0.02
+   ],
+   "tc": [
+    {
+     "low": 120000,
+     "mode": 170000,
+     "high": 240000
+    },
+    {
+     "low": 180000,
+     "mode": 260000,
+     "high": 380000
+    },
+    {
+     "low": 260000,
+     "mode": 400000,
+     "high": 650000
+    },
+    {
+     "low": 450000,
+     "mode": 750000,
+     "high": 1300000
+    },
+    {
+     "low": 1200000,
+     "mode": 2500000,
+     "high": 6000000
+    }
+   ]
+  },
+  {
+   "name": "Safety, policy and operations",
+   "headcount": {
+    "low": 160,
+    "mode": 200,
+    "high": 260
+   },
+   "native_bands": [
+    "entry",
+    "mid",
+    "senior",
+    "director"
+   ],
+   "shares": [
+    0.2,
+    0.42,
+    0.3,
+    0.08
+   ],
+   "tc": [
+    {
+     "low": 110000,
+     "mode": 160000,
+     "high": 220000
+    },
+    {
+     "low": 170000,
+     "mode": 240000,
+     "high": 340000
+    },
+    {
+     "low": 250000,
+     "mode": 380000,
+     "high": 600000
+    },
+    {
+     "low": 420000,
+     "mode": 700000,
+     "high": 1200000
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,608 @@
+{
+ "meta": {
+  "company": "小米集团 (1810.HK)",
+  "reference_date": "2025-12-31",
+  "entity_type": "开曼注册、港交所上市的不同投票权（A/B股）科技集团",
+  "scope": "集团合并口径；中国大陆为主（53,901/56,531人），境外单列",
+  "threshold": "年度税前 TC ≥ 1,000,000 CNY（基本薪资 + 现金奖金 + 年化归属股份；股份按grant_date价格基准）",
+  "confidence": "中等（财务/人数为审计口径；分层薪酬依赖非官方样本）",
+  "subtitle": "公开数据驱动的企业人才经济学研究",
+  "language": "zh-CN",
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24"
+ },
+ "executive": {
+  "diagnosis": "小米是一家人均毛利 180 万、但只有约 8% 员工跨过百万 TC 的“宽底尖塔”组织：利润池由互联网服务与汽车/IoT 决定，高薪人群几乎全部落在 16 级以上、持有股份奖励的 1.66 万人之内，而 18 级（资深专家/高级经理）是跨过百万线的分水岭。",
+  "metrics": [
+   {
+    "label": "全职员工",
+    "value": "约 56,531 人"
+   },
+   {
+    "label": "研发人员",
+    "value": "约 25,457 人 / 45%"
+   },
+   {
+    "label": "人均薪酬费用（含股份）",
+    "value": "53.9万 CNY"
+   },
+   {
+    "label": "TC 中位数（推断）",
+    "value": "33.7万 CNY"
+   },
+   {
+    "label": "TC P90（推断）",
+    "value": "91.8万 CNY"
+   },
+   {
+    "label": "跨阈值人数 p50",
+    "value": "约 4,916 人"
+   },
+   {
+    "label": "p05-p95",
+    "value": "4,289-约 5,845 人"
+   },
+   {
+    "label": "跨阈值占比",
+    "value": "8.7%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "营业收入",
+    "value": "4,573亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "毛利",
+    "value": "1,018亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "经营利润",
+    "value": "479亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "净利润",
+    "value": "416亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "研发开支",
+    "value": "331亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "销售开支",
+    "value": "332亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "行政开支",
+    "value": "66.5亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "雇员福利开支（含 SBC）",
+    "value": "305亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "以股份为基础的薪酬",
+    "value": "53.7亿 CNY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "人均毛利",
+    "value": "180万 CNY",
+    "type": "derived_metric",
+    "evidence": "毛利 ÷ 全职雇员数"
+   },
+   {
+    "metric": "雇员福利开支 ÷ 毛利",
+    "value": "29.9%",
+    "type": "derived_metric",
+    "evidence": "财务报表附注"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "互联网服务",
+    "revenue": "374亿 CNY",
+    "gross_profit": "286亿 CNY",
+    "growth": "9.7%",
+    "dependency": "广告变现、用户规模"
+   },
+   {
+    "segment": "IoT与生活消费产品",
+    "revenue": "1,232亿 CNY",
+    "gross_profit": "284亿 CNY",
+    "growth": "18.3%",
+    "dependency": "大家电产品力、新零售"
+   },
+   {
+    "segment": "智能电动汽车及AI",
+    "revenue": "1,061亿 CNY",
+    "gross_profit": "258亿 CNY",
+    "growth": "223.8%",
+    "dependency": "辅助驾驶、产能、销售网络"
+   },
+   {
+    "segment": "智能手机",
+    "revenue": "1,864亿 CNY",
+    "gross_profit": "203亿 CNY",
+    "growth": "-2.8%",
+    "dependency": "高端化、自研芯片"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "互联网服务",
+   "process": "广告与增值变现",
+   "role": "广告/变现业务负责人、算法推荐负责人",
+   "dependency": "极高",
+   "why": "286 亿毛利、76.5% 毛利率，是集团第一大利润池；人少钱多"
+  },
+  {
+   "profit_pool": "汽车及 AI",
+   "process": "辅助驾驶 / 端到端 VLA",
+   "role": "HAD/XLA 算法负责人、数据闭环负责人",
+   "dependency": "极高",
+   "why": "决定单车溢价与安全叙事；市场替换成本最高"
+  },
+  {
+   "profit_pool": "汽车及 AI",
+   "process": "整车工程与产能",
+   "role": "平台总工、工厂/供应链负责人",
+   "dependency": "高",
+   "why": "55 万辆交付目标受制于产能与质量"
+  },
+  {
+   "profit_pool": "手机",
+   "process": "自研芯片与影像",
+   "role": "玄戒 SoC 架构负责人、影像算法负责人",
+   "dependency": "高",
+   "why": "高端化 27.1% 的支撑，但毛利率仅 10.9%，经济上限受限"
+  },
+  {
+   "profit_pool": "IoT",
+   "process": "大家电产品定义与供应链",
+   "role": "品类总经理、供应链负责人",
+   "dependency": "中高",
+   "why": "284 亿毛利，增长快但依赖国补退坡后的产品力"
+  },
+  {
+   "profit_pool": "全部",
+   "process": "基座模型（MiMo）",
+   "role": "大模型核心研究员",
+   "dependency": "高（战略性）",
+   "why": "目前不直接产生利润，但 AI 承诺 5 年 2,000 亿研发是招募溢价来源"
+  }
+ ],
+ "organization": [
+  {
+   "native": "13-15 级 专员/工程师",
+   "track": "IC",
+   "scope": "任务/项目",
+   "function": "全职能",
+   "state": "IC1-IC3",
+   "confidence": "中（网传职级表）"
+  },
+  {
+   "native": "16-17 级 专家/经理/主管",
+   "track": "IC/M",
+   "scope": "项目/团队",
+   "function": "全职能",
+   "state": "IC4-IC5 / M1-M2",
+   "confidence": "中"
+  },
+  {
+   "native": "18 级 高级经理/资深专家",
+   "track": "IC/M",
+   "scope": "多团队",
+   "function": "研发为主",
+   "state": "IC6 / M3",
+   "confidence": "中"
+  },
+  {
+   "native": "19-20 级 总监/首席",
+   "track": "M",
+   "scope": "职能/产品线",
+   "function": "研发、业务线",
+   "state": "M4-M5",
+   "confidence": "中"
+  },
+  {
+   "native": "21-22 级 VP/CXO/合伙人",
+   "track": "高管",
+   "scope": "公司/BU P&L",
+   "function": "集团",
+   "state": "E6+",
+   "confidence": "高（公开高管名单）"
+  },
+  {
+   "native": "门店/工厂/客服一线",
+   "track": "一线",
+   "scope": "任务",
+   "function": "零售、制造、服务",
+   "state": "F1",
+   "confidence": "低（未单独披露）"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "研发 13-15",
+   "headcount": "约 14,205 人",
+   "cash": "22-45 万",
+   "equity": "0-3 万",
+   "total": "25.0万-48.0万 (众数 33.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 16-17",
+   "headcount": "约 8,299 人",
+   "cash": "45-80 万",
+   "equity": "8-30 万",
+   "total": "55.0万-110万 (众数 72.0万)",
+   "probability": "9%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 18",
+   "headcount": "约 2,189 人",
+   "cash": "60-110 万",
+   "equity": "30-90 万",
+   "total": "90.0万-200万 (众数 125万)",
+   "probability": "93%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 19-20",
+   "headcount": "约 624 人",
+   "cash": "100-200 万",
+   "equity": "80-250 万",
+   "total": "180万-450万 (众数 250万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "研发 21-22",
+   "headcount": "约 140 人",
+   "cash": "200-600 万",
+   "equity": "300 万+",
+   "total": "500万-3,000万 (众数 900万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "非研发专业岗 13-15",
+   "headcount": "约 8,460 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "15.0万-42.0万 (众数 28.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "非研发专业岗 16-17",
+   "headcount": "约 4,371 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "45.0万-100万 (众数 65.0万)",
+   "probability": "3%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "非研发专业岗 18-20",
+   "headcount": "约 1,269 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "80.0万-380万 (众数 130万)",
+   "probability": "96%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "一线零售/制造/客服 frontline",
+   "headcount": "约 14,400 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "8.0万-20.0万 (众数 13.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "境外员工 mixed",
+   "headcount": "约 2,630 人",
+   "cash": "—",
+   "equity": "—",
+   "total": "10.0万-70.0万 (众数 25.0万)",
+   "probability": "0%",
+   "confidence": "inference"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 4,289 / p50 4,916 / p95 5,845 人 (8.7%)",
+  "rows": [
+   {
+    "bucket": "研发 18",
+    "count": "约 2,042 人",
+    "contribution": "42%",
+    "uncertainty": "职级与股权覆盖为模型估计；单桶人数和跨线概率均非公司披露"
+   },
+   {
+    "bucket": "非研发专业岗 18-20",
+    "count": "约 1,217 人",
+    "contribution": "25%",
+    "uncertainty": "职级与股权覆盖为模型估计；单桶人数和跨线概率均非公司披露"
+   },
+   {
+    "bucket": "研发 16-17",
+    "count": "约 768 人",
+    "contribution": "16%",
+    "uncertainty": "职级与股权覆盖为模型估计；单桶人数和跨线概率均非公司披露"
+   },
+   {
+    "bucket": "研发 19-20",
+    "count": "约 624 人",
+    "contribution": "13%",
+    "uncertainty": "职级与股权覆盖为模型估计；单桶人数和跨线概率均非公司披露"
+   },
+   {
+    "bucket": "研发 21-22",
+    "count": "约 140 人",
+    "contribution": "3%",
+    "uncertainty": "职级与股权覆盖为模型估计；单桶人数和跨线概率均非公司披露"
+   },
+   {
+    "bucket": "非研发专业岗 16-17",
+    "count": "约 114 人",
+    "contribution": "2%",
+    "uncertainty": "职级与股权覆盖为模型估计；单桶人数和跨线概率均非公司披露"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "辅助驾驶/VLA 算法负责人",
+   "market": "250-600 万",
+   "economic": "250-800 万",
+   "internal": "180-450 万",
+   "defensible": "250-450 万",
+   "diagnostic": "内部上限偏低，留才风险"
+  },
+  {
+   "role": "MiMo 基座模型核心研究员",
+   "market": "200-500 万",
+   "economic": "150-600 万",
+   "internal": "150-400 万",
+   "defensible": "200-400 万",
+   "diagnostic": "区间重合；需特批通道"
+  },
+  {
+   "role": "玄戒 SoC 架构负责人",
+   "market": "200-450 万",
+   "economic": "180-500 万",
+   "internal": "150-350 万",
+   "defensible": "200-350 万",
+   "diagnostic": "区间重合"
+  },
+  {
+   "role": "手机产品线总经理（19-20 级）",
+   "market": "180-350 万",
+   "economic": "200-500 万",
+   "internal": "180-350 万",
+   "defensible": "200-350 万",
+   "diagnostic": "经济上限高于市场：可用 P&L 绑定浮动"
+  },
+  {
+   "role": "互联网广告变现负责人",
+   "market": "150-300 万",
+   "economic": "200-600 万",
+   "internal": "150-300 万",
+   "defensible": "200-300 万",
+   "diagnostic": "最被低估的利润池岗位"
+  },
+  {
+   "role": "18 级资深研发专家（通用）",
+   "market": "90-160 万",
+   "economic": "80-180 万",
+   "internal": "90-150 万",
+   "defensible": "90-150 万",
+   "diagnostic": "区间重合，百万线分水岭"
+  },
+  {
+   "role": "16-17 级工程师/经理",
+   "market": "55-100 万",
+   "economic": "50-110 万",
+   "internal": "55-90 万",
+   "defensible": "55-90 万",
+   "diagnostic": "靠股权拉开差距"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "13 级校招 → 15 级（约 3 年）→ 16/17 级专家或经理（约 3-4 年）→ 18 级资深专家/高级经理（约 3 年）→ 19-20 级总监",
+   "总监 → 副总裁（22 级）→ 集团总裁/合伙人（王翔、卢伟冰均由 VP 内部升任总裁）"
+  ],
+  "external_path": [
+   "其他大厂 P7/T7 → 小米 16-17 级（社招平移）",
+   "手机/通信/芯片/车企高管 → 直接空降 VP（卢伟冰、曾学忠、王翔）",
+   "汽车业务大量外部引进：车企平台/供应链/辅助驾驶负责人"
+  ],
+  "first_threshold_state": "18 级资深专家/高级经理（含年化股权）；17 级上部凭 S 绩效 + 股权可提前跨过",
+  "promotion_tenure": "公开样本（n=12，Tier B/D）显示主要职级跃迁约 36-48 个月；样本量不足以给出公司级晋升概率",
+  "senior_hire_mix": "VP 层外部空降与早期员工晋升约各半；汽车与 AI 新业务外部引进比例明显更高"
+ },
+ "governance": [
+  {
+   "metric": "以股份为基础的薪酬",
+   "value": "53.65 亿元（占薪酬费用 17.6%）",
+   "evidence": "业绩公告非 IFRS 调节表"
+  },
+  {
+   "metric": "持股雇员",
+   "value": "16,572 人（占 29.3%）",
+   "evidence": "业绩公告"
+  },
+  {
+   "metric": "2025-2026 授出",
+   "value": "约 1.84 亿股 / 约 1.07 万人次；零对价、最长 10 年归属",
+   "evidence": "授出奖励公告"
+  },
+  {
+   "metric": "剩余可授出额度",
+   "value": "约 19.4 亿股 + 服务供应商 1.24 亿股",
+   "evidence": "2025-11-19 公告"
+  },
+  {
+   "metric": "回购与摊薄",
+   "value": "2025 年回购约 63 亿港元、1.526 亿股；注销 2.49 亿 B 股",
+   "evidence": "业绩公告"
+  },
+  {
+   "metric": "创始人控制",
+   "value": "雷军兼董事长/CEO；A 类 10 票；回购同步转股维持 DVR",
+   "evidence": "企业管治章节"
+  },
+  {
+   "metric": "高管薪酬",
+   "value": "执行董事薪酬未逐人披露；2024 年四名独董合计 211 万",
+   "evidence": "2024 年报（转述）"
+  }
+ ],
+ "sensitivity": [
+  "百万人数对 18 级人数（模型 2,200，区间 1,700-2,800）和股权年化口径最敏感：按授予日价值年化 vs. 按当前市值，18 级 TC 可相差 20-30 万。",
+  "第二敏感项是 16-17 级的股权覆盖率：若优秀 15-16 级普遍获授，p50 可上移 300-500 人。",
+  "网传职级薪资表为 2024 年数据（Tier E），2025 年 25% 的薪酬费用增速意味着各级现金可能已上移 5-10%。",
+  "取得 2025 年报中五名最高薪酬人士明细、按职能的员工构成、以及汽车工厂/门店一线人数，可把区间收窄到 ±10%。",
+  "手机毛利率降至 10.9% 与汽车分部盈利转正，意味着 2026 年高薪增量将向汽车/AI 倾斜，手机侧存在结构性上限。"
+ ],
+ "evidence": [
+  {
+   "id": "A01",
+   "source": "2025 年全年业绩公告（HKEX，2026-03-24）",
+   "date": "2026-03",
+   "status": "披露",
+   "supports": "收入、毛利、利润、开支、员工数、薪酬费用、SBC、持股人数、治理"
+  },
+  {
+   "id": "A02",
+   "source": "2023 年股份计划授出奖励公告 ×4",
+   "date": "2025-03 至 2026-03",
+   "status": "披露",
+   "supports": "授股规模、人数、归属期"
+  },
+  {
+   "id": "B01",
+   "source": "公开高管履历与任命公告",
+   "date": "2015-2025",
+   "status": "披露",
+   "supports": "高管进入与晋升路径"
+  },
+  {
+   "id": "C01",
+   "source": "2024 年报独董薪酬（媒体转述）",
+   "date": "2025-04",
+   "status": "披露",
+   "supports": "董事薪酬"
+  },
+  {
+   "id": "E01",
+   "source": "脉脉/CSDN/知乎职级薪资表",
+   "date": "2024-2026",
+   "status": "弱校准",
+   "supports": "职级结构与各级 TC 量级"
+  },
+  {
+   "id": "M01",
+   "source": "estimate_population.py 蒙特卡洛 + 薪酬费用/持股人数交叉校验",
+   "date": "2026-08",
+   "status": "模型",
+   "supports": "百万 TC 人数与岗位定价区间"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "法律/上市结构",
+    "current": "开曼公司，2018 年港交所上市（1810），首家同股不同权上市公司",
+    "historical": "2010 年创立，多轮优先股融资后重组上市",
+    "evidence": "业绩公告/招股书（官方摘要）"
+   },
+   {
+    "item": "章程状态",
+    "current": "现行组织章程细则可于 HKEX 获取；本报告未逐条核对",
+    "historical": "上市前多次修订以配置 A/B 股",
+    "evidence": "official_summary"
+   },
+   {
+    "item": "创始人经济权益",
+    "current": "雷军通过 Smart Mobile Holdings 持股（2025 年配售后减少）",
+    "historical": "2025 年 3 月以 53.25 港元配售 8 亿股旧股并同额认购新股",
+    "evidence": "业绩公告"
+   },
+   {
+    "item": "创始人投票权",
+    "current": "A 类股 10 票/股；雷军+林斌为 DVR 受益人",
+    "historical": "回购时 A 类按 1:1 转 B 类以维持比例（2025-2026 累计约 4,300 万股）",
+    "evidence": "业绩公告/上市规则 8A"
+   },
+   {
+    "item": "董事会控制",
+    "current": "7 席：3 执行（雷军兼董事长与 CEO）、1 非执行（刘芹）、3 独董",
+    "historical": "偏离守则 C.2.1（董事长 CEO 未分设）",
+    "evidence": "企业管治章节"
+   },
+   {
+    "item": "员工股权工具",
+    "current": "2023 年股份计划 + 小米香港 2024 购股权计划；剩余可授出约 19.4 亿股",
+    "historical": "上市后 2018/2023 计划接续；创业者计划两期",
+    "evidence": "授出奖励公告"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "2018-07",
+    "event": "港交所上市，同股不同权",
+    "economic": "优先股转普通股，员工期权/RSU 承接",
+    "control": "A 类股 10 票/股锁定创始人控制",
+    "status": "官方摘要"
+   },
+   {
+    "date": "2022-03",
+    "event": "史上最大规模授股 1.749 亿股/4,931 人",
+    "economic": "创业者计划二期，不含高管",
+    "control": "无变化",
+    "status": "原始文件"
+   },
+   {
+    "date": "2025-03",
+    "event": "配售+认购 8 亿股 @53.25 港元",
+    "economic": "创始人套现同额回注公司",
+    "control": "DVR 比例微降",
+    "status": "原始文件"
+   },
+   {
+    "date": "2025-2026",
+    "event": "四次授股共约 1.84 亿股 / 约 1.07 万人次",
+    "economic": "SBC 53.65 亿元，16,572 人持股",
+    "control": "回购 2.83 亿 B 股并注销，A 类同步转 B",
+    "status": "原始文件"
+   }
+  ]
+ }
+}

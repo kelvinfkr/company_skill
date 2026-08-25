@@ -1,0 +1,146 @@
+{
+ "tc_uncertainty_pct": 0.15,
+ "_doc": "tc_uncertainty_pct = epistemic +/-% applied to each tc triangle to widen p_exceed. One entry per function. Optional per band: cash / equity display strings. share = fraction of that function's headcount in the band; tc = annual pre-tax TC triangle in reporting currency units (not millions). Bands must be listed entry->exec. Use defaults.json pyramid shares if no better evidence exists.",
+ "functions": [
+  {
+   "name": "R&D",
+   "headcount": {
+    "low": null,
+    "mode": null,
+    "high": null
+   },
+   "native_bands": [
+    "entry",
+    "mid",
+    "senior",
+    "director",
+    "exec"
+   ],
+   "shares": [
+    0.56,
+    0.33,
+    0.085,
+    0.024,
+    0.001
+   ],
+   "tc": [
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    }
+   ]
+  },
+  {
+   "name": "Non-R&D professional",
+   "headcount": {
+    "low": null,
+    "mode": null,
+    "high": null
+   },
+   "native_bands": [
+    "entry",
+    "mid",
+    "senior",
+    "director",
+    "exec"
+   ],
+   "shares": [
+    0.6,
+    0.3,
+    0.085,
+    0.014,
+    0.001
+   ],
+   "tc": [
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    },
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    }
+   ]
+  },
+  {
+   "name": "Frontline",
+   "headcount": {
+    "low": null,
+    "mode": null,
+    "high": null
+   },
+   "native_bands": [
+    "frontline"
+   ],
+   "shares": [
+    1.0
+   ],
+   "tc": [
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    }
+   ]
+  },
+  {
+   "name": "Overseas",
+   "headcount": {
+    "low": null,
+    "mode": null,
+    "high": null
+   },
+   "native_bands": [
+    "mixed"
+   ],
+   "shares": [
+    1.0
+   ],
+   "tc": [
+    {
+     "low": null,
+     "mode": null,
+     "high": null
+    }
+   ]
+  }
+ ]
+}

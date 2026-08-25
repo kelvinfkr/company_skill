@@ -1,0 +1,7 @@
+{
+  "case_alias": "demo-intern",
+  "answers": [
+    {"question_id":"core_07","answer":"One product opening was withdrawn and a departure was not replaced.","observed_date":"2026-08-01","provenance":"direct_observation","candidate_confidence":0.8,"include_in_report":true},
+    {"question_id":"core_10","answer":"The candidate has a funded release milestone eight weeks ahead.","observed_date":"2026-08-15","provenance":"direct_observation","candidate_confidence":0.9,"include_in_report":true}
+  ]
+}

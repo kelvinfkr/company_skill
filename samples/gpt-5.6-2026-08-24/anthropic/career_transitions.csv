@@ -1,0 +1,9 @@
+from_state,to_state,transition_type,months,evidence_tier,note
+Research scientist,Senior research scientist,internal_promotion,24,D,public profile sample
+Senior research scientist,Research lead,internal_promotion,30,D,public profile sample
+Research lead,Research director,internal_promotion,36,C,leadership biography
+Software engineer,Staff engineer,internal_promotion,30,D,public profile sample
+External frontier lab researcher,Senior researcher,external_entry,0,C,peer-lab hiring route
+External enterprise AI lead,Applied AI lead,external_entry,0,C,enterprise expansion
+Policy researcher,Policy director,internal_promotion,36,C,public biography
+Product leader,Labs leader,internal_lateral,24,B,official leadership announcement

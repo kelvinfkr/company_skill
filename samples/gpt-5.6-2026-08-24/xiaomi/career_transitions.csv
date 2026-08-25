@@ -1,0 +1,13 @@
+from_state,to_state,transition_type,months,evidence_tier,note
+外部手机厂商CEO/总裁,小米副总裁(22级),external_entry,0,B,卢伟冰 2019 自金立加入
+小米副总裁(22级),集团总裁/合伙人,internal_promotion,36,B,卢伟冰 2022 升集团总裁
+外部通信厂商高管,小米副总裁(22级),external_entry,0,B,曾学忠 2020 自中兴加入
+外部芯片厂商高管,小米高级副总裁,external_entry,0,B,王翔 2015 自高通加入
+小米高级副总裁,集团总裁,internal_promotion,60,B,王翔 2019 升集团总裁
+早期核心员工/部门负责人,小米副总裁(22级),internal_promotion,96,B,屈恒/许斐等早期员工晋升VP
+小米总监(19-20级),小米副总裁(22级),internal_promotion,48,D,公开履历样本
+外部车企/供应链高管,小米汽车部门负责人,external_entry,0,D,汽车业务外部引进
+资深专家(18级),总监(19-20级),internal_promotion,42,D,公开履历样本
+专家/经理(16-17级),资深专家/高级经理(18级),internal_promotion,36,D,公开履历样本
+专员(13-15级),专家/经理(16-17级),internal_promotion,40,D,公开履历样本
+外部大厂P7/T7级工程师,小米16-17级,external_entry,0,D,社招平移

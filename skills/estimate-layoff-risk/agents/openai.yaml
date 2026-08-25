@@ -1,0 +1,15 @@
+interface:
+  display_name: Layoff Risk Economics
+  short_description: Estimate job-loss risk from profit pools and role exposure
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+  brand_color: '#172B4D'
+  default_prompt: Use $estimate-layoff-risk to assess my 3, 6, and 12-month involuntary
+    job-loss risk.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

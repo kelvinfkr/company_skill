@@ -6,3 +6,4 @@ talent-economics/
 *.egg-info/
 .venv/
 venv/
+tmp/

@@ -1,0 +1,79 @@
+{
+  "core": [
+    {"id":"core_01","question":"Which outcomes should count: layoff, unit closure, role redundancy, performance exit, non-renewal, internship ending, forced transfer, or any involuntary exit?"},
+    {"id":"core_02","question":"Which horizons matter: 3, 6, and/or 12 months?"},
+    {"id":"core_03","question":"Which legal entity employs or contracts with you, and which parent or brand do you work under?"},
+    {"id":"core_04","question":"Which country, worksite, business unit, product/project/customer, and role family are you attached to?"},
+    {"id":"core_05","question":"What is your employment type and, if applicable, contract, probation, or internship end date?"},
+    {"id":"core_06","question":"Is the business stable/profitable, growing but loss-making, incubating, integrating, or contracting? Unknown is acceptable."},
+    {"id":"core_07","question":"What changed in headcount, open roles, replacement hiring, contractors, budget, travel, procurement, overtime, or shifts in the last 90 days?"},
+    {"id":"core_08","question":"Is your workload increasing, stable, disappearing, transferred, automated, or duplicated?"},
+    {"id":"core_09","question":"Did your manager, reporting line, cost center, site, or product ownership change recently?"},
+    {"id":"core_10","question":"Do you have funded deliverables with owners and deadlines for the next 8-12 weeks?"},
+    {"id":"core_11","question":"Has anyone requested role justification, workload logs, handover documents, access review, location changes, or role reapplications?"},
+    {"id":"core_12","question":"If the team shrank 20%, which work must remain and who else could perform yours?"}
+  ],
+  "employment": {
+    "intern": [
+      {"id":"emp_intern_01","question":"When does the internship end, and is conversion headcount formally approved?"},
+      {"id":"emp_intern_02","question":"Are you assigned to a funded project schedule or mainly temporary overflow work?"},
+      {"id":"emp_intern_03","question":"What happened to comparable interns in the latest cohort?"}
+    ],
+    "probation": [
+      {"id":"emp_probation_01","question":"What written criteria and review date apply to probation?"},
+      {"id":"emp_probation_02","question":"Did the role or hiring plan change after you accepted?"},
+      {"id":"emp_probation_03","question":"What documented feedback have you received? You may decline to answer."}
+    ],
+    "fixed_term": [
+      {"id":"emp_fixed_01","question":"When does the term end, and what is the team's renewal history?"},
+      {"id":"emp_fixed_02","question":"Does the role or its funding continue beyond the contract date?"}
+    ],
+    "contractor": [
+      {"id":"emp_contract_01","question":"When do the statement of work and purchase order end?"},
+      {"id":"emp_contract_02","question":"Is the client consolidating vendors or internalizing this work?"}
+    ],
+    "employee": [
+      {"id":"emp_employee_01","question":"What redeployment or internal-transfer mechanisms exist?"},
+      {"id":"emp_employee_02","question":"Would selection occur by role family, site, business unit, or individual performance?"}
+    ]
+  },
+  "roles": {
+    "product": [
+      {"id":"role_product_01","question":"Is the product launched, funded, and present on the current roadmap?"},
+      {"id":"role_product_02","question":"Are engineering and design resources still assigned to its next releases?"},
+      {"id":"role_product_03","question":"Are there overlapping product teams or plans to merge the product?"}
+    ],
+    "sales": [
+      {"id":"role_sales_01","question":"What are quota attainment, pipeline coverage, renewals, and product contribution trends?"},
+      {"id":"role_sales_02","question":"Is the territory or account ownership being consolidated?"}
+    ],
+    "engineering": [
+      {"id":"role_eng_01","question":"Do you own production systems, on-call, customer commitments, security, or regulatory obligations?"},
+      {"id":"role_eng_02","question":"Is the platform being duplicated, migrated, outsourced, automated, or retired?"},
+      {"id":"role_eng_03","question":"How long would replacement and operational recovery take?"}
+    ],
+    "research": [
+      {"id":"role_research_01","question":"What funds the work, how long is the runway, and what is the next decision milestone?"},
+      {"id":"role_research_02","question":"Is management still willing to fund the next stage?"}
+    ],
+    "manufacturing": [
+      {"id":"role_mfg_01","question":"What changed in orders, inventory, utilization, shifts, overtime, and line-transfer plans?"},
+      {"id":"role_mfg_02","question":"Is the role required for minimum safe, quality, maintenance, or certified staffing?"}
+    ],
+    "services": [
+      {"id":"role_services_01","question":"What are billable utilization, bench duration, backlog, project margin, and renewal status?"},
+      {"id":"role_services_02","question":"Is a funded next project identified?"}
+    ],
+    "corporate": [
+      {"id":"role_corp_01","question":"Are shared services, M&A duplication, ERP automation, or outsourcing changing the function?"},
+      {"id":"role_corp_02","question":"Is current restructuring work temporary, and what remains after it peaks?"}
+    ],
+    "public_service": [
+      {"id":"role_public_01","question":"What appropriation, grant, enrollment, census, service demand, or mandate funds the role?"},
+      {"id":"role_public_02","question":"Are attrition, redeployment, or non-renewal more likely than layoffs?"}
+    ],
+    "general": [
+      {"id":"role_general_01","question":"What measurable business process depends on this role, and what happens if it stops for three months?"}
+    ]
+  }
+}

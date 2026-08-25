@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["claim_id","claim","claim_type","level","direction","confidence"],
+  "properties":{
+    "claim_id":{"type":"string"},
+    "claim":{"type":"string"},
+    "claim_type":{"enum":["observed_fact","candidate_report","derived_metric","model_assumption","inference"]},
+    "level":{"enum":["company","business_unit","process","role","employment","individual"]},
+    "direction":{"enum":["risk_up","risk_down","mixed","neutral"]},
+    "event_date":{"type":"string"},
+    "published_date":{"type":"string"},
+    "source_title":{"type":"string"},
+    "source_url":{"type":"string"},
+    "source_type":{"type":"string"},
+    "tier":{"enum":["A","B","C","D","E","candidate"]},
+    "independence_group":{"type":"string"},
+    "confidence":{"type":"number","minimum":0,"maximum":1},
+    "notes":{"type":"string"}
+  },
+  "additionalProperties":true
+}

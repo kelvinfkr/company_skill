@@ -1,0 +1,8 @@
+Ingenieur -> Senior-Spezialist [internal_promotion] n=1, weighted_share=100.0%, median_tenure=48 mo
+Senior-Spezialist -> Teamleitung [internal_promotion] n=1, weighted_share=100.0%, median_tenure=36 mo
+Teamleitung -> Bereichsleitung [internal_promotion] n=1, weighted_share=100.0%, median_tenure=48 mo
+Bereichsleitung -> Vorstand [internal_promotion] n=1, weighted_share=100.0%, median_tenure=72 mo
+Produktionsplanung -> Werkleitung [internal_promotion] n=1, weighted_share=100.0%, median_tenure=60 mo
+Werkleitung -> Produktionsvorstand [internal_promotion] n=1, weighted_share=100.0%, median_tenure=72 mo
+Externer Softwaremanager -> Softwarebereichsleitung [external_entry] n=1, weighted_share=100.0%, median_tenure=0 mo
+Regionalleitung -> Zentralbereichsleitung [internal_lateral] n=1, weighted_share=100.0%, median_tenure=48 mo

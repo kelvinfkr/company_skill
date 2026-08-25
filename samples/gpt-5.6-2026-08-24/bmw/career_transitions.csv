@@ -1,0 +1,9 @@
+from_state,to_state,transition_type,months,evidence_tier,note
+Ingenieur,Senior-Spezialist,internal_promotion,48,C,öffentliche Karriereprofile
+Senior-Spezialist,Teamleitung,internal_promotion,36,C,öffentliche Karriereprofile
+Teamleitung,Bereichsleitung,internal_promotion,48,B,Vorstandsbiografien
+Bereichsleitung,Vorstand,internal_promotion,72,B,offizielle Biografien
+Produktionsplanung,Werkleitung,internal_promotion,60,B,Werkleiterprofile
+Werkleitung,Produktionsvorstand,internal_promotion,72,B,offizielle Biografie
+Externer Softwaremanager,Softwarebereichsleitung,external_entry,0,C,Technologie-Rekrutierung
+Regionalleitung,Zentralbereichsleitung,internal_lateral,48,B,internationale Karriere

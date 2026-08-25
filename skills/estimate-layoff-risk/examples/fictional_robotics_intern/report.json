@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "case_alias": "demo-intern",
+    "company": "Northstar Robotics（虚构示例）",
+    "legal_employer": "Northstar Robotics (Suzhou) Co., Ltd.",
+    "role": "移动端产品实习生",
+    "country": "中国",
+    "reference_date": "2026-08-24",
+    "confidence": "中等",
+    "outcome_definition": "提前终止、项目取消、合同不续或无转正名额；与法定裁员分别报告"
+  },
+  "executive": {
+    "diagnosis": "六个月内的主要风险来自共享产品团队合并及实习到期不续，而不是公司层面的生存危机。",
+    "dominant_uncertainty": "移动端团队是否继续获得独立产品编制，以及转正名额是否已获批准。",
+    "risk_by_horizon": [
+      {"horizon":"3个月","structural_layoff":"0.7%-2.2%","contract_or_nonrenewal":"4.4%-11.3%","performance_exit":"1.6%-5.1%","any_involuntary_exit":"8.2%-15.6%"},
+      {"horizon":"6个月","structural_layoff":"1.4%-4.3%","contract_or_nonrenewal":"15.7%-33.4%","performance_exit":"3.1%-8.6%","any_involuntary_exit":"22.1%-39.0%"},
+      {"horizon":"12个月","structural_layoff":"2.6%-7.2%","contract_or_nonrenewal":"35.7%-61.7%","performance_exit":"5.5%-13.1%","any_involuntary_exit":"43.9%-66.9%"}
+    ]
+  },
+  "company_pressure": {
+    "regime": "资本重配与组织整合",
+    "summary": "核心清洁业务仍产生正向贡献，但实验性业务被审查，共享移动端团队正在合并。",
+    "metrics": [
+      {"metric":"现金压力","value":"低-中","type":"模型推断","evidence":"核心业务仍为正贡献"},
+      {"metric":"组织整合强度","value":"中-高","type":"观察事实","evidence":"多个产品团队被合并"}
+    ]
+  },
+  "profit_pools": [
+    {"name":"核心清洁机器人","economics":"增长、正贡献","contribution":"高","option_value":"高","management_intent":"保护并投入","risk":"低"},
+    {"name":"实验性移动设备","economics":"负贡献","contribution":"低","option_value":"战略审查后下降","management_intent":"收缩","risk":"高"},
+    {"name":"共享移动App","economics":"间接支持多个产品","contribution":"中","option_value":"中","management_intent":"合并团队","risk":"中"}
+  ],
+  "dependency_graph": [
+    {"profit_pool":"核心清洁机器人","process":"设备配网与控制","role":"移动端产品实习生","substitutability":"中高","time_to_damage":"数周至数月","risk":"中"},
+    {"profit_pool":"共享移动App","process":"版本协调与需求管理","role":"产品团队","substitutability":"高（存在重叠）","time_to_damage":"较慢","risk":"中高"}
+  ],
+  "leadership_regime": {
+    "summary":"管理层表现为创始人集中试错与运营效率约束的混合机制；对核心技术继续投入，对失去赞助的实验项目快速整合。",
+    "evidence":["预算从实验产品回流核心清洁业务。","组织调整以整个项目和重复团队为单位，而非仅按个人绩效。"]
+  },
+  "candidate_signals": {
+    "risk_up":["一个同类产品岗位被撤回，离职员工未补招。"],
+    "protective":["候选人仍有八周后的正式版本里程碑。","工作直接服务核心清洁设备。"],
+    "ambiguous":["转正编制尚未确认。"]
+  },
+  "scenarios": [
+    {"name":"有利","assumptions":"核心App保持独立路线图并批准转正名额","risk_6m":"12%-22%","interpretation":"风险主要为一般实习到期波动"},
+    {"name":"基准","assumptions":"共享团队合并，但核心版本继续交付","risk_6m":"22%-39%","interpretation":"不续概率高于整建制裁撤"},
+    {"name":"不利","assumptions":"产品并入集团平台且停止同类招聘","risk_6m":"45%-65%","interpretation":"岗位冗余与不续同时上升"}
+  ],
+  "evidence_for":["产品岗位被撤回。","共享移动端团队存在重复。"],
+  "evidence_against":["核心清洁利润池仍获得投入。","候选人仍在正式版本排期。"],
+  "watchlist": {
+    "risk_up":["路线图取消或交接给集团平台。","导师或产品负责人离职。","同类招聘全部下架。"],
+    "risk_down":["转正名额书面批准。","新增同类招聘。","候选人获得下一季度指标所有权。"]
+  },
+  "limitations":["公司与数据均为虚构示例。","概率为场景先验，未经过该公司历史样本校准。","没有使用任何受保护或敏感个人属性。"],
+  "sources":[{"title":"Fictional annual operating review","url":"https://example.com/fictional-source"}]
+}

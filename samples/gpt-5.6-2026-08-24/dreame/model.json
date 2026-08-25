@@ -1,0 +1,279 @@
+{
+ "company": "追觅科技",
+ "reference_date": "2025-12-31",
+ "threshold": {
+  "amount": 1000000.0,
+  "currency": "CNY"
+ },
+ "workforce": {
+  "low": 18168,
+  "mode": 18539,
+  "high": 18910
+ },
+ "buckets": [
+  {
+   "name": "研发 entry",
+   "function": "研发",
+   "level": "entry",
+   "headcount": {
+    "low": 3510,
+    "mode": 4320,
+    "high": 5130
+   },
+   "tc": {
+    "low": 200000,
+    "mode": 300000,
+    "high": 450000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "研发 mid",
+   "function": "研发",
+   "level": "mid",
+   "headcount": {
+    "low": 2080,
+    "mode": 2560,
+    "high": 3040
+   },
+   "tc": {
+    "low": 350000,
+    "mode": 520000,
+    "high": 750000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "研发 senior",
+   "function": "研发",
+   "level": "senior",
+   "headcount": {
+    "low": 650,
+    "mode": 800,
+    "high": 950
+   },
+   "tc": {
+    "low": 650000,
+    "mode": 900000,
+    "high": 1300000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.3462,
+    "high": 0.9125
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "研发 director",
+   "function": "研发",
+   "level": "director",
+   "headcount": {
+    "low": 228,
+    "mode": 280,
+    "high": 333
+   },
+   "tc": {
+    "low": 1000000,
+    "mode": 1500000,
+    "high": 2400000
+   },
+   "p_exceed": {
+    "low": 0.7376,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "研发 exec",
+   "function": "研发",
+   "level": "exec",
+   "headcount": {
+    "low": 32,
+    "mode": 40,
+    "high": 48
+   },
+   "tc": {
+    "low": 2200000,
+    "mode": 4500000,
+    "high": 9000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、产品与职能 entry",
+   "function": "销售、产品与职能",
+   "level": "entry",
+   "headcount": {
+    "low": 1856,
+    "mode": 2320,
+    "high": 2784
+   },
+   "tc": {
+    "low": 160000,
+    "mode": 260000,
+    "high": 400000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、产品与职能 mid",
+   "function": "销售、产品与职能",
+   "level": "mid",
+   "headcount": {
+    "low": 960,
+    "mode": 1200,
+    "high": 1440
+   },
+   "tc": {
+    "low": 300000,
+    "mode": 450000,
+    "high": 650000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、产品与职能 senior",
+   "function": "销售、产品与职能",
+   "level": "senior",
+   "headcount": {
+    "low": 288,
+    "mode": 360,
+    "high": 432
+   },
+   "tc": {
+    "low": 550000,
+    "mode": 800000,
+    "high": 1200000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.1538,
+    "high": 0.7042
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、产品与职能 director",
+   "function": "销售、产品与职能",
+   "level": "director",
+   "headcount": {
+    "low": 86,
+    "mode": 108,
+    "high": 130
+   },
+   "tc": {
+    "low": 900000,
+    "mode": 1400000,
+    "high": 2200000
+   },
+   "p_exceed": {
+    "low": 0.5722,
+    "mode": 0.9846,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "销售、产品与职能 exec",
+   "function": "销售、产品与职能",
+   "level": "exec",
+   "headcount": {
+    "low": 10,
+    "mode": 12,
+    "high": 14
+   },
+   "tc": {
+    "low": 2000000,
+    "mode": 4000000,
+    "high": 8000000
+   },
+   "p_exceed": {
+    "low": 1.0,
+    "mode": 1.0,
+    "high": 1.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "制造与服务一线 frontline",
+   "function": "制造与服务一线",
+   "level": "frontline",
+   "headcount": {
+    "low": 4300,
+    "mode": 5000,
+    "high": 5700
+   },
+   "tc": {
+    "low": 90000,
+    "mode": 140000,
+    "high": 220000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0
+   },
+   "cash": null,
+   "equity": null
+  },
+  {
+   "name": "境外员工 mixed",
+   "function": "境外员工",
+   "level": "mixed",
+   "headcount": {
+    "low": 1200,
+    "mode": 1539,
+    "high": 1900
+   },
+   "tc": {
+    "low": 180000,
+    "mode": 360000,
+    "high": 800000
+   },
+   "p_exceed": {
+    "low": 0.0,
+    "mode": 0.0,
+    "high": 0.0035
+   },
+   "cash": null,
+   "equity": null
+  }
+ ]
+}

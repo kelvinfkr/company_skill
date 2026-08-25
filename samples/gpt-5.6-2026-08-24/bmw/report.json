@@ -1,0 +1,623 @@
+{
+ "meta": {
+  "company": "BMW AG",
+  "language": "de",
+  "reference_date": "2025-12-31",
+  "entity_type": "Börsennotierte deutsche Aktiengesellschaft mit mitbestimmtem Aufsichtsrat",
+  "scope": "BMW Group konsolidiert; Funktions- und Levelmix aus öffentlichen Angaben rekonstruiert",
+  "threshold": "Jährliche TC vor Steuern >= 150.000 EUR (Grundgehalt + Barbonus + annualisierte unverfallbare Aktien; Aktienbewertung auf grant-date / market price for listed shares-Basis)",
+  "confidence": "Niedrig (vorläufige Schätzung)",
+  "subtitle": "Aus öffentlichen Daten rekonstruierte Talent-Ökonomie",
+  "provisional_note": "Vorläufig: gross_profit modeled, employee_benefit_expense modeled war öffentlich nicht verfügbar. Die Schätzung beruht auf Modellannahmen und ist als Intervall zu lesen, nicht als Messwert.",
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24"
+ },
+ "executive": {
+  "diagnosis": "BMW hat eine breite tariflich geprägte Basis und eine große technische Führungsschicht: Das Modell verortet rund ein Fünftel über 150.000 EUR TC, doch Rohertrag und Personalaufwand sind für dieses Sample modelliert und das Ergebnis daher vorläufig.",
+  "metrics": [
+   {
+    "label": "Vollzeitbeschäftigte",
+    "value": "ca. 154.540 Beschäftigte"
+   },
+   {
+    "label": "F&E-Beschäftigte",
+    "value": "ca. 25.000 Beschäftigte / 16%"
+   },
+   {
+    "label": "Personalkosten je Beschäftigten (inkl. Aktien)",
+    "value": "ca. 148.800 EUR (Modellannahme)"
+   },
+   {
+    "label": "Median-TC (geschätzt)",
+    "value": "92,8 Tsd. EUR"
+   },
+   {
+    "label": "TC P90 (geschätzt)",
+    "value": "188 Tsd. EUR"
+   },
+   {
+    "label": "Über Schwelle (p50)",
+    "value": "ca. 29.688 Beschäftigte"
+   },
+   {
+    "label": "p05-p95",
+    "value": "25.057-ca. 34.323 Beschäftigte"
+   },
+   {
+    "label": "Anteil über der Schwelle",
+    "value": "19,2%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "Umsatz",
+    "value": "133 Mrd. EUR",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "Rohertrag",
+    "value": "35,0 Mrd. EUR",
+    "type": "observed_fact",
+    "evidence": "E09"
+   },
+   {
+    "metric": "Betriebsergebnis",
+    "value": "10,2 Mrd. EUR",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "Jahresüberschuss",
+    "value": "7,5 Mrd. EUR",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "F&E-Aufwand",
+    "value": "8,3 Mrd. EUR",
+    "type": "observed_fact",
+    "evidence": "E03"
+   },
+   {
+    "metric": "Personalaufwand (inkl. Aktienvergütung)",
+    "value": "23,0 Mrd. EUR",
+    "type": "observed_fact",
+    "evidence": "E09"
+   },
+   {
+    "metric": "Rohertrag je Beschäftigten",
+    "value": "226 Tsd. EUR",
+    "type": "derived_metric",
+    "evidence": "Rohertrag / Kopfzahl"
+   },
+   {
+    "metric": "Personalaufwand / Rohertrag",
+    "value": "65,7%",
+    "type": "derived_metric",
+    "evidence": "Anhang zum Abschluss"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "Automotive",
+    "revenue": "118 Mrd. EUR",
+    "gross_profit": "Nicht öffentlich; Konzernwert modelliert",
+    "growth": "-5,9%",
+    "dependency": "Fahrzeugarchitektur, Batterie, Software, Produktion (extreme)"
+   },
+   {
+    "segment": "Financial Services",
+    "revenue": "39,8 Mrd. EUR",
+    "gross_profit": "Nicht öffentlich; Konzernwert modelliert",
+    "growth": "3,2%",
+    "dependency": "Restwert, Kreditrisiko, Treasury (high)"
+   },
+   {
+    "segment": "Motorräder",
+    "revenue": "3,1 Mrd. EUR",
+    "gross_profit": "Nicht öffentlich; Konzernwert modelliert",
+    "growth": "-2,4%",
+    "dependency": "Produktentwicklung und Premiumvertrieb (medium)"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "Automotive",
+   "process": "Batterie und E-Antrieb",
+   "role": "Leitung Batterie/E-Antrieb",
+   "dependency": "sehr hoch",
+   "why": "Reichweite, Kosten und Industrialisierung prägen Fahrzeugmarge"
+  },
+  {
+   "profit_pool": "Automotive",
+   "process": "E/E- und Softwarearchitektur",
+   "role": "Software-/Architekturleitung",
+   "dependency": "sehr hoch",
+   "why": "NEUE KLASSE bündelt Differenzierung in Elektronik und Software"
+  },
+  {
+   "profit_pool": "Automotive",
+   "process": "Industrialisierung",
+   "role": "Werk- und Produktionsleitung",
+   "dependency": "hoch",
+   "why": "Qualität, Anlauf und Auslastung wirken direkt auf EBIT"
+  },
+  {
+   "profit_pool": "Financial Services",
+   "process": "Restwert und Kreditrisiko",
+   "role": "Risiko-/Treasury-Leitung",
+   "dependency": "hoch",
+   "why": "Portfolioqualität und Refinanzierung bestimmen Segmentergebnis"
+  }
+ ],
+ "organization": [
+  {
+   "native": "Tarif/Fachkraft (rekonstruiert)",
+   "track": "Fach",
+   "scope": "Arbeitsstation/Funktion",
+   "function": "Produktion/Logistik",
+   "state": "tarif",
+   "confidence": "mittel"
+  },
+  {
+   "native": "Professional",
+   "track": "IC/M",
+   "scope": "Modul/Projekt",
+   "function": "alle",
+   "state": "professional",
+   "confidence": "mittel"
+  },
+  {
+   "native": "Senior/Lead",
+   "track": "IC/M",
+   "scope": "System/Team",
+   "function": "F&E, Software, Vertrieb",
+   "state": "senior/lead",
+   "confidence": "niedrig"
+  },
+  {
+   "native": "Management/Director",
+   "track": "M",
+   "scope": "Bereich/Werk",
+   "function": "alle",
+   "state": "management",
+   "confidence": "niedrig"
+  },
+  {
+   "native": "Vorstand",
+   "track": "Organ",
+   "scope": "Konzernressort",
+   "function": "Gruppe",
+   "state": "executive",
+   "confidence": "hoch"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "Produktion und Logistik tarif",
+   "headcount": "ca. 43.400 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "45,0 Tsd.-82,0 Tsd. (Modus 62,0 Tsd.)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Produktion und Logistik professional",
+   "headcount": "ca. 17.500 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "65,0 Tsd.-110 Tsd. (Modus 85,0 Tsd.)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Produktion und Logistik senior",
+   "headcount": "ca. 7.000 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "95,0 Tsd.-170 Tsd. (Modus 125 Tsd.)",
+   "probability": "23%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Produktion und Logistik management",
+   "headcount": "ca. 1.890 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "140 Tsd.-320 Tsd. (Modus 200 Tsd.)",
+   "probability": "92%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Produktion und Logistik executive",
+   "headcount": "ca. 210 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "350 Tsd.-1,6 Mio. (Modus 700 Tsd.)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Forschung, Entwicklung und Software entry",
+   "headcount": "ca. 5.000 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "60,0 Tsd.-100 Tsd. (Modus 78,0 Tsd.)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Forschung, Entwicklung und Software professional",
+   "headcount": "ca. 10.750 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "80,0 Tsd.-140 Tsd. (Modus 105 Tsd.)",
+   "probability": "4%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Forschung, Entwicklung und Software senior",
+   "headcount": "ca. 6.750 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "115 Tsd.-220 Tsd. (Modus 155 Tsd.)",
+   "probability": "62%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Forschung, Entwicklung und Software management",
+   "headcount": "ca. 2.250 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "180 Tsd.-450 Tsd. (Modus 270 Tsd.)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Forschung, Entwicklung und Software executive",
+   "headcount": "ca. 250 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "500 Tsd.-2,2 Mio. (Modus 1,0 Mio.)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Vertrieb, Verwaltung und Financial Services entry",
+   "headcount": "ca. 9.450 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "50,0 Tsd.-90,0 Tsd. (Modus 68,0 Tsd.)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Vertrieb, Verwaltung und Financial Services professional",
+   "headcount": "ca. 15.750 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "70,0 Tsd.-130 Tsd. (Modus 95,0 Tsd.)",
+   "probability": "1%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Vertrieb, Verwaltung und Financial Services senior",
+   "headcount": "ca. 7.000 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "105 Tsd.-210 Tsd. (Modus 145 Tsd.)",
+   "probability": "50%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Vertrieb, Verwaltung und Financial Services management",
+   "headcount": "ca. 2.450 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "170 Tsd.-430 Tsd. (Modus 260 Tsd.)",
+   "probability": "99%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Vertrieb, Verwaltung und Financial Services executive",
+   "headcount": "ca. 350 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "480 Tsd.-2,1 Mio. (Modus 950 Tsd.)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Technische Spezialisten und Führung specialist",
+   "headcount": "ca. 11.779 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "90,0 Tsd.-160 Tsd. (Modus 120 Tsd.)",
+   "probability": "16%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Technische Spezialisten und Führung lead",
+   "headcount": "ca. 8.344 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "125 Tsd.-240 Tsd. (Modus 170 Tsd.)",
+   "probability": "74%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Technische Spezialisten und Führung director",
+   "headcount": "ca. 3.681 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "210 Tsd.-550 Tsd. (Modus 320 Tsd.)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "Technische Spezialisten und Führung executive",
+   "headcount": "ca. 736 Beschäftigte",
+   "cash": "—",
+   "equity": "—",
+   "total": "500 Tsd.-2,4 Mio. (Modus 1,0 Mio.)",
+   "probability": "100%",
+   "confidence": "inference"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 25.057 / p50 29.688 / p95 34.323 Beschäftigte (19,2%)",
+  "rows": [
+   {
+    "bucket": "Technische Spezialisten und Führung lead",
+    "count": "ca. 6.202 Beschäftigte",
+    "contribution": "21%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Forschung, Entwicklung und Software senior",
+    "count": "ca. 4.199 Beschäftigte",
+    "contribution": "14%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Technische Spezialisten und Führung director",
+    "count": "ca. 3.678 Beschäftigte",
+    "contribution": "12%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Vertrieb, Verwaltung und Financial Services senior",
+    "count": "ca. 3.531 Beschäftigte",
+    "contribution": "12%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Vertrieb, Verwaltung und Financial Services management",
+    "count": "ca. 2.433 Beschäftigte",
+    "contribution": "8%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Forschung, Entwicklung und Software management",
+    "count": "ca. 2.246 Beschäftigte",
+    "contribution": "8%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Technische Spezialisten und Führung specialist",
+    "count": "ca. 1.831 Beschäftigte",
+    "contribution": "6%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Produktion und Logistik management",
+    "count": "ca. 1.739 Beschäftigte",
+    "contribution": "6%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Produktion und Logistik senior",
+    "count": "ca. 1.639 Beschäftigte",
+    "contribution": "6%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Technische Spezialisten und Führung executive",
+    "count": "ca. 736 Beschäftigte",
+    "contribution": "2%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Forschung, Entwicklung und Software professional",
+    "count": "ca. 441 Beschäftigte",
+    "contribution": "1%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Vertrieb, Verwaltung und Financial Services executive",
+    "count": "ca. 350 Beschäftigte",
+    "contribution": "1%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Forschung, Entwicklung und Software executive",
+    "count": "ca. 250 Beschäftigte",
+    "contribution": "1%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Produktion und Logistik executive",
+    "count": "ca. 210 Beschäftigte",
+    "contribution": "1%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   },
+   {
+    "bucket": "Vertrieb, Verwaltung und Financial Services professional",
+    "count": "ca. 109 Beschäftigte",
+    "contribution": "0%",
+    "uncertainty": "Funktionsmix, Levelverteilung und modellierter Personalaufwand sind keine von BMW gemessenen Schwellenwerte"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "Leitung Batterie und E-Antrieb",
+   "market": "180-360 Tsd. EUR",
+   "economic": "240-650 Tsd. EUR",
+   "internal": "170-380 Tsd. EUR",
+   "defensible": "240-360 Tsd. EUR",
+   "diagnostic": "Überlappung; langfristige Technikziele wichtig"
+  },
+  {
+   "role": "Leitung E/E- und Softwarearchitektur",
+   "market": "190-400 Tsd. EUR",
+   "economic": "260-750 Tsd. EUR",
+   "internal": "180-420 Tsd. EUR",
+   "defensible": "260-400 Tsd. EUR",
+   "diagnostic": "Starker externer Technologiemarkt"
+  },
+  {
+   "role": "Werk- und Industrialisierungsleitung",
+   "market": "170-330 Tsd. EUR",
+   "economic": "220-550 Tsd. EUR",
+   "internal": "160-350 Tsd. EUR",
+   "defensible": "220-330 Tsd. EUR",
+   "diagnostic": "Anlauf- und Qualitätsziele sollten variabel wirken"
+  },
+  {
+   "role": "Restwert- und Kreditrisikoleitung",
+   "market": "160-320 Tsd. EUR",
+   "economic": "210-500 Tsd. EUR",
+   "internal": "150-330 Tsd. EUR",
+   "defensible": "210-320 Tsd. EUR",
+   "diagnostic": "Risikoergebnis rechtfertigt Prämie"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "Ingenieur → Senior-Spezialist → Teamleitung",
+   "Werkleitung → Produktionsressort"
+  ],
+  "external_path": [
+   "Externer Softwaremanager → Softwarebereichsleitung",
+   "Finanzrisiko-Spezialist → Financial-Services-Leitung"
+  ],
+  "first_threshold_state": "Senior-Spezialist am oberen Band oder erste größere Führungsverantwortung",
+  "promotion_tenure": "Die acht öffentlichen Pfade zeigen meist 3-6 Jahre je Schritt; es sind beobachtete Übergänge, keine Beförderungswahrscheinlichkeiten",
+  "senior_hire_mix": "Produktion und klassische Fahrzeugentwicklung überwiegend intern; Software und neue Technologien stärker extern"
+ },
+ "governance": [
+  {
+   "metric": "Rechtsform",
+   "value": "BMW AG, dualistischer Vorstand/Aufsichtsrat",
+   "evidence": "Satzung/Governance-Bericht"
+  },
+  {
+   "metric": "Mitbestimmung",
+   "value": "Arbeitnehmervertretung im Aufsichtsrat",
+   "evidence": "Corporate Governance"
+  },
+  {
+   "metric": "Organvergütung",
+   "value": "Vergütungsbericht nach §162 AktG",
+   "evidence": "Vergütungsbericht 2025"
+  },
+  {
+   "metric": "Belegschaftsaktien",
+   "value": "Programme vorhanden; vollständige Teilnahme nach Level nicht öffentlich",
+   "evidence": "Geschäftsbericht"
+  }
+ ],
+ "sensitivity": [
+  "Ein ±25% höherer Senior-/Lead-Anteil verschiebt den p50-Wert um etwa 4.000-6.000 Personen.",
+  "Regionale Mischung und tarifliche Sonderzahlungen sind der zweitgrößte Treiber.",
+  "Der Personalaufwand von 23 Mrd. EUR und Rohertrag von 35 Mrd. EUR sind Modellannahmen, keine BMW-Angaben.",
+  "Personalaufwand nach Segment, offizielle Levelverteilung und Beteiligungsquote würden die Spanne am stärksten reduzieren."
+ ],
+ "evidence": [
+  {
+   "id": "A01",
+   "source": "BMW Group Jahresergebnis/Report 2025",
+   "date": "2026-03-12",
+   "status": "offiziell",
+   "supports": "Umsatz, EBIT, EBT, Ergebnis, Beschäftigte, F&E"
+  },
+  {
+   "id": "A02",
+   "source": "Vergütungsbericht 2025",
+   "date": "2026-03",
+   "status": "offiziell",
+   "supports": "Organvergütung und Governance"
+  },
+  {
+   "id": "B01",
+   "source": "Unternehmens-, Werk- und Karriereprofile",
+   "date": "2026-08",
+   "status": "Kalibrierung",
+   "supports": "Rollen und Karrierepfade"
+  },
+  {
+   "id": "M01",
+   "source": "50.000 Ziehungen dieses Modells",
+   "date": "2026-08-24",
+   "status": "Modell",
+   "supports": "Schwellenpopulation und TC-Verteilung"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "Rechtsform",
+    "current": "Bayerische Motoren Werke Aktiengesellschaft",
+    "historical": "Deutsche börsennotierte AG",
+    "evidence": "Satzung"
+   },
+   {
+    "item": "Leitung",
+    "current": "Vorstand führt, Aufsichtsrat überwacht",
+    "historical": "Dualistisches deutsches Modell",
+    "evidence": "Governance-Bericht"
+   },
+   {
+    "item": "Mitbestimmung",
+    "current": "Arbeitnehmervertreter im Aufsichtsrat",
+    "historical": "Gesetzliche Mitbestimmung",
+    "evidence": "Governance-Bericht"
+   },
+   {
+    "item": "Vergütung",
+    "current": "Organvergütung mit fixen, variablen und langfristigen Komponenten",
+    "historical": "§162-AktG-Bericht",
+    "evidence": "Vergütungsbericht"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "1916",
+    "event": "Unternehmensgründung",
+    "economic": "Aufbau industrieller Kompetenzen",
+    "control": "Deutsche AG",
+    "status": "offizielle Historie"
+   },
+   {
+    "date": "2021-2025",
+    "event": "NEUE-KLASSE-Investitionsphase",
+    "economic": "Batterie, Software und neue Werke",
+    "control": "Kapitalallokation durch Vorstand/Aufsichtsrat",
+    "status": "offizielle Berichte"
+   },
+   {
+    "date": "2025-12",
+    "event": "Geschäftsjahr 2025",
+    "economic": "10,2 Mrd. EUR EBT",
+    "control": "Mitbestimmte Governance",
+    "status": "Originalbericht"
+   }
+  ]
+ }
+}

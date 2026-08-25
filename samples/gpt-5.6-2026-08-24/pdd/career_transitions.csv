@@ -1,0 +1,9 @@
+from_state,to_state,transition_type,months,evidence_tier,note
+创始团队/业务负责人,高级副总裁,internal_promotion,36,B,官方管理层履历的早期内部晋升路径
+高级副总裁,联席CEO,internal_promotion,60,B,赵佳臻2018-2023任高级副总裁，2023任联席CEO
+联席CEO,联席董事长/联席CEO,internal_promotion,32,B,2025年12月治理角色扩大
+技术负责人,CEO/董事,internal_promotion,48,B,陈磊由技术与业务领导岗位进入最高管理层
+业务运营骨干,业务线负责人,internal_promotion,36,D,公开履历样本的典型路径
+外部电商平台资深工程师,资深产品开发,external_entry,0,D,同业社招路径
+资深产品开发,技术负责人,internal_promotion,42,D,公开履历样本
+中国业务负责人,跨境业务负责人,internal_lateral,24,D,Temu扩张期的横向流动模式

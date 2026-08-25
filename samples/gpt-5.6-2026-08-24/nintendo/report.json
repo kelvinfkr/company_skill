@@ -1,0 +1,548 @@
+{
+ "meta": {
+  "company": "任天堂株式会社",
+  "language": "ja",
+  "reference_date": "2026-03-31",
+  "entity_type": "東証上場の日本株式会社（連結グループ）",
+  "scope": "任天堂株式会社および連結子会社。職能配分は公開資料からの再構築",
+  "threshold": "年間税引前 TC ≥ 20,000,000 JPY（基本給 + 賞与 + 年換算の権利確定株式。株価基準はgrant-date / disclosed award value）",
+  "confidence": "低（暫定推計）",
+  "subtitle": "公開情報から再構築した人材エコノミクス分析",
+  "provisional_note": "暫定推計：employee_benefit_expense modeled, not disclosed は公開情報として入手できなかった。本推計はモデル仮定に依存しており、実測値ではなく区間として読むこと。",
+  "model": "OpenAI Codex (GPT-5.6)",
+  "generated_at": "2026-08-24"
+ },
+ "executive": {
+  "diagnosis": "任天堂は高いソフトウェア粗利を少数精鋭の開発組織で支える構造で、2,000万円超は主に上位開発者・ディレクターに集中するが、連結人件費が未開示のため人数は暫定レンジである。",
+  "metrics": [
+   {
+    "label": "正社員数",
+    "value": "約 8,666 名"
+   },
+   {
+    "label": "研究開発人員",
+    "value": "約 3,600 名 / 42%"
+   },
+   {
+    "label": "一人当たり人件費（株式含む）",
+    "value": "約1,154万 JPY（モデル仮定）"
+   },
+   {
+    "label": "TC 中央値（推定）",
+    "value": "789万 JPY"
+   },
+   {
+    "label": "TC P90（推定）",
+    "value": "1,766万 JPY"
+   },
+   {
+    "label": "しきい値超 p50",
+    "value": "約 681 名"
+   },
+   {
+    "label": "p05-p95",
+    "value": "507-約 883 名"
+   },
+   {
+    "label": "しきい値超の比率",
+    "value": "7.9%"
+   }
+  ]
+ },
+ "business": {
+  "metrics": [
+   {
+    "metric": "売上高",
+    "value": "23,131億 JPY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "売上総利益",
+    "value": "9,090億 JPY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "営業利益",
+    "value": "3,601億 JPY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "当期純利益",
+    "value": "4,241億 JPY",
+    "type": "observed_fact",
+    "evidence": "E01"
+   },
+   {
+    "metric": "人件費（株式報酬含む）",
+    "value": "1,000億 JPY",
+    "type": "observed_fact",
+    "evidence": "E09"
+   },
+   {
+    "metric": "一人当たり売上総利益",
+    "value": "1.0億 JPY",
+    "type": "derived_metric",
+    "evidence": "売上総利益 ÷ 従業員数"
+   },
+   {
+    "metric": "人件費 ÷ 売上総利益",
+    "value": "11.0%",
+    "type": "derived_metric",
+    "evidence": "財務諸表注記"
+   }
+  ],
+  "profit_pools": [
+   {
+    "segment": "ゲームソフト・デジタル",
+    "revenue": "7,900億 JPY",
+    "gross_profit": "6,250億 JPY",
+    "growth": "25.0%",
+    "dependency": "ゲーム制作、エンジン、オンライン基盤（extreme）"
+   },
+   {
+    "segment": "ハードウェア",
+    "revenue": "14,496億 JPY",
+    "gross_profit": "2,325億 JPY",
+    "growth": "100.0%",
+    "dependency": "SoC、量産品質、供給網（high）"
+   },
+   {
+    "segment": "IP関連",
+    "revenue": "735億 JPY",
+    "gross_profit": "514億 JPY",
+    "growth": "-9.7%",
+    "dependency": "IP企画、映画・ライセンス（high）"
+   }
+  ]
+ },
+ "talent_pnl": [
+  {
+   "profit_pool": "ゲームソフト・デジタル",
+   "process": "ゲーム企画と制作",
+   "role": "ゲームディレクター／リード開発者",
+   "dependency": "極めて高い",
+   "why": "高粗利IPの品質と発売時期を直接左右する"
+  },
+  {
+   "profit_pool": "デジタル継続収益",
+   "process": "オンライン基盤と運用",
+   "role": "ネットワーク／プラットフォーム責任者",
+   "dependency": "高い",
+   "why": "アカウント、ストア、マルチプレイの信頼性が継続収益を支える"
+  },
+  {
+   "profit_pool": "ハードウェア",
+   "process": "SoC・量産品質・供給網",
+   "role": "ハードウェア／サプライチェーン責任者",
+   "dependency": "高い",
+   "why": "普及台数と原価が将来のソフトウェア利益を規定する"
+  },
+  {
+   "profit_pool": "IP関連",
+   "process": "映像・ライセンス展開",
+   "role": "IP／映像事業責任者",
+   "dependency": "高い",
+   "why": "ゲーム外接点を増やし、長期IP価値を広げる"
+  }
+ ],
+ "organization": [
+  {
+   "native": "entry（再構築）",
+   "track": "IC",
+   "scope": "担当機能",
+   "function": "開発・デザイン",
+   "state": "entry",
+   "confidence": "低"
+  },
+  {
+   "native": "mid（再構築）",
+   "track": "IC/M",
+   "scope": "機能・小規模チーム",
+   "function": "全職能",
+   "state": "mid",
+   "confidence": "中"
+  },
+  {
+   "native": "senior（再構築）",
+   "track": "IC/M",
+   "scope": "タイトル／重要システム",
+   "function": "開発・ハードウェア",
+   "state": "senior",
+   "confidence": "低"
+  },
+  {
+   "native": "director（再構築）",
+   "track": "M",
+   "scope": "部門／複数タイトル",
+   "function": "全職能",
+   "state": "director",
+   "confidence": "低"
+  },
+  {
+   "native": "執行役員",
+   "track": "経営",
+   "scope": "全社／事業領域",
+   "function": "グループ",
+   "state": "executive",
+   "confidence": "高"
+  }
+ ],
+ "compensation": [
+  {
+   "bucket": "ソフトウェア・ゲーム開発 entry",
+   "headcount": "約 1,620 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "550万-900万 (最頻値 700万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ソフトウェア・ゲーム開発 mid",
+   "headcount": "約 1,224 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "800万-1,400万 (最頻値 1,050万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ソフトウェア・ゲーム開発 senior",
+   "headcount": "約 576 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "1,300万-2,600万 (最頻値 1,800万)",
+   "probability": "39%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ソフトウェア・ゲーム開発 director",
+   "headcount": "約 162 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "2,200万-5,000万 (最頻値 3,200万)",
+   "probability": "97%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ソフトウェア・ゲーム開発 executive",
+   "headcount": "約 18 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "4,500万-1.5億 (最頻値 8,000万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ハードウェア・デザイン entry",
+   "headcount": "約 864 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "520万-880万 (最頻値 680万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ハードウェア・デザイン mid",
+   "headcount": "約 612 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "780万-1,350万 (最頻値 1,020万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ハードウェア・デザイン senior",
+   "headcount": "約 243 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "1,250万-2,500万 (最頻値 1,750万)",
+   "probability": "34%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ハードウェア・デザイン director",
+   "headcount": "約 72 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "2,100万-4,500万 (最頻値 3,000万)",
+   "probability": "95%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "ハードウェア・デザイン executive",
+   "headcount": "約 9 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "4,000万-1.3億 (最頻値 7,000万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "営業・管理・IP entry",
+   "headcount": "約 936 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "480万-850万 (最頻値 650万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "営業・管理・IP mid",
+   "headcount": "約 594 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "750万-1,300万 (最頻値 980万)",
+   "probability": "0%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "営業・管理・IP senior",
+   "headcount": "約 198 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "1,150万-2,300万 (最頻値 1,600万)",
+   "probability": "22%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "営業・管理・IP director",
+   "headcount": "約 63 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "2,000万-4,300万 (最頻値 2,900万)",
+   "probability": "93%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "営業・管理・IP executive",
+   "headcount": "約 9 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "4,000万-1.4億 (最頻値 7,500万)",
+   "probability": "100%",
+   "confidence": "inference"
+  },
+  {
+   "bucket": "運営・顧客支援 support",
+   "headcount": "約 1,466 名",
+   "cash": "—",
+   "equity": "—",
+   "total": "400万-950万 (最頻値 600万)",
+   "probability": "0%",
+   "confidence": "inference"
+  }
+ ],
+ "high_compensation": {
+  "headline": "p05 507 / p50 681 / p95 883 名 (7.9%)",
+  "rows": [
+   {
+    "bucket": "ソフトウェア・ゲーム開発 senior",
+    "count": "約 224 名",
+    "contribution": "33%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "ソフトウェア・ゲーム開発 director",
+    "count": "約 158 名",
+    "contribution": "23%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "ハードウェア・デザイン senior",
+    "count": "約 83 名",
+    "contribution": "12%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "ハードウェア・デザイン director",
+    "count": "約 68 名",
+    "contribution": "10%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "営業・管理・IP director",
+    "count": "約 59 名",
+    "contribution": "9%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "営業・管理・IP senior",
+    "count": "約 44 名",
+    "contribution": "6%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "ソフトウェア・ゲーム開発 executive",
+    "count": "約 18 名",
+    "contribution": "3%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "ハードウェア・デザイン executive",
+    "count": "約 9 名",
+    "contribution": "1%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   },
+   {
+    "bucket": "営業・管理・IP executive",
+    "count": "約 9 名",
+    "contribution": "1%",
+    "uncertainty": "連結人件費、職能別等級、海外報酬換算はモデル仮定。会社開示の実測人数ではない"
+   }
+  ]
+ },
+ "role_pay": [
+  {
+   "role": "ゲームディレクター",
+   "market": "1,800-3,500万円",
+   "economic": "2,500-6,000万円",
+   "internal": "1,600-3,200万円",
+   "defensible": "2,500-3,200万円",
+   "diagnostic": "重複あり。タイトル成功連動の変動報酬が重要"
+  },
+  {
+   "role": "オンライン基盤責任者",
+   "market": "1,800-3,600万円",
+   "economic": "2,400-5,500万円",
+   "internal": "1,600-3,300万円",
+   "defensible": "2,400-3,300万円",
+   "diagnostic": "市場圧力が強い"
+  },
+  {
+   "role": "SoC・ハードウェア責任者",
+   "market": "1,700-3,300万円",
+   "economic": "2,200-5,000万円",
+   "internal": "1,500-3,000万円",
+   "defensible": "2,200-3,000万円",
+   "diagnostic": "希少性プレミアムが必要"
+  },
+  {
+   "role": "IP・映像事業責任者",
+   "market": "1,600-3,200万円",
+   "economic": "2,200-5,200万円",
+   "internal": "1,500-3,000万円",
+   "defensible": "2,200-3,000万円",
+   "diagnostic": "長期IP価値と連動"
+  }
+ ],
+ "career": {
+  "internal_path": [
+   "開発者 → シニア開発者 → ゲームディレクター",
+   "部門責任者 → 執行役員"
+  ],
+  "external_path": [
+   "半導体専門家 → SoC責任者",
+   "映像プロデューサー → IP事業責任者"
+  ],
+  "first_threshold_state": "上位seniorまたはdirector。賞与年度と海外報酬換算に依存する",
+  "promotion_tenure": "公開8経路では通常4-7年単位。これは観測経路であり会社全体の率ではない",
+  "senior_hire_mix": "ゲーム制作は内部育成中心、半導体・オンライン・映像は外部採用も重要"
+ },
+ "governance": [
+  {
+   "metric": "上場・法形式",
+   "value": "東証7974、日本株式会社",
+   "evidence": "有価証券報告書"
+  },
+  {
+   "metric": "平均年間給与",
+   "value": "単体982.5万円（賞与等を含む）",
+   "evidence": "第86期有価証券報告書"
+  },
+  {
+   "metric": "報酬設計",
+   "value": "固定報酬と業績連動要素。連結非役員株式報酬は未取得",
+   "evidence": "有価証券報告書・報酬開示"
+  },
+  {
+   "metric": "取締役会",
+   "value": "取締役会と執行役員の役割分担",
+   "evidence": "コーポレートガバナンス報告"
+  }
+ ],
+ "sensitivity": [
+  "開発senior比率を±25%変えると2,000万円超p50は概ね150-220人動く。",
+  "海外従業員の通貨換算と賞与年度が第2の感応度である。",
+  "連結人件費1,000億円はモデル仮定であり、10%変化すれば全TC帯の再校正が必要。",
+  "連結人件費、株式報酬参加人数、正式等級別人数が最も価値の高い追加証拠である。"
+ ],
+ "evidence": [
+  {
+   "id": "A01",
+   "source": "2026年3月期 決算短信",
+   "date": "2026-05-08",
+   "status": "開示",
+   "supports": "売上高、粗利益、営業利益、純利益"
+  },
+  {
+   "id": "A02",
+   "source": "第86期 有価証券報告書・会社概要",
+   "date": "2026-06",
+   "status": "開示",
+   "supports": "従業員数、単体平均年間給与"
+  },
+  {
+   "id": "B01",
+   "source": "採用・役員情報",
+   "date": "2026-08",
+   "status": "校正",
+   "supports": "職種と経路"
+  },
+  {
+   "id": "M01",
+   "source": "本レポートの50,000回シミュレーション",
+   "date": "2026-08-24",
+   "status": "モデル",
+   "supports": "閾値超人数とTC分布"
+  }
+ ],
+ "charter": {
+  "summary": [
+   {
+    "item": "法人・上場",
+    "current": "任天堂株式会社、東証プライム7974",
+    "historical": "京都を本拠とする日本株式会社",
+    "evidence": "定款・有価証券報告書"
+   },
+   {
+    "item": "統治",
+    "current": "取締役会と執行役員による監督・執行分離",
+    "historical": "長期IP投資を重視",
+    "evidence": "ガバナンス報告"
+   },
+   {
+    "item": "従業員インセンティブ",
+    "current": "固定給・賞与中心。特許・制作貢献の報奨制度",
+    "historical": "利益連動要素を継続",
+    "evidence": "有価証券報告書"
+   }
+  ],
+  "timeline": [
+   {
+    "date": "1889",
+    "event": "創業",
+    "economic": "娯楽IPの長期蓄積",
+    "control": "京都本社",
+    "status": "公式沿革"
+   },
+   {
+    "date": "2025-06",
+    "event": "Nintendo Switch 2発売",
+    "economic": "新ハード普及サイクル",
+    "control": "大型投資と供給判断",
+    "status": "公式資料"
+   },
+   {
+    "date": "2026-03",
+    "event": "FY2026終了",
+    "economic": "売上2.31兆円",
+    "control": "取締役会・執行役員体制",
+    "status": "原資料"
+   }
+  ]
+ }
+}

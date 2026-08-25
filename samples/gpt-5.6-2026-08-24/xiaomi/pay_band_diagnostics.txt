@@ -1,0 +1,58 @@
+[
+  {
+    "role": "汽车端到端辅助驾驶/VLA 算法负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2500000.0,
+      4500000.0
+    ]
+  },
+  {
+    "role": "MiMo 基座大模型核心研究员/负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2000000.0,
+      4000000.0
+    ]
+  },
+  {
+    "role": "自研芯片(玄戒)架构/SoC 负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2000000.0,
+      3500000.0
+    ]
+  },
+  {
+    "role": "手机产品线总经理 (19-20级)",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2000000.0,
+      3500000.0
+    ]
+  },
+  {
+    "role": "互联网广告变现负责人",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      2000000.0,
+      3000000.0
+    ]
+  },
+  {
+    "role": "18级资深研发专家 (通用)",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      900000.0,
+      1500000.0
+    ]
+  },
+  {
+    "role": "16-17级研发工程师/经理",
+    "diagnostic": "overlap",
+    "defensible_zone": [
+      550000.0,
+      900000.0
+    ]
+  }
+]

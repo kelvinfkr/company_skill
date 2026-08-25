@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {"id":"pool_core","type":"profit_pool","label":"Core cleaning robots"},
+    {"id":"process_app","type":"process","label":"Mobile onboarding and device control"},
+    {"id":"role_product","type":"role","label":"Mobile App Product Intern"}
+  ],
+  "edges": [
+    {"from":"pool_core","to":"process_app","dependency":"medium"},
+    {"from":"process_app","to":"role_product","dependency":"low-medium"}
+  ]
+}

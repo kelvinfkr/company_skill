@@ -1,20 +1,21 @@
-# company-talent-economics
+# Company Skills
 
 **中文文档：[README.zh-CN.md](README.zh-CN.md)**
 
-An agent skill that reconstructs a company's **compensation distribution, high-pay population,
-economically critical roles, defensible pay bands and career graph** from public filings — and
-delivers a typeset PDF, not a wall of chat text.
+A public-evidence company research toolkit with two complementary agent skills:
 
-It works for companies **in any country**, and it writes the report **in the language of the company
-name you type**. Ask about `ソニーグループ` and you get a Japanese report; ask about `Siemens AG` and
-you get a German one; ask about `小米集团` and you get a Chinese one.
+| Skill | Question it answers | Main deliverable |
+|---|---|---|
+| [`company-talent-economics`](skills/company-talent-economics/) | How much do people earn, how many cross a pay threshold, and which roles are economically critical? | Auditable compensation and career report |
+| [`estimate-layoff-risk`](skills/estimate-layoff-risk/) | What is an employee, intern, contractor, or role group's 3/6/12-month involuntary job-loss risk? | Evidence-backed risk intervals and scenario report |
 
-Runs in **Claude Code**, **Codex**, and **claude.ai** from the same folder.
+Both skills start from business economics and profit pools rather than titles, sentiment, or salary-site anecdotes. They separate public facts, user-provided facts, assumptions, derived metrics, and inference.
+
+The toolkit runs in **Claude Code**, **Codex**, and compatible skill hosts. The talent-economics skill supports multilingual typesetting; the layoff-risk skill uses an adaptive candidate interview plus current public research.
 
 ---
 
-## What you actually get
+## Company Talent Economics: what you actually get
 
 A directory of auditable artifacts, with `report.pdf` as the deliverable:
 
@@ -59,8 +60,18 @@ cd company_skill
 bash install.sh
 ```
 
-Symlinks the skill into `~/.claude/skills/` and `~/.codex/skills/`, then checks your dependencies.
-Because it is a symlink, `git pull` updates both hosts at once.
+The current installer symlinks **company-talent-economics** into `~/.claude/skills/` and
+`~/.codex/skills/`, then checks its dependencies. Because it is a symlink, `git pull` updates
+both hosts at once.
+
+Install **estimate-layoff-risk** separately:
+
+```bash
+ln -s "$(pwd)/skills/estimate-layoff-risk" ~/.codex/skills/estimate-layoff-risk
+# or: cp -R skills/estimate-layoff-risk ~/.codex/skills/
+```
+
+For Claude Code, use `~/.claude/skills/estimate-layoff-risk` as the destination instead.
 
 ```bash
 bash install.sh --claude      # Claude Code only
@@ -113,7 +124,7 @@ what is missing and what it affects.
 
 ## Use it
 
-Just ask, in any language:
+Ask for compensation and talent economics:
 
 ```
 小米集团的员工薪酬分布是怎样的？年薪超过 100 万的有多少人？
@@ -121,12 +132,22 @@ How many people at Siemens earn above €150k, and which roles justify it?
 ソニーで年収2000万円を超える社員は何人くらいいますか？
 ```
 
-Or invoke it directly:
+Ask for involuntary job-loss risk:
 
-| Host | Invocation |
-|---|---|
-| Claude Code | `/company-talent-economics <company>` |
-| Codex | `$company-talent-economics <company>` |
+```
+Use estimate-layoff-risk to assess a Dreame product intern's 3/6/12-month risk.
+Interview me first, then research current public evidence and produce scenario ranges.
+```
+
+Or invoke a skill directly:
+
+| Host | Talent economics | Layoff risk |
+|---|---|---|
+| Claude Code | `/company-talent-economics <company>` | `/estimate-layoff-risk <company and role>` |
+| Codex | `$company-talent-economics <company>` | `$estimate-layoff-risk <company and role>` |
+
+See the layoff skill's [README](skills/estimate-layoff-risk/README.md) for its full interview prompt,
+profit-pool framework, privacy boundaries, CLI pipeline, and fictional worked example.
 
 ### Driving the harness by hand
 
@@ -252,14 +273,22 @@ These are enforced by the harness, not by good intentions:
 ```
 .claude-plugin/            plugin + marketplace manifests
 install.sh                 installer, dependency check, zip builder
-skills/company-talent-economics/
-  SKILL.md                 the agent-facing instructions
-  scripts/                 the harness (see below)
-  locales/                 12 chrome locale packs
-  assets/                  jurisdiction registry, search terms, priors, templates
-  references/              method: glossary, reasoning chains, jurisdiction playbooks, localization
-  schemas/                 JSON schemas for report / model / evidence
-  examples/                a worked Xiaomi run and runnable fixtures
+skills/
+  company-talent-economics/
+    SKILL.md               compensation and career research workflow
+    scripts/               ten-gate harness
+    locales/               12 chrome locale packs
+    assets/                jurisdiction registry, search terms, priors, templates
+    references/            economics, evidence, localization, career methods
+    schemas/               report / model / evidence JSON schemas
+    examples/              worked runs and runnable fixtures
+  estimate-layoff-risk/
+    README.md              interaction guide and local run instructions
+    SKILL.md               layoff-risk workflow and safety boundaries
+    scripts/               case setup, interview, search, estimation, rendering, validation
+    references/            profit pools, roles, leadership regimes, evidence, calibration
+    schemas/               case / evidence / model / report JSON schemas
+    examples/              fictional robotics product-intern case
 ```
 
 | Script | Does |
