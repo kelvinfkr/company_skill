@@ -100,6 +100,10 @@
   "evidence": [
    "근거 요약",
    "본문에는 핵심 근거만 싣고, 전체 출처 목록과 근거 원장은 감사 패키지에 포함한다."
+  ],
+  "role_profiles": [
+   "재직자 사례와 이력 비교",
+   ""
   ]
  },
  "tables": {
@@ -182,6 +186,24 @@
    "일자",
    "상태",
    "뒷받침하는 판단"
+  ],
+  "profile_experiences": [
+   "기간",
+   "경험",
+   "시점",
+   "근거"
+  ],
+  "profile_comparison": [
+   "역량",
+   "채용 요건",
+   "입사 전 사례",
+   "내 이력"
+  ],
+  "profile_sources": [
+   "ID",
+   "출처",
+   "내용 날짜",
+   "열람일"
   ]
  },
  "labels": {
@@ -235,5 +257,28 @@
   "note_notes": "재무제표 주석"
  },
  "threshold_sentence": "연간 세전 TC ≥ {amount} {currency}(기본급 + 현금 상여 + 연환산 가득 주식, 주가 기준은 {basis})",
- "forbidden_terms": []
+ "forbidden_terms": [],
+ "role_profiles": {
+  "current": "재직",
+  "former": "전직",
+  "unconfirmed": "미확인",
+  "pre_entry": "입사 전",
+  "post_entry": "입사 후",
+  "unknown": "시점 미상",
+  "documented": "기록 있음",
+  "not_documented": "근거 미제공",
+  "not_supplied": "이력 미제공",
+  "required": "필수",
+  "preferred": "우대",
+  "case_only": "공개 채용 요건 없음",
+  "no_case": "확인된 입사 전 사례 없음",
+  "undated": "날짜 미상",
+  "comparison": "경험 비교",
+  "sources": "출처",
+  "other_cases": "과거·미확인·제외 사례",
+  "sample_note": "공개 사례는 기록된 배경과 입사 경로를 보여 줍니다. 표본의 범위는 알 수 없습니다.",
+  "ranking_note": "정렬은 출처 신뢰도, 직무 관련성, 내용 날짜를 반영합니다. 점수는 정렬 가중치입니다.",
+  "next_steps": "다음 단계",
+  "case_count": "재직 사례 {n}건"
+ }
 }

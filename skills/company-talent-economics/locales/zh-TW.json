@@ -99,6 +99,10 @@
   "evidence": [
    "證據摘要",
    "主報告僅保留核心證據；完整來源清單與證據帳冊隨稽核包交付。"
+  ],
+  "role_profiles": [
+   "職位任職者案例與履歷對比",
+   ""
   ]
  },
  "tables": {
@@ -181,6 +185,24 @@
    "日期",
    "狀態",
    "支持的判斷"
+  ],
+  "profile_experiences": [
+   "時間",
+   "經歷",
+   "入職階段",
+   "證據"
+  ],
+  "profile_comparison": [
+   "能力",
+   "招聘要求",
+   "入職前案例",
+   "你的履歷"
+  ],
+  "profile_sources": [
+   "編號",
+   "來源",
+   "內容日期",
+   "存取日期"
   ]
  },
  "labels": {
@@ -243,5 +265,28 @@
    "高收入人口",
    "高薪族群"
   ]
- ]
+ ],
+ "role_profiles": {
+  "current": "在職",
+  "former": "曾任",
+  "unconfirmed": "待確認",
+  "pre_entry": "入職前",
+  "post_entry": "入職後",
+  "unknown": "時間不明",
+  "documented": "已有記錄",
+  "not_documented": "尚未提供證據",
+  "not_supplied": "未提供履歷",
+  "required": "必需",
+  "preferred": "優先",
+  "case_only": "未找到公開招聘要求",
+  "no_case": "無可確認的入職前案例",
+  "undated": "日期不明",
+  "comparison": "經歷對比",
+  "sources": "來源",
+  "other_cases": "歷史、待確認或排除的案例",
+  "sample_note": "公開案例呈現已記錄的背景與進入路徑，樣本涵蓋範圍未知。",
+  "ranking_note": "排序綜合來源可靠性、職位相關性與內容日期，分數用於排列參考案例。",
+  "next_steps": "後續行動",
+  "case_count": "{n} 個在職案例"
+ }
 }

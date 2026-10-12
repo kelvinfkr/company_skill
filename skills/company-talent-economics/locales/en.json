@@ -101,6 +101,10 @@
   "evidence": [
    "Evidence summary",
    "The report keeps core evidence only; the full source manifest and claim ledger travel with the audit bundle."
+  ],
+  "role_profiles": [
+   "Role-holder cases and CV comparison",
+   ""
   ]
  },
  "tables": {
@@ -183,6 +187,24 @@
    "Date",
    "Status",
    "Supports"
+  ],
+  "profile_experiences": [
+   "Period",
+   "Experience",
+   "Timing",
+   "Evidence"
+  ],
+  "profile_comparison": [
+   "Capability",
+   "Job posting",
+   "Before entry",
+   "Your CV"
+  ],
+  "profile_sources": [
+   "ID",
+   "Source",
+   "Content date",
+   "Access date"
   ]
  },
  "labels": {
@@ -236,5 +258,28 @@
   "note_notes": "financial statement notes"
  },
  "threshold_sentence": "Annual pre-tax TC >= {amount} {currency} (base + cash bonus + annualised vested equity; equity priced on a {basis} basis)",
- "forbidden_terms": []
+ "forbidden_terms": [],
+ "role_profiles": {
+  "current": "Current",
+  "former": "Former",
+  "unconfirmed": "Unconfirmed",
+  "pre_entry": "Before entry",
+  "post_entry": "After entry",
+  "unknown": "Timing unknown",
+  "documented": "Documented",
+  "not_documented": "Evidence not supplied",
+  "not_supplied": "CV not supplied",
+  "required": "Required",
+  "preferred": "Preferred",
+  "case_only": "No advertised requirement",
+  "no_case": "No dated pre-entry case",
+  "undated": "Undated",
+  "comparison": "Experience comparison",
+  "sources": "Sources",
+  "other_cases": "Historical, uncertain or excluded cases",
+  "sample_note": "Public cases show documented backgrounds and entry paths. Sample coverage is unknown.",
+  "ranking_note": "Ordering uses source quality, role relevance and content dates. Scores are ordering weights.",
+  "next_steps": "Next steps",
+  "case_count": "{n} current cases"
+ }
 }

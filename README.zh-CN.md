@@ -39,6 +39,18 @@
 
 ---
 
+## 岗位任职者案例与简历对比
+
+可以这样问：
+
+> 查找某公司美国研究科学家岗位的公开任职者，确认当前任职和近期变化，
+> 整理他们入职前的经历，再与我的简历对比。每项对比注明来源和简历位置。
+
+可选模块从公开资料中寻找人物，综合来源可靠性、岗位相关性和内容日期排序，
+区分入职前与入职后的经历。结果可单独生成 PDF，也可附在企业报告中。
+不从 BOSS 获取数据。操作说明和可运行示例见
+[岗位画像工作流](skills/company-talent-economics/references/role_profiles.md)。
+
 ## 安装
 
 四选一。第一种最短，第二种最通用。
@@ -294,6 +306,7 @@ skills/
 
 ```bash
 python skills/company-talent-economics/scripts/check_locales.py    # 语言包 + 注册表
+python -m unittest discover -s skills/company-talent-economics/tests -v  # 岗位案例与简历对比
 python skills/company-talent-economics/scripts/selftest.py         # 闸门 0-10，只出 DOCX
 python skills/company-talent-economics/scripts/selftest.py --pdf   # 同时转 PDF
 ```

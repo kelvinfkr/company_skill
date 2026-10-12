@@ -101,6 +101,10 @@
   "evidence": [
    "Synthèse des preuves",
    "Le rapport ne conserve que les preuves centrales ; l'inventaire complet des sources et le registre des affirmations accompagnent le dossier d'audit."
+  ],
+  "role_profiles": [
+   "Parcours des titulaires et comparaison de CV",
+   ""
   ]
  },
  "tables": {
@@ -183,6 +187,24 @@
    "Date",
    "Statut",
    "Étaye"
+  ],
+  "profile_experiences": [
+   "Période",
+   "Expérience",
+   "Moment",
+   "Preuve"
+  ],
+  "profile_comparison": [
+   "Compétence",
+   "Offre d’emploi",
+   "Avant l’entrée",
+   "Votre CV"
+  ],
+  "profile_sources": [
+   "ID",
+   "Source",
+   "Date du contenu",
+   "Date de consultation"
   ]
  },
  "labels": {
@@ -236,5 +258,28 @@
   "note_notes": "annexes aux états financiers"
  },
  "threshold_sentence": "TC annuelle avant impôt >= {amount} {currency} (fixe + bonus en numéraire + actions acquises annualisées ; actions valorisées sur base {basis})",
- "forbidden_terms": []
+ "forbidden_terms": [],
+ "role_profiles": {
+  "current": "Actuel",
+  "former": "Ancien",
+  "unconfirmed": "Non confirmé",
+  "pre_entry": "Avant l’entrée",
+  "post_entry": "Après l’entrée",
+  "unknown": "Date incertaine",
+  "documented": "Documenté",
+  "not_documented": "Preuve non fournie",
+  "not_supplied": "CV non fourni",
+  "required": "Requis",
+  "preferred": "Souhaité",
+  "case_only": "Aucune exigence publiée",
+  "no_case": "Aucun cas antérieur daté",
+  "undated": "Sans date",
+  "comparison": "Comparaison des expériences",
+  "sources": "Sources",
+  "other_cases": "Cas anciens, incertains ou exclus",
+  "sample_note": "Les cas publics décrivent des parcours documentés. La couverture de l’échantillon est inconnue.",
+  "ranking_note": "Le classement combine qualité des sources, pertinence du poste et date du contenu. Les scores servent au classement.",
+  "next_steps": "Prochaines étapes",
+  "case_count": "{n} cas en poste"
+ }
 }

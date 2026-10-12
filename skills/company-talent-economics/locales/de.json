@@ -101,6 +101,10 @@
   "evidence": [
    "Belegübersicht",
    "Der Bericht führt nur Kernbelege; das vollständige Quellenverzeichnis und das Belegregister liegen dem Prüfpaket bei."
+  ],
+  "role_profiles": [
+   "Stelleninhaber und Lebenslaufvergleich",
+   ""
   ]
  },
  "tables": {
@@ -183,6 +187,24 @@
    "Datum",
    "Status",
    "Stützt"
+  ],
+  "profile_experiences": [
+   "Zeitraum",
+   "Erfahrung",
+   "Zeitpunkt",
+   "Beleg"
+  ],
+  "profile_comparison": [
+   "Fähigkeit",
+   "Stellenanzeige",
+   "Vor dem Eintritt",
+   "Ihr Lebenslauf"
+  ],
+  "profile_sources": [
+   "ID",
+   "Quelle",
+   "Inhaltsdatum",
+   "Abrufdatum"
   ]
  },
  "labels": {
@@ -236,5 +258,28 @@
   "note_notes": "Anhang zum Abschluss"
  },
  "threshold_sentence": "Jährliche TC vor Steuern >= {amount} {currency} (Grundgehalt + Barbonus + annualisierte unverfallbare Aktien; Aktienbewertung auf {basis}-Basis)",
- "forbidden_terms": []
+ "forbidden_terms": [],
+ "role_profiles": {
+  "current": "Aktuell",
+  "former": "Ehemalig",
+  "unconfirmed": "Unbestätigt",
+  "pre_entry": "Vor dem Eintritt",
+  "post_entry": "Nach dem Eintritt",
+  "unknown": "Zeitpunkt unbekannt",
+  "documented": "Dokumentiert",
+  "not_documented": "Beleg nicht vorgelegt",
+  "not_supplied": "Lebenslauf nicht vorgelegt",
+  "required": "Erforderlich",
+  "preferred": "Bevorzugt",
+  "case_only": "Keine ausgeschriebene Anforderung",
+  "no_case": "Kein datierter Fall vor Eintritt",
+  "undated": "Undatiert",
+  "comparison": "Erfahrungsvergleich",
+  "sources": "Quellen",
+  "other_cases": "Ehemalige, unklare oder ausgeschlossene Fälle",
+  "sample_note": "Öffentliche Fälle zeigen dokumentierte Laufbahnen. Die Abdeckung der Stichprobe ist unbekannt.",
+  "ranking_note": "Die Reihenfolge berücksichtigt Quellenqualität, Stellenbezug und Inhaltsdatum. Werte dienen der Sortierung.",
+  "next_steps": "Nächste Schritte",
+  "case_count": "{n} aktuelle Fälle"
+ }
 }

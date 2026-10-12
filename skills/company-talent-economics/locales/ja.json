@@ -101,6 +101,10 @@
   "evidence": [
    "証拠サマリー",
    "本編には主要な証拠のみを載せ、完全な出典一覧と証拠台帳は監査パッケージに同梱する。"
+  ],
+  "role_profiles": [
+   "在職者の事例と経歴の比較",
+   ""
   ]
  },
  "tables": {
@@ -183,6 +187,24 @@
    "日付",
    "状態",
    "支持する判断"
+  ],
+  "profile_experiences": [
+   "期間",
+   "経歴",
+   "時期",
+   "根拠"
+  ],
+  "profile_comparison": [
+   "能力",
+   "求人要件",
+   "入職前の事例",
+   "あなたの経歴"
+  ],
+  "profile_sources": [
+   "ID",
+   "情報源",
+   "内容の日付",
+   "閲覧日"
   ]
  },
  "labels": {
@@ -236,5 +258,28 @@
   "note_notes": "財務諸表注記"
  },
  "threshold_sentence": "年間税引前 TC ≥ {amount} {currency}（基本給 + 賞与 + 年換算の権利確定株式。株価基準は{basis}）",
- "forbidden_terms": []
+ "forbidden_terms": [],
+ "role_profiles": {
+  "current": "在職",
+  "former": "過去の在職",
+  "unconfirmed": "未確認",
+  "pre_entry": "入職前",
+  "post_entry": "入職後",
+  "unknown": "時期不明",
+  "documented": "記載あり",
+  "not_documented": "根拠未提供",
+  "not_supplied": "経歴未提供",
+  "required": "必須",
+  "preferred": "望ましい",
+  "case_only": "公開要件が見つかりません",
+  "no_case": "入職前の確認事例なし",
+  "undated": "日付不明",
+  "comparison": "経歴の比較",
+  "sources": "情報源",
+  "other_cases": "過去・未確認・除外の事例",
+  "sample_note": "公開事例は記録された経歴と入職経路を示します。標本の網羅性は不明です。",
+  "ranking_note": "順序は情報源の信頼性、職務との関連性、内容の日付に基づきます。点数は並べ替え用です。",
+  "next_steps": "次の行動",
+  "case_count": "在職事例 {n} 件"
+ }
 }

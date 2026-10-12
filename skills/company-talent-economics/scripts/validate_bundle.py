@@ -54,6 +54,9 @@ def main():
                 problems.append(f'report.json: missing section {s}')
         if not report.get('meta', {}).get('language'):
             problems.append('report.json: meta.language missing; the renderer cannot pick a locale')
+        if 'role_profiles' in report:
+            from role_profiles import validate_section
+            problems.extend(validate_section(report['role_profiles'], report.get('meta', {})))
         for m in report.get('business', {}).get('metrics', []):
             if m.get('type') not in allowed_types:
                 problems.append(f"business.metrics '{m.get('metric')}': type must be one of "

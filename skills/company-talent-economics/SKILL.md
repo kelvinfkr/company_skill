@@ -1,8 +1,21 @@
 ---
 name: company-talent-economics
-description: Reconstruct a company's compensation distribution, high-compensation population, promotion/hiring paths, and role-specific pay bands from public filings and other public data, and deliver a typeset PDF report. Works for companies in any country and writes the report in the language of the company name the user typed (Chinese, Japanese, Korean, German, Spanish, Arabic and more). Use when asked how much people at a company earn, how many employees exceed a total-compensation threshold, which roles are economically critical, how promotion works, or what a role at a given level should be paid. Starts from segment profit pools and the payroll envelope, then rebuilds the level pyramid, equity awards, and career graph. Public data only; never infers a private individual's pay.
+description: Research company compensation distributions, high-pay populations, critical-role pay bands and career paths from public evidence, and produce a localized PDF. Use for company salary, role-value and career-path questions, or to compare public R&D role-holder backgrounds with a user-supplied CV. Compensation analysis starts from profit pools and the payroll envelope. Public profiles support role and experience comparisons; private individual pay is never inferred.
 ---
 # Company Talent Economics
+
+## Optional role-holder research
+
+When asked who holds an R&D role or how the user's experience compares, read
+`references/role_profiles.md`. Find public role-holder cases, confirm identity and
+role scope, collect dated experiences, and compare entry backgrounds with the
+user-supplied CV. Rank current cases using source quality, relevance and content
+dates. BOSS sources are excluded. Use `scripts/role_profiles.py` to prepare search
+queries, validate evidence and compile the optional report section.
+
+This module can run on its own (`render_report.py --profiles-only`) or attach to a
+company report. Standalone case research uses its own evidence bundle; company
+compensation analysis continues through the ten phase gates below.
 
 ## Operating procedure (follow this literally)
 

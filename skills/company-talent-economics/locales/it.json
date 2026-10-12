@@ -101,6 +101,10 @@
   "evidence": [
    "Sintesi delle evidenze",
    "Il rapporto conserva solo le evidenze centrali; l'elenco completo delle fonti e il registro delle affermazioni accompagnano il pacchetto di audit."
+  ],
+  "role_profiles": [
+   "Casi di titolari e confronto dei CV",
+   ""
   ]
  },
  "tables": {
@@ -183,6 +187,24 @@
    "Data",
    "Stato",
    "Sostiene"
+  ],
+  "profile_experiences": [
+   "Periodo",
+   "Esperienza",
+   "Momento",
+   "Evidenza"
+  ],
+  "profile_comparison": [
+   "Competenza",
+   "Annuncio",
+   "Prima dell’ingresso",
+   "Il tuo CV"
+  ],
+  "profile_sources": [
+   "ID",
+   "Fonte",
+   "Data del contenuto",
+   "Data di accesso"
   ]
  },
  "labels": {
@@ -236,5 +258,28 @@
   "note_notes": "note al bilancio"
  },
  "threshold_sentence": "TC annua lorda >= {amount} {currency} (fisso + bonus in denaro + azioni maturate annualizzate; azioni valorizzate su base {basis})",
- "forbidden_terms": []
+ "forbidden_terms": [],
+ "role_profiles": {
+  "current": "Attuale",
+  "former": "Precedente",
+  "unconfirmed": "Non confermato",
+  "pre_entry": "Prima dell’ingresso",
+  "post_entry": "Dopo l’ingresso",
+  "unknown": "Data incerta",
+  "documented": "Documentato",
+  "not_documented": "Evidenza non fornita",
+  "not_supplied": "CV non fornito",
+  "required": "Richiesto",
+  "preferred": "Preferito",
+  "case_only": "Nessun requisito pubblicato",
+  "no_case": "Nessun caso precedente datato",
+  "undated": "Senza data",
+  "comparison": "Confronto delle esperienze",
+  "sources": "Fonti",
+  "other_cases": "Casi precedenti, incerti o esclusi",
+  "sample_note": "I casi pubblici mostrano percorsi documentati. La copertura del campione è sconosciuta.",
+  "ranking_note": "L’ordine combina qualità della fonte, pertinenza del ruolo e data del contenuto. I punteggi ordinano i casi.",
+  "next_steps": "Prossimi passi",
+  "case_count": "{n} casi attuali"
+ }
 }
