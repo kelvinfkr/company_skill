@@ -41,6 +41,20 @@ starts from where the money is made, not from a salary survey.
 
 ---
 
+## Public role-holder cases
+
+Ask who holds a target R&D role and how their entry backgrounds compare with your CV:
+
+> Research public Research Scientist cases at a company in the US. Check current
+> roles and recent updates, collect their entry histories, and compare them with
+> my CV. Cite the sources and CV entries behind each comparison.
+
+The optional module collects public profiles, ranks current cases by source
+quality, role relevance and content date, and separates pre-entry experience
+from work completed after joining. It produces a standalone PDF or appends a
+section to the company report. BOSS sources are excluded. See
+[the workflow and runnable example](skills/company-talent-economics/references/role_profiles.md).
+
 ## Install
 
 Pick one. The first is the shortest; the second is the most portable.
@@ -315,6 +329,7 @@ skills/
 python skills/company-talent-economics/scripts/check_locales.py    # packs + registry
 python skills/company-talent-economics/scripts/selftest.py         # gates 0-10, DOCX only
 python skills/company-talent-economics/scripts/selftest.py --pdf   # also convert to PDF
+python -m unittest discover -s skills/company-talent-economics/tests -v
 ```
 
 `selftest.py` runs three scenarios end to end — a fully disclosed listed company, an unlisted company

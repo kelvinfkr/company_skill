@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "company": "Northwind Robotics Inc.",
+    "role": "Research Scientist",
+    "geography": "US",
+    "language": "en",
+    "reference_date": "2026-10-12",
+    "scope": "Fictional role-profile example"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Fictional S1",
+      "url": "https://example.invalid/S1",
+      "source_type": "company_page",
+      "origin_id": "S1",
+      "published_date": "2026-10-01",
+      "updated_date": null,
+      "accessed_date": "2026-10-12"
+    },
+    {
+      "id": "S2",
+      "title": "Fictional S2",
+      "url": "https://example.invalid/S2",
+      "source_type": "personal_homepage",
+      "origin_id": "S2",
+      "published_date": "2022-01-01",
+      "updated_date": null,
+      "accessed_date": "2026-10-12"
+    },
+    {
+      "id": "S2-copy",
+      "title": "Fictional S2-copy",
+      "url": "https://example.invalid/S2-copy",
+      "source_type": "personal_homepage",
+      "origin_id": "S2",
+      "published_date": "2022-01-01",
+      "updated_date": null,
+      "accessed_date": "2026-10-12"
+    },
+    {
+      "id": "S3",
+      "title": "Fictional S3",
+      "url": "https://example.invalid/S3",
+      "source_type": "public_cv",
+      "origin_id": "S3",
+      "published_date": null,
+      "updated_date": null,
+      "accessed_date": "2026-10-12"
+    },
+    {
+      "id": "S4",
+      "title": "Fictional S4",
+      "url": "https://example.invalid/S4",
+      "source_type": "appointment",
+      "origin_id": "S4",
+      "published_date": "2026-10-05",
+      "updated_date": null,
+      "accessed_date": "2026-10-12"
+    },
+    {
+      "id": "J1",
+      "title": "Fictional J1",
+      "url": "https://example.invalid/J1",
+      "source_type": "job_posting",
+      "origin_id": "J1",
+      "published_date": "2026-10-10",
+      "updated_date": null,
+      "accessed_date": "2026-10-12"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "research",
+      "label": "Research experience"
+    },
+    {
+      "id": "systems",
+      "label": "Training and evaluation systems"
+    },
+    {
+      "id": "leadership",
+      "label": "Technical leadership"
+    }
+  ],
+  "requirements": [
+    {
+      "capability_id": "systems",
+      "importance": "required",
+      "evidence_ids": [
+        "J1"
+      ]
+    },
+    {
+      "capability_id": "research",
+      "importance": "preferred",
+      "evidence_ids": [
+        "J1"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "P1",
+      "person_key": "P1",
+      "name": "Alex Example",
+      "identity_status": "resolved",
+      "identity_evidence_ids": [
+        "S1"
+      ],
+      "joined_date": "2024-06-01",
+      "role": {
+        "company": "Northwind Robotics Inc.",
+        "title": "Research Scientist",
+        "geography": "US",
+        "status": "current",
+        "match": "exact",
+        "match_reason": "Fictional official role matches the target.",
+        "evidence_ids": [
+          "S1"
+        ],
+        "as_of": null
+      },
+      "experiences": [
+        {
+          "kind": "education",
+          "summary": "PhD in machine learning",
+          "capability_ids": [
+            "research"
+          ],
+          "evidence_ids": [
+            "S1"
+          ],
+          "start_date": "2019",
+          "end_date": "2023"
+        },
+        {
+          "kind": "project",
+          "summary": "Built a distributed training prototype",
+          "capability_ids": [
+            "systems"
+          ],
+          "evidence_ids": [
+            "S1"
+          ],
+          "start_date": "2023-01",
+          "end_date": "2024-02"
+        },
+        {
+          "kind": "project",
+          "summary": "Led the production research team",
+          "capability_ids": [
+            "leadership"
+          ],
+          "evidence_ids": [
+            "S1"
+          ],
+          "start_date": "2025-01",
+          "end_date": "2026-02"
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "person_key": "P2",
+      "name": "Blair Example",
+      "identity_status": "resolved",
+      "identity_evidence_ids": [
+        "S2"
+      ],
+      "joined_date": "2021",
+      "role": {
+        "company": "Northwind Robotics Inc.",
+        "title": "Research Scientist",
+        "geography": "US",
+        "status": "current",
+        "match": "exact",
+        "match_reason": "Fictional official role matches the target.",
+        "evidence_ids": [
+          "S2",
+          "S2-copy"
+        ],
+        "as_of": null
+      },
+      "experiences": [
+        {
+          "kind": "employment",
+          "summary": "Research engineer at a prior lab",
+          "capability_ids": [
+            "systems",
+            "research"
+          ],
+          "evidence_ids": [
+            "S2"
+          ],
+          "start_date": "2017",
+          "end_date": "2020"
+        },
+        {
+          "kind": "publication",
+          "summary": "Paper published during the joining year",
+          "capability_ids": [
+            "research"
+          ],
+          "evidence_ids": [
+            "S2"
+          ],
+          "start_date": "2021",
+          "end_date": "2021"
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "person_key": "P3",
+      "name": "Casey Example",
+      "identity_status": "resolved",
+      "identity_evidence_ids": [
+        "S3"
+      ],
+      "joined_date": "2025-08",
+      "role": {
+        "company": "Northwind Robotics Inc.",
+        "title": "Research Scientist",
+        "geography": "US",
+        "status": "current",
+        "match": "exact",
+        "match_reason": "Fictional official role matches the target.",
+        "evidence_ids": [
+          "S3"
+        ],
+        "as_of": null
+      },
+      "experiences": [
+        {
+          "kind": "project",
+          "summary": "Built an open-source evaluation suite",
+          "capability_ids": [
+            "systems"
+          ],
+          "evidence_ids": [
+            "S3"
+          ],
+          "start_date": "2022",
+          "end_date": "2024"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "person_key": "P4",
+      "name": "Drew Example",
+      "identity_status": "resolved",
+      "identity_evidence_ids": [
+        "S4"
+      ],
+      "joined_date": "2020",
+      "role": {
+        "company": "Northwind Robotics Inc.",
+        "title": "Research Scientist",
+        "geography": "US",
+        "status": "former",
+        "match": "exact",
+        "match_reason": "Fictional official role matches the target.",
+        "evidence_ids": [
+          "S4"
+        ],
+        "as_of": null
+      },
+      "experiences": [
+        {
+          "kind": "education",
+          "summary": "PhD in computing",
+          "capability_ids": [
+            "research"
+          ],
+          "evidence_ids": [
+            "S4"
+          ],
+          "start_date": "2014",
+          "end_date": "2019"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "person_key": "P5",
+      "name": "Alex Namesake",
+      "identity_status": "ambiguous",
+      "identity_evidence_ids": [
+        "S1"
+      ],
+      "joined_date": "2024",
+      "role": {
+        "company": "Northwind Robotics Inc.",
+        "title": "Research Scientist",
+        "geography": "US",
+        "status": "current",
+        "match": "exact",
+        "match_reason": "Fictional official role matches the target.",
+        "evidence_ids": [
+          "S1"
+        ],
+        "as_of": null
+      },
+      "experiences": []
+    }
+  ],
+  "searches": [
+    {
+      "query": "Fictional Northwind research team",
+      "searched_date": "2026-10-12",
+      "outcome": "found",
+      "note": "Synthetic team-page fixture"
+    },
+    {
+      "query": "Fictional Casey Example dated CV",
+      "searched_date": "2026-10-12",
+      "outcome": "not_found",
+      "note": "No dated CV in this synthetic scenario"
+    }
+  ]
+}

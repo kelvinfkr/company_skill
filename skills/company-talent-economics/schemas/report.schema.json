@@ -80,6 +80,11 @@
     "career": {
       "type": "object"
     },
+    "role_profiles": {
+      "type": "object",
+      "required": ["bundle", "current_cases", "other_cases", "comparison", "sample_count", "policy"],
+      "description": "Optional public role-holder cases compiled by role_profiles.py. validate_bundle.py checks the source bundle and recomputes the section."
+    },
     "governance": {
       "type": "array"
     },

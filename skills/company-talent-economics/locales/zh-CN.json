@@ -100,6 +100,10 @@
   "evidence": [
    "证据摘要",
    "主报告只保留核心证据；完整来源清单与证据台账随审计包交付。"
+  ],
+  "role_profiles": [
+   "岗位任职者案例与简历对比",
+   ""
   ]
  },
  "tables": {
@@ -182,6 +186,24 @@
    "日期",
    "状态",
    "支持的判断"
+  ],
+  "profile_experiences": [
+   "时间",
+   "经历",
+   "入职阶段",
+   "证据"
+  ],
+  "profile_comparison": [
+   "能力",
+   "招聘要求",
+   "入职前案例",
+   "你的简历"
+  ],
+  "profile_sources": [
+   "编号",
+   "来源",
+   "内容日期",
+   "访问日期"
   ]
  },
  "labels": {
@@ -248,5 +270,28 @@
    "收入分布",
    "薪酬分布"
   ]
- ]
+ ],
+ "role_profiles": {
+  "current": "在岗",
+  "former": "曾任",
+  "unconfirmed": "待确认",
+  "pre_entry": "入职前",
+  "post_entry": "入职后",
+  "unknown": "时间不明",
+  "documented": "已有记录",
+  "not_documented": "尚未提供证据",
+  "not_supplied": "未提供简历",
+  "required": "必需",
+  "preferred": "优先",
+  "case_only": "未找到公开招聘要求",
+  "no_case": "无可确认的入职前案例",
+  "undated": "日期不明",
+  "comparison": "经历对比",
+  "sources": "来源",
+  "other_cases": "历史、待确认或排除的案例",
+  "sample_note": "公开案例展示已记录的背景与进入路径，样本覆盖范围未知。",
+  "ranking_note": "排序综合来源可靠性、岗位相关性和内容日期，分数用于排列参考案例。",
+  "next_steps": "后续行动",
+  "case_count": "{n} 个在职案例"
+ }
 }

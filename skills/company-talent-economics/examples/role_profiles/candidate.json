@@ -1,0 +1,20 @@
+{
+  "experiences": [
+    {
+      "summary": "Built a distributed training prototype for a graduate project",
+      "capability_ids": [
+        "systems"
+      ],
+      "resume_reference": "Fictional CV, Projects, item 1"
+    }
+  ],
+  "next_steps": [
+    {
+      "capability_id": "systems",
+      "action": "Describe the training scale, your contribution and evaluation results in the project entry.",
+      "evidence_ids": [
+        "J1"
+      ]
+    }
+  ]
+}

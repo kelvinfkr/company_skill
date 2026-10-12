@@ -360,10 +360,65 @@ def add_subhead(doc, text):
     text_run(p, text, bold=True, size=12, color=ACCENT)
 
 
+def add_role_profiles(doc, profiles):
+    """Render public cases with their dates, sources and candidate CV references."""
+    from role_profiles import validate_section
+    problems = validate_section(profiles)
+    if problems:
+        raise ValueError("\n".join(problems))
+    meta = profiles['bundle']['meta']
+    add_callout(doc, f"{meta['company']} · {meta['role']} · {meta['geography']} · {meta['reference_date']}")
+    add_bullets(doc, [T('role_profiles.case_count').format(n=profiles['sample_count'])])
+    add_bullets(doc, [T('role_profiles.sample_note'), T('role_profiles.ranking_note')])
+    for case in profiles['current_cases'] + profiles['other_cases']:
+        if profiles['other_cases'] and case is profiles['other_cases'][0]:
+            add_subhead(doc, T('role_profiles.other_cases'))
+        add_subhead(doc, case['name'] + ' [' + case['id'] + ']')
+        role = case['role']
+        ranking = case.get('ranking')
+        status = role['status'] if case['identity_status'] == 'resolved' else 'unconfirmed'
+        details = f"{role['title']} · {role['geography']} · {T('role_profiles.' + status)}"
+        if ranking:
+            details += f" · {ranking['as_of'] or T('role_profiles.undated')} · {ranking['score']:.2f}"
+        add_bullets(doc, [details, role['match_reason'], ', '.join(role['evidence_ids'])])
+        if case['experiences']:
+            add_table(doc, T('tables.profile_experiences'),
+                  [[f"{e.get('start_date') or ''} / {e.get('end_date') or ''}", e['summary'],
+                    T('role_profiles.' + e['phase']), ', '.join(e['evidence_ids'])]
+                   for e in case['experiences']], [2.4, 7.2, 2.8, 3.6], 7.7)
+    add_subhead(doc, T('role_profiles.comparison'))
+    rows = []
+    for item in profiles['comparison']:
+        peers = '\n'.join(f"{e['profile_id']}: {e['summary']} [{', '.join(e['evidence_ids'])}]"
+                          for e in item['pre_entry_examples']) or T('role_profiles.no_case')
+        candidate = '\n'.join(f"{e['summary']} [{e['resume_reference']}]"
+                              for e in item['candidate_examples'])
+        candidate = T('role_profiles.' + item['candidate_status']) + ('\n' + candidate if candidate else '')
+        requirements = '\n'.join(f"{T('role_profiles.' + r['importance'])} [{', '.join(r['evidence_ids'])}]"
+                                 for r in item['requirements']) or T('role_profiles.case_only')
+        rows.append([item['label'], requirements, peers, candidate])
+    add_table(doc, T('tables.profile_comparison'), rows, [2.8, 3.0, 5.7, 4.5], 7.7)
+    next_steps = (profiles.get('candidate') or {}).get('next_steps', [])
+    if next_steps:
+        add_subhead(doc, T('role_profiles.next_steps'))
+        add_bullets(doc, [s['action'] + ' [' + ', '.join(s['evidence_ids']) + ']' for s in next_steps])
+    doc.add_page_break()
+    add_subhead(doc, T('role_profiles.sources'))
+    add_table(doc, T('tables.profile_sources'),
+              [[s['id'], s['title'] + '\n' + s['url'],
+                s.get('updated_date') or s.get('published_date') or T('role_profiles.undated'),
+                s['accessed_date']] for s in profiles['bundle']['sources']], [1.2, 9.6, 2.6, 2.6], 7.5)
+
+
 # ----------------------------------------------------------------------- report
 
-def build_docx(data: dict, out_docx: Path, language: str | None = None):
+def build_docx(data: dict, out_docx: Path, language: str | None = None, profiles_only=False):
     global LOC, FONT_MAIN, FONT_SERIF, RTL
+    if 'role_profiles' in data:
+        from role_profiles import validate_section
+        problems = validate_section(data['role_profiles'], data.get('meta', {}))
+        if problems:
+            raise ValueError('\n'.join(problems))
     lang = language or data.get('meta', {}).get('language')
     if not lang:
         # Older bundles carry no meta.language: fall back to the company name's script rather
@@ -394,8 +449,17 @@ def build_docx(data: dict, out_docx: Path, language: str | None = None):
     doc = Document()
     configure_doc(doc)
     company = data.get('meta', {}).get('company', 'Company')
-    add_cover(doc, data)
+    if profiles_only:
+        p = doc.add_paragraph(style='Title')
+        text_run(p, section('role_profiles')[0], bold=True, size=24, font=FONT_SERIF)
+    else:
+        add_cover(doc, data)
     add_header_footer(doc, company)
+
+    if profiles_only:
+        add_role_profiles(doc, data['role_profiles'])
+        doc.save(out_docx)
+        return
 
     title, note = section("executive")
     add_section_title(doc, 1, title, note)
@@ -499,6 +563,12 @@ def build_docx(data: dict, out_docx: Path, language: str | None = None):
               rows_by_keys(data.get('evidence', []), ['id', 'source', 'date', 'status', 'supports']),
               [1.4, 5.1, 2.2, 2.0, 5.3], 7.1)
 
+    if data.get('role_profiles'):
+        doc.add_page_break()
+        title, note = section('role_profiles')
+        add_section_title(doc, 13, title, note)
+        add_role_profiles(doc, data['role_profiles'])
+
     doc.save(out_docx)
 
 
@@ -541,23 +611,25 @@ def main():
     ap.add_argument('--docx-output')
     ap.add_argument('--docx-only', action='store_true',
                     help='Write DOCX only; skip PDF conversion (no LibreOffice needed)')
+    ap.add_argument('--profiles-only', action='store_true',
+                    help='Render the optional role-profile report on its own')
     args = ap.parse_args()
     data = json.loads(Path(args.report_json).read_text(encoding='utf-8'))
     pdf = Path(args.output)
     pdf.parent.mkdir(parents=True, exist_ok=True)
     if args.docx_only:
         docx = Path(args.docx_output) if args.docx_output else pdf.with_suffix('.docx')
-        build_docx(data, docx, args.language)
+        build_docx(data, docx, args.language, args.profiles_only)
         print(docx)
         return
     if args.keep_docx:
         docx = Path(args.docx_output) if args.docx_output else pdf.with_suffix('.docx')
-        build_docx(data, docx, args.language)
+        build_docx(data, docx, args.language, args.profiles_only)
         convert_to_pdf(docx, pdf)
     else:
         with tempfile.TemporaryDirectory(prefix='cte_report_') as td:
             docx = Path(td) / 'report.docx'
-            build_docx(data, docx, args.language)
+            build_docx(data, docx, args.language, args.profiles_only)
             convert_to_pdf(docx, pdf)
     print(pdf)
 

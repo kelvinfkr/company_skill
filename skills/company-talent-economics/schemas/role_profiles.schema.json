@@ -1,0 +1,383 @@
+{
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "company": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geography": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reference_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "company",
+        "role",
+        "geography",
+        "language",
+        "reference_date"
+      ]
+    },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "half_life_days": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "undated_weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": []
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "origin_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_type": {
+            "enum": [
+              "company_page",
+              "appointment",
+              "personal_homepage",
+              "public_cv",
+              "orcid",
+              "publication",
+              "conference_bio",
+              "technical_blog",
+              "open_source",
+              "public_professional_profile",
+              "job_posting"
+            ]
+          },
+          "published_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "updated_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "accessed_date": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "source_type",
+          "origin_id",
+          "accessed_date"
+        ]
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "label"
+        ]
+      }
+    },
+    "searches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "searched_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "outcome": {
+            "enum": [
+              "found",
+              "not_found",
+              "excluded"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "query",
+          "searched_date",
+          "outcome",
+          "note"
+        ]
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "importance": {
+            "enum": [
+              "required",
+              "preferred"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "capability_id",
+          "importance",
+          "evidence_ids"
+        ]
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "person_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "identity_status": {
+            "enum": [
+              "resolved",
+              "ambiguous"
+            ]
+          },
+          "identity_evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "joined_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+          },
+          "role": {
+            "type": "object",
+            "properties": {
+              "company": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "geography": {
+                "type": "string",
+                "minLength": 1
+              },
+              "match_reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_ids": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "status": {
+                "enum": [
+                  "current",
+                  "former",
+                  "unconfirmed"
+                ]
+              },
+              "match": {
+                "enum": [
+                  "exact",
+                  "related",
+                  "excluded"
+                ]
+              },
+              "as_of": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              }
+            },
+            "required": [
+              "company",
+              "title",
+              "geography",
+              "status",
+              "match",
+              "match_reason",
+              "evidence_ids"
+            ]
+          },
+          "experiences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "education",
+                    "employment",
+                    "project",
+                    "publication",
+                    "service",
+                    "honor"
+                  ]
+                },
+                "summary": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "capability_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "start_date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+                },
+                "end_date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+                }
+              },
+              "required": [
+                "kind",
+                "summary",
+                "evidence_ids"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "identity_status",
+          "identity_evidence_ids",
+          "role",
+          "experiences"
+        ]
+      }
+    }
+  },
+  "required": [
+    "meta",
+    "sources",
+    "capabilities",
+    "requirements",
+    "profiles"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public role-holder evidence bundle"
+}
